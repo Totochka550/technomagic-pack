@@ -1,0 +1,21 @@
+filename = 'Mekanism-1.7.10-9.1.1.1031.jar'
+name = 'Mekanism'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Mekanism-1.7.10-9.1.1.1031.jar'
+
+[download]
+hash = 'cd3caa76541a58e55e1b68d1e6a1aef881523cd2'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2475797
+project-id = 268560
+
+[[x-prismlauncher-dependencies]]
+addonId = '229323'
+type = 'REQUIRED'

@@ -1,0 +1,1821 @@
+{
+  "title": "Blood Magic",
+  "chapters": [
+    {
+      "id": "bloodmagic",
+      "title": "Blood Magic",
+      "description": "Кровавый алтарь, руны, сигилы и ритуалы: путь от первой капли крови до приручённых демонов.",
+      "icon": "AWWayofTime:Altar",
+      "requiredMod": "AWWayofTime",
+      "quests": [
+        {
+          "id": "bm_altar",
+          "title": "Кровавый алтарь",
+          "icon": "AWWayofTime:Altar",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "AWWayofTime:Altar",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Поставить алтарь на видном месте"
+            }
+          ],
+          "description": [
+            "Алтарь — сердце всей магии крови. В него стекается жизнь, и он же превращает её в предметы.",
+            "Поставьте его там, где не жалко пролить пару литров."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "bm_knife",
+          "title": "Первая кровь",
+          "icon": "AWWayofTime:sacrificialKnife",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "ingotIron",
+              "count": 1,
+              "consume": false,
+              "title": "Подготовить железный слиток"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:sacrificialKnife",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать жертвенный нож в алтаре"
+            },
+            {
+              "type": "checkmark",
+              "title": "Пролить первую кровь в алтарь"
+            }
+          ],
+          "description": [
+            "Жертвенный нож делается в алтаре из железного слитка. Ударьтесь им — и алтарь наполнится вашей кровью.",
+            "Больно только в первый раз, потом привыкнете."
+          ],
+          "dependencies": [
+            "bm_altar"
+          ],
+          "achievement": "achievement.alchemicalwizardry:firstPrick",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:blankSlate",
+              "count": 1
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "bm_slate",
+          "title": "Пустые плитки",
+          "icon": "AWWayofTime:blankSlate",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "stone",
+              "count": 8,
+              "consume": false,
+              "title": "Заготовить камень"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:blankSlate",
+              "count": 2,
+              "consume": true,
+              "title": "Сдать 2 пустые плитки"
+            }
+          ],
+          "description": [
+            "Из обычного камня и крови в алтаре получаются пустые плитки — основа почти всех рецептов мода."
+          ],
+          "dependencies": [
+            "bm_knife"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:bloodStoneBrick",
+              "count": 8
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "bm_weak_orb",
+          "title": "Слабый кровавый шар",
+          "icon": "AWWayofTime:weakBloodOrb",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:weakBloodOrb",
+              "count": 1,
+              "consume": false,
+              "title": "Создать слабый кровавый шар"
+            },
+            {
+              "type": "checkmark",
+              "title": "Наполнить шар кровью (ПКМ)"
+            }
+          ],
+          "description": [
+            "Шар — ваш личный резервуар жизни. Создайте его в алтаре и наполните кровью.",
+            "Носить шар с собой удобнее, чем каждый раз резать себя."
+          ],
+          "dependencies": [
+            "bm_slate"
+          ],
+          "achievement": "achievement.alchemicalwizardry:weakOrb",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "AWWayofTime:blankSlate",
+                  "count": 4
+                },
+                {
+                  "type": "item",
+                  "item": "AWWayofTime:bloodStoneBrick",
+                  "count": 16
+                }
+              ]
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "bm_blood_pack",
+          "title": "Кровавый ранец",
+          "icon": "AWWayofTime:itemBloodPack",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:itemBloodPack",
+              "count": 1,
+              "consume": false,
+              "title": "Сшить кровяной ранец"
+            }
+          ],
+          "description": [
+            "Ранец собирает пролитую рядом кровь и хранит её про запас — хорошая прибавка к алтарю."
+          ],
+          "dependencies": [
+            "bm_weak_orb"
+          ],
+          "achievement": "achievement.alchemicalwizardry:bloodLettersPack",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:emptySocket",
+              "count": 2
+            }
+          ],
+          "x": 4,
+          "y": -3
+        },
+        {
+          "id": "bm_water_sigil",
+          "title": "Сигил воды",
+          "icon": "AWWayofTime:waterSigil",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:waterSigil",
+              "count": 1,
+              "consume": false,
+              "title": "Создать сигил воды"
+            },
+            {
+              "type": "checkmark",
+              "title": "Наполнить ведро воды щелчком сигила"
+            }
+          ],
+          "description": [
+            "Первый боевой сигил в хозяйстве: бесконечная вода буквально из воздуха и за счёт жизни."
+          ],
+          "dependencies": [
+            "bm_weak_orb"
+          ],
+          "achievement": "achievement.alchemicalwizardry:waterSigil",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:aquasalus",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": -2
+        },
+        {
+          "id": "bm_runes",
+          "title": "Шаг ко второму уровню",
+          "icon": "AWWayofTime:AlchemicalWizardrybloodRune",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:AlchemicalWizardrybloodRune",
+              "count": 8,
+              "consume": false,
+              "title": "Изготовить 8 пустых рун"
+            },
+            {
+              "type": "checkmark",
+              "title": "Расставить руны вокруг алтаря — он станет второго уровня"
+            }
+          ],
+          "description": [
+            "Восемь пустых рун по кругу поднимают алтарь до второго уровня: больше объём и новые рецепты.",
+            "Руны и дальше будут главным украшением вашей постройки."
+          ],
+          "dependencies": [
+            "bm_weak_orb"
+          ],
+          "achievement": "achievement.alchemicalwizardry:blankRunes",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:bloodStoneBrick",
+              "count": 16
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "bm_apprentice_orb",
+          "title": "Шар ученика",
+          "icon": "AWWayofTime:apprenticeBloodOrb",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:apprenticeBloodOrb",
+              "count": 1,
+              "consume": false,
+              "title": "Создать шар ученика"
+            }
+          ],
+          "description": [
+            "Второй шар вмещает заметно больше жизни и открывает доступ к сигилам посерьёзнее."
+          ],
+          "dependencies": [
+            "bm_runes"
+          ],
+          "achievement": "achievement.alchemicalwizardry:apprenticeOrb",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:reinforcedSlate",
+              "count": 2
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "bm_air_sigil",
+          "title": "Сигил воздуха",
+          "icon": "AWWayofTime:airSigil",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:airSigil",
+              "count": 1,
+              "consume": false,
+              "title": "Создать сигил воздуха"
+            },
+            {
+              "type": "checkmark",
+              "title": "Подпрыгнуть с сигилом в руке"
+            }
+          ],
+          "description": [
+            "Сигил воздуха подбрасывает вверх и спасает от падения — самое честное применение крови."
+          ],
+          "dependencies": [
+            "bm_apprentice_orb"
+          ],
+          "achievement": "achievement.alchemicalwizardry:airSigil",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:aether",
+              "count": 4
+            }
+          ],
+          "x": 6,
+          "y": -3
+        },
+        {
+          "id": "bm_dagger",
+          "title": "Кинжал жертвоприношения",
+          "icon": "AWWayofTime:daggerOfSacrifice",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:daggerOfSacrifice",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать кинжал жертвоприношения"
+            },
+            {
+              "type": "kill",
+              "entity": "Cow",
+              "count": 5,
+              "title": "Принести в жертву 5 коров"
+            }
+          ],
+          "description": [
+            "Кинжал превращает чужие жизни в вашу: поставьте моба на алтарь и ударьте.",
+            "Коровы дают больше всего крови — держите ферму под рукой."
+          ],
+          "dependencies": [
+            "bm_apprentice_orb"
+          ],
+          "achievement": "achievement.alchemicalwizardry:daggerSacrifice",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:weakBloodShard",
+              "count": 1
+            }
+          ],
+          "x": 6,
+          "y": -2
+        },
+        {
+          "id": "bm_alchemy",
+          "title": "Алхимический набор",
+          "icon": "AWWayofTime:blockWritingTable",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "AWWayofTime:blockWritingTable",
+              "count": 1,
+              "title": "Собрать алхимический набор"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:alchemyFlask",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать колбу для зелий"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:standardBindingAgent",
+              "count": 1,
+              "consume": false,
+              "title": "Сварить связующий реагент"
+            }
+          ],
+          "description": [
+            "Алхимический набор варит из реагентов зелья, гибридные смеси и разные полезные жидкости.",
+            "Колба нужна, чтобы носить зелья с собой."
+          ],
+          "dependencies": [
+            "bm_apprentice_orb"
+          ],
+          "achievement": "achievement.alchemicalwizardry:brewingPotions",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:magicales",
+              "count": 4
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "bm_magician_orb",
+          "title": "Шар магистра",
+          "icon": "AWWayofTime:magicianBloodOrb",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:magicianBloodOrb",
+              "count": 1,
+              "consume": false,
+              "title": "Создать шар магистра"
+            },
+            {
+              "type": "checkmark",
+              "title": "Наполнить шар кровью"
+            }
+          ],
+          "description": [
+            "Третий шар — пропуск в настоящую магию крови: привязанные инструменты, броня и ритуалы."
+          ],
+          "dependencies": [
+            "bm_alchemy"
+          ],
+          "achievement": "achievement.alchemicalwizardry:magicianOrb",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:reinforcedSlate",
+              "count": 4
+            }
+          ],
+          "x": 7,
+          "y": -2
+        },
+        {
+          "id": "bm_sigil_holding",
+          "title": "Сигил хранения",
+          "icon": "AWWayofTime:sigilOfHolding",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:sigilOfHolding",
+              "count": 1,
+              "consume": false,
+              "title": "Создать сигил хранения"
+            },
+            {
+              "type": "checkmark",
+              "title": "Вложить в сигил другие сигилы"
+            }
+          ],
+          "description": [
+            "Один сигил вместо десяти: внутрь складываются все остальные и переключаются на ходу."
+          ],
+          "dependencies": [
+            "bm_magician_orb"
+          ],
+          "achievement": "achievement.alchemicalwizardry:sigilHolding",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "AWWayofTime:incendium",
+                  "count": 4
+                },
+                {
+                  "type": "item",
+                  "item": "AWWayofTime:crystallos",
+                  "count": 4
+                }
+              ]
+            }
+          ],
+          "x": 8,
+          "y": -3
+        },
+        {
+          "id": "bm_bound_blade",
+          "title": "Привязанный клинок",
+          "icon": "AWWayofTime:energySword",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:energySword",
+              "count": 1,
+              "consume": false,
+              "title": "Выковать привязанный клинок"
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 10,
+              "title": "Испытать клинок на скелетах"
+            }
+          ],
+          "description": [
+            "Клинок бьёт больно, чинится кровью хозяина и сам тянет жизнь из врагов."
+          ],
+          "dependencies": [
+            "bm_magician_orb"
+          ],
+          "achievement": "achievement.alchemicalwizardry:boundBlade",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:weakBloodShard",
+              "count": 2
+            }
+          ],
+          "x": 8,
+          "y": -2
+        },
+        {
+          "id": "bm_bound_armor",
+          "title": "Несокрушимая броня",
+          "icon": "AWWayofTime:boundPlate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "AWWayofTime:armourForge",
+              "count": 1,
+              "title": "Собрать кузницу души"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:boundHelmet",
+              "count": 1,
+              "consume": false,
+              "title": "Привязанный шлем"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:boundPlate",
+              "count": 1,
+              "consume": false,
+              "title": "Привязанный нагрудник"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:boundLeggings",
+              "count": 1,
+              "consume": false,
+              "title": "Привязанные поножи"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:boundBoots",
+              "count": 1,
+              "consume": false,
+              "title": "Привязанные ботинки"
+            }
+          ],
+          "description": [
+            "Кузница души выковывает полный комплект привязанной брони.",
+            "Каждая часть ремонтируется вашей кровью — надеть её можно почти навсегда."
+          ],
+          "dependencies": [
+            "bm_bound_blade"
+          ],
+          "achievement": "achievement.alchemicalwizardry:boundArmor",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 110
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:bloodSocket",
+              "count": 2
+            }
+          ],
+          "x": 9,
+          "y": -3
+        },
+        {
+          "id": "bm_complex_spells",
+          "title": "Сложные заклинания",
+          "icon": "AWWayofTime:itemComplexSpellCrystal",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "AWWayofTime:blockHomHeart",
+              "count": 1,
+              "title": "Собрать стол заклинаний"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:blankSpell",
+              "count": 1,
+              "consume": false,
+              "title": "Получить несвязанный кристалл"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:itemComplexSpellCrystal",
+              "count": 1,
+              "consume": false,
+              "title": "Создать сложный кристалл заклинания"
+            }
+          ],
+          "description": [
+            "На столе заклинаний кристаллы связываются в программы: снаряды, защита, аура — на что хватит фантазии."
+          ],
+          "dependencies": [
+            "bm_magician_orb"
+          ],
+          "achievement": "achievement.alchemicalwizardry:complexSpells",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:blockCrystal",
+              "count": 1
+            }
+          ],
+          "x": 8,
+          "y": -1
+        },
+        {
+          "id": "bm_ritual_diviner",
+          "title": "Разделитель ритуалов",
+          "icon": "AWWayofTime:itemRitualDiviner",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "AWWayofTime:ritualStone",
+              "count": 12,
+              "title": "Собрать 12 ритуальных камней"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:itemRitualDiviner",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать разделитель ритуалов"
+            },
+            {
+              "type": "checkmark",
+              "title": "Провести первый ритуал"
+            }
+          ],
+          "description": [
+            "Разделитель сам расставляет ритуальные камни и подсказывает, чего не хватает.",
+            "Ритуалы дают погоду, добычу, защиту и многое другое."
+          ],
+          "dependencies": [
+            "bm_magician_orb"
+          ],
+          "achievement": "achievement.alchemicalwizardry:ritualDiviner",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 85
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:ritualStone",
+              "count": 8
+            }
+          ],
+          "x": 8,
+          "y": 0
+        },
+        {
+          "id": "bm_master_orb",
+          "title": "Шар мастера",
+          "icon": "AWWayofTime:masterBloodOrb",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:masterBloodOrb",
+              "count": 1,
+              "consume": false,
+              "title": "Создать шар мастера"
+            }
+          ],
+          "description": [
+            "Четвёртый шар — большой резервуар и ключ к ритуалам высшего уровня."
+          ],
+          "dependencies": [
+            "bm_bound_blade"
+          ],
+          "achievement": "achievement.alchemicalwizardry:masterOrb",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:demonicSlate",
+              "count": 1
+            }
+          ],
+          "x": 9,
+          "y": -2
+        },
+        {
+          "id": "bm_demon_spawn",
+          "title": "Порождение демона",
+          "icon": "AWWayofTime:demonPlacer",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:demonPlacer",
+              "count": 1,
+              "consume": false,
+              "title": "Создать кристалл демона"
+            },
+            {
+              "type": "checkmark",
+              "title": "Провести ритуал призыва демона"
+            }
+          ],
+          "description": [
+            "Кристалл демона вместе с ритуалом открывает путь в Нижний мир демонов.",
+            "Гостей оттуда лучше сразу бить — они приходят за вашей кровью."
+          ],
+          "dependencies": [
+            "bm_master_orb"
+          ],
+          "achievement": "achievement.alchemicalwizardry:demonSpawn",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 130
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:tennebrae",
+              "count": 4
+            }
+          ],
+          "x": 10,
+          "y": -3
+        },
+        {
+          "id": "bm_phantom_bridge",
+          "title": "Призрачный мост",
+          "icon": "AWWayofTime:sigilOfTheBridge",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:sigilOfTheBridge",
+              "count": 1,
+              "consume": false,
+              "title": "Создать сигил призрачного моста"
+            },
+            {
+              "type": "checkmark",
+              "title": "Пройти по мосту из воздуха"
+            }
+          ],
+          "description": [
+            "Сигил создаёт под ногами твёрдые блоки — ходить по воздуху проще, чем кажется."
+          ],
+          "dependencies": [
+            "bm_master_orb"
+          ],
+          "achievement": "achievement.alchemicalwizardry:phantomBridgeSigil",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 110
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:aether",
+              "count": 8
+            }
+          ],
+          "x": 10,
+          "y": -2
+        },
+        {
+          "id": "bm_teleposer",
+          "title": "Телепозёр",
+          "icon": "AWWayofTime:blockTeleposer",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "AWWayofTime:blockTeleposer",
+              "count": 1,
+              "title": "Собрать телепозёр"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:telepositionFocus",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать фокус телепозиции"
+            }
+          ],
+          "description": [
+            "Два телепозёра с фокусами переносят вас, мобов и целые постройки между точками."
+          ],
+          "dependencies": [
+            "bm_master_orb"
+          ],
+          "achievement": "achievement.alchemicalwizardry:teleposer",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 110
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:enhancedTelepositionFocus",
+              "count": 1
+            }
+          ],
+          "x": 10,
+          "y": -1
+        },
+        {
+          "id": "bm_suppression",
+          "title": "Сигил подавления",
+          "icon": "AWWayofTime:sigilOfSupression",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:sigilOfSupression",
+              "count": 1,
+              "consume": false,
+              "title": "Создать сигил подавления"
+            },
+            {
+              "type": "checkmark",
+              "title": "Погасить враждебных мобов вокруг себя"
+            }
+          ],
+          "description": [
+            "Сигил заставляет мобов вокруг забыть, что они хотели вас убить. На время, но очень полезно."
+          ],
+          "dependencies": [
+            "bm_master_orb"
+          ],
+          "achievement": "achievement.alchemicalwizardry:suppressionSigil",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 110
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:tennebrae",
+              "count": 4
+            }
+          ],
+          "x": 10,
+          "y": 0
+        },
+        {
+          "id": "bm_archmage_orb",
+          "title": "Шар архимага",
+          "icon": "AWWayofTime:archmageBloodOrb",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:archmageBloodOrb",
+              "count": 1,
+              "consume": false,
+              "title": "Создать шар архимага"
+            }
+          ],
+          "description": [
+            "Огромный резервуар жизни — с ним ритуалы и заклинания перестают быть редким удовольствием."
+          ],
+          "dependencies": [
+            "bm_master_orb"
+          ],
+          "achievement": "achievement.alchemicalwizardry:archmageOrb",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:imbuedSlate",
+              "count": 2
+            }
+          ],
+          "x": 10,
+          "y": 1
+        },
+        {
+          "id": "bm_bazooka",
+          "title": "БУМ!",
+          "icon": "AWWayofTime:energyBazooka",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "AWWayofTime:energyBazooka",
+              "count": 1,
+              "title": "Собрать энергетическую базуку"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:energyBlaster",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать энергетический бластер"
+            }
+          ],
+          "description": [
+            "Базука стреляет сгустками жизненной силы и оставляет после себя воронки. Держите её подальше от дома."
+          ],
+          "dependencies": [
+            "bm_archmage_orb"
+          ],
+          "achievement": "achievement.alchemicalwizardry:energyBazooka",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:energyBlaster",
+              "count": 1
+            }
+          ],
+          "x": 11,
+          "y": -1
+        },
+        {
+          "id": "bm_demons",
+          "title": "Охотник на демонов",
+          "icon": "AWWayofTime:itemKeyOfDiablo",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:itemKeyOfDiablo",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать ключ привязки"
+            },
+            {
+              "type": "kill",
+              "entity": "PigZombie",
+              "count": 10,
+              "title": "Истребить демоническую нежить Нижнего мира"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:demonBloodShard",
+              "count": 1,
+              "consume": false,
+              "title": "Добыть демонический осколок"
+            }
+          ],
+          "description": [
+            "Ключ привязки открывает демонический портал, а из демонов выпадают осколки их крови.",
+            "Дальше без них не обойтись."
+          ],
+          "dependencies": [
+            "bm_archmage_orb"
+          ],
+          "achievement": "achievement.alchemicalwizardry:demons",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 180
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "AWWayofTime:demonBloodShard",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:nether_star",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 11,
+          "y": 0
+        },
+        {
+          "id": "bm_transcendent_orb",
+          "title": "Трансцендентный шар",
+          "icon": "AWWayofTime:transcendentBloodOrb",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:transcendentBloodOrb",
+              "count": 1,
+              "consume": false,
+              "title": "Создать трансцендентный шар"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:demonBloodShard",
+              "count": 4,
+              "consume": false,
+              "title": "Собрать 4 демонических осколка"
+            }
+          ],
+          "description": [
+            "Последний шар мода — почти бездонный источник жизни. С ним вы уже не маг, а стихийное бедствие.",
+            "Демонические осколки придётся накопить."
+          ],
+          "dependencies": [
+            "bm_demons"
+          ],
+          "achievement": "achievement.alchemicalwizardry:trancsendentOrb",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 250
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "AWWayofTime:demonBloodShard",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "AWWayofTime:archmageBloodOrb",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 12,
+          "y": -1
+        },
+        {
+          "id": "bm_divination",
+          "title": "Сигил предсказания",
+          "icon": "AWWayofTime:divinationSigil",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:divinationSigil",
+              "count": 1,
+              "consume": false,
+              "title": "Создать сигил предсказания"
+            },
+            {
+              "type": "checkmark",
+              "title": "Посмотреть на алтарь с сигилом в руке"
+            }
+          ],
+          "description": [
+            "Сигил показывает, сколько жизни осталось в алтаре и в кровавом шаре.",
+            "С ним не придётся вслепую резать себя, чтобы понять, хватает ли крови."
+          ],
+          "dependencies": [
+            "bm_weak_orb"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:blankSlate",
+              "count": 2
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "bm_blood_light",
+          "title": "Кровавый светильник",
+          "icon": "AWWayofTime:itemBloodLightSigil",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:itemBloodLightSigil",
+              "count": 1,
+              "consume": false,
+              "title": "Создать сигил кровавого светильника"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:bloodLight",
+              "count": 4,
+              "consume": false,
+              "title": "Расставить 4 кровавых огня"
+            }
+          ],
+          "description": [
+            "Кровавые огни светят не хуже факелов и отлично смотрятся в лаборатории.",
+            "Сигил ставит их прямо в воздухе — освещение без лесов и факелов."
+          ],
+          "dependencies": [
+            "bm_weak_orb"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:bloodStoneBrick",
+              "count": 8
+            }
+          ],
+          "x": 4,
+          "y": 1
+        },
+        {
+          "id": "bm_magnetism",
+          "title": "Сигил магнетизма",
+          "icon": "AWWayofTime:sigilOfMagnetism",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:sigilOfMagnetism",
+              "count": 1,
+              "consume": false,
+              "title": "Создать сигил магнетизма"
+            },
+            {
+              "type": "checkmark",
+              "title": "Притянуть выпавшие предметы сигилом"
+            }
+          ],
+          "description": [
+            "Сигил подтягивает к вам предметы с земли — незаменим после резни в алтаре и на шахте."
+          ],
+          "dependencies": [
+            "bm_apprentice_orb"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "AWWayofTime:reinforcedSlate",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "AWWayofTime:blankSlate",
+                  "count": 8
+                }
+              ]
+            }
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "id": "bm_green_grove",
+          "title": "Зелёная роща",
+          "icon": "AWWayofTime:growthSigil",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:growthSigil",
+              "count": 1,
+              "consume": false,
+              "title": "Создать сигил зелёной рощи"
+            },
+            {
+              "type": "checkmark",
+              "title": "Ускорить рост посевов сигилом"
+            }
+          ],
+          "description": [
+            "Сигил ускоряет рост растений вокруг: одна грядка кормит всю базу."
+          ],
+          "dependencies": [
+            "bm_apprentice_orb"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:terrae",
+              "count": 4
+            }
+          ],
+          "x": 6,
+          "y": 1
+        },
+        {
+          "id": "bm_harvest",
+          "title": "Урожай богини",
+          "icon": "AWWayofTime:itemHarvestSigil",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:itemHarvestSigil",
+              "count": 1,
+              "consume": false,
+              "title": "Создать сигил богини урожая"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:wheat",
+              "count": 64,
+              "consume": true,
+              "title": "Собрать и сдать 64 пшеницы"
+            }
+          ],
+          "description": [
+            "Сигил сам собирает и пересаживает спелые посевы в большом радиусе.",
+            "Осталось только успевать складывать урожай в сундуки."
+          ],
+          "dependencies": [
+            "bm_green_grove"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "AWWayofTime:terrae",
+                  "count": 8
+                },
+                {
+                  "type": "item",
+                  "item": "AWWayofTime:bloodStoneBrick",
+                  "count": 16
+                }
+              ]
+            }
+          ],
+          "x": 7,
+          "y": 1
+        },
+        {
+          "id": "bm_alchemy_routing",
+          "title": "Алхимическая разводка",
+          "icon": "AWWayofTime:itemAttunedCrystal",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "AWWayofTime:blockReagentConduit",
+              "count": 1,
+              "title": "Собрать алхимическое реле"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:itemAttunedCrystal",
+              "count": 1,
+              "consume": false,
+              "title": "Настроить алхимический роутер"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:inputRoutingFocus",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать фокус ввода"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:outputRoutingFocus",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать фокус вывода"
+            }
+          ],
+          "description": [
+            "Фокусы и роутер указывают, откуда брать реагенты и куда складывать результат.",
+            "Вместе с реле это превращает набор в маленький автоматический завод."
+          ],
+          "dependencies": [
+            "bm_alchemy"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:standardBindingAgent",
+              "count": 2
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "bm_catalysts",
+          "title": "Катализаторы",
+          "icon": "AWWayofTime:itemCombinationalCatalyst",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "AWWayofTime:itemCombinationalCatalyst",
+              "count": 1,
+              "title": "Сварить комбинационный катализатор"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:greaterPowerCatalyst",
+              "count": 1,
+              "consume": false,
+              "title": "Усилить катализатор силы"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:greaterLengtheningCatalyst",
+              "count": 1,
+              "consume": false,
+              "title": "Усилить катализатор длительности"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:enhancedFillingAgent",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать улучшенный наполнитель"
+            }
+          ],
+          "description": [
+            "Катализаторы делают зелья мощнее и дольше, а наполнители добавляют им новые эффекты.",
+            "Без них алхимический набор варит только самое простое."
+          ],
+          "dependencies": [
+            "bm_alchemy"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 75
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:magicales",
+              "count": 8
+            }
+          ],
+          "x": 7,
+          "y": 0
+        },
+        {
+          "id": "bm_rune_specialization",
+          "title": "Руны жертвы",
+          "icon": "AWWayofTime:runeOfSacrifice",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:runeOfSacrifice",
+              "count": 4,
+              "consume": false,
+              "title": "Изготовить 4 руны жертвы"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:runeOfSelfSacrifice",
+              "count": 4,
+              "consume": false,
+              "title": "Изготовить 4 руны самопожертвования"
+            }
+          ],
+          "description": [
+            "Руна жертвы увеличивает кровь от чужих смертей, руна самопожертвования — от вашей.",
+            "Расставьте их вокруг алтаря, и каждый удар будет давать заметно больше."
+          ],
+          "dependencies": [
+            "bm_magician_orb"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:bloodStoneBrick",
+              "count": 16
+            }
+          ],
+          "x": 8,
+          "y": 1
+        },
+        {
+          "id": "bm_rune_speed",
+          "title": "Руны скорости",
+          "icon": "AWWayofTime:speedRune",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:speedRune",
+              "count": 4,
+              "consume": false,
+              "title": "Изготовить 4 руны скорости"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:efficiencyRune",
+              "count": 4,
+              "consume": false,
+              "title": "Изготовить 4 руны эффективности"
+            }
+          ],
+          "description": [
+            "Руны скорости ускоряют крафт в алтаре, а руны эффективности снижают расход жизни."
+          ],
+          "dependencies": [
+            "bm_rune_specialization"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "AWWayofTime:imbuedSlate",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "AWWayofTime:reinforcedSlate",
+                  "count": 4
+                }
+              ]
+            }
+          ],
+          "x": 9,
+          "y": 2
+        },
+        {
+          "id": "bm_bound_tools",
+          "title": "Привязанные инструменты",
+          "icon": "AWWayofTime:boundPickaxe",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:boundPickaxe",
+              "count": 1,
+              "consume": false,
+              "title": "Выковать привязанную кирку"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:boundAxe",
+              "count": 1,
+              "consume": false,
+              "title": "Выковать привязанный топор"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:boundShovel",
+              "count": 1,
+              "consume": false,
+              "title": "Выковать привязанную лопату"
+            }
+          ],
+          "description": [
+            "В кузнице души можно выковать не только клинок: кирка, топор и лопата тоже чинятся кровью.",
+            "Каждый инструмент ломает блоки целой областью — стройка идёт в разы быстрее."
+          ],
+          "dependencies": [
+            "bm_bound_blade"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 95
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:weakBloodShard",
+              "count": 2
+            }
+          ],
+          "x": 9,
+          "y": -1
+        },
+        {
+          "id": "bm_omega_armor",
+          "title": "Омега-броня",
+          "icon": "AWWayofTime:boundPlateFire",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:boundHelmetFire",
+              "count": 1,
+              "consume": false,
+              "title": "Огненный омега-шлем"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:boundPlateFire",
+              "count": 1,
+              "consume": false,
+              "title": "Огненный омега-нагрудник"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:boundLeggingsFire",
+              "count": 1,
+              "consume": false,
+              "title": "Огненные омега-поножи"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:boundBootsFire",
+              "count": 1,
+              "consume": false,
+              "title": "Огненные омега-ботинки"
+            }
+          ],
+          "description": [
+            "Привязанную броню можно усилить до омега-версии: огненный комплект держит вас в лаве.",
+            "Такой же апгрейд есть под воду, ветер и землю — выбирайте под свой стиль."
+          ],
+          "dependencies": [
+            "bm_bound_armor"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 160
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "AWWayofTime:demonBloodShard",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "AWWayofTime:bloodSocket",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "x": 10,
+          "y": -4
+        },
+        {
+          "id": "bm_master_stones",
+          "title": "Мастер-ритуалы",
+          "icon": "AWWayofTime:masterStone",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "AWWayofTime:masterStone",
+              "count": 8,
+              "title": "Собрать 8 мастер-камней"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:ritualDismantler",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать демонтажник ритуалов"
+            }
+          ],
+          "description": [
+            "Мастер-камни — основа больших ритуалов высшего уровня.",
+            "Демонтажник аккуратно разбирает построенный ритуал и возвращает все камни в инвентарь."
+          ],
+          "dependencies": [
+            "bm_ritual_diviner"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 95
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:ritualStone",
+              "count": 12
+            }
+          ],
+          "x": 9,
+          "y": 1
+        },
+        {
+          "id": "bm_spell_glyphs",
+          "title": "Глифы заклинаний",
+          "icon": "AWWayofTime:blockEnchantmentGlyph",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:blockEnchantmentGlyph",
+              "count": 1,
+              "consume": false,
+              "title": "Получить глиф чародея"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:blockStabilityGlyph",
+              "count": 1,
+              "consume": false,
+              "title": "Получить глиф стабильности"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:AlchemicalWizardrytile.blockSpellModifier",
+              "count": 1,
+              "consume": false,
+              "title": "Настроить модификатор заклинания"
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:AlchemicalWizardrytile.blockSpellEnhancement",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать усилитель заклинаний"
+            }
+          ],
+          "description": [
+            "Глифы и модификаторы на столе заклинаний задают урон, радиус и стабильность программы.",
+            "Глиф стабильности особенно важен: без него заклинание разваливается на части."
+          ],
+          "dependencies": [
+            "bm_complex_spells"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "item",
+              "item": "AWWayofTime:blockCrystal",
+              "count": 2
+            }
+          ],
+          "x": 9,
+          "y": 0
+        },
+        {
+          "id": "bm_ender_severance",
+          "title": "Разрыв с Эндером",
+          "icon": "AWWayofTime:sigilOfEnderSeverance",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:sigilOfEnderSeverance",
+              "count": 1,
+              "consume": false,
+              "title": "Создать сигил разрыва"
+            },
+            {
+              "type": "kill",
+              "entity": "Enderman",
+              "count": 5,
+              "title": "Отогнать 5 странников Края"
+            }
+          ],
+          "description": [
+            "Сигил не даёт эндерменам телепортироваться рядом и отбрасывает их от вас."
+          ],
+          "dependencies": [
+            "bm_magician_orb"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "item",
+              "item": "minecraft:ender_pearl",
+              "count": 2
+            }
+          ],
+          "x": 8,
+          "y": 2
+        },
+        {
+          "id": "bm_assassin",
+          "title": "Сигил убийцы",
+          "icon": "AWWayofTime:itemAssassinSigil",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "AWWayofTime:itemAssassinSigil",
+              "count": 1,
+              "consume": false,
+              "title": "Создать сигил убийцы"
+            },
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 20,
+              "title": "Истребить 20 зомби"
+            }
+          ],
+          "description": [
+            "Сигил скрывает вас от мобов, пока вы не нападёте первым.",
+            "Удар из невидимости бьёт особенно больно — идеально для одиноких вылазок."
+          ],
+          "dependencies": [
+            "bm_master_orb"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "AWWayofTime:weakBloodShard",
+                  "count": 3
+                },
+                {
+                  "type": "item",
+                  "item": "AWWayofTime:demonBloodShard",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 10,
+          "y": 2
+        }
+      ]
+    }
+  ]
+}

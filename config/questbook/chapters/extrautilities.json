@@ -1,0 +1,1195 @@
+{
+  "title": "Extra Utilities",
+  "chapters": [
+    {
+      "id": "extrautilities",
+      "title": "Extra Utilities",
+      "description": "Трансфер-узлы и трубы, генераторы, фермы мобов и техника вроде эндер-карьера.",
+      "icon": "ExtraUtilities:angelRing",
+      "requiredMod": "ExtraUtilities",
+      "quests": [
+        {
+          "id": "eu_node",
+          "title": "Трансфер-узел",
+          "icon": "ExtraUtilities:extractor_base",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:extractor_base",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Узел, приставленный к сундуку или машине, вытягивает предметы и передаёт их дальше. С него начинается вся логистика мода."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "eu_pipes",
+          "title": "Трансфер-трубы",
+          "icon": "ExtraUtilities:pipes",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:pipes",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Трубы соединяют узлы с сундуками и устройствами, и предметы едут по ним сами."
+          ],
+          "dependencies": [
+            "eu_node"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 1,
+          "y": -8
+        },
+        {
+          "id": "eu_retrieval",
+          "title": "Узел-извлекатель",
+          "icon": "ExtraUtilities:extractor_base_remote",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:extractor_base_remote",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Этот узел работает в обратную сторону: он забирает предметы из сети труб и складывает их рядом с собой. Удобно, когда поток нужно развернуть."
+          ],
+          "dependencies": [
+            "eu_pipes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 2,
+          "y": -8
+        },
+        {
+          "id": "eu_upgrade",
+          "title": "Улучшения узлов",
+          "icon": "ExtraUtilities:nodeUpgrade",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:nodeUpgrade",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Улучшения вешаются прямо на узел: он начинает работать быстрее и перетаскивать больше предметов за раз."
+          ],
+          "dependencies": [
+            "eu_node"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 1,
+          "y": -7
+        },
+        {
+          "id": "eu_trashcan",
+          "title": "Мусорный бак",
+          "icon": "ExtraUtilities:trashcan",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:trashcan",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Всё, что попадает внутрь, исчезает навсегда. Незаменим, чтобы отходы не забивали сундуки."
+          ],
+          "dependencies": [
+            "eu_node"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 1,
+          "y": -6
+        },
+        {
+          "id": "eu_drum",
+          "title": "Барабан",
+          "icon": "ExtraUtilities:drum",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:drum",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Бочка-гигант: в один блок влезает очень много жидкости. Отличная пара для насосов и труб."
+          ],
+          "dependencies": [
+            "eu_node"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 1,
+          "y": -5
+        },
+        {
+          "id": "eu_conveyor",
+          "title": "Конвейер",
+          "icon": "ExtraUtilities:conveyor",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:conveyor",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Двигает предметы и мобов по прямой. Самый дешёвый способ развести поток без труб."
+          ],
+          "dependencies": [
+            "eu_node"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 1,
+          "y": -4
+        },
+        {
+          "id": "eu_chests",
+          "title": "Аккуратные сундуки",
+          "icon": "ExtraUtilities:chestFull",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:chestMini",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:chestFull",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Мини-сундук экономит место, а «чуть больший» вмещает заметно больше обычного.",
+            "Оба хороши для мелочей и сортировки."
+          ],
+          "dependencies": [
+            "eu_node"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 1,
+          "y": -3
+        },
+        {
+          "id": "eu_quiet",
+          "title": "Тихая и спокойная база",
+          "icon": "ExtraUtilities:magnumTorch",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:magnumTorch",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:sound_muffler",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Магнум-факел не даёт мобам появляться в большом радиусе, а глушитель убирает лишний шум машин и мобов."
+          ],
+          "dependencies": [
+            "eu_node"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 1,
+          "y": -2
+        },
+        {
+          "id": "eu_angelblock",
+          "title": "Ангельский блок",
+          "icon": "ExtraUtilities:angelBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:angelBlock",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Ставится прямо в воздухе, без опоры. Идеален для стройки на высоте и над пропастью."
+          ],
+          "dependencies": [
+            "eu_node"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "eu_wand",
+          "title": "Жезл строителя",
+          "icon": "ExtraUtilities:builderswand",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:builderswand",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Одним кликом достраивает ряд блоков, если они есть в инвентаре. Стройка ускоряется в разы."
+          ],
+          "dependencies": [
+            "eu_angelblock"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "ExtraUtilities:angelBlock",
+              "count": 8
+            }
+          ],
+          "x": 2,
+          "y": -6
+        },
+        {
+          "id": "eu_generator",
+          "title": "Первый генератор",
+          "icon": "ExtraUtilities:generator",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:generator",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Сжигает топливо и даёт энергию. Без него не запустить карьер и другую технику."
+          ],
+          "dependencies": [
+            "eu_node"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 1,
+          "y": 0
+        },
+        {
+          "id": "eu_generator2",
+          "title": "Генератор помощнее",
+          "icon": "ExtraUtilities:generator.8",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:generator.8",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Генераторов в моде несколько, и этот мощнее первого — прокормит серьёзную технику."
+          ],
+          "dependencies": [
+            "eu_generator"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 2,
+          "y": -4
+        },
+        {
+          "id": "eu_spikes",
+          "title": "Шипы",
+          "icon": "ExtraUtilities:spike_base",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:spike_base",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:spike_base_wood",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Шипы ранят всех, кто на них наступит. С них начинается первая ферма мобов."
+          ],
+          "dependencies": [
+            "eu_node"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "eu_diamond_spike",
+          "title": "Алмазные шипы",
+          "icon": "ExtraUtilities:spike_base_diamond",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:spike_base_diamond",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Алмазные шипы убивают мобов так, будто их добил игрок, — с них падает редкий дроп."
+          ],
+          "dependencies": [
+            "eu_spikes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "eu_lasso",
+          "title": "Золотое лассо",
+          "icon": "ExtraUtilities:golden_lasso",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:golden_lasso",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Ловит моба и превращает его в предмет. Так перевозят жителей, животных и вообще кого угодно."
+          ],
+          "dependencies": [
+            "eu_spikes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "id": "eu_hunt",
+          "title": "Проверка в деле",
+          "icon": "ExtraUtilities:ethericsword",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 15
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 10
+            },
+            {
+              "type": "kill",
+              "entity": "Creeper",
+              "count": 5
+            }
+          ],
+          "description": [
+            "Настоящая ферма начинается с урожая: проверьте шипы и оружие на орде мобов."
+          ],
+          "dependencies": [
+            "eu_diamond_spike"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "ExtraUtilities:drum",
+              "count": 2
+            }
+          ],
+          "x": 3,
+          "y": -2
+        },
+        {
+          "id": "eu_sigil",
+          "title": "Дивизионная печать",
+          "icon": "ExtraUtilities:divisionSigil",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "ExtraUtilities:divisionSigil",
+              "count": 1,
+              "consume": false,
+              "title": "Раздобыть дивизионную печать"
+            }
+          ],
+          "description": [
+            "Редкая печать мода. С неё начинаются проклятая земля, нестабильные слитки и прочие странности."
+          ],
+          "dependencies": [
+            "eu_node"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 1,
+          "y": 2
+        },
+        {
+          "id": "eu_cursed",
+          "title": "Проклятая земля",
+          "icon": "ExtraUtilities:cursedearthside",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "ExtraUtilities:cursedearthside",
+              "count": 1,
+              "consume": false,
+              "title": "Получить проклятую землю"
+            }
+          ],
+          "description": [
+            "На проклятой земле мобы появляются очень быстро, даже днём. Основа мощной фермы — только держите её за стенами."
+          ],
+          "dependencies": [
+            "eu_sigil",
+            "eu_spikes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "ExtraUtilities:spike_base_diamond",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "ExtraUtilities:golden_lasso",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 2,
+          "y": 4
+        },
+        {
+          "id": "eu_unstable",
+          "title": "Нестабильный слиток",
+          "icon": "ExtraUtilities:unstableingot",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "ExtraUtilities:unstableingot",
+              "count": 1,
+              "consume": false,
+              "title": "Добыть нестабильный слиток"
+            }
+          ],
+          "description": [
+            "Держите его под рукой недолго: слиток взрывается, если пролежит в инвентаре слишком долго."
+          ],
+          "dependencies": [
+            "eu_sigil"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 2,
+          "y": 5
+        },
+        {
+          "id": "eu_deepdark",
+          "title": "Тёмное измерение",
+          "icon": "ExtraUtilities:dark_portal",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Побывать в Тёмном измерении"
+            }
+          ],
+          "description": [
+            "Портал ведёт в Тёмный мир: руды там заметно больше, зато темно и очень опасно."
+          ],
+          "dependencies": [
+            "eu_sigil"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 2,
+          "y": 6
+        },
+        {
+          "id": "eu_pump",
+          "title": "Эндер-термический насос",
+          "icon": "ExtraUtilities:enderThermicPump",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:enderThermicPump",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Качает лаву прямо из Нижнего мира и не оставляет после себя дыр и лагов."
+          ],
+          "dependencies": [
+            "eu_generator"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "ExtraUtilities:drum",
+              "count": 2
+            }
+          ],
+          "x": 2,
+          "y": -3
+        },
+        {
+          "id": "eu_quarry",
+          "title": "Эндер-карьер",
+          "icon": "ExtraUtilities:enderQuarry",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:enderQuarry",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:endMarker",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Карьер сам добывает огромную область, а её границы задают эндер-маркеры.",
+            "Карьеру нужна энергия — подведите к нему генератор."
+          ],
+          "dependencies": [
+            "eu_generator2",
+            "eu_pump"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "eu_quarry_upgrade",
+          "title": "Улучшения карьера",
+          "icon": "ExtraUtilities:enderQuarryUpgrade",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:enderQuarryUpgrade",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Улучшения вешаются на карьер и усиливают его: скорость, добыча, поведение."
+          ],
+          "dependencies": [
+            "eu_quarry"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "eu_lily",
+          "title": "Эндер-лилия",
+          "icon": "ExtraUtilities:plant/ender_lilly",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "ExtraUtilities:plant/ender_lilly",
+              "count": 1,
+              "consume": false,
+              "title": "Найти семена эндер-лилии"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:ender_pearl",
+              "count": 4,
+              "consume": false,
+              "title": "Собрать 4 жемчуга эндера"
+            }
+          ],
+          "description": [
+            "Лилии растут очень долго, зато сами дают жемчуг эндера — свой источник жемчуга без походов в Край."
+          ],
+          "dependencies": [
+            "eu_node"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 1,
+          "y": 3
+        },
+        {
+          "id": "eu_ring",
+          "title": "Кольцо ангела",
+          "icon": "ExtraUtilities:angelRing",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "ExtraUtilities:angelRing",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать кольцо ангела"
+            }
+          ],
+          "description": [
+            "Даёт творческий полёт: стройка, разведка и дальние поездки становятся гораздо приятнее."
+          ],
+          "dependencies": [
+            "eu_quarry",
+            "eu_sigil"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            }
+          ],
+          "x": 4,
+          "y": -2
+        },
+        {
+          "id": "eu_gold_spike",
+          "title": "Золотые шипы",
+          "icon": "ExtraUtilities:spike_base_gold",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:spike_base_gold",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Золотые шипы бьют слабее железных, зато оставляют больше опыта с каждой жертвы. Полезное дополнение к ферме, когда нужны уровни."
+          ],
+          "dependencies": [
+            "eu_spikes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "eu_peaceful",
+          "title": "Мирный стол",
+          "icon": "ExtraUtilities:peaceful_table_top",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:peaceful_table_top",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Стол сам выдаёт дроп мобов, не требуя ни спавнера, ни шипов, ни тёмной комнаты. Тихая ферма для тех, кто не хочет возиться с ловушками."
+          ],
+          "dependencies": [
+            "eu_gold_spike"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 3,
+          "y": 1
+        },
+        {
+          "id": "eu_ender_collector",
+          "title": "Эндер-коллектор",
+          "icon": "ExtraUtilities:enderCollector",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:enderCollector",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Собирает дроп мобов и предметы в радиусе и сам отправляет их в сундук. Избавляет от воронок и ходьбы по ферме."
+          ],
+          "dependencies": [
+            "eu_spikes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 2,
+          "y": 2
+        },
+        {
+          "id": "eu_sonar",
+          "title": "Сонар-очки",
+          "icon": "ExtraUtilities:sonar_goggles",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:sonar_goggles",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Подсвечивают мобов сквозь стены. С ними сразу видно, где копится орда и не пора ли её убрать."
+          ],
+          "dependencies": [
+            "eu_spikes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 2,
+          "y": 3
+        },
+        {
+          "id": "eu_golden_bag",
+          "title": "Золотая сумка",
+          "icon": "ExtraUtilities:golden_bag",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:golden_bag",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Носимый сундук с большим объёмом: лежит в инвентаре и открывается в любой точке мира."
+          ],
+          "dependencies": [
+            "eu_node"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 1,
+          "y": 4
+        },
+        {
+          "id": "eu_filing",
+          "title": "Картотека",
+          "icon": "ExtraUtilities:filing",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:filing",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Шкаф хранит предметы по типам и ищет нужное по названию. Удобная замена десятку обычных сундуков."
+          ],
+          "dependencies": [
+            "eu_chests"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 2,
+          "y": -7
+        },
+        {
+          "id": "eu_clock",
+          "title": "Часы и детектор блока",
+          "icon": "ExtraUtilities:timer",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:timer",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:budoff",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Часы выдают импульс через заданный интервал, а детектор ловит обновления блока рядом. Из этой пары собирается автоматика без сложных схем."
+          ],
+          "dependencies": [
+            "eu_node"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 1,
+          "y": 5
+        },
+        {
+          "id": "eu_heating",
+          "title": "Нагревательный элемент",
+          "icon": "ExtraUtilities:heatingElement",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:heatingElement",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Раскалённая спираль — важный промежуточный компонент в рецептах продвинутой техники мода."
+          ],
+          "dependencies": [
+            "eu_generator"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 2,
+          "y": -2
+        },
+        {
+          "id": "eu_watering",
+          "title": "Лейка",
+          "icon": "ExtraUtilities:watering_can",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:watering_can",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Ускоряет рост растений и восстанавливает вытоптанную землю. Эндер-лилии с ней растут заметно быстрее."
+          ],
+          "dependencies": [
+            "eu_lily"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 2,
+          "y": 7
+        },
+        {
+          "id": "eu_ethereal",
+          "title": "Эфирное стекло",
+          "icon": "ExtraUtilities:etherealglass",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:etherealglass",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Через него свободно проходят игроки, но не проходят мобы. Идеальные окна и двери для безопасной базы."
+          ],
+          "dependencies": [
+            "eu_angelblock"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 2,
+          "y": -5
+        },
+        {
+          "id": "eu_tools",
+          "title": "Инструменты разрушения",
+          "icon": "ExtraUtilities:destructionpickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:destructionpickaxe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:erosionShovel",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Кирка ломает сразу целую область блоков, а лопата сгребает землю широкой полосой. Расчистка площадки под базу идёт намного быстрее."
+          ],
+          "dependencies": [
+            "eu_node"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "ExtraUtilities:angelBlock",
+                  "count": 8
+                },
+                {
+                  "type": "item",
+                  "item": "ExtraUtilities:builderswand",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 1,
+          "y": 6
+        },
+        {
+          "id": "eu_compressed",
+          "title": "Сжатый булыжник",
+          "icon": "ExtraUtilities:cobblestone_compressed",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "compressedCobblestone1x",
+              "count": 8,
+              "consume": false,
+              "title": "Собрать 8 блоков сжатого булыжника"
+            }
+          ],
+          "description": [
+            "Каждый уровень сжатия упаковывает девять блоков в один. Так булыжник занимает в разы меньше места."
+          ],
+          "dependencies": [
+            "eu_node"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "ExtraUtilities:cobblestone_compressed",
+              "count": 4
+            }
+          ],
+          "x": 1,
+          "y": 7
+        },
+        {
+          "id": "eu_bedrockium",
+          "title": "Бедрокиум",
+          "icon": "ExtraUtilities:bedrockiumIngot",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "ExtraUtilities:bedrockiumIngot",
+              "count": 1,
+              "consume": false,
+              "title": "Получить слиток бедрокиума"
+            }
+          ],
+          "description": [
+            "Сплав на основе нестабильных слитков — прочнее и тяжелее почти всего в моде. С него начинаются последние рецепты Extra Utilities."
+          ],
+          "dependencies": [
+            "eu_unstable"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "eu_bedrockium_block",
+          "title": "Блок бедрокиума",
+          "icon": "ExtraUtilities:block_bedrockium",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:block_bedrockium",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Девять слитков превращаются в блок, который почти ничем не сломать. Надёжная защита для сейфов и хранилищ."
+          ],
+          "dependencies": [
+            "eu_bedrockium"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "eu_kikoku",
+          "title": "Кикоку",
+          "icon": "ExtraUtilities:lawSword",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ExtraUtilities:lawSword",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Клинок из бедрокиума — самое дорогое оружие мода и достойная награда за пройденную цепочку."
+          ],
+          "dependencies": [
+            "eu_ring",
+            "eu_bedrockium"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            }
+          ],
+          "x": 5,
+          "y": -1
+        }
+      ]
+    }
+  ]
+}

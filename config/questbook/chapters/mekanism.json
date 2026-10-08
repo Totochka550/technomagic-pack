@@ -1,0 +1,1762 @@
+{
+  "title": "Mekanism",
+  "chapters": [
+    {
+      "id": "mekanism",
+      "title": "Mekanism",
+      "description": "Путь Mekanism: от осмиевой руды и обогатителя через энергию, сплавы и химическую переработку к цифровому шахтёру, телепортеру и квантовому запутывателю.",
+      "icon": "Mekanism:MachineBlock",
+      "requiredMod": "Mekanism",
+      "quests": [
+        {
+          "id": "mek_ores",
+          "title": "Осмий и первые ресурсы",
+          "icon": "Mekanism:OreBlock",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "oreOsmium",
+              "count": 16,
+              "consume": false,
+              "title": "Добыть 16 осмиевой руды"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:iron_ingot",
+              "count": 16,
+              "consume": false,
+              "title": "Запасти 16 слитков железа"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:redstone",
+              "count": 8,
+              "consume": false,
+              "title": "Собрать 8 редстоуна"
+            }
+          ],
+          "description": [
+            "Осмий — основа всех машин Mekanism, а железо и редстоун нужны для корпусов, схем и сплавов.",
+            "Руду ищите под землёй: осмиевые жилы встречаются довольно часто."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "mek_enrichment",
+          "title": "Обогатитель",
+          "icon": "Mekanism:MachineBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:MachineBlock",
+              "count": 1,
+              "meta": 0,
+              "title": "Собрать обогатительную камеру"
+            }
+          ],
+          "description": [
+            "Enrichment Chamber — первая машина Mekanism: она удваивает выход руды в пыль, делает сжатый углерод и обогащённое железо.",
+            "Поставьте её рядом с источником энергии."
+          ],
+          "dependencies": [
+            "mek_ores"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "minecraft:redstone",
+              "count": 8
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "mek_energy",
+          "title": "Энергокуб и энерготаблетка",
+          "icon": "Mekanism:EnergyCube",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:EnergyCube",
+              "count": 1,
+              "title": "Собрать базовый энергокуб"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:EnergyTablet",
+              "count": 2,
+              "title": "Сделать 2 энерготаблетки"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:EnergyUpgrade",
+              "count": 2,
+              "title": "Сделать 2 энергетических улучшения"
+            },
+            {
+              "type": "checkmark",
+              "title": "Подключить к энергокубу генератор и зарядить таблетку"
+            }
+          ],
+          "description": [
+            "Energy Cube хранит заряд, а Energy Tablet носит его с собой и заряжает предметы.",
+            "Тепловой или солнечный генератор подключается к кубу кабелем."
+          ],
+          "dependencies": [
+            "mek_enrichment"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:EnergyTablet",
+              "count": 1
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "mek_infuser",
+          "title": "Металлург и комбинатор",
+          "icon": {
+            "item": "Mekanism:MachineBlock",
+            "meta": 8
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:MachineBlock",
+              "count": 1,
+              "meta": 8,
+              "title": "Собрать металлургический комбинатор"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:MachineBlock",
+              "count": 1,
+              "meta": 2,
+              "title": "Собрать комбинатор"
+            }
+          ],
+          "description": [
+            "Metallurgic Infuser смешивает металл с углеродом, редстоуном и алмазом — здесь рождаются сталь и обогащённые сплавы.",
+            "Combiner соединяет два предмета в один и делает из простого сырья редкие материалы."
+          ],
+          "dependencies": [
+            "mek_energy"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:CompressedCarbon",
+              "count": 4
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "mek_alloys",
+          "title": "Обогащённые сплавы",
+          "icon": "Mekanism:EnrichedAlloy",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "itemEnrichedAlloy",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 обогащённых сплавов"
+            },
+            {
+              "type": "item",
+              "ore": "dustIron",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 железной пыли"
+            }
+          ],
+          "description": [
+            "Обогащённый сплав — универсальный компонент: из него делают схемы, корпуса машин и почти все улучшения.",
+            "Железную пыль выдаёт обогатитель, сплав варится в металлургическом комбинаторе."
+          ],
+          "dependencies": [
+            "mek_infuser"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "minecraft:gold_ingot",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": -2
+        },
+        {
+          "id": "mek_crusher",
+          "title": "Дробилка и энергопечь",
+          "icon": {
+            "item": "Mekanism:MachineBlock",
+            "meta": 3
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:MachineBlock",
+              "count": 1,
+              "meta": 3,
+              "title": "Собрать дробилку"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:MachineBlock",
+              "count": 1,
+              "meta": 10,
+              "title": "Собрать энергетическую печь"
+            }
+          ],
+          "description": [
+            "Crusher превращает руду и слитки в грязную пыль — её потом отмывают и обогащают.",
+            "Energized Smelter плавит пыль и руду на энергии, не съедая топливо."
+          ],
+          "dependencies": [
+            "mek_alloys"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "minecraft:iron_ingot",
+              "count": 8
+            }
+          ],
+          "x": 5,
+          "y": -3
+        },
+        {
+          "id": "mek_sawmill",
+          "title": "Лесопилка Precision Sawmill",
+          "icon": {
+            "item": "Mekanism:MachineBlock2",
+            "meta": 5
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:MachineBlock2",
+              "count": 1,
+              "meta": 5,
+              "title": "Собрать точную лесопилку"
+            },
+            {
+              "type": "item",
+              "ore": "dustWood",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 опилок"
+            }
+          ],
+          "description": [
+            "Precision Sawmill распускает брёвна в доски с выгодой и попутно даёт опилки.",
+            "Опилки идут на биотопливо, бумагу и субстрат для дальнейших машин."
+          ],
+          "dependencies": [
+            "mek_crusher"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "minecraft:planks",
+              "count": 16
+            }
+          ],
+          "x": 6,
+          "y": -3
+        },
+        {
+          "id": "mek_cable",
+          "title": "Универсальные кабели",
+          "icon": "Mekanism:PartTransmitter",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:PartTransmitter",
+              "count": 8,
+              "meta": 0,
+              "title": "Сделать 8 базовых универсальных кабелей"
+            }
+          ],
+          "description": [
+            "Universal Cable разносит энергию от куба к машинам без потерь.",
+            "Кабели соединяются в сеть и сами ограничивают передачу по своему уровню."
+          ],
+          "dependencies": [
+            "mek_energy"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:PartTransmitter",
+              "meta": 0,
+              "count": 8
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "mek_pipe",
+          "title": "Механические трубы",
+          "icon": {
+            "item": "Mekanism:PartTransmitter",
+            "meta": 4
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:PartTransmitter",
+              "count": 8,
+              "meta": 4,
+              "title": "Сделать 8 базовых механических труб"
+            }
+          ],
+          "description": [
+            "Mechanical Pipe качает воду, лаву и другие жидкости между машинами и баками."
+          ],
+          "dependencies": [
+            "mek_cable"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:bucket",
+              "count": 1
+            }
+          ],
+          "x": 4,
+          "y": 1
+        },
+        {
+          "id": "mek_tube",
+          "title": "Газовые трубки",
+          "icon": {
+            "item": "Mekanism:PartTransmitter",
+            "meta": 8
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:PartTransmitter",
+              "count": 8,
+              "meta": 8,
+              "title": "Сделать 8 базовых газовых трубок"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:GasTank",
+              "count": 1,
+              "title": "Собрать базовый газовый баллон"
+            }
+          ],
+          "description": [
+            "Pressurized Tube переносит газы — кислород, водород, этилен и пары.",
+            "Газовый баллон позволяет носить газ с собой и заправлять машины вручную."
+          ],
+          "dependencies": [
+            "mek_pipe"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:GasTank",
+              "count": 1
+            }
+          ],
+          "x": 5,
+          "y": -2
+        },
+        {
+          "id": "mek_transporter",
+          "title": "Логистические транспортёры",
+          "icon": {
+            "item": "Mekanism:PartTransmitter",
+            "meta": 12
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:PartTransmitter",
+              "count": 8,
+              "meta": 12,
+              "title": "Сделать 8 базовых транспортёров"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:Configurator",
+              "count": 1,
+              "title": "Собрать конфигуратор"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:NetworkReader",
+              "count": 1,
+              "title": "Собрать сетевой анализатор"
+            }
+          ],
+          "description": [
+            "Logistical Transporter сам разносит предметы по машинам и сундукам.",
+            "Configurator настраивает стороны и режимы, Network Reader показывает, что творится в сети."
+          ],
+          "dependencies": [
+            "mek_pipe"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:ConfigurationCard",
+              "count": 1
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "mek_oxidizer",
+          "title": "Химический окислитель",
+          "icon": {
+            "item": "Mekanism:MachineBlock2",
+            "meta": 1
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:MachineBlock2",
+              "count": 1,
+              "meta": 1,
+              "title": "Собрать химический окислитель"
+            }
+          ],
+          "description": [
+            "Chemical Oxidizer превращает твёрдые материалы в газы: так получают кислород, водород и этилен.",
+            "Без газов не запустить очистку руды и производство пластика."
+          ],
+          "dependencies": [
+            "mek_infuser",
+            "mek_cable"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:GasTank",
+              "count": 1
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "mek_separator",
+          "title": "Электролитический разделитель",
+          "icon": {
+            "item": "Mekanism:MachineBlock2",
+            "meta": 4
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:MachineBlock2",
+              "count": 1,
+              "meta": 4,
+              "title": "Собрать электролитический разделитель"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:ElectrolyticCore",
+              "count": 2,
+              "title": "Сделать 2 электролитических ядра"
+            },
+            {
+              "type": "checkmark",
+              "title": "Разложить воду на кислород и водород"
+            }
+          ],
+          "description": [
+            "Electrolytic Separator разбивает воду на кислород и водород, а рассол — на натрий и хлор.",
+            "Кислород нужен камере очистки, водород — реакционной камере под давлением."
+          ],
+          "dependencies": [
+            "mek_oxidizer"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:GasTank",
+              "count": 1
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "mek_purification",
+          "title": "Камера очистки",
+          "icon": {
+            "item": "Mekanism:MachineBlock",
+            "meta": 9
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:MachineBlock",
+              "count": 1,
+              "meta": 9,
+              "title": "Собрать камеру очистки"
+            },
+            {
+              "type": "item",
+              "ore": "clumpIron",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 сгустков железа"
+            }
+          ],
+          "description": [
+            "Purification Chamber с кислородом превращает руду в сгустки — это первый шаг цепочки, умножающей металл в несколько раз.",
+            "Дальше сгустки дробят в грязную пыль и обогащают до кристаллов."
+          ],
+          "dependencies": [
+            "mek_separator",
+            "mek_crusher"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "minecraft:gunpowder",
+              "count": 8
+            }
+          ],
+          "x": 6,
+          "y": -2
+        },
+        {
+          "id": "mek_injection",
+          "title": "Химический инжектор",
+          "icon": {
+            "item": "Mekanism:MachineBlock2",
+            "meta": 3
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:MachineBlock2",
+              "count": 1,
+              "meta": 3,
+              "title": "Собрать химический инжектор"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:MachineBlock2",
+              "count": 1,
+              "meta": 2,
+              "title": "Собрать химический инфузер"
+            }
+          ],
+          "description": [
+            "Chemical Injection Chamber впрыскивает в грязную пыль реагенты и удваивает выход.",
+            "Chemical Infuser смешивает два газа в третий — например, водород с хлором."
+          ],
+          "dependencies": [
+            "mek_purification"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:ControlCircuit",
+              "count": 2
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "mek_crystals",
+          "title": "Кристаллы и осколки",
+          "icon": "Mekanism:Crystal",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "shardIron",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 осколков железа"
+            },
+            {
+              "type": "item",
+              "ore": "dustDirtyIron",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 грязной пыли"
+            },
+            {
+              "type": "item",
+              "ore": "crystalIron",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 кристалла железа"
+            }
+          ],
+          "description": [
+            "Полная цепочка руды: осколок → грязная пыль → сгусток → кристалл → чистый слиток.",
+            "Чем длиннее путь, тем больше металла вы получаете из одной руды."
+          ],
+          "dependencies": [
+            "mek_purification",
+            "mek_injection"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:iron_ingot",
+                  "count": 16
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:gold_ingot",
+                  "count": 8
+                }
+              ]
+            }
+          ],
+          "x": 8,
+          "y": -1
+        },
+        {
+          "id": "mek_plastic",
+          "title": "Пластик и субстрат",
+          "icon": "Mekanism:Polyethene",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:MachineBlock2",
+              "count": 1,
+              "meta": 10,
+              "title": "Собрать реакционную камеру под давлением"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:PlasticBlock",
+              "count": 8,
+              "title": "Сделать 8 пластиковых блоков"
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:Substrate",
+              "count": 4,
+              "consume": false,
+              "title": "Получить 4 субстрата"
+            }
+          ],
+          "description": [
+            "Pressurized Reaction Chamber с этиленом делает гранулы HDPE — основу пластика.",
+            "Пластик и субстрат нужны для брони, газовых баллонов и самых сложных машин."
+          ],
+          "dependencies": [
+            "mek_separator",
+            "mek_sawmill"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:Polyethene",
+              "count": 4
+            }
+          ],
+          "x": 7,
+          "y": -2
+        },
+        {
+          "id": "mek_factories",
+          "title": "Фабрики и установщик",
+          "icon": {
+            "item": "Mekanism:MachineBlock",
+            "meta": 5
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:MachineBlock",
+              "count": 1,
+              "meta": 5,
+              "title": "Собрать базовую фабрику"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:FactoryInstaller",
+              "count": 1,
+              "title": "Сделать базовый фабричный установщик"
+            }
+          ],
+          "description": [
+            "Фабрика обрабатывает сразу несколько предметов за такт, а фабричный установщик повышает её уровень до продвинутого и элитного.",
+            "Это самый простой способ ускорить всю переработку."
+          ],
+          "dependencies": [
+            "mek_crusher",
+            "mek_plastic"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:FactoryInstaller",
+              "count": 1
+            }
+          ],
+          "x": 8,
+          "y": -2
+        },
+        {
+          "id": "mek_defense",
+          "title": "Оборона базы",
+          "icon": "Mekanism:ElectricBow",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:ElectricBow",
+              "count": 1,
+              "title": "Собрать электрический лук"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:Flamethrower",
+              "count": 1,
+              "title": "Собрать огнемёт"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:ObsidianTNT",
+              "count": 4,
+              "title": "Сделать 4 обсидиановых TNT"
+            },
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 15,
+              "title": "Убить 15 зомби"
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 10,
+              "title": "Убить 10 скелетов"
+            }
+          ],
+          "description": [
+            "Electric Bow и Flamethrower работают на энергии из таблетки или энергокуба.",
+            "Обсидиановый TNT не рушит ландшафт так, как обычный, — удобно для обороны."
+          ],
+          "dependencies": [
+            "mek_factories"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 65
+            },
+            {
+              "type": "item",
+              "item": "minecraft:bone",
+              "count": 8
+            }
+          ],
+          "x": 9,
+          "y": -1
+        },
+        {
+          "id": "mek_digital_miner",
+          "title": "Цифровой шахтёр",
+          "icon": {
+            "item": "Mekanism:MachineBlock",
+            "meta": 4
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:MachineBlock",
+              "count": 1,
+              "meta": 4,
+              "title": "Собрать цифровой шахтёр"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:SeismicReader",
+              "count": 1,
+              "title": "Собрать сейсмический сканер"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:Robit",
+              "count": 1,
+              "title": "Собрать робота-помощника"
+            },
+            {
+              "type": "checkmark",
+              "title": "Задать шахтёру фильтр и добыть руду на расстоянии"
+            }
+          ],
+          "description": [
+            "Digital Miner сам выкапывает только нужные блоки в радиусе вокруг себя.",
+            "Сейсмический сканер подскажет, где искать руду, а Robit станет ручным помощником."
+          ],
+          "dependencies": [
+            "mek_factories",
+            "mek_crystals"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 3
+            }
+          ],
+          "x": 9,
+          "y": -2
+        },
+        {
+          "id": "mek_teleporter",
+          "title": "Телепортер",
+          "icon": {
+            "item": "Mekanism:MachineBlock",
+            "meta": 11
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:MachineBlock",
+              "count": 1,
+              "meta": 11,
+              "title": "Собрать телепортер"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:TeleportationCore",
+              "count": 1,
+              "title": "Сделать ядро телепортации"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:PortableTeleporter",
+              "count": 1,
+              "title": "Собрать портативный телепортер"
+            }
+          ],
+          "description": [
+            "Teleporter связывает две платформы и переносит игрока и предметы за энергию.",
+            "Portable Teleporter позволяет прыгнуть к своей сети из любой точки."
+          ],
+          "dependencies": [
+            "mek_digital_miner"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 85
+            },
+            {
+              "type": "item",
+              "item": "minecraft:ender_pearl",
+              "count": 4
+            }
+          ],
+          "x": 10,
+          "y": -1
+        },
+        {
+          "id": "mek_entangloporter",
+          "title": "Квантовый запутыватель",
+          "icon": "Mekanism:MachineBlock3",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:MachineBlock3",
+              "count": 1,
+              "title": "Собрать квантовый запутыватель"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:ConfigurationCard",
+              "count": 1,
+              "title": "Сделать карту конфигурации"
+            },
+            {
+              "type": "checkmark",
+              "title": "Передать предметы, газ или энергию по беспроводной сети"
+            }
+          ],
+          "description": [
+            "Quantum Entangloporter переносит предметы, жидкости, газы и энергию без проводов — через всю базу или между измерениями.",
+            "Частота задаётся в его интерфейсе, а карта конфигурации копирует настройки."
+          ],
+          "dependencies": [
+            "mek_teleporter",
+            "mek_transporter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "Mekanism:EnergyCube",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "Mekanism:TeleportationCore",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 11,
+          "y": -1
+        },
+        {
+          "id": "mek_gear",
+          "title": "Личное снаряжение",
+          "icon": "Mekanism:AtomicDisassembler",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:AtomicDisassembler",
+              "count": 1,
+              "title": "Собрать атомный разборщик"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:GasMask",
+              "count": 1,
+              "title": "Сделать противогаз"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:ScubaTank",
+              "count": 1,
+              "title": "Сделать акваланг"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:FreeRunners",
+              "count": 1,
+              "title": "Сделать скороходы"
+            }
+          ],
+          "description": [
+            "Atomic Disassembler в одно касание рубит дерево, копает камень и плавит руду.",
+            "Противогаз, акваланг и скороходы превращают исследование пещер и океана в прогулку."
+          ],
+          "dependencies": [
+            "mek_plastic",
+            "mek_teleporter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 85
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:EnergyTablet",
+              "count": 1
+            }
+          ],
+          "x": 11,
+          "y": 0
+        },
+        {
+          "id": "mek_jetpack",
+          "title": "Реактивный ранец",
+          "icon": "Mekanism:Jetpack",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:Jetpack",
+              "count": 1,
+              "title": "Собрать реактивный ранец"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:ArmoredJetpack",
+              "count": 1,
+              "title": "Собрать бронированный ранец"
+            },
+            {
+              "type": "checkmark",
+              "title": "Подняться в воздух на реактивном ранце"
+            }
+          ],
+          "description": [
+            "Jetpack расходует газ из встроенного бака и держит вас в воздухе.",
+            "Бронированная версия вдобавок работает как нагрудник и защищает от урона."
+          ],
+          "dependencies": [
+            "mek_gear"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 4
+            }
+          ],
+          "x": 12,
+          "y": -1
+        },
+        {
+          "id": "mek_ultimate",
+          "title": "Атомный сплав",
+          "icon": "Mekanism:AtomicAlloy",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "alloyUltimate",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 атомных сплава"
+            },
+            {
+              "type": "item",
+              "ore": "ingotRefinedObsidian",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 слитка очищенного обсидиана"
+            },
+            {
+              "type": "item",
+              "ore": "dustDiamond",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 алмазной пыли"
+            }
+          ],
+          "description": [
+            "Atomic Alloy — вершина сплавов мода: на нём держатся самые быстрые машины и броня.",
+            "Refined Obsidian получают из обсидиана и алмазной пыли, а сама пыль — из дробилки."
+          ],
+          "dependencies": [
+            "mek_jetpack",
+            "mek_entangloporter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "Mekanism:AtomicDisassembler",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "Mekanism:AtomicAlloy",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "x": 13,
+          "y": -1
+        },
+        {
+          "id": "mek_condensentrator",
+          "title": "Ротационный конденсатор",
+          "icon": "Mekanism:MachineBlock2",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:MachineBlock2",
+              "count": 1,
+              "meta": 0,
+              "title": "Собрать ротационный конденсатор"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:GasTank",
+              "count": 1,
+              "title": "Собрать газовый баллон"
+            },
+            {
+              "type": "checkmark",
+              "title": "Перегнать газ в жидкость и обратно"
+            }
+          ],
+          "description": [
+            "Rotary Condensentrator переводит газы в жидкости и обратно: так этилен становится жидким топливом, а рассол — удобным для перевозки.",
+            "Конденсатор и баллон вместе позволяют хранить химию вне машин."
+          ],
+          "dependencies": [
+            "mek_oxidizer"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:Polyethene",
+              "count": 4
+            }
+          ],
+          "x": 5,
+          "y": 1
+        },
+        {
+          "id": "mek_evaporation",
+          "title": "Термическое выпаривание",
+          "icon": "Mekanism:BasicBlock2",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Mekanism:BasicBlock2",
+              "count": 8,
+              "consume": false,
+              "title": "Собрать 8 блоков выпаривателя"
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:GaugeDropper",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать капельницу-дозатор"
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:BrineBucket",
+              "count": 1,
+              "consume": true,
+              "title": "Сдать ведро рассола"
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:LithiumBucket",
+              "count": 1,
+              "consume": true,
+              "title": "Сдать ведро лития"
+            }
+          ],
+          "description": [
+            "Thermal Evaporation Plant выпаривает воду в рассол, а рассол — в литий.",
+            "Многослойная конструкция греется от солнца или лавы и даёт сырьё для редких сплавов."
+          ],
+          "dependencies": [
+            "mek_condensentrator"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "minecraft:bucket",
+              "count": 2
+            }
+          ],
+          "x": 6,
+          "y": 1
+        },
+        {
+          "id": "mek_salt",
+          "title": "Соль и биотопливо",
+          "icon": "Mekanism:Salt",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "itemSalt",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 соли"
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:BioFuel",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 порции биотоплива"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:SaltBlock",
+              "count": 4,
+              "title": "Спрессовать 4 соляных блока"
+            }
+          ],
+          "description": [
+            "Из рассола получают соль — она идёт на химию и в пищу, а из опилок и субстрата варят биотопливо.",
+            "Биотопливо горит в генераторах, поэтому база перестаёт зависеть от угля."
+          ],
+          "dependencies": [
+            "mek_evaporation",
+            "mek_sawmill"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "minecraft:bread",
+              "count": 4
+            }
+          ],
+          "x": 7,
+          "y": 0
+        },
+        {
+          "id": "mek_compressed",
+          "title": "Сжатые материалы",
+          "icon": "Mekanism:CompressedDiamond",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:CompressedRedstone",
+              "count": 4,
+              "title": "Сделать 4 сжатых редстоуна"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:CompressedDiamond",
+              "count": 2,
+              "title": "Сделать 2 сжатых алмаза"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:CompressedObsidian",
+              "count": 2,
+              "title": "Сделать 2 сжатых обсидиана"
+            }
+          ],
+          "description": [
+            "Сжатые блоки — концентрат редких ресурсов: их получают в обогатителе и комбинаторе.",
+            "Без сжатого алмаза и обсидиана не сделать укреплённые сплавы."
+          ],
+          "dependencies": [
+            "mek_infuser"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:CompressedCarbon",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "mek_reinforced",
+          "title": "Укреплённый сплав",
+          "icon": "Mekanism:ReinforcedAlloy",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "alloyElite",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 укреплённых сплава"
+            },
+            {
+              "type": "item",
+              "ore": "alloyAdvanced",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 продвинутых сплава"
+            }
+          ],
+          "description": [
+            "Reinforced Alloy — средний уровень сплавов: он крепче обогащённого и нужен для элитных машин и брони.",
+            "Дальше из него и очищенного обсидиана варят атомный сплав."
+          ],
+          "dependencies": [
+            "mek_alloys",
+            "mek_compressed"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:diamond",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "Mekanism:EnrichedAlloy",
+                  "count": 8
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": 2
+        },
+        {
+          "id": "mek_upgrades",
+          "title": "Улучшения машин",
+          "icon": "Mekanism:SpeedUpgrade",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:SpeedUpgrade",
+              "count": 4,
+              "title": "Сделать 4 улучшения скорости"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:EnergyUpgrade",
+              "count": 2,
+              "title": "Сделать 2 энергетических улучшения"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:GasUpgrade",
+              "count": 2,
+              "title": "Сделать 2 газовых улучшения"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:MufflingUpgrade",
+              "count": 2,
+              "title": "Сделать 2 шумопоглощающих улучшения"
+            },
+            {
+              "type": "checkmark",
+              "title": "Разложить улучшения по слотам машины"
+            }
+          ],
+          "description": [
+            "Улучшения вставляются в машины и фабрики: скорость, экономия энергии, объём газа и тишина.",
+            "Каждая машина имеет ограниченное число слотов, поэтому выбирайте под задачу."
+          ],
+          "dependencies": [
+            "mek_factories"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 65
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:SpeedUpgrade",
+              "count": 2
+            }
+          ],
+          "x": 9,
+          "y": 0
+        },
+        {
+          "id": "mek_decoration",
+          "title": "Пластиковый декор",
+          "icon": "Mekanism:GlowPanel",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:GlowPanel",
+              "count": 8,
+              "title": "Сделать 8 светящихся панелей"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:GlowPlasticBlock",
+              "count": 4,
+              "title": "Сделать 4 светящихся блока"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:PlasticFence",
+              "count": 8,
+              "title": "Сделать 8 пластиковых ограждений"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:Balloon",
+              "count": 4,
+              "title": "Надуть 4 воздушных шара"
+            }
+          ],
+          "description": [
+            "Пластик красится в любой цвет и даёт ровный свет без факелов: Glow Panel светит сама и красиво смотрится в стенах и потолках.",
+            "Из того же пластика выходят ограждения и шары для украшения базы."
+          ],
+          "dependencies": [
+            "mek_plastic"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:Polyethene",
+              "count": 8
+            }
+          ],
+          "x": 8,
+          "y": 0
+        },
+        {
+          "id": "mek_roads",
+          "title": "Дороги и покрытия",
+          "icon": "Mekanism:RoadPlasticBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:RoadPlasticBlock",
+              "count": 16,
+              "title": "Сделать 16 дорожных блоков"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:SlickPlasticBlock",
+              "count": 8,
+              "title": "Сделать 8 скользких блоков"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:ReinforcedPlasticBlock",
+              "count": 8,
+              "title": "Сделать 8 укреплённых пластиковых блоков"
+            }
+          ],
+          "description": [
+            "Дорожное покрытие разгоняет бег, скользкие блоки превращаются в трассу для вагонеток, а укреплённый пластик держит взрывы.",
+            "Всё это — быстрый способ обустроить базу, не трогая камень."
+          ],
+          "dependencies": [
+            "mek_decoration"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:SlickPlasticBlock",
+              "count": 8
+            }
+          ],
+          "x": 9,
+          "y": 1
+        },
+        {
+          "id": "mek_boxes",
+          "title": "Картонные коробки",
+          "icon": "Mekanism:CardboardBox",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:CardboardBox",
+              "count": 4,
+              "title": "Склеить 4 картонные коробки"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:ConfigurationCard",
+              "count": 2,
+              "title": "Сделать 2 карты конфигурации"
+            },
+            {
+              "type": "checkmark",
+              "title": "Упаковать машину в коробку и перенести на новое место"
+            }
+          ],
+          "description": [
+            "Cardboard Box переносит машину вместе со всем содержимым и настройками.",
+            "Карта конфигурации копирует режимы машины, чтобы не настраивать вторую вручную."
+          ],
+          "dependencies": [
+            "mek_transporter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:ConfigurationCard",
+              "count": 1
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "mek_comms",
+          "title": "Связь и справочник",
+          "icon": "Mekanism:WalkieTalkie",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:WalkieTalkie",
+              "count": 2,
+              "title": "Собрать 2 рации"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:Dictionary",
+              "count": 1,
+              "title": "Собрать словарь"
+            },
+            {
+              "type": "checkmark",
+              "title": "Связаться с напарником по рации"
+            }
+          ],
+          "description": [
+            "Walkie-Talkie держит связь на расстоянии, а Dictionary подсказывает рецепты и применения предметов мода.",
+            "Удобно, когда база разрослась и вы работаете с кем-то в паре."
+          ],
+          "dependencies": [
+            "mek_transporter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:ControlCircuit",
+              "count": 2
+            }
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "id": "mek_robit_formula",
+          "title": "Формулы для робота",
+          "icon": "Mekanism:CraftingFormula",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Mekanism:Robit",
+              "count": 1,
+              "title": "Собрать робота-помощника"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:CraftingFormula",
+              "count": 4,
+              "title": "Записать 4 формулы крафта"
+            },
+            {
+              "type": "craft",
+              "item": "Mekanism:FilterUpgrade",
+              "count": 2,
+              "title": "Сделать 2 фильтрующих улучшения"
+            },
+            {
+              "type": "checkmark",
+              "title": "Заставить робота скрафтить предмет по формуле"
+            }
+          ],
+          "description": [
+            "Crafting Formula хранит рецепт: робот с формулой сам крафтит предметы из того, что лежит рядом.",
+            "Фильтрующие улучшения ограничивают, что именно робот подбирает и переносит."
+          ],
+          "dependencies": [
+            "mek_digital_miner"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "Mekanism:ControlCircuit",
+              "count": 4
+            }
+          ],
+          "x": 10,
+          "y": 0
+        },
+        {
+          "id": "mek_hunt",
+          "title": "Охота на монстров",
+          "icon": "Mekanism:Flamethrower",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Creeper",
+              "count": 10,
+              "title": "Убить 10 криперов"
+            },
+            {
+              "type": "kill",
+              "entity": "Enderman",
+              "count": 5,
+              "title": "Убить 5 эндерменов"
+            },
+            {
+              "type": "kill",
+              "entity": "Spider",
+              "count": 10,
+              "title": "Убить 10 пауков"
+            },
+            {
+              "type": "kill",
+              "entity": "Blaze",
+              "count": 5,
+              "title": "Убить 5 вспышек в Нижнем мире"
+            }
+          ],
+          "description": [
+            "Энергетический лук и огнемёт легко расправляются с ночными гостями и обитателями Нижнего мира.",
+            "Заодно набираются порох, эндер-жемчуг и огненный порошок для реакций и телепортов."
+          ],
+          "dependencies": [
+            "mek_defense"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 65
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:gunpowder",
+                  "count": 8
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:blaze_powder",
+                  "count": 6
+                }
+              ]
+            }
+          ],
+          "x": 10,
+          "y": -2
+        }
+      ]
+    }
+  ]
+}

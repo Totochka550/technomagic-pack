@@ -1,0 +1,18 @@
+filename = 'Modpack Configuration Checker-1.7.10-v1.5.3.jar'
+name = 'Config Checker Mod'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Modpack Configuration Checker-1.7.10-v1.5.3.jar'
+
+[download]
+hash = '53583f6e09c30d81cce71083c09f27f86676da8f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2713414
+project-id = 292992

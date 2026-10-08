@@ -1,0 +1,1692 @@
+{
+  "title": "Witchery",
+  "chapters": [
+    {
+      "id": "witchery",
+      "title": "Witchery",
+      "description": "Ведьмовство по шагам: роуэн и котёл, алтарь и ритуальный мел, свой сад трав, поппеты, зелья и охота на нечисть.",
+      "icon": "witchery:kettle",
+      "requiredMod": "witchery",
+      "quests": [
+        {
+          "id": "wt_rowan",
+          "title": "Дерево ведьм",
+          "icon": "witchery:witchsapling",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "witchery:witchsapling",
+              "count": 1,
+              "consume": false,
+              "title": "Найти саженец роуэна"
+            },
+            {
+              "type": "item",
+              "item": "witchery:witchlog",
+              "count": 8,
+              "consume": false,
+              "title": "Срубить роуэн"
+            }
+          ],
+          "description": [
+            "Роуэн — белое дерево, из которого у ведьмы сделано буквально всё.",
+            "Саженец попадается в лесу, а выросшее дерево даёт древесину, листья и саженцы для посадки."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 15
+            },
+            {
+              "type": "item",
+              "item": "witchery:witchsapling",
+              "count": 2
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "wt_rowan_parts",
+          "title": "Постройки из роуэна",
+          "icon": "witchery:witchwood",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:rowanwooddoor",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:stairswoodrowan",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "witchery:witchwoodslab",
+              "count": 6
+            }
+          ],
+          "description": [
+            "Доски роуэна идут на двери, ступени и плиты — материал для дома и ровной площадки под ритуалы."
+          ],
+          "dependencies": [
+            "wt_rowan"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "witchery:witchwood",
+              "count": 16
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "wt_seeds",
+          "title": "Семена для сада",
+          "icon": "witchery:seedsmandrake",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "witchery:seedsmandrake",
+              "count": 1,
+              "consume": false,
+              "title": "Семена мандрагоры"
+            },
+            {
+              "type": "item",
+              "item": "witchery:seedsbelladonna",
+              "count": 1,
+              "consume": false,
+              "title": "Семена красавки"
+            },
+            {
+              "type": "item",
+              "item": "witchery:seedswormwood",
+              "count": 1,
+              "consume": false,
+              "title": "Семена полыни"
+            },
+            {
+              "type": "item",
+              "item": "witchery:seedssnowbell",
+              "count": 1,
+              "consume": false,
+              "title": "Семена снежного колокольчика"
+            },
+            {
+              "type": "item",
+              "item": "witchery:seedswolfsbane",
+              "count": 1,
+              "consume": false,
+              "title": "Семена волчьего лыка"
+            }
+          ],
+          "description": [
+            "Семена ведьминских трав попадаются в высокой траве и у воды.",
+            "Часть растений всходит только ночью, так что фонарь рядом с грядкой лучше не ставить."
+          ],
+          "dependencies": [
+            "wt_rowan"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 1,
+          "y": 0
+        },
+        {
+          "id": "wt_harvest",
+          "title": "Ведьмин сад",
+          "icon": "witchery:mandrake",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "witchery:mandrake",
+              "count": 3,
+              "consume": false,
+              "title": "Выкопать 3 мандрагоры"
+            },
+            {
+              "type": "item",
+              "item": "witchery:belladonna",
+              "count": 3,
+              "consume": false,
+              "title": "Собрать 3 красавки"
+            },
+            {
+              "type": "item",
+              "item": "witchery:wormwood",
+              "count": 3,
+              "consume": false,
+              "title": "Срезать 3 полыни"
+            },
+            {
+              "type": "item",
+              "item": "witchery:snowbell",
+              "count": 3,
+              "consume": false,
+              "title": "Собрать 3 снежных колокольчика"
+            },
+            {
+              "type": "item",
+              "item": "witchery:wolfsbane",
+              "count": 3,
+              "consume": false,
+              "title": "Срезать 3 волчьего лыка"
+            }
+          ],
+          "description": [
+            "Мандрагора кричит при выкапывании, красавка ядовита, полынь идёт в печь, а колокольчик и волчье лыко нужны для зелий.",
+            "Заведите по грядке каждой травы — иначе ритуалы встанут."
+          ],
+          "dependencies": [
+            "wt_seeds"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "witchery:mandrake",
+              "count": 2
+            }
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "id": "wt_kettle",
+          "title": "Ведьмин котёл",
+          "icon": "witchery:kettle",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:kettle",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "witchery:cauldronbook",
+              "count": 1,
+              "consume": false,
+              "title": "Добыть книгу «Ведьминские зелья»"
+            }
+          ],
+          "description": [
+            "Котёл — рабочее место ведьмы: в нём варятся зелья и настаиваются смеси.",
+            "Книга «Ведьминские зелья» подскажет рецепты, так что держите её под рукой."
+          ],
+          "dependencies": [
+            "wt_rowan_parts"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 2,
+          "y": -2
+        },
+        {
+          "id": "wt_altar",
+          "title": "Алтарь",
+          "icon": "witchery:altar",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:altar",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Алтарь собирает силу природы вокруг себя и тратит её на ритуалы.",
+            "Ставьте его на открытом месте: чем богаче окружение, тем быстрее копится сила."
+          ],
+          "dependencies": [
+            "wt_kettle"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 3,
+          "y": -2
+        },
+        {
+          "id": "wt_supplies",
+          "title": "Запасы для ритуалов",
+          "icon": "witchery:alluringskull",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "ingotIron",
+              "count": 8,
+              "consume": false,
+              "title": "Запасти 8 железных слитков"
+            },
+            {
+              "type": "item",
+              "ore": "ingotGold",
+              "count": 2,
+              "consume": false,
+              "title": "Запасти 2 золотых слитка"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:glass_bottle",
+              "count": 8,
+              "consume": false,
+              "title": "Набрать 8 склянок"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:book",
+              "count": 2,
+              "consume": false,
+              "title": "Подготовить 2 книги"
+            }
+          ],
+          "description": [
+            "Железо нужно на инструменты, золото — на чаши и канделябры, склянки — под зелья, книги — под записи.",
+            "Приятный бонус: черепа и прочая жуть тоже пригодятся, но это уже на ваш вкус."
+          ],
+          "dependencies": [
+            "wt_altar"
+          ],
+          "rewards": [
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "witchery:glassgoblet",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "witchery:brewbag",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 4,
+          "y": -6
+        },
+        {
+          "id": "wt_altar_power",
+          "title": "Источники силы алтаря",
+          "icon": "witchery:brazier",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:brazier",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:candelabra",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:chalice",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:glowglobe",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Жаровня, канделябр, чаша и светящийся шар стоят вокруг алтаря и подпитывают его.",
+            "Расставьте их в радиусе нескольких блоков и не забывайте про топливо."
+          ],
+          "dependencies": [
+            "wt_altar"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "witchery:glowglobe",
+              "count": 2
+            }
+          ],
+          "x": 4,
+          "y": -5
+        },
+        {
+          "id": "wt_athame",
+          "title": "Атаме и болин",
+          "icon": "witchery:arthana",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:arthana",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:boline",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Атаме режет травы и чертит круги, болин срезает побеги и ветки для обрядов.",
+            "Оба инструмента нужны почти в каждом ритуале."
+          ],
+          "dependencies": [
+            "wt_altar"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 4,
+          "y": -4
+        },
+        {
+          "id": "wt_chalk",
+          "title": "Мел и глифы",
+          "icon": "witchery:chalkritual",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:chalkritual",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:circleglyphritual",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Ритуальный мел чертит круг, а глифы по его краю задают, что именно случится.",
+            "Чем больше глифов, тем серьёзнее ритуал — начните с малого круга."
+          ],
+          "dependencies": [
+            "wt_athame"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "witchery:chalkritual",
+              "count": 1
+            }
+          ],
+          "x": 5,
+          "y": -2
+        },
+        {
+          "id": "wt_artichoke",
+          "title": "Огород и чеснок",
+          "icon": "witchery:garlic",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "witchery:seedsartichoke",
+              "count": 1,
+              "consume": false,
+              "title": "Найти семена водяного артишока"
+            },
+            {
+              "type": "item",
+              "item": "witchery:garlic",
+              "count": 4,
+              "consume": false,
+              "title": "Собрать 4 чеснока"
+            },
+            {
+              "type": "item",
+              "item": "witchery:garlicgarland",
+              "count": 1,
+              "consume": false,
+              "title": "Связать гирлянду из чеснока"
+            }
+          ],
+          "description": [
+            "Водяной артишок растёт прямо в воде, а чеснок — лучшее средство от вампиров и прочей нечисти.",
+            "Гирлянду вешают над дверью: нечисть обходит дом стороной."
+          ],
+          "dependencies": [
+            "wt_seeds"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "witchery:garlic",
+              "count": 4
+            }
+          ],
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "wt_mutator",
+          "title": "Мутирующий побег",
+          "icon": "witchery:mutator",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:mutator",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:crittersnare",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Побег превращает одно растение в другое — так получают редкие травы, которые иначе не найти.",
+            "Силки пригодятся, чтобы наловить мелких зверьков для обрядов."
+          ],
+          "dependencies": [
+            "wt_harvest"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 3,
+          "y": -4
+        },
+        {
+          "id": "wt_spinning",
+          "title": "Прялка и плетение",
+          "icon": "witchery:spinningwheel",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:spinningwheel",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "witchery:wickerbundle",
+              "count": 2,
+              "consume": false,
+              "title": "Свить 2 пучка лозы"
+            }
+          ],
+          "description": [
+            "Прялка скручивает волокна и лозу в плетёные пучки — основу для кукол и оберегов."
+          ],
+          "dependencies": [
+            "wt_harvest"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "witchery:wickerbundle",
+              "count": 2
+            }
+          ],
+          "x": 3,
+          "y": -3
+        },
+        {
+          "id": "wt_poppet",
+          "title": "Кукла-поппет",
+          "icon": "witchery:poppet",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:taglockkit",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:poppet",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Набор для метки снимает с существа локон, шерсть или каплю крови — привязку для куклы.",
+            "Поппет берёт на себя чужую боль и проклятия, если правильно привязан."
+          ],
+          "dependencies": [
+            "wt_spinning"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "witchery:poppet",
+              "count": 1
+            }
+          ],
+          "x": 4,
+          "y": -2
+        },
+        {
+          "id": "wt_wards",
+          "title": "Обереги и полка",
+          "icon": "witchery:poppetshelf",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:poppetshelf",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:shelfcompass",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:witchsladder",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:dreamcatcher",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Полка хранит поппеты, компас подсказывает, где какая кукла лежит.",
+            "Лестница ведьмы из палок и нитей и ловец снов отгоняют дурные сны и порчу."
+          ],
+          "dependencies": [
+            "wt_poppet"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "item",
+              "item": "witchery:taglockkit",
+              "count": 1
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "wt_oven",
+          "title": "Ведьмина печь",
+          "icon": "witchery:witchesovenidle",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:witchesovenidle",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:fumefunnel",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "witchery:filteredfumefunnel",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Печь сжигает травы и предметы, а воронки собирают поднимающиеся пары.",
+            "Отфильтрованная воронка даёт пары чище — из них выходят лучшие зелья."
+          ],
+          "dependencies": [
+            "wt_kettle"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "wt_distillery",
+          "title": "Дистиллятор",
+          "icon": "witchery:distilleryidle",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:distilleryidle",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:brewbag",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Дистиллятор превращает собранные воронками пары в готовые зелья.",
+            "Сумка для зелий позволит носить их с собой и не путать бутылочки."
+          ],
+          "dependencies": [
+            "wt_oven"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "item",
+              "item": "minecraft:glass_bottle",
+              "count": 8
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "wt_brews",
+          "title": "Первое зелье",
+          "icon": "witchery:brewbottle",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "witchery:brewbottle",
+              "count": 1,
+              "consume": false,
+              "title": "Сварить любое зелье"
+            },
+            {
+              "type": "checkmark",
+              "title": "Опробовать зелье в деле"
+            }
+          ],
+          "description": [
+            "Сварите в котле простейшее зелье и разлейте его по бутылочкам.",
+            "Дальше можно браться за зелья полёта, огня и превращений."
+          ],
+          "dependencies": [
+            "wt_distillery"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "witchery:brew.water",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "witchery:brew.fuel",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": 1
+        },
+        {
+          "id": "wt_hunter",
+          "title": "Охотник на ведьм",
+          "icon": "witchery:huntercoat",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:hunterhat",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:huntercoat",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:hunterlegs",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:hunterboots",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Кожаный костюм охотника — броня тех, кто идёт против ведьм и вампиров.",
+            "Полный комплект не даёт нечисти сбить вас с толку."
+          ],
+          "dependencies": [
+            "wt_rowan_parts"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "witchery:garlicgarland",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "witchery:earmuffs",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "wt_handbow",
+          "title": "Арбалет-пистоль",
+          "icon": "witchery:handbow",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:handbow",
+              "count": 1
+            },
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 10
+            }
+          ],
+          "description": [
+            "Ручной арбалет бьёт серебряными болтами и бьёт больно даже по нежити.",
+            "Проверьте его на десятке зомби — заодно разомнётесь."
+          ],
+          "dependencies": [
+            "wt_hunter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 3,
+          "y": 2
+        },
+        {
+          "id": "wt_silver",
+          "title": "Серебро против нечисти",
+          "icon": "witchery:silversword",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "witchery:silversword",
+              "count": 1,
+              "consume": false,
+              "title": "Добыть серебряный меч"
+            },
+            {
+              "type": "item",
+              "item": "witchery:hunterhatsilvered",
+              "count": 1,
+              "consume": false,
+              "title": "Посеребрить шляпу охотника"
+            }
+          ],
+          "description": [
+            "Серебро обжигает вампиров и вервольфов там, где обычная сталь бесполезна.",
+            "Посеребрённые части охотничьего набора — лучший доспех против такой нечисти."
+          ],
+          "dependencies": [
+            "wt_handbow"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "witchery:alluringskull",
+              "count": 1
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "wt_crystal",
+          "title": "Хрустальный шар и зеркало",
+          "icon": "witchery:crystalball",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:crystalball",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:mirror",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Хрустальный шар показывает чужие сны и местоположение игроков.",
+            "Зеркало связывает две точки мира — удобный и очень странный способ путешествовать."
+          ],
+          "dependencies": [
+            "wt_poppet"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "wt_statues",
+          "title": "Статуи",
+          "icon": "witchery:statuegoddess",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:statuegoddess",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:statueofworship",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Статуя Богини усиливает алтарь и помогает с ритуалами плодородия.",
+            "Статуя хобгоблина-покровителя приносит благословение маленького народца."
+          ],
+          "dependencies": [
+            "wt_altar_power"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 65
+            },
+            {
+              "type": "item",
+              "item": "witchery:spectralstone",
+              "count": 1
+            }
+          ],
+          "x": 5,
+          "y": -4
+        },
+        {
+          "id": "wt_kobold",
+          "title": "Кобольдит",
+          "icon": "witchery:kobolditepickaxe",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Подружиться с хобгоблином"
+            },
+            {
+              "type": "item",
+              "item": "witchery:kobolditepickaxe",
+              "count": 1,
+              "consume": false,
+              "title": "Получить кирку из кобольдита"
+            }
+          ],
+          "description": [
+            "Хобгоблины любят подарки и в благодарность делятся кобольдитом.",
+            "Из него выходит кирка, которая копает сама — почти как живая."
+          ],
+          "dependencies": [
+            "wt_statues"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "minecraft:gold_ingot",
+              "count": 4
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "wt_spirit",
+          "title": "Мир духов",
+          "icon": "witchery:spiritportal",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Попасть в мир духов"
+            },
+            {
+              "type": "item",
+              "item": "witchery:buckethollowtears",
+              "count": 1,
+              "consume": false,
+              "title": "Набрать ведро пустых слёз"
+            }
+          ],
+          "description": [
+            "Мир духов — тонкая копия обычного мира: там видно то, что скрыто от живых.",
+            "Пустые слёзы и духи-помощники открывают доступ к самым сильным ритуалам мода."
+          ],
+          "dependencies": [
+            "wt_crystal"
+          ],
+          "optional": true,
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "item",
+              "item": "witchery:bucketspirit",
+              "count": 1
+            }
+          ],
+          "x": 6,
+          "y": -2
+        },
+        {
+          "id": "wt_vampire",
+          "title": "Наблюдения бессмертного",
+          "icon": "witchery:vampirebook",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "witchery:vampirebook",
+              "count": 1,
+              "consume": false,
+              "title": "Добыть «Наблюдения бессмертного»"
+            },
+            {
+              "type": "craft",
+              "item": "witchery:coffinblock",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Книга вампира и гроб — вход в самую мрачную ветку мода.",
+            "Путь долгий: сначала придётся умереть и вернуться, а потом охотиться на живых."
+          ],
+          "dependencies": [
+            "wt_statues"
+          ],
+          "optional": true,
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "item",
+              "item": "witchery:bloodcrucible",
+              "count": 1
+            }
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "id": "wt_cooking",
+          "title": "Ведьмин обед",
+          "icon": "witchery:stewraw",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "witchery:stewraw",
+              "count": 2,
+              "consume": false,
+              "title": "Собрать 2 сытных похлёбки"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:bowl",
+              "count": 4,
+              "consume": false,
+              "title": "Заготовить 4 миски"
+            }
+          ],
+          "description": [
+            "В котле можно варить не только зелья: мясо, овощи и травы дают сытную похлёбку.",
+            "Одна тарелка такого обеда кормит так, что до следующего утра про еду можно забыть."
+          ],
+          "dependencies": [
+            "wt_kettle",
+            "wt_artichoke"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "minecraft:bowl",
+              "count": 4
+            }
+          ],
+          "x": 3,
+          "y": 1
+        },
+        {
+          "id": "wt_stew",
+          "title": "Сытная похлёбка",
+          "icon": "witchery:stew",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:stew",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Готовая похлёбка восстанавливает силы и снимает усталость после ритуалов.",
+            "Держите миску под рукой: варить её долго, а съедается она быстро."
+          ],
+          "dependencies": [
+            "wt_cooking"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "witchery:stew",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:cooked_beef",
+                  "count": 4
+                }
+              ]
+            }
+          ],
+          "x": 4,
+          "y": 1
+        },
+        {
+          "id": "wt_ice_blocks",
+          "title": "Ледяная отделка",
+          "icon": "witchery:perpetualice",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:iceslab",
+              "count": 6
+            },
+            {
+              "type": "craft",
+              "item": "witchery:icestairs",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "witchery:icefence",
+              "count": 6
+            }
+          ],
+          "description": [
+            "Вечный лёд не тает ни у печи, ни в пустыне — из него можно строить что угодно.",
+            "Плиты, ступени и забор пригодятся для ледяного зала и дорожек в саду."
+          ],
+          "dependencies": [
+            "wt_altar_power"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "witchery:perpetualice",
+              "count": 4
+            }
+          ],
+          "x": 5,
+          "y": -3
+        },
+        {
+          "id": "wt_ruby_slippers",
+          "title": "Рубиновые туфельки",
+          "icon": "witchery:rubyslippers",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:rubyslippers",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Рубиновые туфельки — ведьмин способ телепортироваться: щёлкнули каблуками и вы дома.",
+            "Дорогая вещь, но она стоит каждого слитка золота."
+          ],
+          "dependencies": [
+            "wt_ice_blocks"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 75
+            },
+            {
+              "type": "item",
+              "item": "minecraft:gold_ingot",
+              "count": 4
+            }
+          ],
+          "x": 6,
+          "y": 1
+        },
+        {
+          "id": "wt_wolf",
+          "title": "Союз с волками",
+          "icon": "witchery:wolfaltar",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:wolftrap",
+              "count": 2
+            },
+            {
+              "type": "craft",
+              "item": "witchery:wolfhead",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "witchery:hornofthehunt",
+              "count": 1,
+              "consume": false,
+              "title": "Добыть рог охоты"
+            }
+          ],
+          "description": [
+            "Волчий алтарь и рог охоты собирают стаю вокруг ведьмы, а волчий капкан защищает дом.",
+            "Волки приносят добычу и первыми бросаются на незваных гостей."
+          ],
+          "dependencies": [
+            "wt_mutator"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "witchery:crittersnare",
+              "count": 2
+            }
+          ],
+          "x": 4,
+          "y": -3
+        },
+        {
+          "id": "wt_werewolf",
+          "title": "Волчья шкура",
+          "icon": "witchery:bitingbelt",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:bitingbelt",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Обратиться волком в лунную ночь"
+            }
+          ],
+          "description": [
+            "Кусающий пояс вместе с волчьим амулетом превращает ведьму в вервольфа.",
+            "В волчьей шкуре вы быстрее и злее, но у луны свои планы на ваше расписание."
+          ],
+          "dependencies": [
+            "wt_wolf"
+          ],
+          "optional": true,
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "witchery:wolfaltar",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "witchery:beartrap",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": 2
+        },
+        {
+          "id": "wt_wards_home",
+          "title": "Защита участка",
+          "icon": "witchery:beartrap",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:beartrap",
+              "count": 2
+            },
+            {
+              "type": "craft",
+              "item": "witchery:stockade",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "witchery:cactus",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Медвежий капкан, частокол и кактусы превращают двор в недружелюбное место.",
+            "Мелкая нечисть обходит такую ограду стороной, а крупная теряет время."
+          ],
+          "dependencies": [
+            "wt_hunter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "witchery:wolftrap",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "witchery:crittersnare",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "x": 3,
+          "y": 3
+        },
+        {
+          "id": "wt_demon_heart",
+          "title": "Сердце демона",
+          "icon": "witchery:demonheart",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "witchery:demonheart",
+              "count": 1,
+              "consume": false,
+              "title": "Вырвать сердце демона"
+            },
+            {
+              "type": "item",
+              "item": "witchery:bloodrose",
+              "count": 1,
+              "consume": false,
+              "title": "Вырастить кровавый мак"
+            }
+          ],
+          "description": [
+            "Сердце демона вырывают из слуг тьмы, а кровавый мак растят на пролитой крови.",
+            "Оба трофея открывают доступ к самым тёмным обрядам мода."
+          ],
+          "dependencies": [
+            "wt_spirit"
+          ],
+          "optional": true,
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 95
+            },
+            {
+              "type": "item",
+              "item": "witchery:spectralstone",
+              "count": 4
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "wt_storage",
+          "title": "Ведьмин склад",
+          "icon": "witchery:refillingchest",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:refillingchest",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Сундук-наполнитель сам достаёт нужные мелочи, когда вы стоите рядом с верстаком.",
+            "Идеальное место для семян, склянок и прочей мелочи, которая вечно теряется."
+          ],
+          "dependencies": [
+            "wt_kettle"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:chest",
+              "count": 2
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "wt_urn",
+          "title": "Урна Леонарда",
+          "icon": "witchery:leonardsurn",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:leonardsurn",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Урна Леонарда копит красную пыль и отдаёт её тому, кто поставит её у алтаря.",
+            "Так у ведьмы появляется возобновляемый источник красного камня."
+          ],
+          "dependencies": [
+            "wt_storage"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "item",
+              "item": "minecraft:redstone",
+              "count": 8
+            }
+          ],
+          "x": 4,
+          "y": 3
+        },
+        {
+          "id": "wt_leech_chest",
+          "title": "Пиявка-сундук",
+          "icon": "witchery:leechchest",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:leechchest",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:barrier",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Сундук-пиявка сам вытягивает вещи из стоящих рядом сундуков и сортирует их по себе.",
+            "Вместе с барьером он превращает склад в аккуратную автоматическую систему."
+          ],
+          "dependencies": [
+            "wt_storage"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:hopper",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:chest",
+                  "count": 4
+                }
+              ]
+            }
+          ],
+          "x": 4,
+          "y": 4
+        },
+        {
+          "id": "wt_traps",
+          "title": "Ловушки в саду",
+          "icon": "witchery:plantmine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:plantmine",
+              "count": 2
+            },
+            {
+              "type": "item",
+              "item": "witchery:witchhand",
+              "count": 1,
+              "consume": false,
+              "title": "Добыть ведьмину руку"
+            }
+          ],
+          "description": [
+            "Мак паутины выпускает липкую сеть, стоит наступить на него.",
+            "Вместе с ведьминой рукой эти ловушки останавливают гостей, которые лезут в сад за травами."
+          ],
+          "dependencies": [
+            "wt_wards_home"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "item",
+              "item": "witchery:web",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": 2
+        },
+        {
+          "id": "wt_hag_hunt",
+          "title": "Ночная охота",
+          "icon": "witchery:witchrobe",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Witch",
+              "count": 3
+            },
+            {
+              "type": "kill",
+              "entity": "Bat",
+              "count": 5
+            }
+          ],
+          "description": [
+            "Ведьмы, что живут в хижинах по болотам, знают ритуалы, которых нет в книгах.",
+            "Охота на них и на их летучих спутников — быстрый способ разжиться редкими травами."
+          ],
+          "dependencies": [
+            "wt_traps"
+          ],
+          "optional": true,
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "witchery:witchhat",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "witchery:garlic",
+                  "count": 6
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": 3
+        },
+        {
+          "id": "wt_coven_robes",
+          "title": "Одеяния ковена",
+          "icon": "witchery:witchhat",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "witchery:witchhat",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:witchrobe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "witchery:barkbelt",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Шляпа, мантия и кора-пояс — полный наряд ведьмы, а не просто маскарад.",
+            "Костюм узнают свои, а деревенские жители начинают здороваться первыми."
+          ],
+          "dependencies": [
+            "wt_demon_heart"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "witchery:babashat",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "witchery:necromancerrobe",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 8,
+          "y": -1
+        }
+      ]
+    }
+  ]
+}

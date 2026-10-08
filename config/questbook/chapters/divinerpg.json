@@ -1,0 +1,1921 @@
+{
+  "title": "DivineRPG",
+  "chapters": [
+    {
+      "id": "divinerpg",
+      "title": "DivineRPG",
+      "description": "Пять сумеречных земель, подземелье Арканы, ледяная Айсика, боссы и все 33 достижения мода.",
+      "icon": "divinerpg:twilightClock",
+      "requiredMod": "divinerpg",
+      "quests": [
+        {
+          "id": "drpg_shark",
+          "title": "Акула на ужин",
+          "icon": "divinerpg:sharkFin",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "divinerpg:EntityShark",
+              "count": 3
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:sharkFin",
+              "count": 2,
+              "consume": false,
+              "title": "Собрать акульи плавники"
+            }
+          ],
+          "description": [
+            "Акулы патрулируют океан и оставляют после себя плавники — из них потом делают неплохое оружие."
+          ],
+          "achievement": "feedingOnTheFish",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:aquaticPellets",
+              "count": 4
+            }
+          ],
+          "x": 0,
+          "y": -3
+        },
+        {
+          "id": "drpg_dramcryx",
+          "title": "Смерть джунглевым стегозаврам!",
+          "icon": "divinerpg:jungleShards",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "divinerpg:EntityJungleDramcryx",
+              "count": 5
+            }
+          ],
+          "description": [
+            "Джунглевые драмкриксы не любят гостей: уберите пятерых, и чаща станет заметно спокойнее."
+          ],
+          "achievement": "dramcryxDeath",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:jungleShards",
+              "count": 2
+            }
+          ],
+          "x": 0,
+          "y": -2
+        },
+        {
+          "id": "drpg_livestock",
+          "title": "Питомец на заказ",
+          "icon": "divinerpg:overworldPetSpawner",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:overworldPetSpawner",
+              "count": 1,
+              "consume": false,
+              "title": "Купить яйцо питомца у Торговца скотом"
+            },
+            {
+              "type": "checkmark",
+              "title": "Выпустить питомца из яйца"
+            }
+          ],
+          "description": [
+            "Торговец скотом продаёт яйца ручных зверят за теневые монеты — возьмите одно и выпустите малыша."
+          ],
+          "achievement": "petCollector",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:shadowCoins",
+              "count": 3
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "drpg_jackoman",
+          "title": "Дух Хэллоуина",
+          "icon": "divinerpg:jackOManHelmet",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Найти в лесу Jack-O-Man и поговорить с ним"
+            }
+          ],
+          "description": [
+            "Джек-О-Мэн бродит по лесам и рад поболтать — за разговор он подкинет что-нибудь праздничное."
+          ],
+          "achievement": "halloweenSpirit",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "minecraft:pumpkin",
+              "count": 4
+            }
+          ],
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "drpg_eye",
+          "title": "Взгляд в ответ",
+          "icon": "divinerpg:watchingEye",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Найти The Eye и заглянуть ему прямо в глаз"
+            }
+          ],
+          "description": [
+            "Летающий The Eye встречается в Верхнем мире. Посмотрите ему в глаз — он это запомнит, и вы тоже."
+          ],
+          "achievement": "eyeOfEvil",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:enderShards",
+              "count": 2
+            }
+          ],
+          "x": 0,
+          "y": 1
+        },
+        {
+          "id": "drpg_chicken",
+          "title": "Обед, который запомнится",
+          "icon": "divinerpg:chickenDinner",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:chickenDinner",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Съесть куриный ужин"
+            }
+          ],
+          "description": [
+            "Куриный ужин сытнее обычной еды. Приготовьте его и съешьте, пока не остыл."
+          ],
+          "achievement": "mealToRemember",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            },
+            {
+              "type": "item",
+              "item": "minecraft:bread",
+              "count": 2
+            }
+          ],
+          "x": 0,
+          "y": 2
+        },
+        {
+          "id": "drpg_watcher",
+          "title": "Божественное вмешательство",
+          "icon": "divinerpg:callOfTheWatcher",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:callOfTheWatcher",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Использовать Зов Наблюдателя и победить The Watcher"
+            }
+          ],
+          "description": [
+            "Из теневых монет торговца собирается Зов Наблюдателя — им вызывают первого босса мода.",
+            "The Watcher оставляет божественные осколки, из которых делают Divine Sword."
+          ],
+          "dependencies": [
+            "drpg_livestock"
+          ],
+          "achievement": "divineIntervention",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:divineShards",
+              "count": 2
+            }
+          ],
+          "x": 1,
+          "y": -2
+        },
+        {
+          "id": "drpg_triplets",
+          "title": "Тройная угроза",
+          "icon": "divinerpg:enderShards",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "divinerpg:EntityEnderTriplets",
+              "count": 3
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:enderShards",
+              "count": 2,
+              "consume": false,
+              "title": "Собрать эндерские осколки"
+            }
+          ],
+          "description": [
+            "Эндерские тройняшки водятся в Нижнем мире и всегда нападают втроём — без брони туда лучше не соваться."
+          ],
+          "dependencies": [
+            "drpg_watcher"
+          ],
+          "achievement": "tripleTheDanger",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "minecraft:ender_pearl",
+              "count": 2
+            }
+          ],
+          "x": 2,
+          "y": -4
+        },
+        {
+          "id": "drpg_eden",
+          "title": "1001 возможность",
+          "icon": "divinerpg:edenPortal",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:twilightClock",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Собрать портал в Эдем и войти в него"
+            }
+          ],
+          "description": [
+            "Сумеречные часы открывают портал в Эдем — первую из пяти сумеречных земель.",
+            "Каркас портала складывают из божественного камня."
+          ],
+          "dependencies": [
+            "drpg_watcher"
+          ],
+          "achievement": "possibilities",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:edenFragments",
+              "count": 4
+            }
+          ],
+          "x": 2,
+          "y": -3
+        },
+        {
+          "id": "drpg_divine_sword",
+          "title": "Божественный план",
+          "icon": "divinerpg:divineSword",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:divineSword",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Divine Sword — первый по-настоящему божественный клинок, собранный из божественных осколков и камня."
+          ],
+          "dependencies": [
+            "drpg_eden"
+          ],
+          "achievement": "divinePlan",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:healingStone",
+              "count": 2
+            }
+          ],
+          "x": 3,
+          "y": -5
+        },
+        {
+          "id": "drpg_angelic",
+          "title": "Когда свиньи летают",
+          "icon": "divinerpg:angelicChestplate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:angelicHelmet",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:angelicChestplate",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:angelicLeggings",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:angelicBoots",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Полный ангельский сет делают из эдемских материалов — наденьте все четыре части, и крылья как будто вырастут."
+          ],
+          "dependencies": [
+            "drpg_eden"
+          ],
+          "achievement": "whenPigsFly",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "divinerpg:orbOfLight",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "divinerpg:healingStone",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "x": 3,
+          "y": -4
+        },
+        {
+          "id": "drpg_bunny",
+          "title": "Друг или враг?",
+          "icon": "divinerpg:edenSoul",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:edenSoul",
+              "count": 3,
+              "consume": false,
+              "title": "Собрать души Эдема"
+            },
+            {
+              "type": "checkmark",
+              "title": "Ударить эдемского кролика и разозлить его"
+            }
+          ],
+          "description": [
+            "Эдемские кролики милые, пока их не тронешь: один удар — и перед вами уже Angry Bunny."
+          ],
+          "dependencies": [
+            "drpg_eden"
+          ],
+          "achievement": "friendOrFoe",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:dreamCarrot",
+              "count": 4
+            }
+          ],
+          "x": 3,
+          "y": -3
+        },
+        {
+          "id": "drpg_archer",
+          "title": "Стрела в колено",
+          "icon": "divinerpg:wildwoodArrow",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Дать сумеречному лучнику попасть в вас стрелой"
+            }
+          ],
+          "description": [
+            "Twilight Archer стреляет без предупреждения. Один меткий выстрел по вам — и достижение в кармане."
+          ],
+          "dependencies": [
+            "drpg_angelic"
+          ],
+          "achievement": "arrowToTheKnee",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:everArrow",
+              "count": 8
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "drpg_boss_dar",
+          "title": "Десять голов лучше одной",
+          "icon": "divinerpg:densosCrystal",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:densosCrystal",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:reyvorCrystal",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Заспавнить Densos и Reyvor, а затем победить обоих"
+            }
+          ],
+          "description": [
+            "Кристаллы призыва собираются в сумерках, и Densos с Reyvor появляются вместе.",
+            "Без хорошей брони и оружия к ним лучше не подходить."
+          ],
+          "dependencies": [
+            "drpg_angelic"
+          ],
+          "achievement": "spawnDAR",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "divinerpg:densosCrystal",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "divinerpg:reyvorCrystal",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "drpg_eternal_archer",
+          "title": "Шесть в одном",
+          "icon": "divinerpg:eternalArcherCrystal",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:eternalArcherCrystal",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Заспавнить Вечного лучника и победить его"
+            }
+          ],
+          "description": [
+            "Кристалл Вечного лучника зовёт босса, который умеет стрелять сразу во все стороны."
+          ],
+          "dependencies": [
+            "drpg_boss_dar"
+          ],
+          "achievement": "sixInOne",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "divinerpg:everArrow",
+                  "count": 16
+                },
+                {
+                  "type": "item",
+                  "item": "divinerpg:healingStone",
+                  "count": 3
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": -5
+        },
+        {
+          "id": "drpg_mortum",
+          "title": "Тёмный ещё день",
+          "icon": "divinerpg:mortumBlock",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:mortumSoul",
+              "count": 3,
+              "consume": false,
+              "title": "Собрать души Мортума"
+            },
+            {
+              "type": "checkmark",
+              "title": "Построить портал в Мортум и войти в него"
+            }
+          ],
+          "description": [
+            "Мортум — самая мрачная из сумеречных земель, и портал туда открывают те же сумеречные часы."
+          ],
+          "dependencies": [
+            "drpg_boss_dar"
+          ],
+          "achievement": "darkAnotherDay",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:mortumDust",
+              "count": 8
+            }
+          ],
+          "x": 5,
+          "y": -4
+        },
+        {
+          "id": "drpg_iceika",
+          "title": "Ледяная земля",
+          "icon": "divinerpg:iceikaPortal",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:snowGlobe",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Открыть портал в Айсику и войти в него"
+            }
+          ],
+          "description": [
+            "Снежный шар, разбитый об лёд, открывает дорогу в Айсику — край вечной зимы и мастерских."
+          ],
+          "dependencies": [
+            "drpg_watcher"
+          ],
+          "achievement": "frozenLand",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:snowflake",
+              "count": 4
+            }
+          ],
+          "x": 2,
+          "y": -2
+        },
+        {
+          "id": "drpg_frosted",
+          "title": "Морозный товар",
+          "icon": "divinerpg:frostedChest",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "divinerpg:EntityFrostArcher",
+              "count": 2
+            },
+            {
+              "type": "checkmark",
+              "title": "Найти ледяное подземелье и разбить морозный сундук"
+            }
+          ],
+          "description": [
+            "В ледяных подземельях стоят морозные сундуки, а охраняют их лучники и ледяные големы."
+          ],
+          "dependencies": [
+            "drpg_iceika"
+          ],
+          "achievement": "frozenGoods",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:iceShards",
+              "count": 4
+            }
+          ],
+          "x": 3,
+          "y": -2
+        },
+        {
+          "id": "drpg_tinkerer",
+          "title": "Мастер на все руки",
+          "icon": "divinerpg:workshopBookcase",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:snowflakeShuriken",
+              "count": 2,
+              "consume": false,
+              "title": "Купить сюрикены у Workshop Tinkerer"
+            },
+            {
+              "type": "checkmark",
+              "title": "Поторговать с Workshop Tinkerer"
+            }
+          ],
+          "description": [
+            "Мастер в ледяной мастерской меняет снежинки на оружие и музыкальные инструменты — загляните к нему."
+          ],
+          "dependencies": [
+            "drpg_iceika"
+          ],
+          "achievement": "lilTinkerin",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:snowflake",
+              "count": 8
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "drpg_merchant",
+          "title": "Маленький подарок",
+          "icon": "divinerpg:presentBox",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:presentBox",
+              "count": 1,
+              "consume": false,
+              "title": "Купить подарочную коробку у Workshop Merchant"
+            },
+            {
+              "type": "checkmark",
+              "title": "Поторговать с Workshop Merchant"
+            }
+          ],
+          "description": [
+            "Торговец в мастерской продаёт подарки, леденцы и праздничную еду за снежинки."
+          ],
+          "dependencies": [
+            "drpg_iceika"
+          ],
+          "achievement": "lilGift",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "divinerpg:fruitCake",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "divinerpg:eggNog",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "drpg_offkey",
+          "title": "Не в лад",
+          "icon": "divinerpg:soundOfMusic",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:soundOfMusic",
+              "count": 1,
+              "consume": false,
+              "title": "Достать Sound of Music у мастера Айсики"
+            },
+            {
+              "type": "checkmark",
+              "title": "Выстрелить из Sound of Music"
+            }
+          ],
+          "description": [
+            "Sound of Music стреляет музыкой вместо стрел — проверьте, как звучит бой."
+          ],
+          "dependencies": [
+            "drpg_iceika"
+          ],
+          "achievement": "offKey",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:snowflake",
+              "count": 6
+            }
+          ],
+          "x": 3,
+          "y": 1
+        },
+        {
+          "id": "drpg_lamp",
+          "title": "Один лампа, два лампа",
+          "icon": "divinerpg:lamp1",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:lamp1",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Поставить лампу DivineRPG на землю"
+            }
+          ],
+          "description": [
+            "Лампы DivineRPG светят ярче факелов и бывают на любой вкус — от аква до эдемской."
+          ],
+          "dependencies": [
+            "drpg_divine_sword"
+          ],
+          "achievement": "oneLampTwoLampRedLampBlueLamp",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "minecraft:glowstone_dust",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": -3
+        },
+        {
+          "id": "drpg_arcana",
+          "title": "Что скрывается внутри",
+          "icon": "divinerpg:arcanaPortalFrame",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:arcanaPortalFrame",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Собрать портал Арканы и войти в подземелье"
+            }
+          ],
+          "description": [
+            "Аркана — подземелье с торговцами, ловушками и боссами.",
+            "Портал собирают из рамок Арканы и поджигают."
+          ],
+          "dependencies": [
+            "drpg_divine_sword"
+          ],
+          "achievement": "whatLiesWithin",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:arcanium",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": -2
+        },
+        {
+          "id": "drpg_yuk",
+          "title": "Фу!",
+          "icon": "divinerpg:weakArcanaPotion",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:weakArcanaPotion",
+              "count": 1,
+              "consume": false,
+              "title": "Купить слабое зелье Арканы у Ваттикуса"
+            },
+            {
+              "type": "checkmark",
+              "title": "Выпить зелье Арканы"
+            }
+          ],
+          "description": [
+            "Лорд Ваттикус торгует зельями Арканы. Вкус у них, мягко говоря, специфический."
+          ],
+          "dependencies": [
+            "drpg_arcana"
+          ],
+          "achievement": "yuk",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:arcanium",
+              "count": 3
+            }
+          ],
+          "x": 5,
+          "y": -3
+        },
+        {
+          "id": "drpg_pet",
+          "title": "Моё маленькое чудовище",
+          "icon": "divinerpg:seimerEgg",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:seimerEgg",
+              "count": 1,
+              "consume": false,
+              "title": "Купить яйцо питомца у Зелуса"
+            },
+            {
+              "type": "checkmark",
+              "title": "Заспавнить питомца из яйца"
+            }
+          ],
+          "description": [
+            "Зелус продаёт яйца арканских зверят — сеймер, паратику и других, выбирайте на свой вкус."
+          ],
+          "dependencies": [
+            "drpg_arcana"
+          ],
+          "achievement": "littleCreature",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:arcanium",
+              "count": 2
+            }
+          ],
+          "x": 5,
+          "y": -2
+        },
+        {
+          "id": "drpg_corruption",
+          "title": "Идеально испорчен",
+          "icon": "divinerpg:altarOfCorruption",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:altarOfCorruption",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Провести порчу предмета на Алтаре Порчи"
+            }
+          ],
+          "description": [
+            "Алтарь Порчи превращает обычные вещи в испорченные — без них не собрать оружие хаоса."
+          ],
+          "dependencies": [
+            "drpg_arcana"
+          ],
+          "achievement": "perfectlyCorrupted",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:corruptedShards",
+              "count": 3
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "drpg_demon_furnace",
+          "title": "Полная демонизация",
+          "icon": "divinerpg:demonFurnace",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:demonFurnace",
+              "count": 1,
+              "consume": false,
+              "title": "Купить демоническую печь у Даттикона"
+            },
+            {
+              "type": "checkmark",
+              "title": "Разжечь демоническую печь"
+            }
+          ],
+          "description": [
+            "Даттикон продаёт демоническую печь — в ней плавится всё, что плохо лежит."
+          ],
+          "dependencies": [
+            "drpg_arcana"
+          ],
+          "achievement": "totalDemonization",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:arcanium",
+              "count": 3
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "drpg_enrichment",
+          "title": "Обогащение",
+          "icon": "divinerpg:staffOfEnrichment",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:staffOfEnrichment",
+              "count": 1,
+              "consume": false,
+              "title": "Купить посох обогащения у Ваттикуса"
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:arcaniteDirt",
+              "count": 4,
+              "consume": false,
+              "title": "Найти арканитовую землю"
+            },
+            {
+              "type": "checkmark",
+              "title": "Применить посох на арканитовую землю"
+            }
+          ],
+          "description": [
+            "Посох обогащения превращает арканитовую землю в настоящую руду — выручает, когда руды не хватает."
+          ],
+          "dependencies": [
+            "drpg_arcana"
+          ],
+          "achievement": "enrichment",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:arcanium",
+              "count": 4
+            }
+          ],
+          "x": 5,
+          "y": 1
+        },
+        {
+          "id": "drpg_elevantium",
+          "title": "Высоко в небе",
+          "icon": "divinerpg:elevantium",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:elevantium",
+              "count": 1,
+              "consume": false,
+              "title": "Купить блок Elevantium у Даттикона"
+            },
+            {
+              "type": "checkmark",
+              "title": "Прыгнуть на блок Elevantium"
+            }
+          ],
+          "description": [
+            "На блоке Elevantium можно подпрыгнуть куда выше своего роста — поставьте его и попробуйте."
+          ],
+          "dependencies": [
+            "drpg_arcana"
+          ],
+          "achievement": "skyHigh",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:arcanium",
+              "count": 2
+            }
+          ],
+          "x": 5,
+          "y": 2
+        },
+        {
+          "id": "drpg_heat_trap",
+          "title": "Горячее, чем в аду",
+          "icon": "divinerpg:heatTrap",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "divinerpg:EntityDungeonDemon",
+              "count": 2
+            },
+            {
+              "type": "checkmark",
+              "title": "Наступить на тепловую ловушку в подземелье Арканы"
+            }
+          ],
+          "description": [
+            "Тепловые ловушки в подземелье Арканы обжигают даже сквозь броню — наступите один раз, чтобы запомнить."
+          ],
+          "dependencies": [
+            "drpg_arcana"
+          ],
+          "achievement": "hotterThanHell",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:healingStone",
+              "count": 2
+            }
+          ],
+          "x": 5,
+          "y": 3
+        },
+        {
+          "id": "drpg_parasecta",
+          "title": "Злая хворь",
+          "icon": "divinerpg:parasectaAltar",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "divinerpg:EntityParasecta",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:dungeonTokens",
+              "count": 4,
+              "consume": false,
+              "title": "Собрать жетоны подземелья"
+            }
+          ],
+          "description": [
+            "Парасекта ждёт своего часа в подземелье Арканы и щедро рассыпает жетоны за победу."
+          ],
+          "dependencies": [
+            "drpg_yuk"
+          ],
+          "achievement": "evilDisease",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:dungeonTokens",
+              "count": 6
+            }
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "id": "drpg_dramix",
+          "title": "Хозяин подземелья",
+          "icon": "divinerpg:dramixAltar",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "divinerpg:EntityDramix",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:dungeonTokens",
+              "count": 8,
+              "consume": false,
+              "title": "Собрать 8 жетонов подземелья"
+            }
+          ],
+          "description": [
+            "Драмикс — главный противник подземелья Арканы. Победите его и заберите награду."
+          ],
+          "dependencies": [
+            "drpg_parasecta"
+          ],
+          "achievement": "dungeonMaster",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "divinerpg:healingStone",
+                  "count": 3
+                },
+                {
+                  "type": "item",
+                  "item": "divinerpg:orbOfLight",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "drpg_storm_sword",
+          "title": "Всё, что угодно, кроме ада",
+          "icon": "divinerpg:stormSword",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:stormSword",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Ударить грозовым мечом и вызвать молнию"
+            }
+          ],
+          "description": [
+            "Storm Sword призывает молнию прямо на цель — зрелище стоит потраченных материалов."
+          ],
+          "dependencies": [
+            "drpg_dramix"
+          ],
+          "achievement": "allHellLoose",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:divineShards",
+              "count": 3
+            }
+          ],
+          "x": 8,
+          "y": -1
+        },
+        {
+          "id": "drpg_realmite",
+          "title": "Реальмитовая жила",
+          "icon": "divinerpg:realmiteIngot",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:realmiteOre",
+              "count": 8,
+              "consume": false,
+              "title": "Добыть реальмитовую руду"
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:realmiteIngot",
+              "count": 4,
+              "consume": false,
+              "title": "Переплавить реальмитовые слитки"
+            }
+          ],
+          "description": [
+            "Реальмит — первый металл DivineRPG: руда лежит глубоко под землёй, а слитки идут на инструменты и броню.",
+            "Ищите серо-зелёные вкрапления в камне под землёй."
+          ],
+          "dependencies": [
+            "drpg_chicken"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:realmiteIngot",
+              "count": 2
+            }
+          ],
+          "x": 1,
+          "y": 0
+        },
+        {
+          "id": "drpg_realmite_gear",
+          "title": "Реальмитовый набор",
+          "icon": "divinerpg:realmitePickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:realmitePickaxe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:realmiteSword",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Из реальмитовых слитков выходят крепкие кирка и меч — с них начинается любая шахтёрская экспедиция."
+          ],
+          "dependencies": [
+            "drpg_realmite"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:realmiteIngot",
+              "count": 3
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "drpg_arlemite_rupee",
+          "title": "Арлемит и рупии",
+          "icon": "divinerpg:rupeeIngot",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:arlemiteIngot",
+              "count": 4,
+              "consume": false,
+              "title": "Выплавить арлемитовые слитки"
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:rupeeIngot",
+              "count": 4,
+              "consume": false,
+              "title": "Выплавить слитки рупий"
+            }
+          ],
+          "description": [
+            "Арлемит и рупийная руда попадаются в пещерах Верхнего мира — вместе они дают материал для брони и оружия."
+          ],
+          "dependencies": [
+            "drpg_realmite"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "divinerpg:arlemiteIngot",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "divinerpg:rupeeIngot",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "id": "drpg_rupee_armor",
+          "title": "Рупийный доспех",
+          "icon": "divinerpg:rupeeChestplate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:rupeeHelmet",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:rupeeChestplate",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:rupeeLeggings",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:rupeeBoots",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Полный сет из рупий держит куда лучше железного — соберите все четыре части перед походом в сумерки."
+          ],
+          "dependencies": [
+            "drpg_arlemite_rupee"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:healingStone",
+              "count": 2
+            }
+          ],
+          "x": 3,
+          "y": 3
+        },
+        {
+          "id": "drpg_shickaxe",
+          "title": "Три инструмента в одном",
+          "icon": "divinerpg:arlemiteShickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:arlemiteShickaxe",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Поработать шиксаей: сломать блок или вспахать землю"
+            }
+          ],
+          "description": [
+            "Shickaxe заменяет кирку, лопату и топор сразу — незаменимая вещь в долгих вылазках."
+          ],
+          "dependencies": [
+            "drpg_arlemite_rupee"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:arlemiteIngot",
+              "count": 3
+            }
+          ],
+          "x": 3,
+          "y": 4
+        },
+        {
+          "id": "drpg_farm",
+          "title": "Огород DivineRPG",
+          "icon": "divinerpg:tomato",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:tomatoSeeds",
+              "count": 2,
+              "consume": false,
+              "title": "Раздобыть семена томатов"
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:whiteMushroomSeeds",
+              "count": 2,
+              "consume": false,
+              "title": "Раздобыть семена белых грибов"
+            }
+          ],
+          "description": [
+            "Семена томатов и белых грибов выбиваются из высокой травы — посадите их рядом с домом и собирайте урожай."
+          ],
+          "dependencies": [
+            "drpg_chicken"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:whiteMushroom",
+              "count": 3
+            }
+          ],
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "drpg_foods",
+          "title": "Сытный стол",
+          "icon": "divinerpg:bacon",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:tomato",
+              "count": 6,
+              "consume": false,
+              "title": "Собрать томаты"
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:bacon",
+              "count": 4,
+              "consume": false,
+              "title": "Раздобыть бекон"
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:cheese",
+              "count": 2,
+              "consume": false,
+              "title": "Найти сыр"
+            }
+          ],
+          "description": [
+            "Еда DivineRPG насыщает куда лучше обычной: томаты, бекон и сыр стоит держать в сумке перед боем."
+          ],
+          "dependencies": [
+            "drpg_farm"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:magicMeat",
+              "count": 2
+            }
+          ],
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "drpg_pumpkins",
+          "title": "Тыквенная коллекция",
+          "icon": "divinerpg:creeperPumpkin",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:creeperPumpkin",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:zombiePumpkin",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:skeletonPumpkin",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Из обычных тыкв вырезают морды мобов — крипер, зомби и скелет отлично украсят дом на Хэллоуин."
+          ],
+          "dependencies": [
+            "drpg_jackoman"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "minecraft:pumpkin",
+              "count": 4
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "drpg_santa",
+          "title": "Праздничный костюм",
+          "icon": "divinerpg:santaCap",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:santaCap",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:santaTunic",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:santaPants",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:santaBoots",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Красный костюм Санты шьют из зимних материалов Айсики — в полном сете мороз не так страшен."
+          ],
+          "dependencies": [
+            "drpg_merchant"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:presentBox",
+              "count": 1
+            }
+          ],
+          "x": 4,
+          "y": 1
+        },
+        {
+          "id": "drpg_lights",
+          "title": "Праздничная гирлянда",
+          "icon": "divinerpg:redChristmasLights",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:redChristmasLights",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:greenChristmasLights",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:blueChristmasLights",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Разноцветные рождественские огни светят не хуже факелов и отлично смотрятся на стенах мастерской."
+          ],
+          "dependencies": [
+            "drpg_santa"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:snowflake",
+              "count": 6
+            }
+          ],
+          "x": 5,
+          "y": 4
+        },
+        {
+          "id": "drpg_aquatic",
+          "title": "Подводная кузница",
+          "icon": "divinerpg:aquaticIngot",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:aquaticIngot",
+              "count": 2,
+              "consume": false,
+              "title": "Добыть акватические слитки"
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:aquaticPellets",
+              "count": 4,
+              "consume": false,
+              "title": "Собрать акватические гранулы"
+            }
+          ],
+          "description": [
+            "Акватические слитки и гранулы поднимают со дна океана — это основа подводного оружия и брони."
+          ],
+          "dependencies": [
+            "drpg_shark"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:aquaticPellets",
+              "count": 6
+            }
+          ],
+          "x": 1,
+          "y": -3
+        },
+        {
+          "id": "drpg_kraken_armor",
+          "title": "Кожа кракена",
+          "icon": "divinerpg:krakenChestplate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "divinerpg:krakenHelmet",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:krakenChestplate",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:krakenLeggings",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "divinerpg:krakenBoots",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Кракены оставляют прочную кожу, из которой шьют подводный доспех — в нём вода уже не помеха."
+          ],
+          "dependencies": [
+            "drpg_aquatic"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "divinerpg:healingStone",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "divinerpg:orbOfLight",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 2,
+          "y": 2
+        },
+        {
+          "id": "drpg_night_hunt",
+          "title": "Ночная охота",
+          "icon": "divinerpg:shadowBar",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 10,
+              "title": "Убить зомби"
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 10,
+              "title": "Убить скелетов"
+            }
+          ],
+          "description": [
+            "Прежде чем лезть к сумеречным боссам, разомнитесь на ночных мобах: два десятка убийств — неплохая тренировка."
+          ],
+          "dependencies": [
+            "drpg_realmite_gear"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:shadowCoins",
+              "count": 5
+            }
+          ],
+          "x": 3,
+          "y": 2
+        },
+        {
+          "id": "drpg_apalachia",
+          "title": "Сумерки Апалачии",
+          "icon": "divinerpg:apalachiaPortal",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:apalachiaSoul",
+              "count": 3,
+              "consume": false,
+              "title": "Собрать души Апалачии"
+            },
+            {
+              "type": "checkmark",
+              "title": "Построить портал в Апалачию и войти в него"
+            }
+          ],
+          "description": [
+            "Апалачия идёт сразу после Мортума: там добывают апалачиевые самоцветы, куски и пыль."
+          ],
+          "dependencies": [
+            "drpg_mortum"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "item",
+              "item": "divinerpg:apalachiaFragments",
+              "count": 4
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "drpg_skythern",
+          "title": "Небесный лес",
+          "icon": "divinerpg:skythernPortal",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "divinerpg:skythernSoul",
+              "count": 3,
+              "consume": false,
+              "title": "Собрать души Скайтерна"
+            },
+            {
+              "type": "checkmark",
+              "title": "Построить портал в Скайтерн и войти в него"
+            }
+          ],
+          "description": [
+            "Скайтерн — самая дальняя сумеречная земля: её материалы крепче всех, что были раньше."
+          ],
+          "dependencies": [
+            "drpg_apalachia"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 110
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "divinerpg:skythernFragments",
+                  "count": 4
+                },
+                {
+                  "type": "item",
+                  "item": "divinerpg:healingStone",
+                  "count": 3
+                }
+              ]
+            }
+          ],
+          "x": 7,
+          "y": 0
+        }
+      ]
+    }
+  ]
+}

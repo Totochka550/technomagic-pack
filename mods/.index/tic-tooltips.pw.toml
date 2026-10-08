@@ -1,0 +1,21 @@
+filename = 'TiCTooltips-mc1.7.10-1.2.5.jar'
+name = 'TiC Tooltips'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'TiCTooltips-mc1.7.10-1.2.5.jar'
+
+[download]
+hash = '5a3b97262bd10cf639974251bfda1a35f4b61127'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2246472
+project-id = 76845
+
+[[x-prismlauncher-dependencies]]
+addonId = '74072'
+type = 'REQUIRED'

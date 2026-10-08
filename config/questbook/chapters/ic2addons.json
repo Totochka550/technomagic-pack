@@ -1,0 +1,1540 @@
+{
+  "title": "Дополнения IC2",
+  "chapters": [
+    {
+      "id": "ic2addons",
+      "title": "Дополнения IC2",
+      "description": "Гравитационный костюм, продвинутые солнечные панели, скоростные машины и удобное хранилище — всё, что пригодится после базового IndustrialCraft 2.",
+      "icon": "GraviSuite:graviChestPlate",
+      "requiredMod": "GraviSuite",
+      "quests": [
+        {
+          "id": "ic2a_circuit",
+          "title": "Продвинутая схема",
+          "icon": "IC2:itemPartCircuitAdv",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemPartCircuitAdv",
+              "count": 2,
+              "title": "Собрать 2 продвинутые схемы"
+            },
+            {
+              "type": "item",
+              "ore": "dustRedstone",
+              "count": 8,
+              "consume": false,
+              "title": "Запасти 8 красной пыли"
+            }
+          ],
+          "description": [
+            "Вся эта глава начинается с продвинутой схемы: без неё не крафтится ни один прибор из дополнений.",
+            "Две схемы — минимальный запас, дальше их понадобится много."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "ore": "dustRedstone",
+              "count": 8,
+              "consume": false
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "ic2a_energy_crystal",
+          "title": "Кристалл энергии",
+          "icon": "IC2:itemBatCrystal",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemBatCrystal",
+              "count": 1,
+              "title": "Вырастить кристалл энергии"
+            },
+            {
+              "type": "item",
+              "ore": "gemDiamond",
+              "count": 2,
+              "consume": true,
+              "title": "Сдать 2 алмаза"
+            }
+          ],
+          "description": [
+            "Кристалл энергии — ёмкий аккумулятор и обязательная деталь продвинутых ранцев и нагрудников.",
+            "Зарядите его в MFE или MFS, иначе крафт уйдёт впустую."
+          ],
+          "dependencies": [
+            "ic2a_circuit"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 1,
+          "y": -3
+        },
+        {
+          "id": "ic2a_sunnarium",
+          "title": "Суннариум",
+          "icon": "AdvancedSolarPanel:asp_crafting_items",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "craftingSunnarium",
+              "count": 4,
+              "consume": false,
+              "title": "Получить 4 суннариума"
+            },
+            {
+              "type": "item",
+              "ore": "dustCoal",
+              "count": 8,
+              "consume": false,
+              "title": "Набрать 8 угольной пыли"
+            }
+          ],
+          "description": [
+            "Суннариум — сплав солнца и света, основа всех панелей Advanced Solar Panel."
+          ],
+          "dependencies": [
+            "ic2a_circuit"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "minecraft:glowstone_dust",
+              "count": 8
+            }
+          ],
+          "x": 1,
+          "y": -2
+        },
+        {
+          "id": "ic2a_adv_solar",
+          "title": "Продвинутая солнечная панель",
+          "icon": "AdvancedSolarPanel:BlockAdvSolarPanel",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "AdvancedSolarPanel:BlockAdvSolarPanel",
+              "count": 1,
+              "title": "Собрать панель"
+            },
+            {
+              "type": "item",
+              "ore": "craftingSunnarium",
+              "count": 2,
+              "consume": false,
+              "title": "Подготовить ещё 2 суннариума"
+            }
+          ],
+          "description": [
+            "Продвинутая панель даёт заметно больше EU, чем обычная солнечная, и работает даже сквозь дождь.",
+            "Днём она кормит машины, а излишки лучше складывать в MFE."
+          ],
+          "dependencies": [
+            "ic2a_sunnarium"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "ore": "ingotCopper",
+              "count": 8,
+              "consume": false
+            }
+          ],
+          "x": 2,
+          "y": -4
+        },
+        {
+          "id": "ic2a_hybrid_solar",
+          "title": "Гибридная солнечная панель",
+          "icon": "AdvancedSolarPanel:hybrid_solar_helmet",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "AdvancedSolarPanel:hybrid_solar_helmet",
+              "count": 1,
+              "title": "Собрать гибридный шлем"
+            }
+          ],
+          "description": [
+            "Гибридный шлем — это и шлем, и панель: носить его можно вместо обычной брони и заряжать надетые приборы.",
+            "Панель работает ночью, пусть и слабее."
+          ],
+          "dependencies": [
+            "ic2a_adv_solar"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 3,
+          "y": -3
+        },
+        {
+          "id": "ic2a_ultimate_helmet",
+          "title": "Ультимативный шлем",
+          "icon": "AdvancedSolarPanel:ultimate_solar_helmet",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "AdvancedSolarPanel:ultimate_solar_helmet",
+              "count": 1,
+              "title": "Собрать ультимативный шлем"
+            },
+            {
+              "type": "item",
+              "ore": "craftingSunnarium",
+              "count": 8,
+              "consume": false,
+              "title": "Заготовить 8 суннариума"
+            }
+          ],
+          "description": [
+            "Самый мощный солнечный шлем пакета: держит заряд даже в пещере и под водой."
+          ],
+          "dependencies": [
+            "ic2a_hybrid_solar"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "item",
+              "ore": "gemDiamond",
+              "count": 1,
+              "consume": false
+            }
+          ],
+          "x": 4,
+          "y": -4
+        },
+        {
+          "id": "ic2a_transformer",
+          "title": "Молекулярный трансформатор",
+          "icon": "AdvancedSolarPanel:BlockMolecularTransformer",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "AdvancedSolarPanel:BlockMolecularTransformer",
+              "count": 1,
+              "title": "Собрать молекулярный трансформатор"
+            },
+            {
+              "type": "checkmark",
+              "title": "Запустить трансформатор и получить первый предмет из энергии"
+            }
+          ],
+          "description": [
+            "Молекулярный трансформатор превращает EU и материалы в готовые вещи, минуя крафт.",
+            "Машина прожорлива: запаситесь ультимативной панелью и большим буфером."
+          ],
+          "dependencies": [
+            "ic2a_ultimate_helmet"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "ore": "ingotCopper",
+                  "count": 32,
+                  "consume": false
+                },
+                {
+                  "type": "item",
+                  "item": "IC2:itemBatRE",
+                  "count": 4
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": -3
+        },
+        {
+          "id": "ic2a_adv_machines",
+          "title": "Скоростные машины",
+          "icon": "AdvancedMachines:blockAdvMachine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "AdvancedMachines:blockAdvMachine",
+              "count": 1,
+              "title": "Собрать продвинутую машину"
+            },
+            {
+              "type": "item",
+              "ore": "circuitAdvanced",
+              "count": 2,
+              "consume": true,
+              "title": "Сдать 2 продвинутые схемы"
+            }
+          ],
+          "description": [
+            "Роторный дробильщик, компрессор-сингулярность и центрифуга-экстрактор работают в разы быстрее обычных машин.",
+            "Они требуют MV-питания, так что сначала подтяните энергосеть."
+          ],
+          "dependencies": [
+            "ic2a_circuit"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "ore": "ingotBronze",
+              "count": 8,
+              "consume": false
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "ic2a_iron_chest",
+          "title": "Железный сундук",
+          "icon": "IronChest:BlockIronChest",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IronChest:BlockIronChest",
+              "count": 1,
+              "title": "Собрать железный сундук"
+            }
+          ],
+          "description": [
+            "Железный сундук вмещает больше обычного, а главное — его можно улучшать дальше апгрейдами.",
+            "Поставьте рядом с верстаком: перекладывать вещи станет удобнее."
+          ],
+          "dependencies": [
+            "ic2a_circuit"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "IronChest:woodIronUpgrade",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "IronChest:woodCopperUpgrade",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 1,
+          "y": 0
+        },
+        {
+          "id": "ic2a_chest_upgrades",
+          "title": "Апгрейды сундуков",
+          "icon": "IronChest:diamondObsidianUpgrade",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IronChest:ironGoldUpgrade",
+              "count": 1,
+              "title": "Железо в золото"
+            },
+            {
+              "type": "craft",
+              "item": "IronChest:goldDiamondUpgrade",
+              "count": 1,
+              "title": "Золото в алмаз"
+            },
+            {
+              "type": "craft",
+              "item": "IronChest:diamondObsidianUpgrade",
+              "count": 1,
+              "title": "Алмаз в обсидиан"
+            }
+          ],
+          "description": [
+            "Апгрейд ставится на сундук и заменяет его на следующий уровень — содержимое при этом остаётся на месте.",
+            "Обсидиановый сундук — рекордсмен по объёму в этой линейке."
+          ],
+          "dependencies": [
+            "ic2a_iron_chest"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "item",
+              "item": "IronChest:copperSilverUpgrade",
+              "count": 1
+            }
+          ],
+          "x": 2,
+          "y": -2
+        },
+        {
+          "id": "ic2a_backpack",
+          "title": "Рюкзак за плечами",
+          "icon": "Backpack:backpack",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Backpack:backpack",
+              "count": 1,
+              "title": "Сшить рюкзак"
+            },
+            {
+              "type": "craft",
+              "item": "Backpack:boundLeather",
+              "count": 4,
+              "title": "Связать 4 кожи"
+            }
+          ],
+          "description": [
+            "Рюкзак носится на спине и освобождает инвентарь в дальних походах."
+          ],
+          "dependencies": [
+            "ic2a_circuit"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "ic2a_workbench_backpack",
+          "title": "Рюкзак-верстак",
+          "icon": "Backpack:workbenchbackpack",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Backpack:workbenchbackpack",
+              "count": 1,
+              "title": "Собрать рюкзак-верстак"
+            }
+          ],
+          "description": [
+            "Внутри такого рюкзака спрятан верстак — крафтить можно где угодно, не возвращаясь домой."
+          ],
+          "dependencies": [
+            "ic2a_backpack"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "ic2a_adv_lappack",
+          "title": "Продвинутый ранец",
+          "icon": "GraviSuite:advLappack",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GraviSuite:advLappack",
+              "count": 1,
+              "title": "Собрать продвинутый ранец"
+            },
+            {
+              "type": "item",
+              "ore": "circuitAdvanced",
+              "count": 2,
+              "consume": true,
+              "title": "Сдать 2 продвинутые схемы"
+            }
+          ],
+          "description": [
+            "Advanced Lappack — база всей линейки GraviSuite: он заряжает надетые приборы и сам копит энергию.",
+            "Носите его в слоте нагрудника, пока не соберёте что-то серьёзнее."
+          ],
+          "dependencies": [
+            "ic2a_energy_crystal"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemBatCrystal",
+              "count": 1
+            }
+          ],
+          "x": 2,
+          "y": -5
+        },
+        {
+          "id": "ic2a_jetpack",
+          "title": "Продвинутый реактивный ранец",
+          "icon": "GraviSuite:advJetpack",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GraviSuite:advJetpack",
+              "count": 1,
+              "title": "Собрать электрический реактивный ранец"
+            }
+          ],
+          "description": [
+            "Ракетный ранец поднимает в воздух и мягко гасит падение, если в нём есть заряд.",
+            "Следите за энергией: пустой ранец превращается в обычный груз за спиной."
+          ],
+          "dependencies": [
+            "ic2a_adv_lappack"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemBatChargeAdv",
+              "count": 1
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "ic2a_ultimate_lappack",
+          "title": "Ультимативный ранец",
+          "icon": "GraviSuite:ultimateLappack",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GraviSuite:ultimateLappack",
+              "count": 1,
+              "title": "Апгрейднуть ранец до ультимативного"
+            }
+          ],
+          "description": [
+            "Ultimate Lappack держит огромный запас EU и питает сразу все надетые приборы."
+          ],
+          "dependencies": [
+            "ic2a_jetpack"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 110
+            },
+            {
+              "type": "item",
+              "ore": "gemDiamond",
+              "count": 1,
+              "consume": false
+            }
+          ],
+          "x": 4,
+          "y": -2
+        },
+        {
+          "id": "ic2a_adv_nano",
+          "title": "Продвинутый нагрудник",
+          "icon": "GraviSuite:advNanoChestPlate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GraviSuite:advNanoChestPlate",
+              "count": 1,
+              "title": "Собрать продвинутый нанонагрудник"
+            },
+            {
+              "type": "item",
+              "ore": "plateCopper",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 медные пластины"
+            }
+          ],
+          "description": [
+            "Advanced NanoChestPlate — броня и источник питания в одном слоте: он питает джетпак и инструменты.",
+            "Это последний шаг перед гравитационным костюмом."
+          ],
+          "dependencies": [
+            "ic2a_adv_lappack"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            }
+          ],
+          "x": 3,
+          "y": 1
+        },
+        {
+          "id": "ic2a_gravi_chest",
+          "title": "Гравитационный нагрудник",
+          "icon": "GraviSuite:graviChestPlate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GraviSuite:graviChestPlate",
+              "count": 1,
+              "title": "Собрать гравитационный нагрудник"
+            },
+            {
+              "type": "item",
+              "ore": "plateDenseCopper",
+              "count": 2,
+              "consume": true,
+              "title": "Сдать 2 плотные медные пластины"
+            }
+          ],
+          "description": [
+            "Вершина мода: гравитационный нагрудник даёт полёт, огромный запас энергии и защиту квантового уровня.",
+            "Управление полётом настраивается клавишами мода — попробуйте сразу."
+          ],
+          "dependencies": [
+            "ic2a_adv_nano"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 180
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "ore": "ingotBronze",
+                  "count": 16,
+                  "consume": false
+                },
+                {
+                  "type": "item",
+                  "item": "IC2:itemBatLamaCrystal",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "ic2a_adv_drill",
+          "title": "Продвинутый алмазный бур",
+          "icon": "GraviSuite:advDDrill",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GraviSuite:advDDrill",
+              "count": 1,
+              "title": "Собрать продвинутый алмазный бур"
+            }
+          ],
+          "description": [
+            "Бур копает в режиме 3x3 и не требует топлива — только энергию.",
+            "Идеален для скоростной проходки туннелей."
+          ],
+          "dependencies": [
+            "ic2a_adv_nano"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "item",
+              "ore": "gemDiamond",
+              "count": 2,
+              "consume": false
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "ic2a_adv_chainsaw",
+          "title": "Продвинутая бензопила",
+          "icon": "GraviSuite:advChainsaw",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GraviSuite:advChainsaw",
+              "count": 1,
+              "title": "Собрать продвинутую бензопилу"
+            }
+          ],
+          "description": [
+            "Пилит дерево быстрее алмазного топора и заодно неплохо рубит мобов."
+          ],
+          "dependencies": [
+            "ic2a_adv_nano"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "item",
+              "ore": "ingotIron",
+              "count": 8,
+              "consume": false
+            }
+          ],
+          "x": 4,
+          "y": 1
+        },
+        {
+          "id": "ic2a_gravi_tool",
+          "title": "Мультитул",
+          "icon": "GraviSuite:graviTool",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GraviSuite:graviTool",
+              "count": 1,
+              "title": "Собрать гравитационный мультитул"
+            }
+          ],
+          "description": [
+            "GraviTool переключается между буровой, пилой, отвёрткой и ключом — один предмет вместо целого набора инструментов.",
+            "Режим меняется клавишей прямо в руке."
+          ],
+          "dependencies": [
+            "ic2a_adv_drill",
+            "ic2a_adv_chainsaw"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 130
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "ic2a_vajra",
+          "title": "Ваджра",
+          "icon": "GraviSuite:vajra",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GraviSuite:vajra",
+              "count": 1,
+              "title": "Собрать ваджру"
+            },
+            {
+              "type": "item",
+              "ore": "gemDiamond",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 алмаза"
+            }
+          ],
+          "description": [
+            "Ваджра ломает почти любой блок с одного удара и бьёт молнией.",
+            "Дорогое удовольствие, но копать с ней — чистое удовольствие."
+          ],
+          "dependencies": [
+            "ic2a_gravi_tool"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 160
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemToolMiningLaser",
+              "count": 1
+            }
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "id": "ic2a_sonic",
+          "title": "Звуковая пушка",
+          "icon": "GraviSuite:sonicLauncher",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GraviSuite:sonicLauncher",
+              "count": 1,
+              "title": "Собрать звуковую пушку"
+            },
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 8,
+              "title": "Отогнать 8 зомби"
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 8,
+              "title": "Отогнать 8 скелетов"
+            }
+          ],
+          "description": [
+            "Sonic Launcher бьёт звуковой волной: отбрасывает мобов и сносит слабые блоки без взрывов."
+          ],
+          "dependencies": [
+            "ic2a_vajra"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:golden_apple",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "IC2:itemBatChargeAdv",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "ic2a_relocator",
+          "title": "Телепорт-переносчик",
+          "icon": "GraviSuite:relocator",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GraviSuite:relocator",
+              "count": 1,
+              "title": "Собрать переносчик"
+            },
+            {
+              "type": "craft",
+              "item": "GraviSuite:BlockRelocatorPortal",
+              "count": 1,
+              "title": "Поставить портал переноса"
+            }
+          ],
+          "description": [
+            "Relocator запоминает точку и переносит вас туда вместе с порталом.",
+            "Удобная замена дальней дороге домой."
+          ],
+          "dependencies": [
+            "ic2a_gravi_chest"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 140
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemBatLamaCrystal",
+              "count": 1
+            }
+          ],
+          "x": 5,
+          "y": -2
+        },
+        {
+          "id": "ic2a_superconductor",
+          "title": "Сверхпроводящая оболочка",
+          "icon": "GraviSuite:itemSimpleItem",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "craftingMolecularTransformer",
+              "count": 1,
+              "consume": false,
+              "title": "Проверить трансформатор"
+            },
+            {
+              "type": "checkmark",
+              "title": "Сделать сверхпроводящую оболочку и вставить её в прибор GraviSuite"
+            }
+          ],
+          "description": [
+            "Сверхпроводящая оболочка снижает потери энергии в приборах GraviSuite."
+          ],
+          "dependencies": [
+            "ic2a_transformer",
+            "ic2a_gravi_chest"
+          ],
+          "optional": true,
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "ic2a_solar_helmet",
+          "title": "Продвинутый солнечный шлем",
+          "icon": "AdvancedSolarPanel:advanced_solar_helmet",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "AdvancedSolarPanel:advanced_solar_helmet",
+              "count": 1,
+              "title": "Собрать продвинутый солнечный шлем"
+            },
+            {
+              "type": "checkmark",
+              "title": "Надеть шлем и дождаться, пока он зарядит приборы"
+            }
+          ],
+          "description": [
+            "Advanced Solar Helmet — промежуточное звено между обычным шлемом и гибридным: он заряжает надетые приборы прямо на голове.",
+            "Ночью и под дождём работает слабее, но заряд не теряет."
+          ],
+          "dependencies": [
+            "ic2a_adv_solar"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "ore": "ingotCopper",
+              "count": 8,
+              "consume": false
+            }
+          ],
+          "x": 3,
+          "y": -2
+        },
+        {
+          "id": "ic2a_sun_battery",
+          "title": "Запас суннариума",
+          "icon": "AdvancedSolarPanel:asp_crafting_items",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "craftingSunnarium",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 суннариума"
+            },
+            {
+              "type": "checkmark",
+              "title": "Накопить излишки EU в MFE или MFS"
+            }
+          ],
+          "description": [
+            "Суннариума никогда не бывает много: он уходит и на панели, и на дальнейшие апгрейды.",
+            "Держите буфер заряженным, чтобы ночью машины не простаивали."
+          ],
+          "dependencies": [
+            "ic2a_hybrid_solar"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "minecraft:glowstone_dust",
+              "count": 16
+            }
+          ],
+          "x": 4,
+          "y": -3
+        },
+        {
+          "id": "ic2a_chest_midline",
+          "title": "Средние апгрейды сундуков",
+          "icon": "IronChest:copperIronUpgrade",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IronChest:copperIronUpgrade",
+              "count": 1,
+              "title": "Медь в железо"
+            },
+            {
+              "type": "craft",
+              "item": "IronChest:copperSilverUpgrade",
+              "count": 1,
+              "title": "Медь в серебро"
+            },
+            {
+              "type": "craft",
+              "item": "IronChest:silverGoldUpgrade",
+              "count": 1,
+              "title": "Серебро в золото"
+            }
+          ],
+          "description": [
+            "Медный, серебряный и железный сундуки — середина линейки IronChest: дешевле алмазных, но заметно вместительнее деревянных.",
+            "Апгрейды можно переносить с сундука на сундук вместе с содержимым."
+          ],
+          "dependencies": [
+            "ic2a_chest_upgrades"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "item",
+              "item": "minecraft:chest",
+              "count": 4
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "ic2a_chest_crystal",
+          "title": "Кристальный сундук",
+          "icon": "IronChest:diamondCrystalUpgrade",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IronChest:diamondCrystalUpgrade",
+              "count": 1,
+              "title": "Собрать алмазно-кристальный апгрейд"
+            },
+            {
+              "type": "checkmark",
+              "title": "Поставить кристальный сундук и разложить в нём вещи"
+            }
+          ],
+          "description": [
+            "Кристальный сундук — один из самых ёмких в моде и отлично подходит под склад ресурсов.",
+            "Поставьте его рядом с машинами, чтобы не бегать с вещами через полбазы."
+          ],
+          "dependencies": [
+            "ic2a_chest_midline"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 130
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:diamond",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "IronChest:copperSilverUpgrade",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 4,
+          "y": 2
+        },
+        {
+          "id": "ic2a_tanned_leather",
+          "title": "Выделанная кожа",
+          "icon": "Backpack:tannedLeather",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Backpack:tannedLeather",
+              "count": 4,
+              "title": "Выделать 4 куска кожи"
+            }
+          ],
+          "description": [
+            "Выделанная кожа прочнее обычной и нужна для более вместительных рюкзаков."
+          ],
+          "dependencies": [
+            "ic2a_backpack"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "Backpack:boundLeather",
+              "count": 4
+            }
+          ],
+          "x": 2,
+          "y": 2
+        },
+        {
+          "id": "ic2a_backpack_leather",
+          "title": "Мастерская кожевника",
+          "icon": "Backpack:boundLeather",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Backpack:boundLeather",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 связанной кожи"
+            },
+            {
+              "type": "item",
+              "item": "Backpack:tannedLeather",
+              "count": 4,
+              "consume": false,
+              "title": "Держать про запас 4 выделанной кожи"
+            }
+          ],
+          "description": [
+            "Связанная кожа — расходный материал: она рвётся при улучшении рюкзака.",
+            "Держите запас, чтобы не бегать за коровами посреди похода."
+          ],
+          "dependencies": [
+            "ic2a_tanned_leather"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "item",
+              "item": "minecraft:leather",
+              "count": 8
+            }
+          ],
+          "x": 3,
+          "y": 2
+        },
+        {
+          "id": "ic2a_machine_bank",
+          "title": "Цех скоростных машин",
+          "icon": "AdvancedMachines:blockAdvMachine",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "plateCopper",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 медных пластин"
+            },
+            {
+              "type": "item",
+              "ore": "circuitAdvanced",
+              "count": 2,
+              "consume": true,
+              "title": "Сдать 2 продвинутые схемы"
+            },
+            {
+              "type": "checkmark",
+              "title": "Построить вторую скоростную машину и запустить её"
+            }
+          ],
+          "description": [
+            "Одна скоростная машина — эксперимент, три подряд — уже производство.",
+            "Пластины и схемы уйдут на корпуса и обвязку нового цеха."
+          ],
+          "dependencies": [
+            "ic2a_adv_machines"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:iron_ingot",
+                  "count": 32
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:redstone",
+                  "count": 32
+                }
+              ]
+            }
+          ],
+          "x": 2,
+          "y": -3
+        },
+        {
+          "id": "ic2a_mob_hunt",
+          "title": "Ночная зачистка",
+          "icon": "minecraft:bow",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 12,
+              "title": "Отогнать 12 зомби"
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 12,
+              "title": "Отогнать 12 скелетов"
+            },
+            {
+              "type": "kill",
+              "entity": "Creeper",
+              "count": 8,
+              "title": "Отогнать 8 крипперов"
+            }
+          ],
+          "description": [
+            "База с панелями и приборами слишком заметна: по ночам к ней тянет всю округу.",
+            "Возьмите оружие получше и расчистите подходы к стенам."
+          ],
+          "dependencies": [
+            "ic2a_vajra"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 110
+            },
+            {
+              "type": "item",
+              "item": "minecraft:arrow",
+              "count": 32
+            }
+          ],
+          "x": 7,
+          "y": 0
+        },
+        {
+          "id": "ic2a_ender_hunt",
+          "title": "Охота на эндерменов",
+          "icon": "minecraft:ender_pearl",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Enderman",
+              "count": 6,
+              "title": "Отогнать 6 эндерменов"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:ender_pearl",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 жемчуга Края"
+            }
+          ],
+          "description": [
+            "Жемчуг Края пригодится для телепортации и редких крафтов, но эндермены сами лезут к вашим сундукам.",
+            "Не смотрите им в глаза без хорошей брони."
+          ],
+          "dependencies": [
+            "ic2a_mob_hunt"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:diamond",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:golden_apple",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 8,
+          "y": -1
+        },
+        {
+          "id": "ic2a_nether_trip",
+          "title": "Вылазка в Нижний мир",
+          "icon": "minecraft:blaze_rod",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Blaze",
+              "count": 8,
+              "title": "Отогнать 8 всполохов"
+            },
+            {
+              "type": "kill",
+              "entity": "PigZombie",
+              "count": 6,
+              "title": "Отогнать 6 зомби-свинозомби"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:blaze_rod",
+              "count": 6,
+              "consume": true,
+              "title": "Сдать 6 огненных стержней"
+            }
+          ],
+          "description": [
+            "Огненные стержни — топливо и материал для продвинутых крафтов, а добыть их можно только в аду.",
+            "В гравитационном нагруднике отступление от лавы даётся куда легче."
+          ],
+          "dependencies": [
+            "ic2a_gravi_chest"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 140
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:gold_ingot",
+                  "count": 16
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:glowstone",
+                  "count": 16
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "ic2a_field_kitchen",
+          "title": "Полевая кухня",
+          "icon": "minecraft:cake",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:cake",
+              "count": 1,
+              "title": "Испечь торт"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:cooked_beef",
+              "count": 8,
+              "consume": false,
+              "title": "Запасти 8 стейков"
+            }
+          ],
+          "description": [
+            "Долгие походы отнимают сытость: пара стейков и торт в рюкзаке спасают от голодной смерти.",
+            "Держите еду в инвентаре, а не в сундуке у входа."
+          ],
+          "dependencies": [
+            "ic2a_backpack"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "minecraft:bread",
+              "count": 8
+            }
+          ],
+          "x": 2,
+          "y": 3
+        },
+        {
+          "id": "ic2a_workshop_light",
+          "title": "Освещение мастерской",
+          "icon": "minecraft:glowstone",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:redstone_lamp",
+              "count": 4,
+              "title": "Собрать 4 редстоун-лампы"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:glowstone",
+              "count": 8,
+              "consume": false,
+              "title": "Запасти 8 светокамня"
+            }
+          ],
+          "description": [
+            "В тёмном цеху плодятся мобы, а разглядеть приборы мешает сумрак.",
+            "Редстоун-лампы включаются рычагом и не мешают спать в кровати рядом."
+          ],
+          "dependencies": [
+            "ic2a_iron_chest"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "ore": "dustRedstone",
+              "count": 16,
+              "consume": false
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "ic2a_sorting",
+          "title": "Сортировка предметов",
+          "icon": "minecraft:hopper",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:hopper",
+              "count": 2,
+              "title": "Собрать 2 воронки"
+            },
+            {
+              "type": "checkmark",
+              "title": "Наладить автоматическую сортировку: воронки, сундуки, раздатчики"
+            }
+          ],
+          "description": [
+            "Воронки сами перекладывают добычу из машин в сундуки — ручной перенос вещей остаётся в прошлом.",
+            "Разложите линии по типам ресурсов, иначе склад быстро превратится в кашу."
+          ],
+          "dependencies": [
+            "ic2a_chest_crystal"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "minecraft:chest",
+              "count": 8
+            }
+          ],
+          "x": 5,
+          "y": 1
+        },
+        {
+          "id": "ic2a_rail_road",
+          "title": "Рельсовая дорога",
+          "icon": "minecraft:minecart",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:minecart",
+              "count": 1,
+              "title": "Собрать вагонетку"
+            },
+            {
+              "type": "craft",
+              "item": "minecraft:rail",
+              "count": 16,
+              "title": "Сделать 16 рельсов"
+            }
+          ],
+          "description": [
+            "Рельсы между шахтой и базой экономят время и обувь: гружёная вагонетка едет быстрее любого рюкзака.",
+            "Проложите ветку до дальней выработки — потом спасибо скажете."
+          ],
+          "dependencies": [
+            "ic2a_iron_chest"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "minecraft:minecart",
+              "count": 2
+            }
+          ],
+          "x": 2,
+          "y": 0
+        }
+      ]
+    }
+  ]
+}

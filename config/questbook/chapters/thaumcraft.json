@@ -1,0 +1,1355 @@
+{
+  "title": "Thaumcraft",
+  "chapters": [
+    {
+      "id": "thaumcraft",
+      "title": "Thaumcraft",
+      "description": "Аспекты, исследования, тигель, таумий, големы и Запределье — путь тауматурга от первой палочки до глаза Древних.",
+      "icon": "Thaumcraft:ItemThaumonomicon",
+      "requiredMod": "Thaumcraft",
+      "quests": [
+        {
+          "id": "thaum_wand",
+          "title": "Железная палочка",
+          "icon": "Thaumcraft:WandCasting",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:WandCasting",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Первая палочка собирается из железных наконечников и деревянного древка."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 15
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "thaum_book",
+          "title": "Таумономикон",
+          "icon": "Thaumcraft:ItemThaumonomicon",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemThaumonomicon",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Главная книга мода: в ней открываются исследования и рецепты."
+          ],
+          "dependencies": [
+            "thaum_wand"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "thaum_greatwood",
+          "title": "Великое дерево",
+          "icon": "Thaumcraft:blockMagicalLog",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Thaumcraft:blockMagicalLog",
+              "count": 8,
+              "consume": false,
+              "title": "Собрать брёвна великого дерева"
+            },
+            {
+              "type": "item",
+              "ore": "treeSapling",
+              "count": 1,
+              "consume": false,
+              "title": "Найти волшебный саженец"
+            }
+          ],
+          "description": [
+            "Волшебные деревья растут в магическом лесу и дают древесину для палочек.",
+            "Саженец можно вырастить дома."
+          ],
+          "dependencies": [
+            "thaum_wand"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 1,
+          "y": 0
+        },
+        {
+          "id": "thaum_thaumometer",
+          "title": "Таумометр",
+          "icon": "Thaumcraft:ItemThaumometer",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemThaumometer",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Прибор показывает аспекты предметов — с него начинается любое исследование."
+          ],
+          "dependencies": [
+            "thaum_book"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 2,
+          "y": -2
+        },
+        {
+          "id": "thaum_scan",
+          "title": "Первые замеры",
+          "icon": "Thaumcraft:ItemThaumometer",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Просканировать таумометром 10 разных предметов"
+            }
+          ],
+          "description": [
+            "Наведите таумометр на блок или вещь и подержите: так открываются новые аспекты."
+          ],
+          "dependencies": [
+            "thaum_thaumometer"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 3,
+          "y": -2
+        },
+        {
+          "id": "thaum_scribing",
+          "title": "Письменные принадлежности",
+          "icon": "Thaumcraft:ItemInkwell",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemInkwell",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Чернильница с пером нужна, чтобы записывать исследования на бумаге."
+          ],
+          "dependencies": [
+            "thaum_book"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            },
+            {
+              "type": "item",
+              "item": "minecraft:paper",
+              "count": 8
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "thaum_research",
+          "title": "Первое исследование",
+          "icon": "Thaumcraft:blockTable",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:blockTable",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Провести первое исследование за столом"
+            }
+          ],
+          "description": [
+            "Стол исследователя собирается из обычного стола, чернильницы и бумаги.",
+            "Соединяйте аспекты на сетке, пока не откроете новую запись в Таумономиконе."
+          ],
+          "dependencies": [
+            "thaum_scribing"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "Thaumcraft:ItemResearchNotes",
+              "count": 1
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "thaum_shards",
+          "title": "Магические минералы",
+          "icon": "Thaumcraft:ItemShard",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "materialAspectShard",
+              "count": 6,
+              "consume": false,
+              "title": "Собрать 6 осколков стихий"
+            },
+            {
+              "type": "item",
+              "ore": "oreCinnabar",
+              "count": 2,
+              "consume": false,
+              "title": "Добыть киноварь"
+            }
+          ],
+          "description": [
+            "Осколки шести стихий и киноварь — основа алхимии и магических крафтов."
+          ],
+          "dependencies": [
+            "thaum_book"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "id": "thaum_workbench",
+          "title": "Магический верстак",
+          "icon": "Thaumcraft:blockTable",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Собрать магический верстак"
+            }
+          ],
+          "description": [
+            "Магический верстак тратит вис из палочки, но умеет крафтить то, что недоступно обычному."
+          ],
+          "dependencies": [
+            "thaum_research",
+            "thaum_shards"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "thaum_wand_upgrade",
+          "title": "Палочка получше",
+          "icon": "Thaumcraft:WandRod",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:WandCap",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:WandRod",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Наконечник и древко — заготовки для второй палочки, которая держит больше вис."
+          ],
+          "dependencies": [
+            "thaum_greatwood",
+            "thaum_workbench"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 5,
+          "y": -2
+        },
+        {
+          "id": "thaum_focus",
+          "title": "Фокусы для палочки",
+          "icon": "Thaumcraft:FocusFire",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:FocusFire",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:FocusShock",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Фокус вставляется в палочку и даёт ей заклинание.",
+            "Огонь поджигает цель, разряд бьёт током и цепляет соседей."
+          ],
+          "dependencies": [
+            "thaum_wand_upgrade"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 6,
+          "y": -2
+        },
+        {
+          "id": "thaum_crucible",
+          "title": "Тигель и банки",
+          "icon": "Thaumcraft:blockMetalDevice",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:blockMetalDevice",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:blockJar",
+              "count": 2
+            }
+          ],
+          "description": [
+            "В тигле плавятся предметы и выделяется эссенция.",
+            "Банки хранят её и не дают аспектам улетучиться."
+          ],
+          "dependencies": [
+            "thaum_workbench"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "thaum_furnace",
+          "title": "Алхимическая печь",
+          "icon": "Thaumcraft:blockStoneDevice",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:blockStoneDevice",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Печь перегоняет предметы в эссенцию — быстрее и чище, чем тигель."
+          ],
+          "dependencies": [
+            "thaum_crucible"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "thaum_tubes",
+          "title": "Эссенция по трубам",
+          "icon": "Thaumcraft:blockTube",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:blockTube",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:blockEssentiaReservoir",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Трубы и резервуар разводят эссенцию по лаборатории и запасают её на будущее."
+          ],
+          "dependencies": [
+            "thaum_furnace"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 7,
+          "y": -2
+        },
+        {
+          "id": "thaum_thaumium",
+          "title": "Таумий",
+          "icon": "Thaumcraft:ItemPickThaumium",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemSwordThaumium",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemPickThaumium",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemAxeThaumium",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemShovelThaumium",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemHoeThaumium",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Таумий плавится в тигле из железа и праэкантатио — из него выходят лёгкие и прочные инструменты."
+          ],
+          "dependencies": [
+            "thaum_crucible"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "id": "thaum_armor",
+          "title": "Таумиевая броня",
+          "icon": "Thaumcraft:ItemChestplateThaumium",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemHelmetThaumium",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemChestplateThaumium",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemLeggingsThaumium",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemBootsThaumium",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Полный таумиевый доспех защищает почти как железный, но даёт бонус к зачарованиям."
+          ],
+          "dependencies": [
+            "thaum_thaumium"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 7,
+          "y": 0
+        },
+        {
+          "id": "thaum_fortress",
+          "title": "Крепость тауматурга",
+          "icon": "Thaumcraft:ItemChestplateFortress",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemHelmetFortress",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemChestplateFortress",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemLeggingsFortress",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Броня-крепость собирается на алтаре инфузии и держит удар лучше обычного таумия."
+          ],
+          "dependencies": [
+            "thaum_armor"
+          ],
+          "rewards": [
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "Thaumcraft:WandCap",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "Thaumcraft:ItemInkwell",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 8,
+          "y": -1
+        },
+        {
+          "id": "thaum_goggles",
+          "title": "Очки раскрытия",
+          "icon": "Thaumcraft:ItemGoggles",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemGoggles",
+              "count": 1
+            }
+          ],
+          "description": [
+            "В очках видно вис в узлах, ауру и аспекты — без них исследования идут вслепую."
+          ],
+          "dependencies": [
+            "thaum_thaumometer",
+            "thaum_thaumium"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 7,
+          "y": -3
+        },
+        {
+          "id": "thaum_brain",
+          "title": "Мозги для големов",
+          "icon": "Thaumcraft:ItemZombieBrain",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 10
+            },
+            {
+              "type": "item",
+              "item": "Thaumcraft:ItemZombieBrain",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 мозга"
+            }
+          ],
+          "description": [
+            "Зомби иногда роняют мозги, а без них не собрать ни один анимационный сердечник."
+          ],
+          "dependencies": [
+            "thaum_crucible"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 6,
+          "y": 1
+        },
+        {
+          "id": "thaum_golem_bell",
+          "title": "Колокольчик големанта",
+          "icon": "Thaumcraft:GolemBell",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:GolemBell",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Колокольчик назначает голему дом, сундук и маршрут работы."
+          ],
+          "dependencies": [
+            "thaum_furnace",
+            "thaum_brain"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 7,
+          "y": 1
+        },
+        {
+          "id": "thaum_golem",
+          "title": "Первый голем",
+          "icon": "Thaumcraft:ItemGolemPlacer",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemGolemPlacer",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemGolemCore",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Сердечник задаёт профессию, соломенный корпус — тело.",
+            "Поставьте голема и позвоните в колокольчик, чтобы он занялся делом."
+          ],
+          "dependencies": [
+            "thaum_golem_bell"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 8,
+          "y": 1
+        },
+        {
+          "id": "thaum_infusion",
+          "title": "Магическая инфузия",
+          "icon": "Thaumcraft:ItemCrystalEssence",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Построить алтарь инфузии и провести первый ритуал"
+            }
+          ],
+          "description": [
+            "Алтарь инфузии окружите пьедесталами и магическими стойками со стабилизаторами.",
+            "Ритуал переносит аспекты из предметов в готовую вещь."
+          ],
+          "dependencies": [
+            "thaum_tubes",
+            "thaum_crucible",
+            "thaum_armor"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 8,
+          "y": -3
+        },
+        {
+          "id": "thaum_traveller",
+          "title": "Сапоги путешественника",
+          "icon": "Thaumcraft:BootsTraveller",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:BootsTraveller",
+              "count": 1
+            }
+          ],
+          "description": [
+            "В этих сапогах выше шаг и прыжок, а падение почти не бьёт."
+          ],
+          "dependencies": [
+            "thaum_infusion"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 9,
+          "y": 1
+        },
+        {
+          "id": "thaum_harness",
+          "title": "Таумостатическая упряжь",
+          "icon": "Thaumcraft:HoverHarness",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:HoverHarness",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemGirdleHover",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Упряжь и пояс поднимают в воздух и позволяют парить над пропастями."
+          ],
+          "dependencies": [
+            "thaum_traveller"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 10,
+          "y": -2
+        },
+        {
+          "id": "thaum_void",
+          "title": "Пустотный металл",
+          "icon": "Thaumcraft:ItemPickVoid",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemPickVoid",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemSwordVoid",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemAxeVoid",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Пустотный металл выковывается у алтаря и сам чинит себя за счёт вис."
+          ],
+          "dependencies": [
+            "thaum_infusion"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            }
+          ],
+          "x": 9,
+          "y": 2
+        },
+        {
+          "id": "thaum_eldritch",
+          "title": "Глаз Древних",
+          "icon": "Thaumcraft:ItemEldritchObject",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Thaumcraft:ItemEldritchObject",
+              "count": 1,
+              "consume": false,
+              "title": "Найти глаз Древних"
+            },
+            {
+              "type": "checkmark",
+              "title": "Побывать в Запределье"
+            }
+          ],
+          "description": [
+            "Глаз Древних открывает проход в Запределье — туда, где тауматурга ждёт искажение.",
+            "Возьмите с собой успокаивающее мыло: варп не прощает беспечности."
+          ],
+          "dependencies": [
+            "thaum_void"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            }
+          ],
+          "x": 10,
+          "y": -1
+        },
+        {
+          "id": "thaum_bellows",
+          "title": "Кузнечные мехи",
+          "icon": "Thaumcraft:blockWoodenDevice",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:blockWoodenDevice",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Арканные мехи раздувают огонь в алхимической печи и заметно ускоряют перегонку."
+          ],
+          "dependencies": [
+            "thaum_furnace"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "thaum_furnace_adv",
+          "title": "Адская печь",
+          "icon": "Thaumcraft:blockArcaneFurnace",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:blockArcaneFurnace",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Адская печь плавит руду без топлива и даёт больше слитков, чем обычная.",
+            "Поставленные рядом мехи ускоряют её работу."
+          ],
+          "dependencies": [
+            "thaum_bellows",
+            "thaum_infusion"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 9,
+          "y": 3
+        },
+        {
+          "id": "thaum_resonator",
+          "title": "Резонатор эссенции",
+          "icon": "Thaumcraft:ItemResonator",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemResonator",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Резонатор подскажет, какая эссенция идёт по трубам и сколько её осталось в банке."
+          ],
+          "dependencies": [
+            "thaum_tubes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 8,
+          "y": -2
+        },
+        {
+          "id": "thaum_hungry_chest",
+          "title": "Голодный сундук",
+          "icon": "Thaumcraft:blockChestHungry",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:blockChestHungry",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Сундук сам притягивает предметы вокруг и складывает их внутрь без помощи голема."
+          ],
+          "dependencies": [
+            "thaum_tubes",
+            "thaum_golem"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 9,
+          "y": -4
+        },
+        {
+          "id": "thaum_lamp",
+          "title": "Магический свет",
+          "icon": "Thaumcraft:blockMagicBox",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:blockMagicBox",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:blockCandle",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Магический светильник освещает целый зал без единого факела.",
+            "Свечи из жира пригодятся для уюта и алтарных ритуалов."
+          ],
+          "dependencies": [
+            "thaum_workbench"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "thaum_decor",
+          "title": "Строительство в стиле тауматурга",
+          "icon": "Thaumcraft:blockStairsArcaneStone",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:blockStairsArcaneStone",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:blockStairsGreatwood",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:blockCosmeticOpaque",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Ступени из арканного камня и янтарные блоки превращают лабораторию в настоящий магический дом."
+          ],
+          "dependencies": [
+            "thaum_workbench"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:torch",
+              "count": 16
+            }
+          ],
+          "x": 5,
+          "y": 1
+        },
+        {
+          "id": "thaum_food",
+          "title": "Сытный стол",
+          "icon": "Thaumcraft:TripleMeatTreat",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Cow",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:TripleMeatTreat",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "Thaumcraft:ItemManaBean",
+              "count": 2,
+              "consume": true,
+              "title": "Сдать 2 мана-бобы"
+            }
+          ],
+          "description": [
+            "Мясное ассорти надолго утоляет голод, а мана-бобы дают аспекты прямо во время еды."
+          ],
+          "dependencies": [
+            "thaum_research"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "thaum_loot",
+          "title": "Древние сокровища",
+          "icon": "Thaumcraft:ItemLootBag",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Обыскать заброшенные сундуки, урны и ящики"
+            },
+            {
+              "type": "item",
+              "item": "Thaumcraft:ItemLootBag",
+              "count": 3,
+              "consume": false,
+              "title": "Собрать 3 мешка сокровищ"
+            }
+          ],
+          "description": [
+            "В старых урнах и ящиках попадаются редкие вещи, а мешки сокровищ открываются в ценный лут."
+          ],
+          "dependencies": [
+            "thaum_thaumometer"
+          ],
+          "rewards": [
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "Thaumcraft:ItemLootBag",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "Thaumcraft:ItemResearchNotes",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "thaum_golem_upgrade",
+          "title": "Улучшения голема",
+          "icon": "Thaumcraft:ItemGolemUpgrade",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemGolemUpgrade",
+              "count": 2
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemGolemDecoration",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Улучшения добавляют голему скорость и ловкость, а цилиндр — исключительно для солидности."
+          ],
+          "dependencies": [
+            "thaum_golem"
+          ],
+          "rewards": [
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "Thaumcraft:ItemGolemCore",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "Thaumcraft:ItemGolemUpgrade",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 9,
+          "y": -1
+        },
+        {
+          "id": "thaum_trunk",
+          "title": "Ходячий сундук",
+          "icon": "Thaumcraft:TrunkSpawner",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:TrunkSpawner",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Сундук на ножках сам ходит за хозяином и таскает вещи вместо вас."
+          ],
+          "dependencies": [
+            "thaum_golem"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 9,
+          "y": 0
+        },
+        {
+          "id": "thaum_elemental",
+          "title": "Инструменты стихий",
+          "icon": "Thaumcraft:ItemPickaxeElemental",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemPickaxeElemental",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemShovelElemental",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemAxeElemental",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemHoeElemental",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Кирка берёт руду целыми блоками, лопата ровняет землю, топор валит деревья, а тяпка ускоряет рост.",
+            "Все они создаются на алтаре инфузии."
+          ],
+          "dependencies": [
+            "thaum_infusion",
+            "thaum_thaumium"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 9,
+          "y": -3
+        },
+        {
+          "id": "thaum_runes",
+          "title": "Рунические украшения",
+          "icon": "Thaumcraft:ItemAmuletRunic",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemBaubleBlanks",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemAmuletRunic",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemGirdleRunic",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemRingRunic",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Рунические амулет, пояс и кольцо дают щит, который со временем восстанавливается сам."
+          ],
+          "dependencies": [
+            "thaum_infusion",
+            "thaum_armor"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 9,
+          "y": -2
+        },
+        {
+          "id": "thaum_hunt",
+          "title": "Зачистка округи",
+          "icon": "Thaumcraft:ItemSwordThaumium",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Creeper",
+              "count": 8
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 8
+            },
+            {
+              "type": "kill",
+              "entity": "Spider",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Таумиевый клинок быстро расправляется с ночными гостями, скелетами и пауками."
+          ],
+          "dependencies": [
+            "thaum_armor"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            }
+          ],
+          "x": 8,
+          "y": 0
+        },
+        {
+          "id": "thaum_primal_crusher",
+          "title": "Первичный дробитель",
+          "icon": "Thaumcraft:ItemPrimalCrusher",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemPrimalCrusher",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Дробитель крошит камень в щебень и попутно выбивает руду — вершина горного дела тауматурга."
+          ],
+          "dependencies": [
+            "thaum_elemental",
+            "thaum_void"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            }
+          ],
+          "x": 10,
+          "y": 0
+        },
+        {
+          "id": "thaum_sanity",
+          "title": "Лечение варпа",
+          "icon": "Thaumcraft:ItemSanitySoap",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemSanityChecker",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemSanitySoap",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Thaumcraft:ItemBathSalts",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Мыло и соль снимают временный варп, а проверка рассудка покажет, сколько его накопилось.",
+            "Постоянный варп так просто не снять."
+          ],
+          "dependencies": [
+            "thaum_eldritch"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 11,
+          "y": -1
+        }
+      ]
+    }
+  ]
+}

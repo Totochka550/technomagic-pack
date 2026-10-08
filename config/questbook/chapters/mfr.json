@@ -1,0 +1,1280 @@
+{
+  "title": "MineFactory Reloaded",
+  "chapters": [
+    {
+      "id": "mfr",
+      "title": "MineFactory Reloaded",
+      "description": "Фермы, автоматизация и лазерный бур: от каучукового дерева до заводских машин.",
+      "icon": "MineFactoryReloaded:machine.2",
+      "requiredMod": "MineFactoryReloaded",
+      "quests": [
+        {
+          "id": "mfr_rubber_tree",
+          "title": "Каучуковая роща",
+          "icon": "MineFactoryReloaded:rubberwood.sapling",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:rubberwood.sapling",
+              "count": 1,
+              "consume": false,
+              "title": "Найти саженец каучукового дерева"
+            },
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:rubberwood.log",
+              "count": 4,
+              "consume": false,
+              "title": "Срубить 4 бревна каучукового дерева"
+            }
+          ],
+          "description": [
+            "Каучуковое дерево — источник каучука для всего мода. Срубите пару стволов и посадите саженец рядом с домом, чтобы сырьё не кончалось."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 15
+            },
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:rubberwood.sapling",
+              "count": 2
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "mfr_raw_rubber",
+          "title": "Сырой каучук",
+          "icon": "MineFactoryReloaded:rubber.raw",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "itemRawRubber",
+              "count": 8,
+              "consume": false,
+              "title": "Собрать 8 сырого каучука"
+            }
+          ],
+          "description": [
+            "Брёвна каучукового дерева отдают сырой каучук. Он пригодится и вместо резины из других модов."
+          ],
+          "dependencies": [
+            "mfr_rubber_tree"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "mfr_rubber_bar",
+          "title": "Каучуковые слитки",
+          "icon": "MineFactoryReloaded:rubber.bar",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "itemRubber",
+              "count": 8,
+              "consume": false,
+              "title": "Переплавить 8 каучуковых слитков"
+            }
+          ],
+          "description": [
+            "Сырой каучук плавится в печи в каучуковый слиток. Из слитков делают конвейеры, трубочки и шприцы."
+          ],
+          "dependencies": [
+            "mfr_raw_rubber"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "mfr_raw_plastic",
+          "title": "Сырой пластик",
+          "icon": "MineFactoryReloaded:plastic.raw",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "dustPlastic",
+              "count": 8,
+              "consume": false,
+              "title": "Получить 8 сырого пластика"
+            }
+          ],
+          "description": [
+            "Второй прогон каучука через печь даёт сырой пластик — основу всей автоматизации мода."
+          ],
+          "dependencies": [
+            "mfr_rubber_bar"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "mfr_plastic_sheets",
+          "title": "Пластиковые листы",
+          "icon": "MineFactoryReloaded:plastic.sheet",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:plastic.sheet",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Из сырого пластика катают листы. Это главный конструкционный материал MineFactory Reloaded."
+          ],
+          "dependencies": [
+            "mfr_raw_plastic"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:plastic.raw",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "mfr_machine_block",
+          "title": "Заводской корпус",
+          "icon": "MineFactoryReloaded:machineblock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:machineblock",
+              "count": 3
+            }
+          ],
+          "description": [
+            "Заводской машинный блок — обязательный корпус почти для каждой машины мода. Запаситесь ими заранее."
+          ],
+          "dependencies": [
+            "mfr_plastic_sheets"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:plastic.sheet",
+              "count": 8
+            }
+          ],
+          "x": 5,
+          "y": -3
+        },
+        {
+          "id": "mfr_hammer",
+          "title": "Точный молоток",
+          "icon": "MineFactoryReloaded:hammer",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:hammer",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Молоток мода: поворачивает машины, гнёт конвейеры и переключает каналы RedNet. Без него никуда."
+          ],
+          "dependencies": [
+            "mfr_machine_block"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 6,
+          "y": -8
+        },
+        {
+          "id": "mfr_planter",
+          "title": "Плантатор",
+          "icon": "MineFactoryReloaded:machine.0",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:machine.0",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Плантатор сам высаживает семена и саженцы на грядки в зоне 3x3 над собой. Поставьте его под полем и подайте энергию."
+          ],
+          "dependencies": [
+            "mfr_machine_block"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 6,
+          "y": -7
+        },
+        {
+          "id": "mfr_ejector",
+          "title": "Эжектор",
+          "icon": "MineFactoryReloaded:machine.1",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:machine.1",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Эжектор по красному сигналу выбрасывает предметы из сундука — самый простой способ передать их дальше."
+          ],
+          "dependencies": [
+            "mfr_machine_block"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 6,
+          "y": -6
+        },
+        {
+          "id": "mfr_conveyor",
+          "title": "Конвейерная лента",
+          "icon": "MineFactoryReloaded:conveyor",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:conveyor",
+              "count": 16
+            }
+          ],
+          "description": [
+            "Лента тащит предметы и мобов, а точный молоток меняет её направление.",
+            "Щепотка светящейся пыли ускоряет конвейер."
+          ],
+          "dependencies": [
+            "mfr_ejector"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 7,
+          "y": -3
+        },
+        {
+          "id": "mfr_tank",
+          "title": "Пластиковые баки",
+          "icon": "MineFactoryReloaded:tank",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:tank",
+              "count": 2
+            },
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:cable.plastic",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Баки хранят жидкости и соединяются друг с другом, а пластиковые трубы доведут содержимое до нужного места."
+          ],
+          "dependencies": [
+            "mfr_machine_block"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 6,
+          "y": -5
+        },
+        {
+          "id": "mfr_fertilizer",
+          "title": "Промышленное удобрение",
+          "icon": "MineFactoryReloaded:fertilizer",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:fertilizer",
+              "count": 16
+            }
+          ],
+          "description": [
+            "Пшеница, костная мука, палки и нитки — и вот 16 порций удобрения, которое заметно ускоряет рост посевов."
+          ],
+          "dependencies": [
+            "mfr_machine_block"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 6,
+          "y": -4
+        },
+        {
+          "id": "mfr_fertile_soil",
+          "title": "Плодородная почва",
+          "icon": "MineFactoryReloaded:farmland",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:farmland",
+              "count": 4,
+              "consume": false,
+              "title": "Сделать 4 блока плодородной почвы"
+            }
+          ],
+          "description": [
+            "На плодородной почве растения растут быстрее обычного. Застелите ею площадку под плантатором."
+          ],
+          "dependencies": [
+            "mfr_fertilizer"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 7,
+          "y": -2
+        },
+        {
+          "id": "mfr_ceramic_dye",
+          "title": "Керамический краситель",
+          "icon": "MineFactoryReloaded:ceramicdye",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "dyeCeramicWhite",
+              "count": 4,
+              "consume": false,
+              "title": "Получить 4 керамических красителя"
+            }
+          ],
+          "description": [
+            "Керамический краситель — стойкая краска мода: ею красят конвейеры и делают цветные витражи."
+          ],
+          "dependencies": [
+            "mfr_plastic_sheets"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 5,
+          "y": -2
+        },
+        {
+          "id": "mfr_stained_glass",
+          "title": "Витражи",
+          "icon": "MineFactoryReloaded:stainedglass.block",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:stainedglass.block",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:stainedglass.pane",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Цветные стёкла и панели — это и декор для базы, и материал для лазерных фокусировок."
+          ],
+          "dependencies": [
+            "mfr_ceramic_dye"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 6,
+          "y": 3
+        },
+        {
+          "id": "mfr_rednet_cable",
+          "title": "RedNet-кабель",
+          "icon": "MineFactoryReloaded:cable.redstone",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:cable.redstone",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Кабель RedNet передаёт красный сигнал по 16 цветным каналам на любые расстояния."
+          ],
+          "dependencies": [
+            "mfr_plastic_sheets"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "mfr_rednet_meter",
+          "title": "Метр и память RedNet",
+          "icon": "MineFactoryReloaded:rednet.meter",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:rednet.meter",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать RedNet-метр"
+            },
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:rednet.memorycard",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать карту памяти PRC"
+            },
+            {
+              "type": "checkmark",
+              "title": "Настроить цвет канала молотком на кабеле"
+            }
+          ],
+          "description": [
+            "Метр показывает каналы и уровни сигнала, а карта памяти переносит программы контроллера.",
+            "С этим набором красная пыль превращается в настоящую логику."
+          ],
+          "dependencies": [
+            "mfr_rednet_cable"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:cable.redstone",
+              "count": 8
+            }
+          ],
+          "x": 6,
+          "y": 4
+        },
+        {
+          "id": "mfr_syringes",
+          "title": "Шприцы",
+          "icon": "MineFactoryReloaded:syringe.empty",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:syringe.empty",
+              "count": 4
+            },
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:syringe.health",
+              "count": 1,
+              "consume": false,
+              "title": "Заполнить шприц здоровья"
+            }
+          ],
+          "description": [
+            "Пустой шприц вмещает 1000 mB жидкости и работает как трубочка для мобов: здоровье, рост, зомбификация — на выбор."
+          ],
+          "dependencies": [
+            "mfr_rubber_bar"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:syringe.empty",
+              "count": 4
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "mfr_safari_hunt",
+          "title": "Добыча для ловца",
+          "icon": "MineFactoryReloaded:safarinet.singleuse",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Enderman",
+              "count": 4
+            },
+            {
+              "type": "kill",
+              "entity": "Ghast",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Многоразовому сафари-нету нужны эндер-жемчуг и слеза гаста. Охота на эндерменов и гастов — хорошая тренировка."
+          ],
+          "dependencies": [
+            "mfr_machine_block"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 6,
+          "y": -3
+        },
+        {
+          "id": "mfr_safari_net",
+          "title": "Сафари-нет",
+          "icon": "MineFactoryReloaded:safarinet.reusable",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:safarinet.reusable",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Многоразовый сафари-нет ловит моба и хранит его внутри — так удобно переносить живность домой."
+          ],
+          "dependencies": [
+            "mfr_safari_hunt"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 7,
+          "y": 0
+        },
+        {
+          "id": "mfr_safari_launcher",
+          "title": "Пусковая установка",
+          "icon": "MineFactoryReloaded:safarinet.launcher",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:safarinet.launcher",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Установка стреляет сетью по мобу на расстоянии. Режим ловли и выпуска переключается Shift+ПКМ."
+          ],
+          "dependencies": [
+            "mfr_safari_net"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:safarinet.singleuse",
+              "count": 2
+            }
+          ],
+          "x": 8,
+          "y": -1
+        },
+        {
+          "id": "mfr_portaspawner",
+          "title": "Портативный спавнер",
+          "icon": "MineFactoryReloaded:portaspawner",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:portaspawner",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Портативный спавнер забирает моб-спавнер с собой и ставит его в новом месте. Одноразовый, поэтому выбирайте место сразу."
+          ],
+          "dependencies": [
+            "mfr_safari_launcher"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            }
+          ],
+          "x": 9,
+          "y": -1
+        },
+        {
+          "id": "mfr_needlegun",
+          "title": "Игломёт",
+          "icon": "MineFactoryReloaded:needlegun",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:needlegun",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:needlegun.ammo.empty",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Игломёт стреляет самыми разными зарядами: от игл до лавы и наковален. Магазин можно перезаряжать."
+          ],
+          "dependencies": [
+            "mfr_machine_block"
+          ],
+          "rewards": [
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "MineFactoryReloaded:needlegun.ammo.standard",
+                  "count": 4
+                },
+                {
+                  "type": "item",
+                  "item": "MineFactoryReloaded:potatolauncher",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 6,
+          "y": -2
+        },
+        {
+          "id": "mfr_pink_slime",
+          "title": "Розовая слизь",
+          "icon": "MineFactoryReloaded:pinkslime",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "slimeballPink",
+              "count": 8,
+              "consume": false,
+              "title": "Собрать 8 розовых слизняков"
+            },
+            {
+              "type": "checkmark",
+              "title": "Встретить розового слизня"
+            }
+          ],
+          "description": [
+            "Розовые слизни водятся в сырых биомах и роняют розовые слизняки — из них делают блоки и много полезного."
+          ],
+          "dependencies": [
+            "mfr_plastic_sheets"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:plastic.sheet",
+              "count": 8
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "mfr_laser_drill",
+          "title": "Лазерный бур",
+          "icon": "MineFactoryReloaded:machine.2",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:machine.2",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Бур добывает руду прямо из бедрока: пробейте чистый шахтный ствол вниз и поставьте его сверху.",
+            "Ему нужна энергия, а луч обжигает — не стойте под ним."
+          ],
+          "dependencies": [
+            "mfr_machine_block"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:laserfocus",
+              "count": 1
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "mfr_laser_focus",
+          "title": "Лазерные фокусировки",
+          "icon": "MineFactoryReloaded:laserfocus",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:laserfocus",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Фокусировка задаёт, какую руду выдаст бур; цвет зависит от витража в рецепте. В бур влезает до шести штук."
+          ],
+          "dependencies": [
+            "mfr_laser_drill",
+            "mfr_stained_glass"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "MineFactoryReloaded:plastic.sheet",
+                  "count": 16
+                },
+                {
+                  "type": "item",
+                  "item": "MineFactoryReloaded:cable.redstone",
+                  "count": 8
+                }
+              ]
+            }
+          ],
+          "x": 7,
+          "y": 1
+        },
+        {
+          "id": "mfr_plastic_block",
+          "title": "Пластиковые блоки",
+          "icon": "MineFactoryReloaded:plastic",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "blockPlastic",
+              "count": 4,
+              "consume": false,
+              "title": "Спрессовать 4 блока пластика"
+            }
+          ],
+          "description": [
+            "Листы пластика спрессовываются в блоки — прочный и дешёвый материал для стен, полов и декора."
+          ],
+          "dependencies": [
+            "mfr_plastic_sheets"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:plastic.sheet",
+              "count": 4
+            }
+          ],
+          "x": 5,
+          "y": 1
+        },
+        {
+          "id": "mfr_plastic_armor",
+          "title": "Пластиковая броня",
+          "icon": "MineFactoryReloaded:plastic.chest",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:plastic.helm",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:plastic.chest",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:plastic.legs",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:plastic.boots",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Полный комплект лёгкой брони из пластиковых листов. Дешёвая защита для дальних вылазок за рудой."
+          ],
+          "dependencies": [
+            "mfr_plastic_sheets"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 5,
+          "y": 2
+        },
+        {
+          "id": "mfr_sunglasses",
+          "title": "Солнцезащитные очки",
+          "icon": "MineFactoryReloaded:glass.helm",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:glass.helm",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать солнцезащитные очки"
+            }
+          ],
+          "description": [
+            "Очки из цветного стекла и пластика — чистая косметика для инженера, который следит за стилем."
+          ],
+          "dependencies": [
+            "mfr_plastic_block"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 6,
+          "y": 5
+        },
+        {
+          "id": "mfr_road",
+          "title": "Дорожное покрытие",
+          "icon": "MineFactoryReloaded:road",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:road",
+              "count": 16,
+              "consume": false,
+              "title": "Запастись 16 дорожными блоками"
+            }
+          ],
+          "description": [
+            "Ровные дорожные блоки стыкуются без швов — проложите трассу от базы до шахты."
+          ],
+          "dependencies": [
+            "mfr_plastic_block"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:road",
+              "count": 8
+            }
+          ],
+          "x": 6,
+          "y": 6
+        },
+        {
+          "id": "mfr_cargo_rails",
+          "title": "Грузовые рельсы",
+          "icon": "MineFactoryReloaded:rail.cargo.pickup",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:rail.cargo.pickup",
+              "count": 2
+            },
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:rail.cargo.dropoff",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Рельсы-загрузчик перекладывают предметы из сундука в вагонетку, а рельсы-разгрузчик высыпают их обратно.",
+            "Так груз ездит по базе без единого провода."
+          ],
+          "dependencies": [
+            "mfr_conveyor"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 8,
+          "y": -2
+        },
+        {
+          "id": "mfr_passenger_rails",
+          "title": "Пассажирские рельсы",
+          "icon": "MineFactoryReloaded:rail.passenger.pickup",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:rail.passenger.pickup",
+              "count": 2
+            },
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:rail.passenger.dropoff",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Эти рельсы сажают и высаживают игрока на ходу — удобно устроить остановку у дома и у фермы."
+          ],
+          "dependencies": [
+            "mfr_cargo_rails"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "MineFactoryReloaded:conveyor",
+              "count": 4
+            }
+          ],
+          "x": 9,
+          "y": 0
+        },
+        {
+          "id": "mfr_rednet_logic",
+          "title": "Программируемый контроллер",
+          "icon": "MineFactoryReloaded:rednet.logic",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:rednet.logic",
+              "count": 1
+            }
+          ],
+          "description": [
+            "PRC выполняет небольшие программы: входы, выходы, счётчики и таймеры на любом из 16 каналов.",
+            "Правой кнопкой по блоку открывается редактор программ."
+          ],
+          "dependencies": [
+            "mfr_rednet_meter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "mfr_rednet_expansion",
+          "title": "Логика и история RedNet",
+          "icon": "MineFactoryReloaded:upgrade.logic",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:upgrade.logic",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:rednet.panel",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Карта LX-100 добавляет контроллеру логические элементы, а историк записывает уровни сигналов во времени.",
+            "С ними отладка автоматики становится спокойным занятием."
+          ],
+          "dependencies": [
+            "mfr_rednet_logic"
+          ],
+          "rewards": [
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "MineFactoryReloaded:rednet.memorycard",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "MineFactoryReloaded:cable.redstone",
+                  "count": 16
+                }
+              ]
+            }
+          ],
+          "x": 8,
+          "y": 0
+        },
+        {
+          "id": "mfr_radius_upgrade",
+          "title": "Апгрейд радиуса",
+          "icon": "MineFactoryReloaded:upgrade.radius",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:upgrade.radius",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Лазуритовый апгрейд расширяет рабочую зону машины. Поставьте его плантатору — и он охватит больше грядок."
+          ],
+          "dependencies": [
+            "mfr_planter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 7,
+          "y": -4
+        },
+        {
+          "id": "mfr_xp_extractor",
+          "title": "Экстрактор опыта",
+          "icon": "MineFactoryReloaded:xpextractor",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:xpextractor",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Собирает сферы опыта, которые обычно пропадают, и хранит их внутри машины до нужного момента."
+          ],
+          "dependencies": [
+            "mfr_machine_block"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "id": "mfr_detcord",
+          "title": "Детонирующий шнур",
+          "icon": "MineFactoryReloaded:detcord",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:detcord",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Шнур рвёт породу цепочкой по красному сигналу — аккуратный подрыв для длинных штолен."
+          ],
+          "dependencies": [
+            "mfr_machine_block"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "minecraft:tnt",
+              "count": 4
+            }
+          ],
+          "x": 6,
+          "y": 1
+        },
+        {
+          "id": "mfr_monster_cleanup",
+          "title": "Зачистка округи",
+          "icon": "minecraft:bone",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 10
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 10
+            },
+            {
+              "type": "kill",
+              "entity": "Spider",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Кости, нитки и гнилая плоть — сырьё для удобрений и шприцов. Заодно окрестности базы станут спокойнее."
+          ],
+          "dependencies": [
+            "mfr_machine_block"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "MineFactoryReloaded:fertilizer",
+                  "count": 16
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:bone",
+                  "count": 8
+                }
+              ]
+            }
+          ],
+          "x": 6,
+          "y": 2
+        },
+        {
+          "id": "mfr_needlegun_ammo",
+          "title": "Сменные заряды игломёта",
+          "icon": "MineFactoryReloaded:needlegun.ammo.pierce",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:needlegun.ammo.pierce",
+              "count": 2
+            },
+            {
+              "type": "craft",
+              "item": "MineFactoryReloaded:needlegun.ammo.lava",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Шрапнель бьёт по площади, а лавовый заряд поджигает цель. Собирайте магазины под разные задачи."
+          ],
+          "dependencies": [
+            "mfr_needlegun"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "MineFactoryReloaded:needlegun.ammo.standard",
+                  "count": 4
+                },
+                {
+                  "type": "item",
+                  "item": "MineFactoryReloaded:needlegun.ammo.fire",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "x": 7,
+          "y": 2
+        }
+      ]
+    }
+  ]
+}

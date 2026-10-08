@@ -1,0 +1,18 @@
+filename = 'JavaCheckerShade  MC-UNIVERSAL  v2.0.jar'
+name = 'Java 7 Checker'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.6.2', '1.6.4', '1.7.2', '1.7.10', '1.8', '1.8.8', '1.8.9', '1.9', '1.9.4', '1.10', '1.10.2', '1.11' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'JavaChecker v2.0 (Shading)'
+
+[download]
+hash = '037509c0fb08b0e618a2f2816b98928915a22a8b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2274692
+project-id = 226991

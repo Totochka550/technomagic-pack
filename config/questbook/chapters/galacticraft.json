@@ -1,0 +1,1538 @@
+{
+  "title": "Galacticraft",
+  "chapters": [
+    {
+      "id": "galacticraft",
+      "title": "Galacticraft",
+      "description": "Космос начинается с NASA Workbench: соберите ракету, долетите до Луны, постройте базу с кислородом и отправляйтесь на Марс.",
+      "icon": "GalacticraftCore:tile.rocketWorkbench",
+      "requiredMod": "GalacticraftCore",
+      "quests": [
+        {
+          "id": "gc_nasa_bench",
+          "title": "Космический верстак",
+          "icon": "GalacticraftCore:tile.rocketWorkbench",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.rocketWorkbench",
+              "count": 1
+            }
+          ],
+          "description": [
+            "NASA Workbench — сердце мода: на нём собираются части ракеты и сама ракета.",
+            "Поставьте его рядом с обычным верстаком и запасом материалов."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "gc_power",
+          "title": "Генератор и компрессор",
+          "icon": "GalacticraftCore:tile.machine2",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.machine",
+              "count": 1,
+              "title": "Собрать угольный генератор"
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.machine2",
+              "count": 1,
+              "title": "Собрать электрический компрессор"
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.aluminumWire",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Генератор даёт энергию, компрессор сжимает металлы в прочные заготовки.",
+            "Соедините машины алюминиевым проводом."
+          ],
+          "dependencies": [
+            "gc_nasa_bench"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "gc_plates",
+          "title": "Тяжёлые пластины",
+          "icon": "GalacticraftCore:item.heavyPlating",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.heavyPlating",
+              "count": 4,
+              "consume": false,
+              "title": "Получить 4 тяжёлые пластины"
+            }
+          ],
+          "description": [
+            "Тяжёлые пластины делаются из сжатых металлов и идут на корпус ракеты, багги и машин."
+          ],
+          "dependencies": [
+            "gc_power",
+            "gc_nasa_bench"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.canister",
+              "count": 2
+            }
+          ],
+          "x": 2,
+          "y": -2
+        },
+        {
+          "id": "gc_meteor",
+          "title": "Упавший метеорит",
+          "icon": "GalacticraftCore:tile.fallenMeteor",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "GalacticraftCore:tile.fallenMeteor",
+              "count": 1,
+              "consume": false,
+              "title": "Найти упавший метеорит"
+            },
+            {
+              "type": "item",
+              "ore": "ingotMeteoricIron",
+              "count": 3,
+              "consume": true,
+              "title": "Сдать 3 слитка метеоритного железа"
+            }
+          ],
+          "description": [
+            "Метеориты падают по всей планете и дают метеоритное железо — его плавят и сжимают.",
+            "Слитки пригодятся и в крафте, и в награде за эту поставку."
+          ],
+          "dependencies": [
+            "gc_power"
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.basicItem",
+              "count": 2
+            },
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "gc_steel_tools",
+          "title": "Тяжёлый инструмент",
+          "icon": "GalacticraftCore:item.steel_pickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:item.steel_pickaxe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:item.steel_sword",
+              "count": 1
+            },
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 10,
+              "title": "Проверить инструмент в бою"
+            }
+          ],
+          "description": [
+            "Сжатая сталь даёт инструменты крепче железных — ими и метеорит разобьёте."
+          ],
+          "dependencies": [
+            "gc_meteor"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 3,
+          "y": 1
+        },
+        {
+          "id": "gc_solar",
+          "title": "Солнечная энергия",
+          "icon": "GalacticraftCore:tile.solar",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.solar",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:item.basicItem",
+              "count": 1,
+              "title": "Собрать солнечный модуль"
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:item.battery",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Солнечная панель вырабатывает энергию днём, а батареи хранят её на ночь.",
+            "На Луне и Марсе панели работают круглые сутки."
+          ],
+          "dependencies": [
+            "gc_power"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "id": "gc_oxygen_gear",
+          "title": "Кислородный набор",
+          "icon": "GalacticraftCore:item.oxygenGear",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:item.oxygenMask",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:item.oxygenGear",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.oxygenTankLightFull",
+              "count": 1,
+              "consume": false,
+              "title": "Заправить лёгкий кислородный баллон"
+            }
+          ],
+          "description": [
+            "Без кислородного снаряжения на Луне нечем дышать: маска, костюм и баллон обязательны.",
+            "Баллон наполняется в кислородном компрессоре."
+          ],
+          "dependencies": [
+            "gc_plates"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 3,
+          "y": -4
+        },
+        {
+          "id": "gc_oxygen_machines",
+          "title": "Производство кислорода",
+          "icon": "GalacticraftCore:tile.oxygenCollector",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.oxygenCollector",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.oxygenCompressor",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.oxygenPipe",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Коллектор собирает кислород из растений, компрессор закачивает его в баллоны, а трубы разносят воздух по базе."
+          ],
+          "dependencies": [
+            "gc_oxygen_gear"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "gc_sealer",
+          "title": "Дом с воздухом",
+          "icon": "GalacticraftCore:tile.sealer",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.sealer",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.distributor",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.oxygenDetector",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Герметизатор наполняет кислородом закрытое помещение — внутри базы можно снять шлем.",
+            "Распределитель разносит воздух по комнатам, датчик подскажет, где его не хватает."
+          ],
+          "dependencies": [
+            "gc_oxygen_machines"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.oxygenTankMedFull",
+              "count": 1
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "gc_refinery",
+          "title": "Нефть и топливо",
+          "icon": "GalacticraftCore:tile.refinery",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.refinery",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:item.oilExtractor",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.bucketOil",
+              "count": 1,
+              "consume": false,
+              "title": "Набрать ведро нефти"
+            }
+          ],
+          "description": [
+            "Нефть ищут под землёй, качают портативным насосом и перегоняют в ракетное топливо."
+          ],
+          "dependencies": [
+            "gc_power"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "gc_fuel",
+          "title": "Ракетное топливо",
+          "icon": "GalacticraftCore:item.bucketFuel",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.bucketFuel",
+              "count": 1,
+              "consume": false,
+              "title": "Получить ведро топлива"
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.fuelCanisterPartial",
+              "count": 1,
+              "consume": false,
+              "title": "Залить топливо в канистру"
+            }
+          ],
+          "description": [
+            "Переработанная нефть — единственное топливо для ракет первого уровня."
+          ],
+          "dependencies": [
+            "gc_refinery"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "ore": "ingotIron",
+              "count": 8
+            }
+          ],
+          "x": 3,
+          "y": 4
+        },
+        {
+          "id": "gc_fuel_loader",
+          "title": "Заправка и погрузка",
+          "icon": "GalacticraftCore:tile.fuelLoader",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.fuelLoader",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.cargo",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Заправщик переливает топливо в ракету прямо на площадке, погрузчик — кладёт вещи в трюм.",
+            "Оба ставятся рядом со стартовой площадкой."
+          ],
+          "dependencies": [
+            "gc_fuel"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "gc_rocket_parts",
+          "title": "Детали ракеты",
+          "icon": "GalacticraftCore:item.engine",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.engine",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать ракетный двигатель"
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.noseCone",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать носовой обтекатель"
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.rocketFins",
+              "count": 4,
+              "consume": false,
+              "title": "Сделать 4 стабилизатора"
+            }
+          ],
+          "description": [
+            "Двигатель, обтекатель и стабилизаторы собираются в NASA Workbench из тяжёлых пластин и сжатых металлов."
+          ],
+          "dependencies": [
+            "gc_plates",
+            "gc_nasa_bench"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 3,
+          "y": -5
+        },
+        {
+          "id": "gc_rocket",
+          "title": "Ракета первого уровня",
+          "icon": "GalacticraftCore:item.spaceship",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.spaceship",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать ракету первого уровня"
+            }
+          ],
+          "description": [
+            "Готовая ракета ставится на площадку, заправляется топливом и ждёт пассажира."
+          ],
+          "dependencies": [
+            "gc_rocket_parts",
+            "gc_fuel"
+          ],
+          "rewards": [
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "GalacticraftCore:item.oxygenTankMedFull",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "GalacticraftCore:item.battery",
+                  "count": 4
+                }
+              ]
+            }
+          ],
+          "x": 4,
+          "y": 1
+        },
+        {
+          "id": "gc_pad",
+          "title": "Стартовая площадка",
+          "icon": "GalacticraftCore:tile.landingPad",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.landingPad",
+              "count": 9,
+              "title": "Собрать площадку 3×3"
+            }
+          ],
+          "description": [
+            "Ровная площадка из девяти стартовых плит — с травы ракета не взлетит."
+          ],
+          "dependencies": [
+            "gc_plates"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 3,
+          "y": -3
+        },
+        {
+          "id": "gc_launch",
+          "title": "Полёт на Луну",
+          "icon": "GalacticraftCore:item.parachute",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:item.parachute",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Совершить посадку на Луне"
+            }
+          ],
+          "description": [
+            "Поставьте ракету на площадку, заправьте, садитесь и нажимайте пуск.",
+            "Отметка ставится вручную, когда вы окажетесь на Луне."
+          ],
+          "dependencies": [
+            "gc_rocket",
+            "gc_pad"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.cheeseCurd",
+              "count": 4
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "gc_flag",
+          "title": "Флаг на Луне",
+          "icon": "GalacticraftCore:item.flag",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:item.flag",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Установить флаг на месте посадки"
+            }
+          ],
+          "description": [
+            "Настоящий исследователь оставляет флаг там, куда ступил первым."
+          ],
+          "dependencies": [
+            "gc_launch"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "gc_buggy_wheels",
+          "title": "Колёса для багги",
+          "icon": "GalacticraftCore:item.buggymat",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:item.buggymat",
+              "count": 4,
+              "title": "Сделать 4 колеса багги"
+            }
+          ],
+          "description": [
+            "Колёса — самая дорогая часть лунного транспорта."
+          ],
+          "dependencies": [
+            "gc_launch"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "id": "gc_buggy",
+          "title": "Лунный багги",
+          "icon": "GalacticraftCore:item.buggy",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.buggy",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать багги"
+            }
+          ],
+          "description": [
+            "Багги ездит по Луне и Марсу быстрее любых ног и берёт пассажира.",
+            "Собирается в NASA Workbench из колёс и тяжёлых пластин."
+          ],
+          "dependencies": [
+            "gc_buggy_wheels"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 7,
+          "y": -2
+        },
+        {
+          "id": "gc_dungeon_key",
+          "title": "Ключ подземелья",
+          "icon": "GalacticraftCore:item.key",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.key",
+              "count": 1,
+              "consume": false,
+              "title": "Добыть ключ первого подземелья"
+            }
+          ],
+          "description": [
+            "Ключ открывает дверь лунного подземелья, где лежат схемы и сокровища."
+          ],
+          "dependencies": [
+            "gc_launch"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 6,
+          "y": 1
+        },
+        {
+          "id": "gc_dungeon",
+          "title": "Лунное подземелье",
+          "icon": "GalacticraftCore:tile.treasureChest",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Найти и открыть лунное подземелье"
+            },
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 10,
+              "title": "Отбиться от охраны подземелья"
+            }
+          ],
+          "description": [
+            "В подземелье охрана из эволюционировавших мобов и сундуки с редкими схемами."
+          ],
+          "dependencies": [
+            "gc_dungeon_key"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "GalacticraftCore:item.sensorGlasses",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "GalacticraftCore:item.standardWrench",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "gc_tier2_parts",
+          "title": "Детали второй ступени",
+          "icon": "GalacticraftMars:item.heavyNoseCone",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "GalacticraftMars:item.heavyNoseCone",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать усиленный обтекатель"
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftMars:item.itemBasicAsteroids",
+              "count": 2,
+              "consume": false,
+              "title": "Сделать 2 усиленные пластины"
+            }
+          ],
+          "description": [
+            "Для второй ступени нужны деш и титан: обтекатель и пластины прочнее прежних."
+          ],
+          "dependencies": [
+            "gc_dungeon",
+            "gc_rocket_parts"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 8,
+          "y": -1
+        },
+        {
+          "id": "gc_tier2_rocket",
+          "title": "Ракета второго уровня",
+          "icon": "GalacticraftMars:item.spaceshipTier2",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "GalacticraftMars:item.spaceshipTier2",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать ракету второго уровня"
+            }
+          ],
+          "description": [
+            "Ракета второго уровня долетит до Марса и до пояса астероидов."
+          ],
+          "dependencies": [
+            "gc_tier2_parts"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftMars:item.carbonFragments",
+              "count": 4
+            }
+          ],
+          "x": 9,
+          "y": -1
+        },
+        {
+          "id": "gc_mars",
+          "title": "Марс",
+          "icon": "GalacticraftMars:item.thermalPadding",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "GalacticraftMars:item.thermalPadding",
+              "count": 1,
+              "consume": false,
+              "title": "Сшить термоизоляцию"
+            },
+            {
+              "type": "checkmark",
+              "title": "Совершить посадку на Марсе"
+            }
+          ],
+          "description": [
+            "На Марсе холодно: без термоизоляции скафандр быстро выйдет из строя.",
+            "Отметьте посадку вручную, когда окажетесь на поверхности."
+          ],
+          "dependencies": [
+            "gc_tier2_rocket"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            }
+          ],
+          "x": 10,
+          "y": -1
+        },
+        {
+          "id": "gc_desh_tools",
+          "title": "Марсианский деш",
+          "icon": "GalacticraftMars:item.deshPick",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Добыть руду деша на Марсе"
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftMars:item.deshPick",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftMars:item.deshSword",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Деш крепче тяжёлой стали: инструменты из него не боятся марсианской пыли и жара."
+          ],
+          "dependencies": [
+            "gc_mars"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "item",
+              "ore": "ingotIron",
+              "count": 8
+            }
+          ],
+          "x": 11,
+          "y": -2
+        },
+        {
+          "id": "gc_astro_miner",
+          "title": "Астро-шахтёр",
+          "icon": "GalacticraftMars:item.itemAstroMiner",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "GalacticraftMars:tile.minerBase",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать базу шахтёра"
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftMars:item.itemAstroMiner",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать астро-шахтёра"
+            }
+          ],
+          "description": [
+            "Астро-шахтёр сам бурит породу в поясе астероидов и приносит руду домой.",
+            "Поставьте базу на астероиде и запустите машину."
+          ],
+          "dependencies": [
+            "gc_mars"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "GalacticraftMars:item.grapple",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "GalacticraftMars:item.orionDrive",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 11,
+          "y": -1
+        },
+        {
+          "id": "gc_energy_storage",
+          "title": "Накопитель энергии",
+          "icon": "GalacticraftCore:tile.machineTiered",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.machineTiered",
+              "count": 1,
+              "title": "Собрать модуль хранения энергии"
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:item.battery",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.aluminumWire",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Накопитель сглаживает перепады: днём панели заряжают его, а ночью он питает компрессор.",
+            "Провода разведут энергию по всей базе."
+          ],
+          "dependencies": [
+            "gc_solar"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 3,
+          "y": 2
+        },
+        {
+          "id": "gc_lighting",
+          "title": "Свет на базе",
+          "icon": "GalacticraftCore:tile.arclamp",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.arclamp",
+              "count": 2,
+              "title": "Сделать 2 дуговые лампы"
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.glowstoneTorch",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "minecraft:glowstone",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Дуговая лампа светит ярче факела, а светокаменные факелы не гаснут без огня — на базе с кислородом это важно."
+          ],
+          "dependencies": [
+            "gc_plates"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 3,
+          "y": -2
+        },
+        {
+          "id": "gc_decor",
+          "title": "Оловянное убранство",
+          "icon": "GalacticraftCore:tile.wallGC",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.wallGC",
+              "count": 8,
+              "title": "Собрать 8 оловянных панелей"
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.tinStairs1",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:slabGCHalf",
+              "count": 6
+            }
+          ],
+          "description": [
+            "Из олова выходят ровные панели, ступени и плиты — ими удобно обшивать коридоры, ангары и площадки."
+          ],
+          "dependencies": [
+            "gc_plates"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "gc_wrench_tools",
+          "title": "Ремонтный набор",
+          "icon": "GalacticraftCore:item.standardWrench",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:item.standardWrench",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:item.steelPole",
+              "count": 4
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.sensorGlasses",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать очки-детектор"
+            }
+          ],
+          "description": [
+            "Ключ разворачивает и чинит машины, стальные штанги держат каркас, а очки-детектор показывают уровень кислорода прямо в шлеме."
+          ],
+          "dependencies": [
+            "gc_meteor",
+            "gc_power"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "gc_telemetry",
+          "title": "Связь и телеметрия",
+          "icon": "GalacticraftCore:tile.dish",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.dish",
+              "count": 1,
+              "title": "Собрать антенну"
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.telemetry",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.viewScreen",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Антенна ловит сигнал, блок телеметрии следит за кораблём, а экраны показывают картинку с орбиты."
+          ],
+          "dependencies": [
+            "gc_solar"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 3,
+          "y": 3
+        },
+        {
+          "id": "gc_oxygen_heavy",
+          "title": "Тяжёлый кислородный баллон",
+          "icon": "GalacticraftCore:item.oxygenTankHeavyFull",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:item.oxygenConcentrator",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.oxygenTankMedFull",
+              "count": 1,
+              "consume": false,
+              "title": "Получить средний баллон"
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.oxygenTankHeavyFull",
+              "count": 1,
+              "consume": false,
+              "title": "Заправить тяжёлый баллон"
+            }
+          ],
+          "description": [
+            "Концентратор вытягивает кислород даже из скудной растительности, а тяжёлый баллон даёт большой запас воздуха для дальних вылазок."
+          ],
+          "dependencies": [
+            "gc_sealer"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.canister",
+              "count": 2
+            }
+          ],
+          "x": 6,
+          "y": -2
+        },
+        {
+          "id": "gc_airlock",
+          "title": "Шлюз и вентиляция",
+          "icon": "GalacticraftCore:tile.airLockFrame",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.airLockFrame",
+              "count": 6,
+              "title": "Собрать 6 рам шлюза"
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.airLockSeal",
+              "count": 1,
+              "title": "Сделать мембрану шлюза"
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:item.airVent",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:item.airFan",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Рама с мембраной образуют шлюз — через него выходят наружу, не выпуская воздух.",
+            "Клапан и вентилятор гоняют кислород внутри комнаты."
+          ],
+          "dependencies": [
+            "gc_sealer",
+            "gc_oxygen_machines"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            }
+          ],
+          "x": 6,
+          "y": -3
+        },
+        {
+          "id": "gc_cheese",
+          "title": "Лунная сыроварня",
+          "icon": "GalacticraftCore:tile.cheeseBlock",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "GalacticraftCore:tile.cheeseBlock",
+              "count": 1,
+              "consume": false,
+              "title": "Получить блок сыра"
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.cheeseCurd",
+              "count": 6,
+              "consume": true,
+              "title": "Сдать 6 ломтиков сыра"
+            }
+          ],
+          "description": [
+            "Сыр — самая сытная еда лунной программы: блок можно поставить на стол, а ломтики взять в дальний рейс."
+          ],
+          "dependencies": [
+            "gc_launch"
+          ],
+          "rewards": [
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "GalacticraftCore:item.cheeseCurd",
+                  "count": 8
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:cookie",
+                  "count": 16
+                }
+              ]
+            }
+          ],
+          "x": 6,
+          "y": 2
+        },
+        {
+          "id": "gc_combat",
+          "title": "Оборона базы",
+          "icon": "GalacticraftCore:item.steel_sword",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 12,
+              "title": "Отбиться от скелетов"
+            },
+            {
+              "type": "kill",
+              "entity": "Creeper",
+              "count": 8,
+              "title": "Не пустить крипера к стенам"
+            },
+            {
+              "type": "kill",
+              "entity": "Spider",
+              "count": 10,
+              "title": "Отогнать пауков от базы"
+            }
+          ],
+          "description": [
+            "Ночи на Луне и пещеры Марса кишат мобами: держите оборону у входа в базу и не подпускайте их к машинам."
+          ],
+          "dependencies": [
+            "gc_steel_tools"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "minecraft:torch",
+              "count": 16
+            }
+          ],
+          "x": 4,
+          "y": -2
+        },
+        {
+          "id": "gc_station",
+          "title": "Космическая станция",
+          "icon": "GalacticraftCore:tile.spaceStationBase",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "GalacticraftCore:tile.spaceStationBase",
+              "count": 1,
+              "consume": false,
+              "title": "Получить блок станции"
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftCore:tile.spinThruster",
+              "count": 4,
+              "title": "Сделать 4 двигателя вращения"
+            },
+            {
+              "type": "checkmark",
+              "title": "Собрать станцию на орбите и раскрутить её"
+            }
+          ],
+          "description": [
+            "Станция строится прямо на орбите: пристыкуйтесь, поставьте базовый блок и раскрутите её двигателями, чтобы получить гравитацию."
+          ],
+          "dependencies": [
+            "gc_launch",
+            "gc_airlock"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftCore:item.parachute",
+              "count": 2
+            }
+          ],
+          "x": 7,
+          "y": 0
+        },
+        {
+          "id": "gc_mars_machines",
+          "title": "Марсианские машины",
+          "icon": "GalacticraftMars:tile.marsMachine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftMars:tile.marsMachine",
+              "count": 1,
+              "title": "Собрать терраформер"
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftMars:tile.marsMachineT2",
+              "count": 1,
+              "title": "Собрать газовый сжижитель"
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftMars:item.atmosphericValve",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Терраформер озеленяет Марс, сжижитель превращает атмосферу в топливо, а клапан стравливает лишнее давление в помещениях."
+          ],
+          "dependencies": [
+            "gc_mars"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 11,
+          "y": 0
+        },
+        {
+          "id": "gc_titanium",
+          "title": "Титановый доспех",
+          "icon": "GalacticraftMars:item.titanium_chestplate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "GalacticraftMars:item.titanium_pickaxe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftMars:item.titanium_sword",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "GalacticraftMars:item.titanium_chestplate",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Титан прочнее деша: инструменты и броня служат дольше и держат удар в марсианских пещерах."
+          ],
+          "dependencies": [
+            "gc_desh_tools"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 95
+            },
+            {
+              "type": "item",
+              "ore": "ingotIron",
+              "count": 8
+            }
+          ],
+          "x": 12,
+          "y": -1
+        },
+        {
+          "id": "gc_orion",
+          "title": "Двигатель «Орион»",
+          "icon": "GalacticraftMars:item.orionDrive",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "GalacticraftMars:item.orionDrive",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать двигатель «Орион»"
+            },
+            {
+              "type": "item",
+              "item": "GalacticraftMars:item.grapple",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать крюк-кошку"
+            },
+            {
+              "type": "checkmark",
+              "title": "Добраться до пояса астероидов"
+            }
+          ],
+          "description": [
+            "«Орион» открывает дорогу к астероидам, а крюк-кошка помогает карабкаться по их обломкам."
+          ],
+          "dependencies": [
+            "gc_astro_miner",
+            "gc_titanium"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 110
+            }
+          ],
+          "x": 13,
+          "y": -1
+        },
+        {
+          "id": "gc_tier3",
+          "title": "Ракета третьей ступени",
+          "icon": "GalacticraftMars:item.itemTier3Rocket",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "GalacticraftMars:item.itemTier3Rocket",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать ракету третьей ступени"
+            },
+            {
+              "type": "checkmark",
+              "title": "Совершить посадку на астероиде"
+            }
+          ],
+          "description": [
+            "Третья ступень требует орионовый двигатель и усиленные пластины — только она выдержит дальний полёт к астероидам."
+          ],
+          "dependencies": [
+            "gc_tier2_rocket",
+            "gc_orion"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 130
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "GalacticraftCore:item.oxygenTankHeavyFull",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "GalacticraftCore:item.battery",
+                  "count": 8
+                }
+              ]
+            }
+          ],
+          "x": 14,
+          "y": -1
+        }
+      ]
+    }
+  ]
+}

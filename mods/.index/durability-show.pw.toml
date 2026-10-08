@@ -1,0 +1,18 @@
+filename = 'DurabilityShow_1.7.10_1.2.0.jar'
+name = 'Durability Show'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[1.7.10] Durability Show 1.2.0'
+
+[download]
+hash = 'a699591c341876d99a7e2cfa15cd900df368fb5f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2225927
+project-id = 226099

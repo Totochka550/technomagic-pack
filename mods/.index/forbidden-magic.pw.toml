@@ -1,0 +1,21 @@
+filename = 'Forbidden Magic-1.7.10-0.575.jar'
+name = 'Forbidden Magic'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Forbidden Magic-1.7.10-0.575.jar'
+
+[download]
+hash = 'dfe376c08c4fa43ec7491128ae26a65b9d4106c9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2303822
+project-id = 224237
+
+[[x-prismlauncher-dependencies]]
+addonId = '223628'
+type = 'REQUIRED'

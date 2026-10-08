@@ -1,0 +1,1332 @@
+{
+  "title": "Botania",
+  "chapters": [
+    {
+      "id": "botania",
+      "title": "Botania",
+      "description": "Ветка Botania: от первого мистического цветка до кольца асов.",
+      "icon": "Botania:flower",
+      "requiredMod": "Botania",
+      "quests": [
+        {
+          "id": "b_flower",
+          "title": "Мистические цветы",
+          "x": 0,
+          "y": 0,
+          "icon": "Botania:flower",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Botania:flower",
+              "count": 4,
+              "consume": false,
+              "title": "Собрать 4 мистических цветка"
+            }
+          ],
+          "description": [
+            "Цветы Botania растут по всему миру и светятся в темноте."
+          ],
+          "achievement": "botania:flowerPickup",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 15
+            },
+            {
+              "type": "item",
+              "item": "Botania:petal",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "b_lexicon",
+          "title": "Лексика Ботании",
+          "x": 0,
+          "y": 1,
+          "icon": "Botania:lexicon",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:lexicon",
+              "count": 1,
+              "title": "Создать «Лексику Ботании»"
+            }
+          ],
+          "description": [
+            "Главная книга мода: в ней описано всё остальное."
+          ],
+          "dependencies": [
+            "b_flower"
+          ],
+          "achievement": "botania:lexiconUse",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 15
+            }
+          ]
+        },
+        {
+          "id": "b_apothecary",
+          "title": "Лепестковая аптека",
+          "x": 0,
+          "y": 2,
+          "icon": "Botania:altar",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Botania:petal",
+              "count": 8,
+              "consume": false,
+              "title": "Собрать 8 любых лепестков"
+            },
+            {
+              "type": "craft",
+              "item": "Botania:altar",
+              "count": 1,
+              "title": "Создать лепестковую аптеку"
+            }
+          ],
+          "description": [
+            "В аптеке из лепестков варятся первые цветы."
+          ],
+          "dependencies": [
+            "b_lexicon"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "Botania:livingwood",
+              "count": 8
+            }
+          ]
+        },
+        {
+          "id": "b_daybloom",
+          "title": "Дневной цветок",
+          "x": 0,
+          "y": 3,
+          "icon": {
+            "item": "Botania:specialFlower",
+            "nbt": "{type:\"daybloom\"}"
+          },
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Botania:specialFlower",
+              "count": 1,
+              "consume": false,
+              "nbt": "{type:\"daybloom\"}",
+              "title": "Создать дневной цветок"
+            }
+          ],
+          "description": [
+            "Первый генерирующий цветок: даёт ману днём."
+          ],
+          "dependencies": [
+            "b_apothecary"
+          ],
+          "achievement": "botania:daybloomPickup",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "Botania:manaTablet",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "b_wand",
+          "title": "Жезл леса",
+          "x": 0,
+          "y": 4,
+          "icon": "Botania:twigWand",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:twigWand",
+              "count": 1,
+              "title": "Создать жезл леса"
+            }
+          ],
+          "description": [
+            "Жезл связывает цветы с бассейнами маны."
+          ],
+          "dependencies": [
+            "b_flower"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "id": "b_manapool",
+          "title": "Бассейн маны",
+          "x": 0,
+          "y": 5,
+          "icon": "Botania:pool",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:pool",
+              "count": 1,
+              "title": "Создать бассейн маны"
+            }
+          ],
+          "description": [
+            "Цветы ставят вокруг бассейна, жезл указывает на него."
+          ],
+          "dependencies": [
+            "b_wand"
+          ],
+          "achievement": "botania:manaPoolPickup",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "id": "b_endoflame",
+          "title": "Эндофлейм",
+          "x": 0,
+          "y": 6,
+          "icon": {
+            "item": "Botania:specialFlower",
+            "nbt": "{type:\"endoflame\"}"
+          },
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Botania:specialFlower",
+              "count": 1,
+              "consume": false,
+              "nbt": "{type:\"endoflame\"}",
+              "title": "Создать эндофлейм"
+            }
+          ],
+          "description": [
+            "Сжигает топливо и даёт много маны."
+          ],
+          "dependencies": [
+            "b_manapool"
+          ],
+          "achievement": "botania:endoflamePickup",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "Botania:manaResource",
+              "meta": 0,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "b_manasteel",
+          "title": "Манасталь",
+          "x": 0,
+          "y": 7,
+          "icon": {
+            "item": "Botania:manaResource",
+            "meta": 0
+          },
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Botania:manaResource",
+              "meta": 0,
+              "count": 4,
+              "consume": false,
+              "title": "Получить 4 слитка манастали"
+            }
+          ],
+          "description": [
+            "Железо, брошенное в бассейн с маной, становится манасталью."
+          ],
+          "dependencies": [
+            "b_endoflame"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "id": "b_runic_altar",
+          "title": "Рунический алтарь",
+          "x": 0,
+          "y": 8,
+          "icon": "Botania:runeAltar",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Botania:livingrock",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 живого камня"
+            },
+            {
+              "type": "craft",
+              "item": "Botania:runeAltar",
+              "count": 1,
+              "title": "Создать рунический алтарь"
+            },
+            {
+              "type": "item",
+              "item": "Botania:rune",
+              "count": 2,
+              "consume": false,
+              "title": "Получить 2 любые руны"
+            }
+          ],
+          "description": [
+            "Алтарь превращает предметы и ману в руны."
+          ],
+          "dependencies": [
+            "b_manasteel"
+          ],
+          "achievement": "botania:runePickup",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "id": "b_terrasteel",
+          "title": "Террасталь",
+          "x": 0,
+          "y": 9,
+          "icon": "Botania:terraPlate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:terraPlate",
+              "count": 1,
+              "title": "Создать пластину агломерации"
+            },
+            {
+              "type": "item",
+              "item": "Botania:manaResource",
+              "meta": 0,
+              "count": 1,
+              "consume": false,
+              "title": "Иметь слиток манастали"
+            },
+            {
+              "type": "item",
+              "item": "Botania:manaResource",
+              "meta": 1,
+              "count": 1,
+              "consume": false,
+              "title": "Иметь жемчужину маны"
+            },
+            {
+              "type": "item",
+              "item": "Botania:manaResource",
+              "meta": 2,
+              "count": 1,
+              "consume": false,
+              "title": "Иметь алмаз маны"
+            },
+            {
+              "type": "item",
+              "item": "Botania:manaResource",
+              "meta": 4,
+              "count": 1,
+              "consume": false,
+              "title": "Сплавить террасталь"
+            }
+          ],
+          "description": [
+            "Пластина собирает террасталь из манастали, жемчужины и алмаза."
+          ],
+          "dependencies": [
+            "b_runic_altar"
+          ],
+          "achievement": "botania:terrasteelPickup",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "item",
+              "item": "Botania:manaResource",
+              "meta": 4,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "b_terra_sword",
+          "title": "Оружие террастали",
+          "x": 1,
+          "y": 12,
+          "icon": "Botania:terraSword",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:terraSword",
+              "count": 1,
+              "title": "Создать клинок терры"
+            }
+          ],
+          "description": [
+            "Клинок терры бьёт больнее алмазного и не теряет прочности."
+          ],
+          "dependencies": [
+            "b_terrasteel"
+          ],
+          "achievement": "botania:terrasteelWeaponCraft",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "id": "b_elementium",
+          "title": "Элементиум",
+          "x": 0,
+          "y": 11,
+          "icon": {
+            "item": "Botania:manaResource",
+            "meta": 7
+          },
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Botania:manaResource",
+              "meta": 7,
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 слитков элементиума"
+            }
+          ],
+          "description": [
+            "Элементиум делают из эльфийского кварца в Альфхейме."
+          ],
+          "dependencies": [
+            "b_elfheim"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "item",
+              "item": "Botania:elementiumPick",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "b_elfheim",
+          "title": "Портал Альфхейма",
+          "x": 0,
+          "y": 10,
+          "icon": "Botania:alfheimPortal",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:alfheimPortal",
+              "count": 1,
+              "title": "Создать портал Альфхейма"
+            },
+            {
+              "type": "item",
+              "item": "Botania:livingwood",
+              "count": 16,
+              "consume": false,
+              "title": "Иметь живой древесины на портал"
+            },
+            {
+              "type": "item",
+              "item": "Botania:dreamwood",
+              "count": 16,
+              "consume": false,
+              "title": "Иметь древесину снов на портал"
+            }
+          ],
+          "description": [
+            "Портал открывает доступ к эльфийским ресурсам."
+          ],
+          "dependencies": [
+            "b_terrasteel"
+          ],
+          "achievement": "botania:elfPortalOpen",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "item",
+              "item": "Botania:elfGlass",
+              "count": 8
+            }
+          ]
+        },
+        {
+          "id": "b_managun",
+          "title": "Мана-бластер",
+          "x": 0,
+          "y": 12,
+          "icon": "Botania:manaGun",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:manaGun",
+              "count": 1,
+              "title": "Создать мана-бластер"
+            },
+            {
+              "type": "item",
+              "item": "Botania:manaTablet",
+              "count": 1,
+              "consume": false,
+              "title": "Иметь планшет маны"
+            }
+          ],
+          "description": [
+            "Стреляет маной: ломает блоки и толкает мобов."
+          ],
+          "dependencies": [
+            "b_manapool"
+          ],
+          "achievement": "botania:manaBlasterShoot",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "id": "b_ring",
+          "title": "Кольцо маны",
+          "x": 0,
+          "y": 13,
+          "icon": "Botania:manaRing",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:manaRing",
+              "count": 1,
+              "title": "Создать кольцо маны"
+            }
+          ],
+          "description": [
+            "Кольцо носится в слоте аксессуаров и хранит ману внутри игрока."
+          ],
+          "dependencies": [
+            "b_manasteel"
+          ],
+          "achievement": "botania:baubleWear",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "id": "b_spark",
+          "title": "Искра",
+          "x": 0,
+          "y": 14,
+          "icon": "Botania:spark",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:spark",
+              "count": 1,
+              "title": "Создать искру"
+            }
+          ],
+          "description": [
+            "Искры переносят ману между бассейнами и механизмами."
+          ],
+          "dependencies": [
+            "b_manapool"
+          ],
+          "achievement": "botania:sparkCraft",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "id": "b_enchanter",
+          "title": "Зачарователь",
+          "x": 0,
+          "y": 15,
+          "icon": "Botania:enchanter",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:enchanter",
+              "count": 1,
+              "title": "Создать зачарователь"
+            }
+          ],
+          "description": [
+            "Зачаровывает предметы за ману, без стола зачарований."
+          ],
+          "dependencies": [
+            "b_manasteel"
+          ],
+          "achievement": "botania:enchanterMake",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ]
+        },
+        {
+          "id": "b_corporea",
+          "title": "Корпорея",
+          "x": 0,
+          "y": 16,
+          "icon": "Botania:corporeaSpark",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:corporeaSpark",
+              "count": 1,
+              "title": "Создать искру корпореи"
+            }
+          ],
+          "description": [
+            "Корпорея — сеть хранения предметов из маны."
+          ],
+          "dependencies": [
+            "b_manapool"
+          ],
+          "achievement": "botania:corporeaCraft",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ]
+        },
+        {
+          "id": "b_super_corporea",
+          "title": "Большой запрос",
+          "x": 1,
+          "y": 17,
+          "icon": "Botania:corporeaIndex",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Запросить у корпореи больше 1000 предметов сразу"
+            }
+          ],
+          "description": [
+            "Корпорея умеет выдавать целые стаки — попробуйте запросить больше тысячи предметов."
+          ],
+          "dependencies": [
+            "b_corporea"
+          ],
+          "optional": true,
+          "achievement": "botania:superCorporeaRequest",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "id": "b_brewery",
+          "title": "Пивоварня",
+          "x": 0,
+          "y": 17,
+          "icon": "Botania:brewery",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:brewery",
+              "count": 1,
+              "title": "Создать ботаническую пивоварню"
+            },
+            {
+              "type": "item",
+              "item": "Botania:brewVial",
+              "count": 1,
+              "consume": false,
+              "title": "Сварить зелье в колбе"
+            }
+          ],
+          "description": [
+            "Ботанические зелья варятся из лепестков, а не из ингредиентов."
+          ],
+          "dependencies": [
+            "b_manapool"
+          ],
+          "achievement": "botania:brewPickup",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "Botania:vial",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "b_gaia",
+          "title": "Стражник Геи",
+          "x": 0,
+          "y": 18,
+          "icon": "Botania:gaiaHead",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "botania:doppleganger",
+              "count": 1,
+              "title": "Победить Стражника Геи"
+            }
+          ],
+          "description": [
+            "Призыв: поставь маяк из булыжника и нажми на него террастальным мечом.",
+            "Стражник — сложный бой, готовь зелья и броню."
+          ],
+          "dependencies": [
+            "b_elfheim"
+          ],
+          "achievement": "botania:gaiaGuardianKill",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 300
+            },
+            {
+              "type": "item",
+              "item": "Botania:manaResource",
+              "meta": 14,
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "b_cookie",
+          "title": "Мана-печенье",
+          "x": -1,
+          "y": 3,
+          "icon": "Botania:manaCookie",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:manaCookie",
+              "count": 1,
+              "title": "Испечь мана-печенье"
+            }
+          ],
+          "description": [
+            "Печенье, заряженное маной: сытно и восстанавливает ману."
+          ],
+          "dependencies": [
+            "b_apothecary"
+          ],
+          "achievement": "botania:manaCookieEat",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "id": "b_tiny_potato",
+          "title": "Крошечная картошка",
+          "x": -1,
+          "y": 4,
+          "icon": "Botania:tinyPotato",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:tinyPotato",
+              "count": 1,
+              "title": "Создать крошечную картошку"
+            }
+          ],
+          "description": [
+            "Питомец, который просто радуется жизни."
+          ],
+          "dependencies": [
+            "b_manapool"
+          ],
+          "achievement": "botania:tinyPotatoPet",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "id": "b_dirt_rod",
+          "title": "Жезл земли",
+          "x": -1,
+          "y": 5,
+          "icon": "Botania:dirtRod",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:dirtRod",
+              "count": 1,
+              "title": "Создать жезл земли"
+            }
+          ],
+          "description": [
+            "Жезл земли ставит и убирает блоки земли на расстоянии."
+          ],
+          "dependencies": [
+            "b_manasteel"
+          ],
+          "achievement": "botania:dirtRodCraft",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "id": "b_terraform_rod",
+          "title": "Жезл терраформирования",
+          "x": -1,
+          "y": 6,
+          "icon": "Botania:terraformRod",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:terraformRod",
+              "count": 1,
+              "title": "Создать жезл терраформирования"
+            }
+          ],
+          "description": [
+            "Жезл терраформирования выравнивает рельеф в радиусе действия."
+          ],
+          "dependencies": [
+            "b_terrasteel"
+          ],
+          "achievement": "botania:terraformRodCraft",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ]
+        },
+        {
+          "id": "b_dandelifeon",
+          "title": "Данделифеон",
+          "x": -1,
+          "y": 7,
+          "icon": {
+            "item": "Botania:specialFlower",
+            "nbt": "{type:\"dandelifeon\"}"
+          },
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Botania:specialFlower",
+              "count": 1,
+              "consume": false,
+              "nbt": "{type:\"dandelifeon\"}",
+              "title": "Создать данделифеон"
+            }
+          ],
+          "description": [
+            "Играет в «Жизнь» Конвея и превращает клетки в ману."
+          ],
+          "dependencies": [
+            "b_elfheim"
+          ],
+          "achievement": "botania:dandelifeonPickup",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "id": "b_kekimurus",
+          "title": "Кекимурус",
+          "x": -1,
+          "y": 8,
+          "icon": {
+            "item": "Botania:specialFlower",
+            "nbt": "{type:\"kekimurus\"}"
+          },
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Botania:specialFlower",
+              "count": 1,
+              "consume": false,
+              "nbt": "{type:\"kekimurus\"}",
+              "title": "Создать кекимурус"
+            }
+          ],
+          "description": [
+            "Пожирает торты и производит ману."
+          ],
+          "dependencies": [
+            "b_elfheim"
+          ],
+          "achievement": "botania:kekimurusPickup",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "id": "b_luminizer",
+          "title": "Светящаяся дорога",
+          "x": -1,
+          "y": 9,
+          "icon": "Botania:lightRelay",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:lightRelay",
+              "count": 1,
+              "title": "Создать световой ретранслятор"
+            },
+            {
+              "type": "checkmark",
+              "title": "Проехать по цепочке светящихся ретрансляторов"
+            }
+          ],
+          "description": [
+            "Ретрансляторы переносят игрока по воздуху на большое расстояние."
+          ],
+          "dependencies": [
+            "b_manasteel"
+          ],
+          "achievement": "botania:luminizerRide",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ]
+        },
+        {
+          "id": "b_ender_air",
+          "title": "Бутылка воздуха Края",
+          "x": -1,
+          "y": 10,
+          "icon": {
+            "item": "Botania:manaResource",
+            "meta": 15
+          },
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Botania:manaResource",
+              "meta": 15,
+              "count": 1,
+              "consume": false,
+              "title": "Собрать воздух Края в бутылку"
+            }
+          ],
+          "description": [
+            "Нужно побывать в Крае с пустой бутылкой."
+          ],
+          "dependencies": [
+            "b_elementium"
+          ],
+          "achievement": "botania:enderAirMake",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ]
+        },
+        {
+          "id": "b_manaweave",
+          "title": "Манатканевая броня",
+          "x": 1,
+          "y": 13,
+          "icon": "Botania:manaweaveChest",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:manaweaveHelm",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Botania:manaweaveChest",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Botania:manaweaveLegs",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Botania:manaweaveBoots",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Полный комплект манатканевой брони — дешёвая защита с бонусом к мане."
+          ],
+          "dependencies": [
+            "b_manasteel"
+          ],
+          "achievement": "botania:manaweaveArmorCraft",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "id": "b_mana_cart",
+          "title": "Вагонетка с маной",
+          "x": 1,
+          "y": 14,
+          "icon": "Botania:poolMinecart",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:poolMinecart",
+              "count": 1,
+              "title": "Создать вагонетку с бассейном"
+            }
+          ],
+          "description": [
+            "Вагонетка с бассейном маны ездит по рельсам и раздаёт ману."
+          ],
+          "dependencies": [
+            "b_manapool"
+          ],
+          "achievement": "botania:manaCartCraft",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ]
+        },
+        {
+          "id": "b_crafting_halo",
+          "title": "Ореол крафта",
+          "x": 1,
+          "y": 15,
+          "icon": "Botania:craftingHalo",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:craftingHalo",
+              "count": 1,
+              "title": "Создать ореол крафта"
+            }
+          ],
+          "description": [
+            "Позволяет крафтить, не открывая верстак."
+          ],
+          "dependencies": [
+            "b_manasteel"
+          ],
+          "achievement": "botania:craftingHaloCraft",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ]
+        },
+        {
+          "id": "b_gaia_no_armor",
+          "title": "Без брони",
+          "x": 1,
+          "y": 16,
+          "icon": "Botania:gaiaHead",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Победить Стражника Геи без единого элемента брони"
+            }
+          ],
+          "description": [
+            "Необязательное испытание для самых уверенных."
+          ],
+          "dependencies": [
+            "b_gaia"
+          ],
+          "optional": true,
+          "achievement": "botania:gaiaGuardianNoArmor",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 400
+            }
+          ]
+        },
+        {
+          "id": "b_ring_odin",
+          "title": "Кольцо Одина",
+          "x": 2,
+          "y": 18,
+          "icon": "Botania:odinRing",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:odinRing",
+              "count": 1,
+              "title": "Создать кольцо Одина"
+            }
+          ],
+          "description": [
+            "Кольцо Одина даёт сопротивление и силу, пока носится в слоте аксессуара."
+          ],
+          "dependencies": [
+            "b_gaia"
+          ],
+          "achievement": "botania:odinRing",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "id": "b_ring_thor",
+          "title": "Кольцо Тора",
+          "x": 2,
+          "y": 19,
+          "icon": "Botania:thorRing",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:thorRing",
+              "count": 1,
+              "title": "Создать кольцо Тора"
+            }
+          ],
+          "description": [
+            "Кольцо Тора бьёт молниями по врагам."
+          ],
+          "dependencies": [
+            "b_gaia"
+          ],
+          "achievement": "botania:thorRing",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "id": "b_ring_loki",
+          "title": "Кольцо Локи",
+          "x": 2,
+          "y": 20,
+          "icon": "Botania:lokiRing",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:lokiRing",
+              "count": 1,
+              "title": "Создать кольцо Локи"
+            }
+          ],
+          "description": [
+            "Кольцо Локи позволяет незаметно красть у мобов и игроков."
+          ],
+          "dependencies": [
+            "b_gaia"
+          ],
+          "achievement": "botania:lokiRing",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "id": "b_ring_aesir",
+          "title": "Кольцо асов",
+          "x": 2,
+          "y": 21,
+          "icon": "Botania:aesirRing",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Botania:odinRing",
+              "count": 1,
+              "consume": false,
+              "title": "Иметь кольцо Одина"
+            },
+            {
+              "type": "item",
+              "item": "Botania:thorRing",
+              "count": 1,
+              "consume": false,
+              "title": "Иметь кольцо Тора"
+            },
+            {
+              "type": "item",
+              "item": "Botania:lokiRing",
+              "count": 1,
+              "consume": false,
+              "title": "Иметь кольцо Локи"
+            },
+            {
+              "type": "craft",
+              "item": "Botania:aesirRing",
+              "count": 1,
+              "title": "Собрать кольцо асов"
+            }
+          ],
+          "description": [
+            "Три кольца соединяются в одно."
+          ],
+          "dependencies": [
+            "b_ring_odin",
+            "b_ring_thor",
+            "b_ring_loki"
+          ],
+          "achievement": "botania:aesirRing",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 500
+            }
+          ]
+        },
+        {
+          "id": "b_infinite_fruit",
+          "title": "Бесконечный плод",
+          "x": 2,
+          "y": 22,
+          "icon": "Botania:infiniteFruit",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:infiniteFruit",
+              "count": 1,
+              "title": "Создать бесконечный плод"
+            }
+          ],
+          "description": [
+            "Бесконечный плод насыщает и снимает голод навсегда."
+          ],
+          "dependencies": [
+            "b_gaia"
+          ],
+          "achievement": "botania:infiniteFruit",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 300
+            }
+          ]
+        },
+        {
+          "id": "b_king_key",
+          "title": "Ключ короля",
+          "x": 2,
+          "y": 23,
+          "icon": "Botania:kingKey",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:kingKey",
+              "count": 1,
+              "title": "Создать ключ короля"
+            }
+          ],
+          "description": [
+            "Ключ короля открывает любые двери и сундуки."
+          ],
+          "dependencies": [
+            "b_gaia"
+          ],
+          "achievement": "botania:kingKey",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 300
+            }
+          ]
+        },
+        {
+          "id": "b_flugel_eye",
+          "title": "Око флюгеля",
+          "x": 2,
+          "y": 24,
+          "icon": "Botania:flugelEye",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Botania:flugelEye",
+              "count": 1,
+              "title": "Создать око флюгеля"
+            }
+          ],
+          "description": [
+            "Око флюгеля переносит владельца в точку возрождения."
+          ],
+          "dependencies": [
+            "b_gaia"
+          ],
+          "achievement": "botania:flugelEye",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 300
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1549 @@
+{
+  "title": "BuildCraft",
+  "chapters": [
+    {
+      "id": "buildcraft",
+      "title": "BuildCraft",
+      "description": "Трубы, двигатели, роботы и строительство: путь от первой деревянной шестерни до карьера и чертежей.",
+      "icon": "BuildCraft|Core:engineBlock",
+      "requiredMod": "BuildCraft|Core",
+      "quests": [
+        {
+          "id": "bc_wooden_gear",
+          "title": "Первая шестерня",
+          "icon": "BuildCraft|Core:woodenGearItem",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Core:woodenGearItem",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Шестерня — сердце любого механизма BuildCraft.",
+            "Две деревянные сразу пригодятся: одна уйдёт в гаечный ключ, вторая — в первый двигатель."
+          ],
+          "achievement": "achievement.woodenGear",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 15
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "bc_stone_gear",
+          "title": "Каменная шестерня",
+          "icon": "BuildCraft|Core:stoneGearItem",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Core:stoneGearItem",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Деревянную шестерню можно улучшить прямо в верстаке: камень прочнее и открывает дорогу к железу."
+          ],
+          "dependencies": [
+            "bc_wooden_gear"
+          ],
+          "achievement": "achievement.stoneGear",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 1,
+          "y": -2
+        },
+        {
+          "id": "bc_wrench",
+          "title": "Гаечный ключ",
+          "icon": "BuildCraft|Core:wrenchItem",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Core:wrenchItem",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Ключ поворачивает блоки и аккуратно снимает трубы, не теряя то, что внутри."
+          ],
+          "dependencies": [
+            "bc_stone_gear"
+          ],
+          "achievement": "achievement.wrench",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            },
+            {
+              "type": "item",
+              "item": "BuildCraft|Core:stoneGearItem",
+              "count": 2
+            }
+          ],
+          "x": 2,
+          "y": -2
+        },
+        {
+          "id": "bc_iron_gear",
+          "title": "Железная шестерня",
+          "icon": "BuildCraft|Core:ironGearItem",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Core:ironGearItem",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Железные шестерни нужны двигателю Стирлинга и почти всем машинам мода."
+          ],
+          "dependencies": [
+            "bc_stone_gear"
+          ],
+          "achievement": "achievement.ironGear",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "minecraft:iron_ingot",
+              "count": 2
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "bc_gold_gear",
+          "title": "Золотая шестерня",
+          "icon": "BuildCraft|Core:goldGearItem",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Core:goldGearItem",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Золото мягкое, зато шестерня из него идёт в самые точные механизмы — вплоть до стола архитектора."
+          ],
+          "dependencies": [
+            "bc_iron_gear"
+          ],
+          "achievement": "achievement.goldGear",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "minecraft:gold_ingot",
+              "count": 1
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "bc_diamond_gear",
+          "title": "Алмазная шестерня",
+          "icon": "BuildCraft|Core:diamondGearItem",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Core:diamondGearItem",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Вершина шестерёночной лестницы: без неё не собрать карьер, лазеры и сборочный стол."
+          ],
+          "dependencies": [
+            "bc_gold_gear"
+          ],
+          "achievement": "achievement.diamondGear",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:diamond",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "BuildCraft|Silicon:redstoneCrystal",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "x": 4,
+          "y": -4
+        },
+        {
+          "id": "bc_auto_workbench",
+          "title": "Автоверстак",
+          "icon": "BuildCraft|Factory:autoWorkbenchBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Factory:autoWorkbenchBlock",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Автоверстак сам повторяет рецепт, если подкидывать ему материалы трубами или вручную."
+          ],
+          "dependencies": [
+            "bc_wooden_gear"
+          ],
+          "achievement": "achievement.aLotOfCrafting",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "bc_redstone_engine",
+          "title": "Двигатель на красном камне",
+          "icon": "BuildCraft|Core:engineBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Core:engineBlock",
+              "count": 1,
+              "meta": 0,
+              "title": "Двигатель на красном камне"
+            }
+          ],
+          "description": [
+            "Самый слабый и самый безопасный двигатель мода: работает от красного сигнала и почти не греется.",
+            "Его хватает на трубы, автоверстак и насос."
+          ],
+          "dependencies": [
+            "bc_wooden_gear"
+          ],
+          "achievement": "achievement.redstoneEngine",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            },
+            {
+              "type": "item",
+              "item": "minecraft:redstone",
+              "count": 8
+            }
+          ],
+          "x": 1,
+          "y": 0
+        },
+        {
+          "id": "bc_stirling_engine",
+          "title": "Двигатель Стирлинга",
+          "icon": {
+            "item": "BuildCraft|Core:engineBlock",
+            "meta": 1
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Core:engineBlock",
+              "count": 1,
+              "meta": 1,
+              "title": "Двигатель Стирлинга"
+            }
+          ],
+          "description": [
+            "Топливом служит уголь и всё, что горит в печи; энергии заметно больше, чем у красного двигателя."
+          ],
+          "dependencies": [
+            "bc_redstone_engine"
+          ],
+          "achievement": "achievement.stirlingEngine",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "minecraft:coal",
+              "count": 8
+            }
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "id": "bc_combustion_engine",
+          "title": "Двигатель внутреннего сгорания",
+          "icon": {
+            "item": "BuildCraft|Core:engineBlock",
+            "meta": 2
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Core:engineBlock",
+              "count": 1,
+              "meta": 2,
+              "title": "Двигатель внутреннего сгорания"
+            }
+          ],
+          "description": [
+            "Самый мощный двигатель мода: пьёт нефть, топливо и лаву.",
+            "Следите за охлаждением водой - перегретый двигатель взрывается."
+          ],
+          "dependencies": [
+            "bc_stirling_engine"
+          ],
+          "achievement": "achievement.combustionEngine",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "BuildCraft|Energy:bucketFuel",
+              "count": 1
+            }
+          ],
+          "x": 3,
+          "y": 1
+        },
+        {
+          "id": "bc_mining_well",
+          "title": "Буровая",
+          "icon": "BuildCraft|Factory:miningWellBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Factory:miningWellBlock",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Буровая вгрызается строго вниз, оставляя за собой шахту и вытаскивая руду с любой глубины."
+          ],
+          "dependencies": [
+            "bc_iron_gear"
+          ],
+          "achievement": "achievement.straightDown",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "BuildCraft|Factory:plainPipeBlock",
+              "count": 8
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "bc_pipes",
+          "title": "Трубы для предметов",
+          "icon": "BuildCraft|Transport:item.buildcraftPipe.pipeitemswood",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipeitemswood",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsstone",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:pipeWaterproof",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Деревянная труба вытягивает предметы из сундуков и печей, каменная просто несёт их дальше.",
+            "Герметик превращает любую трубу в жидкостную."
+          ],
+          "dependencies": [
+            "bc_wrench"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            },
+            {
+              "type": "item",
+              "item": "BuildCraft|Transport:pipeWaterproof",
+              "count": 2
+            }
+          ],
+          "x": 3,
+          "y": -4
+        },
+        {
+          "id": "bc_kinesis",
+          "title": "Энергетические трубы",
+          "icon": "BuildCraft|Transport:item.buildcraftPipe.pipepowerwood",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipepowerwood",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipepowerstone",
+              "count": 4
+            }
+          ],
+          "description": [
+            "По кинетическим трубам энергия доходит от двигателей до машин.",
+            "Деревянная труба принимает энергию, каменная передаёт её дальше."
+          ],
+          "dependencies": [
+            "bc_redstone_engine"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "bc_pump",
+          "title": "Насос и баки",
+          "icon": "BuildCraft|Factory:pumpBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Factory:pumpBlock",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Factory:tankBlock",
+              "count": 2
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipefluidswood",
+              "count": 4
+            },
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 10,
+              "title": "Отогнать зомби от насосной станции"
+            }
+          ],
+          "description": [
+            "Насос качает нефть или воду в трубы и баки: ставьте его над найденным месторождением.",
+            "Ночью к работающей технике тянутся мобы, так что без оружия не обойтись."
+          ],
+          "dependencies": [
+            "bc_kinesis"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "BuildCraft|Factory:tankBlock",
+              "count": 1
+            }
+          ],
+          "x": 3,
+          "y": 2
+        },
+        {
+          "id": "bc_refinery",
+          "title": "Нефтепереработка",
+          "icon": "BuildCraft|Factory:refineryBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Factory:refineryBlock",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "BuildCraft|Energy:bucketOil",
+              "count": 2,
+              "consume": false,
+              "title": "Набрать два ведра нефти"
+            },
+            {
+              "type": "item",
+              "item": "BuildCraft|Energy:bucketFuel",
+              "count": 1,
+              "consume": false,
+              "title": "Получить ведро топлива"
+            }
+          ],
+          "description": [
+            "Нефть из-под земли перегоняется в топливо, а топливо даёт двигателям куда больше энергии, чем уголь.",
+            "Одно ведро нефти превращается в одно ведро топлива."
+          ],
+          "dependencies": [
+            "bc_pump",
+            "bc_diamond_gear"
+          ],
+          "achievement": "achievement.refineAndRedefine",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:bucket",
+              "count": 2
+            }
+          ],
+          "x": 5,
+          "y": -2
+        },
+        {
+          "id": "bc_assembly",
+          "title": "Сборочный стол",
+          "icon": "BuildCraft|Silicon:laserTableBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Silicon:laserTableBlock",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Сборочный стол собирает детали из материалов, но работает только под светом лазеров.",
+            "Здесь делают красные чипсеты и красные кристаллы."
+          ],
+          "dependencies": [
+            "bc_diamond_gear",
+            "bc_kinesis"
+          ],
+          "achievement": "achievement.timeForSomeLogic",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "BuildCraft|Silicon:redstoneCrystal",
+              "count": 2
+            }
+          ],
+          "x": 5,
+          "y": -4
+        },
+        {
+          "id": "bc_laser",
+          "title": "Лазеры и чипсеты",
+          "icon": "BuildCraft|Silicon:laserBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Silicon:laserBlock",
+              "count": 2
+            },
+            {
+              "type": "item",
+              "ore": "chipsetRed",
+              "count": 2,
+              "consume": false,
+              "title": "Получить два красных чипсета"
+            }
+          ],
+          "description": [
+            "Лазеры качают энергию в сборочный стол, а на выходе получаются чипсеты - основа вентилей и роботов.",
+            "Чем больше лазеров, тем быстрее идёт сборка."
+          ],
+          "dependencies": [
+            "bc_assembly"
+          ],
+          "achievement": "achievement.tinglyLaser",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "BuildCraft|Silicon:redstoneChipset",
+              "count": 2
+            }
+          ],
+          "x": 6,
+          "y": -3
+        },
+        {
+          "id": "bc_logic",
+          "title": "Провода и логические вентили",
+          "icon": "BuildCraft|Transport:pipeGate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:pipeWire",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:pipeGate",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:gateCopier",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Вентиль на трубе включает и выключает её по сигналу: фильтры, таймеры, счётчики предметов.",
+            "Копирователь переносит настройки вентиля на все остальные одним щелчком."
+          ],
+          "dependencies": [
+            "bc_laser",
+            "bc_diamond_gear"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "BuildCraft|Transport:pipeWire",
+              "count": 4
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "bc_architect",
+          "title": "Стол архитектора",
+          "icon": "BuildCraft|Builders:architectBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Builders:architectBlock",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Стол архитектора запоминает постройку целиком и превращает её в чертёж или шаблон.",
+            "Строить потом можно где угодно."
+          ],
+          "dependencies": [
+            "bc_gold_gear"
+          ],
+          "achievement": "achievement.architect",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "BuildCraft|Builders:constructionMarkerBlock",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": -3
+        },
+        {
+          "id": "bc_blueprint",
+          "title": "Чертёж",
+          "icon": "BuildCraft|Builders:blueprintItem",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Builders:blueprintItem",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Чертёж хранит целую постройку в одном предмете: его можно копировать и передавать друзьям."
+          ],
+          "dependencies": [
+            "bc_architect"
+          ],
+          "achievement": "achievement.blueprint",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "bc_template",
+          "title": "Шаблон",
+          "icon": "BuildCraft|Builders:templateItem",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Builders:templateItem",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Шаблон — тот же чертёж, только маленький: мосты, стены и площадки из небольшого числа блоков."
+          ],
+          "dependencies": [
+            "bc_blueprint"
+          ],
+          "achievement": "achievement.template",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "bc_builder",
+          "title": "Строитель",
+          "icon": "BuildCraft|Builders:builderBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Builders:builderBlock",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Строитель сам возводит постройку по чертежу: нужно только поднести материалы и подвести энергию.",
+            "Работает и в шахте, и на поверхности."
+          ],
+          "dependencies": [
+            "bc_architect"
+          ],
+          "achievement": "achievement.builder",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "BuildCraft|Builders:frameBlock",
+              "count": 8
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "bc_library",
+          "title": "Электронная библиотека",
+          "icon": "BuildCraft|Builders:libraryBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Builders:libraryBlock",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Библиотека хранит все чертежи сразу и делится ими с остальными игроками через трубы."
+          ],
+          "dependencies": [
+            "bc_builder"
+          ],
+          "achievement": "achievement.blueprintLibrary",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "BuildCraft|Builders:blueprintItem",
+              "count": 2
+            }
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "id": "bc_filler",
+          "title": "Заполнитель",
+          "icon": "BuildCraft|Builders:fillerBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Builders:fillerBlock",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Заполнитель разравнивает площадку по шаблону: пол, стена, пирамида или очистка от лишних блоков."
+          ],
+          "dependencies": [
+            "bc_architect"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 5,
+          "y": 1
+        },
+        {
+          "id": "bc_quarry",
+          "title": "Карьер",
+          "icon": "BuildCraft|Builders:machineBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Builders:machineBlock",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Builders:frameBlock",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Карьер выкапывает целую область до бедрока и складывает добычу в сундук.",
+            "Ему нужна алмазная шестерня, рамки и очень много энергии."
+          ],
+          "dependencies": [
+            "bc_diamond_gear",
+            "bc_kinesis"
+          ],
+          "achievement": "achievement.chunkDestroyer",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:diamond",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "BuildCraft|Core:diamondGearItem",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": -3
+        },
+        {
+          "id": "bc_robots",
+          "title": "Роботы",
+          "icon": "BuildCraft|Robotics:robot",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Robotics:redstone_board",
+              "count": 2
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Robotics:robotStation",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Robotics:robot",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Роботы носят предметы, копают, строят и тушат пожары: программа записывается на красную плату.",
+            "Док-станция заряжает робота и возвращает его домой."
+          ],
+          "dependencies": [
+            "bc_laser",
+            "bc_kinesis"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "BuildCraft|Robotics:redstone_board",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "BuildCraft|Silicon:redstoneCrystal",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "x": 7,
+          "y": 0
+        },
+        {
+          "id": "bc_landmarks",
+          "title": "Разметка участка",
+          "icon": "BuildCraft|Core:markerBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Core:markerBlock",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Core:pathMarkerBlock",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Четыре маркера Land Mark задают прямоугольник участка, с которым потом работают карьер и заполнитель.",
+            "Path Mark отмечает границу этого прямоугольника и помогает выровнять линии постройки."
+          ],
+          "dependencies": [
+            "bc_wrench"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "BuildCraft|Builders:constructionMarkerBlock",
+              "count": 2
+            }
+          ],
+          "x": 3,
+          "y": -3
+        },
+        {
+          "id": "bc_build_tool",
+          "title": "Инструмент строителя",
+          "icon": "BuildCraft|Core:buildToolBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Core:buildToolBlock",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "minecraft:redstone",
+              "count": 8,
+              "consume": false,
+              "title": "Запастись красным камнем"
+            }
+          ],
+          "description": [
+            "Инструмент строителя работает сразу с несколькими блоками: стены и площадки возводятся заметно быстрее, чем вручную."
+          ],
+          "dependencies": [
+            "bc_wrench"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "minecraft:iron_ingot",
+              "count": 2
+            }
+          ],
+          "x": 3,
+          "y": -2
+        },
+        {
+          "id": "bc_clay_pipes",
+          "title": "Глиняные трубы",
+          "icon": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsclay",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsclay",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipefluidsclay",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Глиняные трубы — самый дешёвый способ начать автоматизацию: они вставляют предметы и жидкости прямо в соседний инвентарь.",
+            "Герметик для жидкостной версии вы уже умеете делать."
+          ],
+          "dependencies": [
+            "bc_pipes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            },
+            {
+              "type": "item",
+              "item": "minecraft:clay_ball",
+              "count": 8
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "bc_iron_pipes",
+          "title": "Железные и золотые трубы",
+          "icon": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsiron",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsiron",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsgold",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Железная труба забирает предметы из инвентаря только при красном сигнале — удобно для дозированной выдачи.",
+            "Золотая труба разгоняет предметы: ставьте её на длинных линиях, чтобы добыча не ползла черепахой."
+          ],
+          "dependencies": [
+            "bc_pipes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "ore": "gearIron",
+              "count": 2
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "bc_special_pipes",
+          "title": "Трубы на все случаи",
+          "icon": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsobsidian",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsobsidian",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsquartz",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipeitemssandstone",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Обсидиановая труба засасывает предметы, валяющиеся на земле: незаменима под карьером и у лазеров.",
+            "Кварцевые и песчаниковые трубы дешевле железных и годятся для черновых линий."
+          ],
+          "dependencies": [
+            "bc_iron_pipes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "minecraft:obsidian",
+              "count": 2
+            }
+          ],
+          "x": 5,
+          "y": 2
+        },
+        {
+          "id": "bc_diamond_pipes",
+          "title": "Сортировка предметов",
+          "icon": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsdiamond",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsdiamond",
+              "count": 2
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsemerald",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Алмазная труба раскладывает предметы по цветным фильтрам: руда — в одну сторону, булыжник — в другую.",
+            "Изумрудная труба вытаскивает из сундука только выбранный слот, например одну лишь руду."
+          ],
+          "dependencies": [
+            "bc_iron_pipes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 1
+            }
+          ],
+          "x": 5,
+          "y": 3
+        },
+        {
+          "id": "bc_void_pipes",
+          "title": "Трубы пустоты",
+          "icon": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsvoid",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsvoid",
+              "count": 2
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipefluidsvoid",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Труба пустоты уничтожает всё, что через неё проходит: булыжник, землю и лишние жидкости можно просто сбрасывать в никуда."
+          ],
+          "dependencies": [
+            "bc_diamond_pipes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "minecraft:bucket",
+              "count": 2
+            }
+          ],
+          "x": 6,
+          "y": 1
+        },
+        {
+          "id": "bc_pipe_decor",
+          "title": "Заглушки, фасады и линзы",
+          "icon": "BuildCraft|Transport:pipeFacade",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:pipePlug",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:pipeFacade",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:pipeLens",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Заглушки закрывают лишние стороны трубы, чтобы предметы не уходили не туда.",
+            "Фасады маскируют трубы под любой блок, а линзы окрашивают провода и лучи лазеров."
+          ],
+          "dependencies": [
+            "bc_logic"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "ore": "gearGold",
+              "count": 2
+            }
+          ],
+          "x": 8,
+          "y": -1
+        },
+        {
+          "id": "bc_power_adapter",
+          "title": "Усиление энергосети",
+          "icon": "BuildCraft|Transport:pipePowerAdapter",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:pipePowerAdapter",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipepoweriron",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipepowergold",
+              "count": 4
+            },
+            {
+              "type": "item",
+              "ore": "gearGold",
+              "count": 2,
+              "consume": false,
+              "title": "Подготовить две золотые шестерни"
+            }
+          ],
+          "description": [
+            "Силовой адаптер подключает машину прямо к линии энергетических труб.",
+            "Золотая кинетическая труба передаёт энергию без потерь на любой дистанции — на ней и стоит держать магистраль."
+          ],
+          "dependencies": [
+            "bc_kinesis"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "ore": "gearIron",
+              "count": 2
+            }
+          ],
+          "x": 3,
+          "y": 3
+        },
+        {
+          "id": "bc_chute",
+          "title": "Жёлоб",
+          "icon": "BuildCraft|Factory:blockHopper",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Factory:blockHopper",
+              "count": 2
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:item.buildcraftPipe.pipeitemscobblestone",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Жёлоб ссыпает предметы сверху вниз: он соединяет этажи базы и подаёт добычу прямо в сундуки.",
+            "Булыжниковые трубы рядом подведут предметы к жёлобам."
+          ],
+          "dependencies": [
+            "bc_pipes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "minecraft:chest",
+              "count": 2
+            }
+          ],
+          "x": 4,
+          "y": 1
+        },
+        {
+          "id": "bc_filtered_buffer",
+          "title": "Буфер с фильтрами",
+          "icon": "BuildCraft|Transport:filteredBufferBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Transport:filteredBufferBlock",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "minecraft:chest",
+              "count": 4,
+              "consume": false,
+              "title": "Заготовить четыре сундука"
+            }
+          ],
+          "description": [
+            "Буфер раскладывает входящий поток по девяти слотам: каждая ячейка принимает только свой предмет, остальное уходит дальше."
+          ],
+          "dependencies": [
+            "bc_diamond_pipes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "BuildCraft|Transport:filteredBufferBlock",
+              "count": 1
+            }
+          ],
+          "x": 6,
+          "y": 2
+        },
+        {
+          "id": "bc_water_spring",
+          "title": "Источник воды",
+          "icon": "BuildCraft|Core:eternalSpring",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Core:eternalSpring",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Factory:tankBlock",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Водяной источник бьёт бесконечно: поставьте его в водоём рядом с насосом, и баки никогда не опустеют.",
+            "Вода нужна двигателям внутреннего сгорания для охлаждения."
+          ],
+          "dependencies": [
+            "bc_pump"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "minecraft:bucket",
+              "count": 2
+            }
+          ],
+          "x": 4,
+          "y": 2
+        },
+        {
+          "id": "bc_packager",
+          "title": "Упаковщик рецептов",
+          "icon": "BuildCraft|Silicon:packagerBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Silicon:packagerBlock",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "BuildCraft|Silicon:package",
+              "count": 2,
+              "consume": false,
+              "title": "Получить две посылки"
+            }
+          ],
+          "description": [
+            "Упаковщик складывает нужные для крафта предметы в одну посылку: роботу или запросчику остаётся только доставить её."
+          ],
+          "dependencies": [
+            "bc_assembly"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "BuildCraft|Silicon:redstoneChipset",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "BuildCraft|Silicon:redstoneCrystal",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 6,
+          "y": -2
+        },
+        {
+          "id": "bc_requester",
+          "title": "Запросчик",
+          "icon": "BuildCraft|Robotics:requester",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "BuildCraft|Robotics:requester",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "BuildCraft|Robotics:zonePlan",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Запросчик сам просит у сети роботов нужные предметы и посылки, когда они заканчиваются.",
+            "Планировщик зон очерчивает территорию, на которой роботам разрешено работать."
+          ],
+          "dependencies": [
+            "bc_robots"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "BuildCraft|Robotics:redstone_board",
+              "count": 1
+            }
+          ],
+          "x": 8,
+          "y": 0
+        },
+        {
+          "id": "bc_mob_defense",
+          "title": "Охрана базы",
+          "icon": "minecraft:iron_sword",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 15
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 10
+            },
+            {
+              "type": "kill",
+              "entity": "Creeper",
+              "count": 5
+            }
+          ],
+          "description": [
+            "Гудящие двигатели и свет машин собирают на базе всю нечисть округи.",
+            "Расчистите периметр от зомби, скелетов и криперов, чтобы они не поломали трубы."
+          ],
+          "dependencies": [
+            "bc_combustion_engine"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:iron_ingot",
+                  "count": 4
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:bone",
+                  "count": 6
+                }
+              ]
+            }
+          ],
+          "x": 4,
+          "y": -2
+        }
+      ]
+    }
+  ]
+}

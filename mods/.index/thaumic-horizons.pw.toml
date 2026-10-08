@@ -1,0 +1,21 @@
+filename = 'ThaumicHorizons-1.8.20.jar'
+name = 'Thaumic Horizons'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = ''
+
+[download]
+hash = '5056a29019ee34b32db0e221c36daca50bfb10ef'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8147000
+project-id = 227914
+
+[[x-prismlauncher-dependencies]]
+addonId = '223628'
+type = 'REQUIRED'

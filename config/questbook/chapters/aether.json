@@ -1,0 +1,1536 @@
+{
+  "title": "The Aether",
+  "chapters": [
+    {
+      "id": "aether",
+      "title": "The Aether",
+      "description": "Небесные острова, амброзий, занит, гравитит и три дунджа с боссами.",
+      "icon": "aether_legacy:aether_portal",
+      "requiredMod": "aether_legacy",
+      "quests": [
+        {
+          "id": "ae_portal",
+          "title": "Портал в Эфир",
+          "icon": "minecraft:glowstone",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:glowstone",
+              "count": 10,
+              "consume": false,
+              "title": "Собрать 10 блоков светокамня"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:water_bucket",
+              "count": 1,
+              "consume": false,
+              "title": "Подготовить ведро воды"
+            }
+          ],
+          "description": [
+            "Рамка портала в Эфир выкладывается из светокамня — как у портала в Нижний мир, только без обсидиана.",
+            "Осталось плеснуть внутрь воды, и небесный мир откроется."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "ae_enter",
+          "title": "Первые шаги в Эфире",
+          "icon": "aether_legacy:aether_portal",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Шагнуть в портал и оказаться в Эфире"
+            }
+          ],
+          "description": [
+            "Эфир — мир плавучих островов. Падать здесь очень высоко, так что держитесь подальше от края."
+          ],
+          "dependencies": [
+            "ae_portal"
+          ],
+          "achievement": "advancement.aether_legacy.enter_aether",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:lore_book",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:ambrosium_shard",
+              "count": 4
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "ae_lore",
+          "title": "Книга Знаний",
+          "icon": "aether_legacy:lore_book",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:lore_book",
+              "count": 1,
+              "consume": false,
+              "title": "Держать Книгу Знаний"
+            },
+            {
+              "type": "checkmark",
+              "title": "Открыть книгу и пролистать главы"
+            }
+          ],
+          "description": [
+            "Книга Знаний — путеводитель по моду: она подсказывает, где искать руды, дунджи и боссов."
+          ],
+          "dependencies": [
+            "ae_enter"
+          ],
+          "achievement": "advancement.aether_legacy.loreception",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 2,
+          "y": -6
+        },
+        {
+          "id": "ae_skyroot",
+          "title": "Синекорень",
+          "icon": "aether_legacy:skyroot_log",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:skyroot_log",
+              "count": 4,
+              "consume": false,
+              "title": "Срубить брёвна синекорня"
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:skyroot_sapling",
+              "count": 1,
+              "consume": false,
+              "title": "Найти саженец синекорня"
+            }
+          ],
+          "description": [
+            "Синекорень — местная древесина: из неё выходят доски, палки и первые инструменты."
+          ],
+          "dependencies": [
+            "ae_enter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 2,
+          "y": -5
+        },
+        {
+          "id": "ae_skyroot_tools",
+          "title": "Инструменты из синекорня",
+          "icon": "aether_legacy:skyroot_pickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "aether_legacy:skyroot_pickaxe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:skyroot_sword",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:skyroot_shovel",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Набор из синекорня не прочнее деревянного, но это первый шаг к священному камню."
+          ],
+          "dependencies": [
+            "ae_skyroot"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 3,
+          "y": -4
+        },
+        {
+          "id": "ae_holystone",
+          "title": "Священный камень",
+          "icon": "aether_legacy:holystone",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:holystone",
+              "count": 16,
+              "consume": false,
+              "title": "Накопать священного камня"
+            }
+          ],
+          "description": [
+            "Священный камень — обычный камень Эфира. Из него делают инструменты, кирпичи и блоки дунджей."
+          ],
+          "dependencies": [
+            "ae_skyroot_tools"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 4,
+          "y": -2
+        },
+        {
+          "id": "ae_holystone_tools",
+          "title": "Священные инструменты",
+          "icon": "aether_legacy:holystone_pickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "aether_legacy:holystone_pickaxe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:holystone_sword",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:holystone_axe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:holystone_shovel",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Священный камень крепче дерева: полный набор прослужит долго и добудет занит."
+          ],
+          "dependencies": [
+            "ae_holystone"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "ae_ambrosium",
+          "title": "Амброзий",
+          "icon": "aether_legacy:ambrosium_shard",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:ambrosium_shard",
+              "count": 8,
+              "consume": false,
+              "title": "Собрать осколки амброзия"
+            }
+          ],
+          "description": [
+            "Амброзий светится в темноте и лечит землю, а его осколки нужны для алтаря и факелов."
+          ],
+          "dependencies": [
+            "ae_enter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:ambrosium_torch",
+              "count": 8
+            }
+          ],
+          "x": 2,
+          "y": -4
+        },
+        {
+          "id": "ae_altar",
+          "title": "Алтарь",
+          "icon": "aether_legacy:enchanter",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "aether_legacy:enchanter",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Алтарь — местный верстак чар: положите предмет, добавьте амброзий и получите улучшение."
+          ],
+          "dependencies": [
+            "ae_ambrosium"
+          ],
+          "achievement": "advancement.aether_legacy.enchanter",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 3,
+          "y": -2
+        },
+        {
+          "id": "ae_zanite",
+          "title": "Занит",
+          "icon": "aether_legacy:zanite_gemstone",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Найти занитовую руду в глубине островов"
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:zanite_gemstone",
+              "count": 6,
+              "consume": false,
+              "title": "Добыть самоцветы занита"
+            }
+          ],
+          "description": [
+            "Занит прячется в нижних слоях островов. Чем сильнее изношен предмет, тем быстрее он работает."
+          ],
+          "dependencies": [
+            "ae_holystone_tools"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "ae_zanite_gear",
+          "title": "Занитовая броня",
+          "icon": "aether_legacy:zanite_chestplate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "aether_legacy:zanite_helmet",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:zanite_chestplate",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:zanite_leggings",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:zanite_boots",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Полный занитовый доспех — надёжная защита до первого гравитита и пропуск в дунджи."
+          ],
+          "dependencies": [
+            "ae_zanite"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "ae_icestone",
+          "title": "Ледяной камень",
+          "icon": "aether_legacy:icestone",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:icestone",
+              "count": 8,
+              "consume": false,
+              "title": "Добыть ледяной камень"
+            }
+          ],
+          "description": [
+            "Ледяной камень замораживает воду рядом с собой — из него делают морозильник и украшения."
+          ],
+          "dependencies": [
+            "ae_holystone_tools"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "id": "ae_freezer",
+          "title": "Морозильник",
+          "icon": "aether_legacy:freezer",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "aether_legacy:freezer",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Морозильник превращает воду в лёд, а лёд — в снег, не выходя из дома."
+          ],
+          "dependencies": [
+            "ae_icestone"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 7,
+          "y": 1
+        },
+        {
+          "id": "ae_aercloud",
+          "title": "Небесные облака",
+          "icon": "aether_legacy:aercloud",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:aercloud",
+              "count": 8,
+              "consume": false,
+              "title": "Собрать аэрооблака"
+            },
+            {
+              "type": "checkmark",
+              "title": "Отскочить от синего аэрооблака и не разбиться"
+            }
+          ],
+          "description": [
+            "Аэрооблака держат игрока в воздухе, а синие отбрасывают вверх.",
+            "Прыжок с высоты на синее облако — самый быстрый способ подняться."
+          ],
+          "dependencies": [
+            "ae_enter"
+          ],
+          "achievement": "advancement.aether_legacy.blue_aercloud",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 2,
+          "y": -3
+        },
+        {
+          "id": "ae_sky_gear",
+          "title": "Небесный набор",
+          "icon": "aether_legacy:cold_parachute",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "aether_legacy:cold_parachute",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:golden_parachute",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:cloud_staff",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Парашюты спасают от падения, а посох облаков строит мост из аэрооблака прямо в воздухе."
+          ],
+          "dependencies": [
+            "ae_aercloud"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "ae_golden_oak",
+          "title": "Золотой дуб",
+          "icon": "aether_legacy:golden_oak_log",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:golden_oak_log",
+              "count": 4,
+              "consume": false,
+              "title": "Срубить золотой дуб"
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:golden_oak_sapling",
+              "count": 1,
+              "consume": false,
+              "title": "Раздобыть саженец золотого дуба"
+            }
+          ],
+          "description": [
+            "Золотой дуб растёт на крупных островах: листва сияет, а древесина годится для украшений."
+          ],
+          "dependencies": [
+            "ae_enter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 2,
+          "y": -2
+        },
+        {
+          "id": "ae_golden_amber",
+          "title": "Золотая амбра",
+          "icon": "aether_legacy:golden_amber",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:golden_amber",
+              "count": 2,
+              "consume": false,
+              "title": "Получить золотую амбру"
+            }
+          ],
+          "description": [
+            "Золотую амбру находят в сундуках Эфира; она нужна для стреломёта и украшений."
+          ],
+          "dependencies": [
+            "ae_golden_oak"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 3,
+          "y": 1
+        },
+        {
+          "id": "ae_dart",
+          "title": "Дротики и стреломёт",
+          "icon": "aether_legacy:dart_shooter",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "aether_legacy:dart",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:dart_shooter",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Стреломёт бьёт золотыми дротиками на большую дистанцию — отличная замена луку."
+          ],
+          "dependencies": [
+            "ae_golden_amber"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "ae_incubator",
+          "title": "Инкубатор",
+          "icon": "aether_legacy:incubator",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "aether_legacy:incubator",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:moa_egg",
+              "count": 1,
+              "consume": false,
+              "title": "Раздобыть яйцо моа"
+            }
+          ],
+          "description": [
+            "Моа — большая птица Эфира. Яйцо выбивается из взрослой птицы, а инкубатор согреет его до вылупления."
+          ],
+          "dependencies": [
+            "ae_enter"
+          ],
+          "achievement": "advancement.aether_legacy.incubator",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "ae_moa",
+          "title": "Верный моа",
+          "icon": "aether_legacy:aether_spawn_egg",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Вырастить моа и оседлать его"
+            }
+          ],
+          "description": [
+            "Пока моа растёт, он ест аэрооблака и синие ягоды. Взрослую птицу можно оседлать и летать на ней."
+          ],
+          "dependencies": [
+            "ae_incubator"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "minecraft:saddle",
+              "count": 1
+            }
+          ],
+          "x": 3,
+          "y": 2
+        },
+        {
+          "id": "ae_phyg",
+          "title": "Когда свиньи летают",
+          "icon": "minecraft:saddle",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:saddle",
+              "count": 1,
+              "consume": false,
+              "title": "Раздобыть седло"
+            },
+            {
+              "type": "checkmark",
+              "title": "Оседлать флея и взлететь"
+            }
+          ],
+          "description": [
+            "Флей — летающая свинья Эфира. С седлом она послушно парит между островами."
+          ],
+          "dependencies": [
+            "ae_enter"
+          ],
+          "achievement": "advancement.aether_legacy.mount_phyg",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "id": "ae_bronze",
+          "title": "Бронзовый дундж",
+          "icon": "aether_legacy:dungeon_key",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:dungeon_key",
+              "count": 1,
+              "consume": false,
+              "title": "Добыть бронзовый ключ"
+            },
+            {
+              "type": "checkmark",
+              "title": "Победить Слайдера в бронзовом дундже"
+            }
+          ],
+          "description": [
+            "Бронзовый дундж прячется внутри больших островов: священный камень, ловушки и сундуки.",
+            "Босс — Слайдер, а бронзовый ключ открывает двери и сундуки подземелья."
+          ],
+          "dependencies": [
+            "ae_zanite_gear"
+          ],
+          "achievement": "advancement.aether_legacy.bronze_dungeon",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "aether_legacy:golden_amber",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "aether_legacy:healing_stone",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 8,
+          "y": -1
+        },
+        {
+          "id": "ae_silver",
+          "title": "Серебряный дундж",
+          "icon": "aether_legacy:victory_medal",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:victory_medal",
+              "count": 1,
+              "consume": false,
+              "title": "Получить медаль победы"
+            },
+            {
+              "type": "checkmark",
+              "title": "Одолеть Королеву Валькирий"
+            }
+          ],
+          "description": [
+            "В серебряном дундже живут валькирии. Победите королеву — и получите медаль и доступ к её сокровищнице."
+          ],
+          "dependencies": [
+            "ae_bronze"
+          ],
+          "achievement": "advancement.aether_legacy.silver_dungeon",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "aether_legacy:valkyrie_cape",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "aether_legacy:agility_cape",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 9,
+          "y": -1
+        },
+        {
+          "id": "ae_gold",
+          "title": "Золотой дундж",
+          "icon": "aether_legacy:sun_altar",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:sun_altar",
+              "count": 1,
+              "consume": false,
+              "title": "Добыть солнечный алтарь"
+            },
+            {
+              "type": "checkmark",
+              "title": "Победить Солнечного духа"
+            }
+          ],
+          "description": [
+            "Самый опасный дундж Эфира: лава, адский камень и Солнечный дух в финале."
+          ],
+          "dependencies": [
+            "ae_silver"
+          ],
+          "achievement": "advancement.aether_legacy.gold_dungeon",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "aether_legacy:phoenix_bow",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "aether_legacy:notch_hammer",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 10,
+          "y": -1
+        },
+        {
+          "id": "ae_gravitite",
+          "title": "Гравитит",
+          "icon": "aether_legacy:enchanted_gravitite",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Найти гравититовую руду на нижних островах"
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:enchanted_gravitite",
+              "count": 2,
+              "consume": false,
+              "title": "Получить зачарованный гравитит"
+            }
+          ],
+          "description": [
+            "Гравититовая руда не отдаёт себя обычной киркой — её зачаровывают амброзием прямо в породе."
+          ],
+          "dependencies": [
+            "ae_altar",
+            "ae_zanite"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 7,
+          "y": -2
+        },
+        {
+          "id": "ae_gravitite_tools",
+          "title": "Розовое — новый синий",
+          "icon": "aether_legacy:gravitite_pickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "aether_legacy:gravitite_pickaxe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:gravitite_sword",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:gravitite_shovel",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:gravitite_axe",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Гравитит — вершина снаряжения Эфира: лёгкий, прочный и подкидывает блоки вверх.",
+            "Правый клик инструментом поднимает блок, на который вы смотрите."
+          ],
+          "dependencies": [
+            "ae_gravitite"
+          ],
+          "achievement": "advancement.aether_legacy.gravitite_tools",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            }
+          ],
+          "x": 8,
+          "y": 0
+        },
+        {
+          "id": "ae_skyroot_planks",
+          "title": "Доски синекорня",
+          "icon": "aether_legacy:skyroot_planks",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "aether_legacy:skyroot_planks",
+              "count": 16
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:skyroot_stick",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:skyroot_stairs",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:skyroot_fence",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Из брёвен синекорня выходят доски, палки, ступени и заборы — основа любого небесного дома."
+          ],
+          "dependencies": [
+            "ae_skyroot"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 3,
+          "y": -3
+        },
+        {
+          "id": "ae_holystone_bricks",
+          "title": "Священные кирпичи",
+          "icon": "aether_legacy:holystone_brick",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "aether_legacy:holystone_brick",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:holystone_brick_stairs",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:holystone_slab",
+              "count": 6
+            }
+          ],
+          "description": [
+            "Кирпичи, ступени и плиты из священного камня — самый аккуратный материал для построек Эфира."
+          ],
+          "dependencies": [
+            "ae_holystone"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "ae_ambrosium_torch",
+          "title": "Вечный свет",
+          "icon": "aether_legacy:ambrosium_torch",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "aether_legacy:ambrosium_torch",
+              "count": 16
+            }
+          ],
+          "description": [
+            "Амброзиевый факел горит ярче обычного и не гаснет от воды, так что даже пещеры островов становятся уютными."
+          ],
+          "dependencies": [
+            "ae_ambrosium"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "ae_quicksoil_glass",
+          "title": "Стекло из сыпучего песка",
+          "icon": "aether_legacy:quicksoil_glass",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:quicksoil",
+              "count": 8,
+              "consume": false,
+              "title": "Накопать сыпучий песок"
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:quicksoil_glass",
+              "count": 8,
+              "consume": false,
+              "title": "Переплавить его в стекло"
+            }
+          ],
+          "description": [
+            "Сыпучий песок скользит под ногами, но в печи превращается в прозрачное стекло для окон и фонарей."
+          ],
+          "dependencies": [
+            "ae_enter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:quicksoil_glass",
+              "count": 8
+            }
+          ],
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "ae_blueberry",
+          "title": "Синие ягоды",
+          "icon": "aether_legacy:blueberry",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:blueberry",
+              "count": 8,
+              "consume": false,
+              "title": "Собрать синие ягоды"
+            },
+            {
+              "type": "checkmark",
+              "title": "Найти ягодный куст на острове"
+            }
+          ],
+          "description": [
+            "Синие ягоды растут на кустах Эфира: ими кормят птенцов моа, а зачарованные ягоды сытнее обычных."
+          ],
+          "dependencies": [
+            "ae_enter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 2,
+          "y": 2
+        },
+        {
+          "id": "ae_berry_garden",
+          "title": "Ягодная плантация",
+          "icon": "aether_legacy:berry_bush",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:berry_bush",
+              "count": 2,
+              "consume": false,
+              "title": "Выкопать ягодные кусты"
+            },
+            {
+              "type": "checkmark",
+              "title": "Посадить куст и дождаться нового урожая"
+            }
+          ],
+          "description": [
+            "Соберите кусты целиком и разведите собственный сад — тогда ягоды всегда будут под рукой."
+          ],
+          "dependencies": [
+            "ae_blueberry"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:berry_bush",
+              "count": 2
+            }
+          ],
+          "x": 3,
+          "y": 3
+        },
+        {
+          "id": "ae_enchanted_berry",
+          "title": "Зачарованный урожай",
+          "icon": "aether_legacy:enchanted_blueberry",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:enchanted_blueberry",
+              "count": 2,
+              "consume": false,
+              "title": "Зачаровать ягоды в алтаре"
+            }
+          ],
+          "description": [
+            "Алтарь с амброзием превращает обычные ягоды в зачарованные — они восстанавливают заметно больше сытости."
+          ],
+          "dependencies": [
+            "ae_altar",
+            "ae_berry_garden"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:enchanted_blueberry",
+              "count": 2
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "ae_gloves",
+          "title": "Перчатки",
+          "icon": "aether_legacy:iron_gloves",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "aether_legacy:leather_gloves",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:iron_gloves",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:golden_gloves",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:diamond_gloves",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Перчатки занимают отдельный слот брони Эфира: кожаные, железные, золотые и алмазные дают разную защиту."
+          ],
+          "dependencies": [
+            "ae_enter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "aether_legacy:iron_gloves",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "aether_legacy:diamond_gloves",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 2,
+          "y": 3
+        },
+        {
+          "id": "ae_rings",
+          "title": "Кольца и подвески",
+          "icon": "aether_legacy:zanite_ring",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "aether_legacy:iron_ring",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:golden_ring",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:zanite_ring",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:zanite_pendant",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Украшения из металла и занита дают постоянные бонусы, пока лежат в слоте аксессуара."
+          ],
+          "dependencies": [
+            "ae_zanite"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "aether_legacy:iron_ring",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "aether_legacy:zanite_ring",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 7,
+          "y": 0
+        },
+        {
+          "id": "ae_capes",
+          "title": "Цветные плащи",
+          "icon": "aether_legacy:red_cape",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "aether_legacy:red_cape",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:blue_cape",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "aether_legacy:white_cape",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Плащи красятся в любой цвет и носятся в слоте аксессуара; редкие из них дают ещё и особые свойства."
+          ],
+          "dependencies": [
+            "ae_enter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 2,
+          "y": 4
+        },
+        {
+          "id": "ae_combat",
+          "title": "Небесная оборона",
+          "icon": "aether_legacy:holystone_sword",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 10,
+              "title": "Одолеть 10 зомби"
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 10,
+              "title": "Одолеть 10 скелетов"
+            }
+          ],
+          "description": [
+            "Острова Эфира не безобидны: зомби и скелеты появляются и здесь, особенно ночью и рядом с дунджами."
+          ],
+          "dependencies": [
+            "ae_enter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "minecraft:arrow",
+              "count": 16
+            }
+          ],
+          "x": 2,
+          "y": 5
+        },
+        {
+          "id": "ae_life_shard",
+          "title": "Осколки жизни",
+          "icon": "aether_legacy:life_shard",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:life_shard",
+              "count": 3,
+              "consume": false,
+              "title": "Собрать 3 осколка жизни"
+            }
+          ],
+          "description": [
+            "Осколки жизни попадаются в сундуках дунджей: каждый навсегда добавляет одно сердце здоровья."
+          ],
+          "dependencies": [
+            "ae_bronze"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "aether_legacy:life_shard",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "aether_legacy:healing_stone",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 9,
+          "y": 0
+        },
+        {
+          "id": "ae_neptune_armor",
+          "title": "Нептунов доспех",
+          "icon": "aether_legacy:neptune_chestplate",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:neptune_helmet",
+              "count": 1,
+              "consume": false,
+              "title": "Нептунов шлем"
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:neptune_chestplate",
+              "count": 1,
+              "consume": false,
+              "title": "Нептунова кираса"
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:neptune_leggings",
+              "count": 1,
+              "consume": false,
+              "title": "Нептуновы поножи"
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:neptune_boots",
+              "count": 1,
+              "consume": false,
+              "title": "Нептуновы ботинки"
+            }
+          ],
+          "description": [
+            "Нептунов доспех находят в сундуках дунджей. Полный комплект позволяет дышать и свободно двигаться под водой."
+          ],
+          "dependencies": [
+            "ae_silver"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "aether_legacy:iron_bubble",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "aether_legacy:healing_stone",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 10,
+          "y": 0
+        },
+        {
+          "id": "ae_phoenix_armor",
+          "title": "Фениксовый доспех",
+          "icon": "aether_legacy:phoenix_chestplate",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "aether_legacy:phoenix_helmet",
+              "count": 1,
+              "consume": false,
+              "title": "Фениксов шлем"
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:phoenix_chestplate",
+              "count": 1,
+              "consume": false,
+              "title": "Фениксова кираса"
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:phoenix_leggings",
+              "count": 1,
+              "consume": false,
+              "title": "Фениксовы поножи"
+            },
+            {
+              "type": "item",
+              "item": "aether_legacy:phoenix_boots",
+              "count": 1,
+              "consume": false,
+              "title": "Фениксовы ботинки"
+            }
+          ],
+          "description": [
+            "Фениксовый доспех — редчайшая добыча золотого дунджа: он держит удар в лаве, пока вы ищете Солнечный дух."
+          ],
+          "dependencies": [
+            "ae_gold"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "aether_legacy:regeneration_stone",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "aether_legacy:repulsion_shield",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 11,
+          "y": -1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1348 @@
+{
+  "title": "Hardcore Ender Expansion",
+  "chapters": [
+    {
+      "id": "hee",
+      "title": "Hardcore Ender Expansion",
+      "description": "Расширенный Край: новые руды, биомные острова, темницы, алтари эссенции и охота на дракона.",
+      "icon": "HardcoreEnderExpansion:essence",
+      "requiredMod": "HardcoreEnderExpansion",
+      "quests": [
+        {
+          "id": "hee_welcome",
+          "title": "Новые приключения",
+          "icon": "HardcoreEnderExpansion:end_powder",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:end_powder",
+              "count": 3,
+              "consume": false,
+              "title": "Добыть порошок Края"
+            }
+          ],
+          "description": [
+            "Край стал куда больше: на каменных островах появились новые руды, а порошок Края — начало почти всех здешних рецептов."
+          ],
+          "achievement": "achievement.hee.3540",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "hee_compendium",
+          "title": "Эндер-компендиум",
+          "icon": "HardcoreEnderExpansion:knowledge_note",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Открыть Эндер-компендиум горячей клавишей"
+            }
+          ],
+          "description": [
+            "Компендиум — справочник по Краю: он сам открывает статью о том, на что вы смотрите, а нужные записи выдаются за очки знаний.",
+            "Записи знаний находят в темницах и покупают у жителей."
+          ],
+          "dependencies": [
+            "hee_welcome"
+          ],
+          "achievement": "achievement.hee.3548",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 1,
+          "y": -4
+        },
+        {
+          "id": "hee_endium",
+          "title": "Эндиум",
+          "icon": "HardcoreEnderExpansion:endium_ingot",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:endium_ore",
+              "count": 2,
+              "consume": false,
+              "title": "Добыть руду эндиума"
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:endium_ingot",
+              "count": 2,
+              "consume": false,
+              "title": "Переплавить эндиум"
+            }
+          ],
+          "description": [
+            "Руда эндиума появляется у башен темниц и встречается тем чаще, чем дальше вы ушли от логова дракона. Блок руды плавится в сияющий слиток."
+          ],
+          "dependencies": [
+            "hee_welcome"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 1,
+          "y": -3
+        },
+        {
+          "id": "hee_burning_mountains",
+          "title": "Огненные горы",
+          "icon": "HardcoreEnderExpansion:cinder",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:igneous_rock",
+              "count": 4,
+              "consume": false,
+              "title": "Набрать магматической породы"
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:cinder",
+              "count": 4,
+              "consume": false,
+              "title": "Собрать пылающий камень"
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:fire_shard",
+              "count": 2,
+              "consume": false,
+              "title": "Отбить осколок у призрачного шахтёра"
+            }
+          ],
+          "description": [
+            "В Огненных горах много магматической породы, а в выжженной части лежат целые глыбы пылающего камня — топлива примерно втрое выгоднее огненного стержня.",
+            "Огненные осколки роняют призрачные шахтёры, которые охраняют здешние шахты."
+          ],
+          "dependencies": [
+            "hee_welcome"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 1,
+          "y": -2
+        },
+        {
+          "id": "hee_scorching_pickaxe",
+          "title": "Обжигающая кирка",
+          "icon": "HardcoreEnderExpansion:schorching_pickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "HardcoreEnderExpansion:schorching_pickaxe",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Восемь огненных осколков вокруг золотой кирки — и инструмент сам переплавляет блоки, а к руде применяет «Удачу»."
+          ],
+          "dependencies": [
+            "hee_burning_mountains"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:fire_shard",
+              "count": 1
+            }
+          ],
+          "x": 2,
+          "y": -4
+        },
+        {
+          "id": "hee_stardust",
+          "title": "Магия разложения",
+          "icon": "HardcoreEnderExpansion:stardust",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:stardust",
+              "count": 3,
+              "consume": false
+            }
+          ],
+          "description": [
+            "Звёздная пыль сыплется из руды на биомных островах и из сфалерита с жёлтыми прожилками. Без неё не собрать ни компас биомов, ни стол разложения."
+          ],
+          "dependencies": [
+            "hee_welcome"
+          ],
+          "achievement": "achievement.hee.3547",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "hee_decomposition",
+          "title": "Стол разложения",
+          "icon": "HardcoreEnderExpansion:decomposition_table",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "HardcoreEnderExpansion:decomposition_table",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Стол разбирает ненужные вещи обратно на ингредиенты, беря плату звёздной пылью и энергией; возвращается до 84% материалов."
+          ],
+          "dependencies": [
+            "hee_stardust",
+            "hee_burning_mountains",
+            "hee_endium"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 2,
+          "y": -2
+        },
+        {
+          "id": "hee_enhanced_pearl",
+          "title": "Улучшенный эндер-жемчуг",
+          "icon": "HardcoreEnderExpansion:enhanced_ender_pearl",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:enhanced_ender_pearl",
+              "count": 1,
+              "consume": false
+            }
+          ],
+          "description": [
+            "Присядьте и используйте порошок Края — откроется экран улучшений. Положите туда эндер-жемчуг, и он станет улучшенным."
+          ],
+          "dependencies": [
+            "hee_welcome"
+          ],
+          "achievement": "achievement.hee.3542",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 1,
+          "y": 0
+        },
+        {
+          "id": "hee_super_shiny",
+          "title": "Сверхблестяще!",
+          "icon": "minecraft:ender_pearl",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Добавить жемчугу все возможные улучшения (их семь)"
+            }
+          ],
+          "description": [
+            "Улучшений у жемчуга семь: от защиты от урона при падении до полёта верхом и заморозки.",
+            "Нужный ингредиент придётся подбирать — ошибка уничтожает случайные предметы в слотах."
+          ],
+          "dependencies": [
+            "hee_enhanced_pearl"
+          ],
+          "achievement": "achievement.hee.3591",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:end_powder",
+              "count": 4
+            }
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "id": "hee_biome_compass",
+          "title": "Компас биомов",
+          "icon": "HardcoreEnderExpansion:biome_compass",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "HardcoreEnderExpansion:biome_compass",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Четыре слитка эндиума и звёздная пыль. Компас показывает ближайший биомный остров, а правый клик переключает биом."
+          ],
+          "dependencies": [
+            "hee_endium",
+            "hee_stardust"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "hee_biome_island",
+          "title": "Новые культуры",
+          "icon": "HardcoreEnderExpansion:spooky_log",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:spooky_log",
+              "count": 1,
+              "consume": false,
+              "title": "Добыть жуткое бревно на биомном острове"
+            }
+          ],
+          "description": [
+            "Биомные острова начинаются примерно в 1600 блоках от логова дракона: Заражённый лес, Огненные горы и Зачарованный остров.",
+            "У каждого свои руды, растения и обитатели."
+          ],
+          "dependencies": [
+            "hee_biome_compass"
+          ],
+          "achievement": "achievement.hee.3546",
+          "rewards": [
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "HardcoreEnderExpansion:end_powder",
+                  "count": 4
+                },
+                {
+                  "type": "item",
+                  "item": "HardcoreEnderExpansion:stardust",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "x": 3,
+          "y": -2
+        },
+        {
+          "id": "hee_runes",
+          "title": "Руны разрушенной темницы",
+          "icon": "HardcoreEnderExpansion:rune",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:ravaged_brick",
+              "count": 8,
+              "consume": false,
+              "title": "Набрать разрушенного кирпича"
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:rune",
+              "count": 3,
+              "consume": false,
+              "title": "Собрать руны"
+            }
+          ],
+          "description": [
+            "В опустошённой части Заражённого леса стоит огромная темница из разрушенного кирпича — только там добывают руны.",
+            "Руны лежат в сундуках и выпадают из вшей: из 3-5 рун в мешочке собираются чары."
+          ],
+          "dependencies": [
+            "hee_biome_island"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 4,
+          "y": -7
+        },
+        {
+          "id": "hee_charm_pouch",
+          "title": "Мешочек для чар",
+          "icon": "HardcoreEnderExpansion:charm_pouch",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "HardcoreEnderExpansion:charm_pouch",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:charm",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать первые чары"
+            }
+          ],
+          "description": [
+            "Мешочек хранит и включает чары — усиления, которые работают, пока набор активен.",
+            "Присядьте и используйте мешочек, чтобы включить или выключить чары."
+          ],
+          "dependencies": [
+            "hee_runes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 5,
+          "y": -3
+        },
+        {
+          "id": "hee_nexus",
+          "title": "Нексус алтаря",
+          "icon": "HardcoreEnderExpansion:altar_nexus",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "HardcoreEnderExpansion:altar_nexus",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Сердце будущего алтаря: два алмаза и око Края между ними."
+          ],
+          "dependencies": [
+            "hee_welcome"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "hee_altar",
+          "title": "Основной алтарь эссенции",
+          "icon": "HardcoreEnderExpansion:essence_altar",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "HardcoreEnderExpansion:essence_altar",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Обсидиан, книжные полки, кожа и нексус — алтарь готов принимать эссенцию.",
+            "В углах ставятся блоки-сокеты: редстоун ускоряет алтарь, лазурит увеличивает радиус, кварц удешевляет работу."
+          ],
+          "dependencies": [
+            "hee_nexus"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "hee_dragon",
+          "title": "Дракон Края",
+          "icon": "HardcoreEnderExpansion:essence",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "EnderDragon",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:essence",
+              "count": 1,
+              "consume": false,
+              "title": "Подобрать драконью эссенцию"
+            }
+          ],
+          "description": [
+            "У дракона 125 сердец, кристаллы на шипах лечат его, а после их разрушения начинается злая фаза с особыми атаками.",
+            "С убитого дракона падает драконья эссенция, а под порталом остаётся яйцо."
+          ],
+          "dependencies": [
+            "hee_altar"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:golden_apple",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "HardcoreEnderExpansion:end_powder",
+                  "count": 8
+                }
+              ]
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "hee_altar_dragon",
+          "title": "Алтарь драконьей эссенции",
+          "icon": "HardcoreEnderExpansion:essence_altar",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Отдать алтарю драконью эссенцию и запрошенные им 8 предметов"
+            }
+          ],
+          "description": [
+            "Одна эссенция и восемь блоков превращают основной алтарь в алтарь драконьей эссенции: он чинит снаряжение, усиливает и добавляет зачарования."
+          ],
+          "dependencies": [
+            "hee_dragon"
+          ],
+          "achievement": "achievement.hee.3541",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "hee_enhanced_brewing",
+          "title": "Улучшенная варочная стойка",
+          "icon": "HardcoreEnderExpansion:enhanced_brewing_stand",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:enhanced_brewing_stand",
+              "count": 1,
+              "consume": false
+            }
+          ],
+          "description": [
+            "Варочная стойка, пропитанная драконьей эссенцией на алтаре, варит быстрее и умеет готовить особые зелья.",
+            "Глоустоун, редстоун и порох теперь требуют порошка Края, зато позволяют выйти за обычные пределы."
+          ],
+          "dependencies": [
+            "hee_altar_dragon"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "hee_ender_eye",
+          "title": "Око Края",
+          "icon": "HardcoreEnderExpansion:spatial_dash_gem",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:spatial_dash_gem",
+              "count": 1,
+              "consume": false,
+              "title": "Добыть самоцвет пространственного рывка"
+            }
+          ],
+          "description": [
+            "На вершине башни темницы спит Око Края — мини-босс с 125 сердцами, обсидиановой шкурой и тремя атаками.",
+            "Кроме самоцвета с него падают око Края, обсидиан и щедрый опыт."
+          ],
+          "dependencies": [
+            "hee_altar"
+          ],
+          "achievement": "achievement.hee.3544",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "hee_instability_orb",
+          "title": "Сфера нестабильности",
+          "icon": "HardcoreEnderExpansion:instability_orb",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:instability_orb",
+              "count": 1,
+              "consume": false
+            }
+          ],
+          "description": [
+            "Руда сферы встречается только на биомных островах и требует алмазной кирки, а сфера выпадает лишь в 40% случаев.",
+            "Брошенная на землю сфера разлагается и либо взрывается, либо превращается в случайный предмет, блок или моба."
+          ],
+          "dependencies": [
+            "hee_biome_island"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 4,
+          "y": -6
+        },
+        {
+          "id": "hee_laboratory",
+          "title": "Лаборатория",
+          "icon": "HardcoreEnderExpansion:laboratory_floor",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:laboratory_floor",
+              "count": 8,
+              "consume": false,
+              "title": "Набрать лабораторного пола"
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:auricion",
+              "count": 2,
+              "consume": false,
+              "title": "Найти аурицион"
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:obsidian_fragment",
+              "count": 9,
+              "consume": false,
+              "title": "Собрать осколки обсидиана"
+            }
+          ],
+          "description": [
+            "В лабораторной части Зачарованного острова стоят залы из особых блоков: там живут эндермаги и стражи Края, а в сундуках лежит золотистый аурицион.",
+            "Стражи роняют осколки обсидиана — девять таких осколков снова собираются в блок обсидиана."
+          ],
+          "dependencies": [
+            "hee_biome_island"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 4,
+          "y": -5
+        },
+        {
+          "id": "hee_energy_wand",
+          "title": "Жезл энергии",
+          "icon": "HardcoreEnderExpansion:energy_wand",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "HardcoreEnderExpansion:energy_wand_core",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "HardcoreEnderExpansion:energy_wand",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Восемь ауриционов вокруг блока эндиума дают ядро, а два обсидиановых стержня — сам жезл.",
+            "Присядьте и щёлкните по сгустку энергии, чтобы забрать его, или по блоку, чтобы выпустить."
+          ],
+          "dependencies": [
+            "hee_laboratory"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 5,
+          "y": 1
+        },
+        {
+          "id": "hee_temple_caller",
+          "title": "Возрождение Края",
+          "icon": "HardcoreEnderExpansion:temple_caller",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:temple_caller",
+              "count": 1,
+              "consume": false,
+              "title": "Найти призыватель храма"
+            },
+            {
+              "type": "checkmark",
+              "title": "Зарядить призыватель энергией и использовать его в Крае, держа яйцо дракона"
+            }
+          ],
+          "description": [
+            "Призыватель храма — око Края, пропитанное драконьей эссенцией; его находят в крепостях, темницах и башнях.",
+            "С яйцом дракона он переносит в храм, где яйцо на тёмном пьедестале уничтожает Край и создаёт его заново."
+          ],
+          "dependencies": [
+            "hee_dragon",
+            "hee_biome_island"
+          ],
+          "achievement": "achievement.hee.3590",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "hee_challenge_hardcore",
+          "title": "Испытание: хардкорный игрок",
+          "icon": "HardcoreEnderExpansion:essence",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "EnderDragon",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Победите дракона, ни разу не умерев за бой."
+          ],
+          "dependencies": [
+            "hee_dragon"
+          ],
+          "optional": true,
+          "achievement": "achievement.hee.3620",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 200
+            }
+          ],
+          "x": 4,
+          "y": 1
+        },
+        {
+          "id": "hee_challenge_insomniac",
+          "title": "Испытание: бессонница",
+          "icon": "minecraft:dragon_egg",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Нанести дракону последний удар взрывом кровати"
+            }
+          ],
+          "description": [
+            "Кровати в Крае взрываются — используйте это и добейте дракона взрывом."
+          ],
+          "dependencies": [
+            "hee_dragon"
+          ],
+          "optional": true,
+          "achievement": "achievement.hee.3621",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 200
+            }
+          ],
+          "x": 4,
+          "y": 2
+        },
+        {
+          "id": "hee_challenge_enderlover",
+          "title": "Испытание: любитель эндерменов",
+          "icon": "HardcoreEnderExpansion:enderman_head",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Победить дракона, не убив ни одного странника Края"
+            }
+          ],
+          "description": [
+            "За весь бой с драконом не трогайте странников Края — даже тех, кого поднимает сам дракон."
+          ],
+          "dependencies": [
+            "hee_dragon"
+          ],
+          "optional": true,
+          "achievement": "achievement.hee.3622",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 200
+            }
+          ],
+          "x": 4,
+          "y": 3
+        },
+        {
+          "id": "hee_ender_goo",
+          "title": "Розовый яд",
+          "icon": "HardcoreEnderExpansion:bucket_ender_goo",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:bucket_ender_goo",
+              "count": 1,
+              "consume": false,
+              "title": "Зачерпнуть ведро Ender Goo"
+            },
+            {
+              "type": "checkmark",
+              "title": "Перенести ведро в обычный мир и превратить водоём в ров"
+            }
+          ],
+          "description": [
+            "Ender Goo — розовая жидкость, которая жжёт, накладывает дурные эффекты и постепенно заполняет собой всю воду.",
+            "Ведро яда, вылитое в домашний пруд, делает из него непроходимый ров."
+          ],
+          "dependencies": [
+            "hee_welcome"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 1,
+          "y": 2
+        },
+        {
+          "id": "hee_ghost_amulet",
+          "title": "Призрачный амулет",
+          "icon": "HardcoreEnderExpansion:ghost_amulet",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:ghost_amulet",
+              "count": 1,
+              "consume": false,
+              "title": "Раздобыть призрачный амулет"
+            }
+          ],
+          "description": [
+            "Амулет достаточно держать в любом слоте инвентаря: он мгновенно убивает лесных призраков Заражённого леса.",
+            "Без него из жуткого бревна с «лицом» вырвется призрак, а с ним — выпадет добыча."
+          ],
+          "dependencies": [
+            "hee_ender_goo"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 2,
+          "y": 2
+        },
+        {
+          "id": "hee_ectoplasm",
+          "title": "Эктоплазма",
+          "icon": "HardcoreEnderExpansion:endoplasm",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:endoplasm",
+              "count": 2,
+              "consume": false,
+              "title": "Вскрыть яйца на стволах и собрать эктоплазму"
+            }
+          ],
+          "description": [
+            "В Заражённом лесу на стволах жутких деревьев висят малозаметные яйца: с амулетом щёлкните по ним и с шансом около 60% получите эктоплазму.",
+            "Яйца меняют место с треском, так что не откладывайте удар."
+          ],
+          "dependencies": [
+            "hee_ghost_amulet"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:end_powder",
+              "count": 3
+            }
+          ],
+          "x": 3,
+          "y": 1
+        },
+        {
+          "id": "hee_dry_splinter",
+          "title": "Сухие щепки",
+          "icon": "HardcoreEnderExpansion:dry_splinter",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:spooky_log",
+              "count": 4,
+              "consume": false,
+              "title": "Срубить жуткие деревья"
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:dry_splinter",
+              "count": 4,
+              "consume": false,
+              "title": "Набрать сухих щепок"
+            }
+          ],
+          "description": [
+            "При разрушении жуткого бревна примерно в каждом восьмом случае выпадает сухая щепка — местный материал для крафтов. Свалив нижний блок, вы уроните дерево целиком."
+          ],
+          "dependencies": [
+            "hee_biome_island"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 4,
+          "y": -4
+        },
+        {
+          "id": "hee_death_flower",
+          "title": "Цветок смерти",
+          "icon": "HardcoreEnderExpansion:death_flower",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:death_flower",
+              "count": 2,
+              "consume": false,
+              "title": "Сорвать цветок смерти"
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:death_flower_pot",
+              "count": 1,
+              "consume": false,
+              "title": "Посадить цветок в горшок"
+            }
+          ],
+          "description": [
+            "В Краю цветок смерти безобиден, но в обычном мире он вянет, притягивает к себе злых эндерменов, а затем начинает распространять увядание по блокам вокруг.",
+            "В горшке он так и остаётся безобидным украшением."
+          ],
+          "dependencies": [
+            "hee_welcome"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 1,
+          "y": 3
+        },
+        {
+          "id": "hee_silverfish_blood",
+          "title": "Кровь чешуйниц",
+          "icon": "HardcoreEnderExpansion:silverfish_blood",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Silverfish",
+              "count": 8
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:silverfish_blood",
+              "count": 2,
+              "consume": false,
+              "title": "Собрать кровь чешуйниц"
+            }
+          ],
+          "description": [
+            "Чешуйницы кишат в заражённом лесу и разрушенной темнице, а их укусы заражают игрока. Из добытой с них крови готовят противоядие."
+          ],
+          "dependencies": [
+            "hee_runes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 5,
+          "y": -2
+        },
+        {
+          "id": "hee_infestation_remedy",
+          "title": "Противоядие от заражения",
+          "icon": "HardcoreEnderExpansion:infestation_remedy",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:infestation_remedy",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать противоядие"
+            }
+          ],
+          "description": [
+            "Заражение чешуйницами само не проходит и продолжает выпускать новых паразитов. Пара флаконов противоядия в рюкзаке спасает всю вылазку в темницу."
+          ],
+          "dependencies": [
+            "hee_silverfish_blood"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "id": "hee_ravaged_decor",
+          "title": "Отделка разрушенной темницы",
+          "icon": "HardcoreEnderExpansion:ravaged_brick_glow",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:ravaged_brick_smooth",
+              "count": 8,
+              "consume": false,
+              "title": "Набрать гладкого кирпича"
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:ravaged_brick_glow",
+              "count": 4,
+              "consume": false,
+              "title": "Набрать светящегося кирпича"
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:ravaged_brick_stairs",
+              "count": 4,
+              "consume": false,
+              "title": "Набрать ступеней"
+            }
+          ],
+          "description": [
+            "Разрушенный кирпич темницы даёт целый набор отделки: гладкие блоки, светящиеся стены, ступени, плиты и заборы. Светящийся кирпич освещает зал, не выдавая вас мобам."
+          ],
+          "dependencies": [
+            "hee_runes"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "hee_laboratory_decor",
+          "title": "Лабораторный интерьер",
+          "icon": "HardcoreEnderExpansion:laboratory_glass",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:laboratory_glass",
+              "count": 4,
+              "consume": false,
+              "title": "Набрать лабораторного стекла"
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:laboratory_obsidian",
+              "count": 4,
+              "consume": false,
+              "title": "Набрать лабораторного обсидиана"
+            },
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:laboratory_stairs",
+              "count": 4,
+              "consume": false,
+              "title": "Набрать лабораторных ступеней"
+            }
+          ],
+          "description": [
+            "Залы лаборатории на Зачарованном острове сложены из строгих блоков — стекла, обсидиана и ступеней. Разобрав пару стен, вы увезёте готовый интерьер для собственного НИИ."
+          ],
+          "dependencies": [
+            "hee_laboratory"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 5,
+          "y": 2
+        },
+        {
+          "id": "hee_fire_dungeon",
+          "title": "Огненный лабиринт",
+          "icon": "HardcoreEnderExpansion:dungeon_puzzle",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:igneous_rock",
+              "count": 8,
+              "consume": false,
+              "title": "Запастись магматической породой"
+            },
+            {
+              "type": "checkmark",
+              "title": "Найти оранжевый зал в огненном биоме и зажечь все блоки пола"
+            }
+          ],
+          "description": [
+            "В Огненных горах и Шахтёрских холмах спрятан небольшой оранжевый зал-загадка: бросайте магматическую породу на блоки пола, пока не загорятся все.",
+            "Когда загадка решена, вас подбросит наверх к боссу — Огненному злодею."
+          ],
+          "dependencies": [
+            "hee_burning_mountains"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 2,
+          "y": -3
+        },
+        {
+          "id": "hee_homeland",
+          "title": "Родина эндерменов",
+          "icon": "HardcoreEnderExpansion:enderman_head",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Enderman",
+              "count": 12
+            },
+            {
+              "type": "checkmark",
+              "title": "Отбить у малыша-эндермена украденную вещь на острове Родина"
+            }
+          ],
+          "description": [
+            "Родина — вариант фиолетового биомного острова без обсидиановой лаборатории: эндерменов там видимо-невидимо.",
+            "Малыши таскают предметы прямо из инвентаря и обмениваются ими между собой; вещь вернётся, если убить воришку, но взрослые за это обидятся."
+          ],
+          "dependencies": [
+            "hee_biome_island"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "HardcoreEnderExpansion:stardust",
+                  "count": 3
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:ender_pearl",
+                  "count": 4
+                }
+              ]
+            }
+          ],
+          "x": 4,
+          "y": -3
+        },
+        {
+          "id": "hee_void_chest",
+          "title": "Пустотный сундук",
+          "icon": "HardcoreEnderExpansion:void_chest",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:void_chest",
+              "count": 1,
+              "consume": false,
+              "title": "Раздобыть пустотный сундук"
+            },
+            {
+              "type": "checkmark",
+              "title": "Проверить, что вещи уцелели после падения в пустоту"
+            }
+          ],
+          "description": [
+            "Пустотный сундук вбирает содержимое инвентаря, если вы сорвётесь в пустоту Края. Заглянуть внутрь можете только вы.",
+            "Если предметов больше, чем свободных слотов, лишнее пропадёт — так что не копите хлам."
+          ],
+          "dependencies": [
+            "hee_ender_eye"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            }
+          ],
+          "x": 4,
+          "y": 4
+        },
+        {
+          "id": "hee_spatial_dash",
+          "title": "Рывок сквозь пространство",
+          "icon": "HardcoreEnderExpansion:spatial_dash_gem",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Телепортироваться самоцветом к точке взгляда (до 75 блоков)"
+            }
+          ],
+          "description": [
+            "Держа самоцвет пространственного рывка, нажмите ПКМ — и окажетесь там, куда смотрите, на расстоянии до 75 блоков. На заведомо опасные места самоцвет не переносит."
+          ],
+          "dependencies": [
+            "hee_ender_eye"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 4,
+          "y": 5
+        },
+        {
+          "id": "hee_transference_gem",
+          "title": "Самоцвет переноса",
+          "icon": "HardcoreEnderExpansion:transference_gem",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "HardcoreEnderExpansion:transference_gem",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать самоцвет переноса"
+            },
+            {
+              "type": "checkmark",
+              "title": "Поставить точку возврата и вернуться к ней"
+            }
+          ],
+          "description": [
+            "Самоцвет переноса запоминает точку по Shift+ПКМ, а обычный ПКМ возвращает вас туда из любой точки того же измерения.",
+            "В Краю он заряжается сам; при низком заряде телепорт может пойти не по плану."
+          ],
+          "dependencies": [
+            "hee_biome_island"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 4,
+          "y": -2
+        },
+        {
+          "id": "hee_energy_extraction_table",
+          "title": "Стол извлечения",
+          "icon": "HardcoreEnderExpansion:energy_extraction_table",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "HardcoreEnderExpansion:energy_extraction_table",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Стол вытягивает энергию из блоков и предметов Края: сам блок кладётся сверху, звёздная пыль — снизу.",
+            "Нестабильная сфера в слоте замедляет утечку энергии, а сломанный стол разом выпустит весь запас в мир."
+          ],
+          "dependencies": [
+            "hee_energy_wand"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 6,
+          "y": -1
+        }
+      ]
+    }
+  ]
+}

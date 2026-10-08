@@ -1,0 +1,1730 @@
+{
+  "title": "Дополнения Thaumcraft",
+  "chapters": [
+    {
+      "id": "thaumaddons",
+      "title": "Дополнения Thaumcraft",
+      "description": "Путь по крупным дополнениям: ихор Ками, горизонты, автоматизация и техномагия.",
+      "icon": "ThaumicTinkerer:ichorPickGem",
+      "requiredMod": "ThaumicTinkerer",
+      "quests": [
+        {
+          "id": "ta_seeds",
+          "title": "Заражённые семена",
+          "icon": "ThaumicTinkerer:infusedSeeds",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:infusedSeeds",
+              "count": 4
+            },
+            {
+              "type": "checkmark",
+              "title": "Открыть исследования Kami в Таумономиконе"
+            }
+          ],
+          "description": [
+            "С этого начинается ветка Ками — самой дальней ступени Тинкерера.",
+            "Семена выращивают на особой земле и получают ихор."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 0,
+          "y": -5
+        },
+        {
+          "id": "ta_grain",
+          "title": "Урожай ихора",
+          "icon": "ThaumicTinkerer:infusedGrain",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "ThaumicTinkerer:infusedGrain",
+              "count": 12,
+              "consume": true,
+              "title": "Сдать заражённое зерно"
+            }
+          ],
+          "description": [
+            "Плоды заражённых семян — сырьё для самого дорогого ресурса дополнений."
+          ],
+          "dependencies": [
+            "ta_seeds"
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": "ThaumicTinkerer:infusedSeeds",
+              "count": 4
+            },
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 1,
+          "y": -8
+        },
+        {
+          "id": "ta_ichor",
+          "title": "Ихор",
+          "icon": "ThaumicTinkerer:kamiResource",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "ThaumicTinkerer:kamiResource",
+              "count": 4,
+              "consume": false,
+              "title": "Получить ихор"
+            }
+          ],
+          "description": [
+            "Ихор светится и не портится: из него делают броню и инструменты Ками.",
+            "Держите его при себе — крафты потребуют весь запас."
+          ],
+          "dependencies": [
+            "ta_grain"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "ThaumicTinkerer:darkQuartzItem",
+              "count": 8
+            }
+          ],
+          "x": 2,
+          "y": -5
+        },
+        {
+          "id": "ta_ichorcloth",
+          "title": "Одеяния из ихорткани",
+          "icon": "ThaumicTinkerer:ichorclothChest",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:ichorclothHelm",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:ichorclothChest",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:ichorclothLegs",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:ichorclothBoots",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Полный комплект ихорткани защищает лучше таумия и почти не боится магии."
+          ],
+          "dependencies": [
+            "ta_ichor"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "ThaumicTinkerer:cleansingTalisman",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "ThaumicTinkerer:catAmulet",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "ta_ichorium",
+          "title": "Инструменты из ихория",
+          "icon": "ThaumicTinkerer:ichorPick",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:ichorPick",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:ichorSword",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:ichorAxe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:ichorShovel",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Ихорий копает быстрее и держит зачарования, которые обычные инструменты теряют."
+          ],
+          "dependencies": [
+            "ta_ichor"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            },
+            {
+              "type": "item",
+              "item": "ThaumicTinkerer:ichorPouch",
+              "count": 1
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "ta_awakened",
+          "title": "Пробуждённый ихорий",
+          "icon": "ThaumicTinkerer:ichorPickGem",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:ichorPickGem",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:ichorSwordGem",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Пробуждённые инструменты получили душу: они сами чинятся и стали заметно сильнее.",
+            "Это вершина ветки Ками."
+          ],
+          "dependencies": [
+            "ta_ichorium"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 250
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "ThaumicTinkerer:ichorAxeGem",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "ThaumicTinkerer:ichorShovelGem",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "ta_binder",
+          "title": "Трансвекторный связыватель",
+          "icon": "ThaumicTinkerer:connector",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:connector",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Связыватель соединяет два блока и заставляет их работать как один.",
+            "Основа всей автоматизации Тинкерера."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 0,
+          "y": -4
+        },
+        {
+          "id": "ta_interface",
+          "title": "Трансвекторный интерфейс",
+          "icon": "ThaumicTinkerer:interface",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:interface",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:dislocator",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Интерфейс подменяет соседние блоки, а сместитель переносит их на расстояние.",
+            "Удобно для хрупких механизмов и тайников."
+          ],
+          "dependencies": [
+            "ta_binder"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "ThaumicTinkerer:darkQuartzItem",
+              "count": 4
+            }
+          ],
+          "x": 1,
+          "y": -6
+        },
+        {
+          "id": "ta_tablet",
+          "title": "Стол динамизма",
+          "icon": "ThaumicTinkerer:animationTablet",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:animationTablet",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:magnet",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Стол сам кликает по блокам и мобам, а кинетический аттрактор притягивает предметы.",
+            "Оставьте их работать, пока занимаетесь другими делами."
+          ],
+          "dependencies": [
+            "ta_binder"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 1,
+          "y": -5
+        },
+        {
+          "id": "ta_golemancy",
+          "title": "Анимация големов",
+          "icon": "ThaumicHorizons:golemPowder",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:golemPowder",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:Golemancy Bell TH",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:golemPlacer",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Порошок анимации оживляет голема, а колокольчик задаёт ему работу.",
+            "Здесь големы ближе к Таумкрафту, чем где-либо ещё."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "ThaumicHorizons:crystalTH",
+              "count": 2
+            }
+          ],
+          "x": 0,
+          "y": -3
+        },
+        {
+          "id": "ta_soul_sieve",
+          "title": "Сито для душ",
+          "icon": "ThaumicHorizons:soulSieve",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:soulSieve",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:soulJar",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Сито вытягивает душу из существа, а стазис-банка хранит её до нужного момента.",
+            "Дальше из душ собирают целые тела."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 0,
+          "y": -2
+        },
+        {
+          "id": "ta_soulforge",
+          "title": "Кузница душ",
+          "icon": "ThaumicHorizons:soulforge",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:soulforge",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:inspiratron",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Кузница душ соединяет душу и материю, вдохновляя големов и создавая новых существ.",
+            "Без неё не обойтись в самой жуткой части дополнений."
+          ],
+          "dependencies": [
+            "ta_soul_sieve"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "ThaumicHorizons:nutrients",
+              "count": 4
+            }
+          ],
+          "x": 1,
+          "y": -2
+        },
+        {
+          "id": "ta_deep_crystal",
+          "title": "Глубинные кристаллы",
+          "icon": "ThaumicHorizons:crystalDeep",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "ThaumicHorizons:crystalDeep",
+              "count": 8,
+              "consume": false,
+              "title": "Добыть глубинные кристаллы"
+            }
+          ],
+          "description": [
+            "Глубинный кристалл растёт там, где мир тонок: в пещерах и у разломов."
+          ],
+          "dependencies": [
+            "ta_soul_sieve"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "ThaumicHorizons:light",
+              "count": 2
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "ta_planar",
+          "title": "Планарный портал",
+          "icon": "ThaumicHorizons:gatewayTH",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:crystalWand",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:keystoneTH",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:gatewayTH",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Кристаллическая палочка, ключ-камень и врата открывают ход между планами.",
+            "Соберите связку и проверьте, куда она ведёт."
+          ],
+          "dependencies": [
+            "ta_deep_crystal"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            },
+            {
+              "type": "item",
+              "item": "ThaumicHorizons:voidPutty",
+              "count": 4
+            }
+          ],
+          "x": 2,
+          "y": -2
+        },
+        {
+          "id": "ta_redcrystal",
+          "title": "Редкокристаллы",
+          "icon": "Automagy:blockRedcrystal",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Automagy:blockRedcrystal",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "Automagy:blockRedcrystalAmp",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Редкокристаллы передают сигнал редстоуна без проводов и на любое расстояние.",
+            "Все умные механизмы Automagy стоят на них."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "Automagy:blockRedcrystal",
+              "count": 4
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "ta_inventarium",
+          "title": "Инвентариум",
+          "icon": "Automagy:blockInventarium",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Automagy:blockInventarium",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Automagy:blockThirstyTank",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Инвентариум считает содержимое сундуков, а жадный бак сам тянет эссенцию.",
+            "Так рождается настоящая логистика Таумкрафта."
+          ],
+          "dependencies": [
+            "ta_redcrystal"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "Automagy:blockGreedyChest",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "Automagy:blockEagerChest",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "ta_workbench",
+          "title": "Верстак големов",
+          "icon": "Automagy:blockGolemWorkbench",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Automagy:blockGolemWorkbench",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Automagy:golemWorkbenchUpgrade",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Automagy:golemLinker",
+              "count": 1
+            }
+          ],
+          "description": [
+            "За верстаком голему выдаются улучшения и тонкие настройки поведения.",
+            "Колокольчик-связыватель помогает быстро перевести бригаду на новую стройку."
+          ],
+          "dependencies": [
+            "ta_golemancy"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "Automagy:enchantedPaper",
+              "count": 4
+            }
+          ],
+          "x": 1,
+          "y": -3
+        },
+        {
+          "id": "ta_wrath",
+          "title": "Осколки гнева",
+          "icon": "ForbiddenMagic:NetherShard",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "ForbiddenMagic:NetherShard",
+              "count": 3,
+              "consume": false,
+              "title": "Собрать осколки гнева"
+            },
+            {
+              "type": "kill",
+              "entity": "Blaze",
+              "count": 6
+            }
+          ],
+          "description": [
+            "Осколки гнева выпадают из огненных тварей Нижнего мира.",
+            "Из них запретная магия делает инструменты, которых стыдится Таумономикон."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "ForbiddenMagic:TaintCoal",
+              "count": 4
+            }
+          ],
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "ta_scribing",
+          "title": "Пишущие приборы",
+          "icon": "ForbiddenMagic:Primewell",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ForbiddenMagic:Bloodwell",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ForbiddenMagic:Crystalwell",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ForbiddenMagic:Primewell",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Кровавые, кристальные и первозданные инструменты писца заменяют чернильницу.",
+            "Каждые удобны по-своему: выбирайте под свою школу магии."
+          ],
+          "dependencies": [
+            "ta_wrath"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            }
+          ],
+          "x": 1,
+          "y": 2
+        },
+        {
+          "id": "ta_warpwood",
+          "title": "Искажённая древесина",
+          "icon": "TaintedMagic:BlockWarpwoodSapling",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TaintedMagic:BlockWarpwoodSapling",
+              "count": 1,
+              "consume": false,
+              "title": "Найти росток варпвуда"
+            },
+            {
+              "type": "item",
+              "item": "TaintedMagic:BlockWarpwoodLog",
+              "count": 8,
+              "consume": false,
+              "title": "Заготовить варпвуд"
+            }
+          ],
+          "description": [
+            "Варпвуд растёт на заражённых землях и сам пропитан порчей.",
+            "Древесина пригодится и для палочек, и для брони."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 0,
+          "y": 1
+        },
+        {
+          "id": "ta_shadow",
+          "title": "Теневая сталь",
+          "icon": "TaintedMagic:ItemMaterial",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "ingotShadow",
+              "count": 4,
+              "consume": false,
+              "title": "Получить слитки теневой стали"
+            }
+          ],
+          "description": [
+            "Теневая сталь плавится из варпвуда и металла — она легче и злее обычной."
+          ],
+          "dependencies": [
+            "ta_warpwood"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 1,
+          "y": 4
+        },
+        {
+          "id": "ta_shadow_gear",
+          "title": "Арсенал тени",
+          "icon": "TaintedMagic:ItemShadowmetalPick",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TaintedMagic:ItemShadowmetalPick",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TaintedMagic:ItemShadowmetalSword",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TaintedMagic:ItemKatana",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Кирка, клинок и крепостная катана — рабочий набор из теневой стали.",
+            "С ним даже искажённые земли кажутся дружелюбнее."
+          ],
+          "dependencies": [
+            "ta_shadow"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "TaintedMagic:ItemWandRod",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "TaintedMagic:ItemWandCap",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 2,
+          "y": 2
+        },
+        {
+          "id": "ta_te_core",
+          "title": "Эссенция в цифре",
+          "icon": "thaumicenergistics:knowledge.core",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "thaumicenergistics:knowledge.core",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "thaumicenergistics:storage.casing",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "thaumicenergistics:storage.component",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Ядро знаний и корпус ячейки превращают аспекты в данные ME-сети.",
+            "Дальше эссенцию можно хранить и раздавать как обычные предметы."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "item",
+              "item": "thaumicenergistics:storage.essentia",
+              "count": 1
+            }
+          ],
+          "x": 0,
+          "y": 2
+        },
+        {
+          "id": "ta_exploration",
+          "title": "Вечные сосуды",
+          "icon": "ThaumicExploration:everfullUrn",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicExploration:everfullUrn",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicExploration:everburnUrn",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicExploration:boundJar",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Урна наполняется водой, вторая вечно горит, а связанная банка хранит эссенцию.",
+            "Мелочи, без которых потом трудно жить."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "ThaumicExploration:everburnUrn",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "ThaumicExploration:trashJar",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 0,
+          "y": 3
+        },
+        {
+          "id": "ta_emt_station",
+          "title": "Промышленная зарядка",
+          "icon": "EMT:EMTMachines",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EMT:EMTMachines",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "EMT:EMTSolars",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "EMT:ElectricScribingTools",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Станция заряжает жезлы от энергии, а солнечная панель даёт её бесплатно.",
+            "С этого начинается техномагия: магия на проводах."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "EMT:EMTSolars2",
+              "count": 1
+            }
+          ],
+          "x": 0,
+          "y": 4
+        },
+        {
+          "id": "ta_emt_mjolnir",
+          "title": "Громовержец",
+          "icon": "EMT:Mjolnir",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EMT:Mjolnir",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "EMT:SuperchargedMjolnir",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Молот грома бьёт молнией и требует прорву энергии на зарядку.",
+            "Суперзаряженная версия — законная гордость любого техномага."
+          ],
+          "dependencies": [
+            "ta_emt_station"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 300
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "EMT:Omnitool",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "EMT:NanosuitWing",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 1,
+          "y": 7
+        },
+        {
+          "id": "ta_platform",
+          "title": "Эфирные платформы",
+          "icon": "ThaumicTinkerer:platform",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:platform",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:Levitational Locomotive",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:Levitational Locomotive Relay",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Платформа создаёт невидимую ступень в воздухе, а левитационный локомотив тянет вагонетку без рельсов.",
+            "Так строят дороги между островами и башнями."
+          ],
+          "dependencies": [
+            "ta_binder"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "ThaumicTinkerer:platform",
+              "count": 8
+            }
+          ],
+          "x": 1,
+          "y": -4
+        },
+        {
+          "id": "ta_imbued_fire",
+          "title": "Огни стихий",
+          "icon": "ThaumicTinkerer:fireAir",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:fireAir",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:fireFire",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:fireWater",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:fireOrder",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Имбуированный огонь горит вечно и делится своим аспектом со всем, что рядом.",
+            "Им украшают алтари, кузни и комнаты для инфузии."
+          ],
+          "dependencies": [
+            "ta_seeds"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 1,
+          "y": -7
+        },
+        {
+          "id": "ta_gaseous_light",
+          "title": "Газообразный свет",
+          "icon": "ThaumicTinkerer:brightNitor",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:brightNitor",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "ThaumicTinkerer:gaseousLightItem",
+              "count": 8,
+              "consume": false,
+              "title": "Получить газообразный свет"
+            },
+            {
+              "type": "item",
+              "item": "ThaumicTinkerer:gaseousShadowItem",
+              "count": 8,
+              "consume": false,
+              "title": "Получить газообразную тьму"
+            }
+          ],
+          "description": [
+            "Гиперэнергетический нитор светит ярче факела, а газообразные свет и тьма позволяют рисовать светящиеся узоры.",
+            "Идеально для декора и освещения без факелов."
+          ],
+          "dependencies": [
+            "ta_imbued_fire"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "ThaumicTinkerer:gaseousLightItem",
+                  "count": 8
+                },
+                {
+                  "type": "item",
+                  "item": "ThaumicTinkerer:gaseousShadowItem",
+                  "count": 8
+                }
+              ]
+            }
+          ],
+          "x": 2,
+          "y": 3
+        },
+        {
+          "id": "ta_osmotic",
+          "title": "Осмотический зачарователь",
+          "icon": "ThaumicTinkerer:enchanter",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:enchanter",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:spellCloth",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:repairer",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Зачарователь накладывает чары за аспекты и без стола, ткань снимает их обратно, а восстановитель чинит инструмент.",
+            "Полезный набор для тех, кто часто меняет снаряжение."
+          ],
+          "dependencies": [
+            "ta_tablet"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "item",
+              "item": "ThaumicTinkerer:darkQuartzItem",
+              "count": 8
+            }
+          ],
+          "x": 2,
+          "y": -4
+        },
+        {
+          "id": "ta_sky_pearl",
+          "title": "Небесный жемчуг",
+          "icon": "ThaumicTinkerer:skyPearl",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:skyPearl",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:warpGate",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:bedrockPortal",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Небесный жемчуг открывает врата: одни ведут в Край, другие проходят сквозь коренную породу.",
+            "Самая дальняя точка транспортной ветки Тинкерера."
+          ],
+          "dependencies": [
+            "ta_awakened"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 200
+            },
+            {
+              "type": "item",
+              "item": "ThaumicTinkerer:placementMirror",
+              "count": 1
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "ta_ichor_gems",
+          "title": "Пробуждённые одеяния",
+          "icon": "ThaumicTinkerer:ichorclothChestGem",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:ichorclothHelmGem",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:ichorclothChestGem",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:ichorclothLegsGem",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:ichorclothBootsGem",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Каждая часть пробуждённого одеяния отвечает за свой предел: полёт, глубину, жар и небесную высь.",
+            "Полный комплект делает ихорий почти неуязвимым снаряжением."
+          ],
+          "dependencies": [
+            "ta_ichorcloth",
+            "ta_awakened"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 300
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "ThaumicTinkerer:ichorPouch",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "ThaumicTinkerer:blockTalisman",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "ta_necromancy",
+          "title": "Планшет некромантии",
+          "icon": "ThaumicTinkerer:spawner",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 10
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 10
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:spawner",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicTinkerer:soulMould",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "ThaumicTinkerer:mobAspect",
+              "count": 4,
+              "consume": false,
+              "title": "Собрать аспекты душ"
+            }
+          ],
+          "description": [
+            "Планшет некромантии поднимает мёртвых, а форма для душ сохраняет их отпечаток.",
+            "Материал придётся добыть самостоятельно: зомби и скелеты сами придут."
+          ],
+          "dependencies": [
+            "ta_soul_sieve"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "item",
+              "item": "ThaumicHorizons:nutrients",
+              "count": 4
+            }
+          ],
+          "x": 1,
+          "y": 0
+        },
+        {
+          "id": "ta_horizons_food",
+          "title": "Шоколадная кухня",
+          "icon": "ThaumicHorizons:iceCream",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:chocolate",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:barChocolate",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:iceCream",
+              "count": 2
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:bucketChocolate",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Горизонты приносят собственную кухню: плитки шоколада, мороженое и ведро шоколадного молока.",
+            "Еда сытная, а выглядит куда приятнее неопознанного мяса."
+          ],
+          "dependencies": [
+            "ta_soulforge"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "ThaumicHorizons:barChocolate",
+              "count": 8
+            }
+          ],
+          "x": 2,
+          "y": -3
+        },
+        {
+          "id": "ta_lenses",
+          "title": "Кирлиановые линзы",
+          "icon": "ThaumicHorizons:lensOrderEntropy",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:lensAir",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:lensWater",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:lensFire",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:lensEarth",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicHorizons:lensCase",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Линзы показывают то, чего не видит глаз: аспекты, эхо, свет и тепло.",
+            "Футляр хранит всю коллекцию и спасает от лишних крафтов."
+          ],
+          "dependencies": [
+            "ta_deep_crystal"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "ThaumicHorizons:lensOrderEntropy",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "ThaumicHorizons:lensCase",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "ta_taint_garden",
+          "title": "Сад порчи",
+          "icon": "ForbiddenMagic:TaintSapling",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ForbiddenMagic:TaintPlank",
+              "count": 16
+            },
+            {
+              "type": "craft",
+              "item": "ForbiddenMagic:TaintBlock",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "ForbiddenMagic:TaintPickaxe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ForbiddenMagic:TaintShovel",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Запретная магия умеет приручать порчу: заражённое дерево идёт на доски и камень.",
+            "Кирка искажает блоки, а лопата очищает их — выбирайте, на чьей вы стороне."
+          ],
+          "dependencies": [
+            "ta_wrath"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "ForbiddenMagic:TaintSapling",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "ForbiddenMagic:UmbralBush",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 1,
+          "y": 3
+        },
+        {
+          "id": "ta_morph_tools",
+          "title": "Хамелеоновы инструменты",
+          "icon": "ForbiddenMagic:MorphPickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ForbiddenMagic:MorphPickaxe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ForbiddenMagic:MorphSword",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ForbiddenMagic:MorphAxe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ForbiddenMagic:MorphShovel",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Инструменты-хамелеоны сами подстраивают материал под задачу и не требуют отдельной заточки."
+          ],
+          "dependencies": [
+            "ta_scribing"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "item",
+              "item": "ForbiddenMagic:FMResource",
+              "count": 8
+            }
+          ],
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "ta_hungry_maw",
+          "title": "Голодная пасть",
+          "icon": "Automagy:blockHungryMaw",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Automagy:blockHungryMaw",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Automagy:blockFinicalMaw",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Automagy:blockTally",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Automagy:blockReqTome",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Голодная пасть съедает всё лишнее, придирчивая — только заданное, а книга заявок раздаёт заказы големам.",
+            "Четыре блока, которые превращают свалку в склад."
+          ],
+          "dependencies": [
+            "ta_inventarium"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 110
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "Automagy:blockTenaciousChest",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "Automagy:blockGreedyChest",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "id": "ta_exploration_sorting",
+          "title": "Автосортировка",
+          "icon": "ThaumicExploration:autoSorter",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThaumicExploration:autoSorter",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicExploration:replicator",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "ThaumicExploration:boundChest",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Автосортировщик сам разбирает добычу по сундукам, репликатор копирует простые предметы.",
+            "Связанный сундук открывается с любого конца базы."
+          ],
+          "dependencies": [
+            "ta_exploration"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "item",
+              "item": "ThaumicExploration:trashJar",
+              "count": 1
+            }
+          ],
+          "x": 1,
+          "y": 6
+        },
+        {
+          "id": "ta_te_network",
+          "title": "Сеть эссенции",
+          "icon": "thaumicenergistics:thaumicenergistics.block.essentia.provider",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "thaumicenergistics:part.base",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "thaumicenergistics:thaumicenergistics.block.essentia.provider",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "thaumicenergistics:thaumicenergistics.block.gear.box",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "thaumicenergistics:material",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Шина импорта и провайдер эссенции соединяют МЕ-сеть с тиглем напрямую.",
+            "Редуктор и ядро диффузии раздают аспекты машинам без единой банки."
+          ],
+          "dependencies": [
+            "ta_te_core"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "thaumicenergistics:golem.wifi.backpack",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "thaumicenergistics:storage.essentia",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 1,
+          "y": 5
+        }
+      ]
+    }
+  ]
+}

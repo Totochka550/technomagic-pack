@@ -1,0 +1,37 @@
+filename = 'thaumicenergistics_1.7.10_1.1.3.0.jar'
+name = 'Thaumic Energistics'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '(AE2-RV3)Thaumic Energistics 1.1.3.0'
+
+[download]
+hash = 'a6240b09a0680f3e3246a6d0fe17650299533a84'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2563527
+project-id = 223666
+
+[[x-prismlauncher-dependencies]]
+addonId = '67504'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '226540'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '73488'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '223794'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '223628'
+type = 'REQUIRED'

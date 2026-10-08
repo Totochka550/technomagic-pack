@@ -1,0 +1,18 @@
+filename = 'appliedenergistics2_mc1.7.10_rv3_beta_6.jar'
+name = 'Applied Energistics 2'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'appliedenergistics2-rv3-beta-6.jar'
+
+[download]
+hash = 'e8ada3103524805d4a84b544bdf8c286bbc2e2c7'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2296430
+project-id = 223794

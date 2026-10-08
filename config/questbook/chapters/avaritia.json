@@ -1,0 +1,1376 @@
+{
+  "title": "Avaritia",
+  "chapters": [
+    {
+      "id": "avaritia",
+      "title": "Avaritia",
+      "description": "Эндгейм-крафты Avaritia: сингулярности из целых гор ресурсов, нейтроний и снаряжение бесконечности. Глава длинная и очень дорогая — запаситесь терпением.",
+      "icon": "Avaritia:Resource",
+      "requiredMod": "Avaritia",
+      "quests": [
+        {
+          "id": "av_lattice",
+          "title": "Алмазная решётка",
+          "icon": {
+            "item": "Avaritia:Resource",
+            "meta": 0
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Resource",
+              "count": 1,
+              "meta": 0
+            }
+          ],
+          "description": [
+            "Пять алмазов, сложенных решёткой, — самый первый шаг к бесконечности."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "av_crystal_ingot",
+          "title": "Первый кристаллический слиток",
+          "icon": {
+            "item": "Avaritia:Resource",
+            "meta": 1
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Resource",
+              "count": 1,
+              "meta": 1
+            }
+          ],
+          "description": [
+            "Кристаллический слиток — «первая печать» Avaritia.",
+            "Из него делают матрицы, хранилища и почти всё дальнейшее снаряжение."
+          ],
+          "dependencies": [
+            "av_lattice"
+          ],
+          "achievement": "achievement.avaritia:crystal_matrix",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "av_crystal_matrix",
+          "title": "Кристаллическая матрица",
+          "icon": "Avaritia:Crystal_Matrix",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Avaritia:Crystal_Matrix",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать блок кристаллической матрицы"
+            }
+          ],
+          "description": [
+            "Матрица — прочный каркас для стола Dire и кластера материи."
+          ],
+          "dependencies": [
+            "av_crystal_ingot"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 4
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "av_compressed",
+          "title": "Сжатый верстак",
+          "icon": "Avaritia:Double_Craft",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Double_Craft",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Девять обычных верстаков, сжатых в один блок — с этого начинается путь к столу Dire."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "minecraft:crafting_table",
+              "count": 9
+            }
+          ],
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "av_double_compressed",
+          "title": "Двойное сжатие",
+          "icon": "Avaritia:Triple_Craft",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Triple_Craft",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Ещё девять сжатых верстаков — и готов двойной сжатый стол."
+          ],
+          "dependencies": [
+            "av_compressed"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 1,
+          "y": 0
+        },
+        {
+          "id": "av_dire",
+          "title": "Dire Crafting Table",
+          "icon": "Avaritia:Dire_Crafting",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Dire_Crafting",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Стол 9×9 открывает все рецепты Avaritia — от катализатора до брони.",
+            "Собрать его можно и в обычном верстаке: было бы из чего."
+          ],
+          "dependencies": [
+            "av_double_compressed",
+            "av_crystal_matrix"
+          ],
+          "achievement": "achievement.avaritia:dire_crafting",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:diamond",
+                  "count": 6
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:ender_pearl",
+                  "count": 6
+                }
+              ]
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "av_dire_uncraft",
+          "title": "Разобрать стол",
+          "icon": "Avaritia:Dire_Crafting",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Сломать Dire Crafting Table — достижение TAKE IT EASY!"
+            }
+          ],
+          "description": [
+            "Иногда полезно остановиться и разобрать собранное.",
+            "Достижение «End the episode» выдаётся ровно за сломанный стол Dire."
+          ],
+          "dependencies": [
+            "av_dire"
+          ],
+          "achievement": "achievement.avaritia:dire_uncrafting",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 4,
+          "y": -2
+        },
+        {
+          "id": "av_collector",
+          "title": "Нейтронный коллектор",
+          "icon": "Avaritia:Neutron_Collector",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Neutron_Collector",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Коллектор медленно вытягивает нейтроны из воздуха.",
+            "Держите чанк загруженным: терпение здесь — главный ресурс."
+          ],
+          "dependencies": [
+            "av_dire"
+          ],
+          "achievement": "achievement.avaritia:collector",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "av_neutron_piles",
+          "title": "Горсти нейтронов",
+          "icon": {
+            "item": "Avaritia:Resource",
+            "meta": 2
+          },
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Avaritia:Resource",
+              "meta": 2,
+              "count": 9,
+              "consume": false,
+              "title": "Собрать 9 горстей нейтронов"
+            }
+          ],
+          "description": [
+            "Коллектор выдаёт горсти нейтронов по одной; девять горстей — на один самородок."
+          ],
+          "dependencies": [
+            "av_collector"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "minecraft:iron_block",
+              "count": 4
+            }
+          ],
+          "x": 5,
+          "y": -2
+        },
+        {
+          "id": "av_neutronium_ingot",
+          "title": "Слиток нейтрония",
+          "icon": {
+            "item": "Avaritia:Resource",
+            "meta": 4
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Resource",
+              "count": 1,
+              "meta": 4
+            }
+          ],
+          "description": [
+            "Из нейтронных самородков получается слиток нейтрония — материал всех дальнейших чудес."
+          ],
+          "dependencies": [
+            "av_neutron_piles"
+          ],
+          "achievement": "achievement.avaritia:neutronium",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            }
+          ],
+          "x": 6,
+          "y": -2
+        },
+        {
+          "id": "av_neutronium_block",
+          "title": "Блок нейтрония",
+          "icon": "Avaritia:Resource_Block",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "blockCosmicNeutronium",
+              "count": 1,
+              "consume": false,
+              "title": "Спрессовать блок нейтрония"
+            }
+          ],
+          "description": [
+            "Девять слитков складываются в блок — плотное хранилище и очень прочный материал."
+          ],
+          "dependencies": [
+            "av_neutronium_ingot"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "ore": "ingotIron",
+              "count": 8
+            }
+          ],
+          "x": 7,
+          "y": -2
+        },
+        {
+          "id": "av_compressor",
+          "title": "Нейтрониевый компрессор",
+          "icon": "Avaritia:Neutronium_Compressor",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Neutronium_Compressor",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Компрессор сжимает целые горы одного и того же предмета в сингулярность.",
+            "Одна сингулярность — это очень и очень много исходного материала."
+          ],
+          "dependencies": [
+            "av_neutronium_ingot"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "av_stock",
+          "title": "Склад для компрессора",
+          "icon": "Avaritia:Neutronium_Compressor",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "blockIron",
+              "count": 32,
+              "consume": true,
+              "title": "Сдать 32 железных блока"
+            },
+            {
+              "type": "item",
+              "ore": "blockRedstone",
+              "count": 32,
+              "consume": true,
+              "title": "Сдать 32 блока редстоуна"
+            },
+            {
+              "type": "item",
+              "ore": "blockQuartz",
+              "count": 32,
+              "consume": true,
+              "title": "Сдать 32 блока кварца"
+            }
+          ],
+          "description": [
+            "Компрессор принимает только полные стаки, поэтому сырьё заготавливают заранее."
+          ],
+          "dependencies": [
+            "av_compressor"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "ore": "ingotGold",
+              "count": 16
+            }
+          ],
+          "x": 8,
+          "y": -2
+        },
+        {
+          "id": "av_singularity_iron",
+          "title": "Первая сингулярность",
+          "icon": "Avaritia:Singularity",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Avaritia:Singularity",
+              "meta": 0,
+              "count": 1,
+              "consume": false,
+              "title": "Сжать железную сингулярность"
+            }
+          ],
+          "description": [
+            "Сингулярность — точка невозврата: разобрать её обратно уже не выйдет.",
+            "Железная сингулярность открывает «горизонт событий»."
+          ],
+          "dependencies": [
+            "av_compressor"
+          ],
+          "achievement": "achievement.avaritia:singularity",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            }
+          ],
+          "x": 8,
+          "y": -1
+        },
+        {
+          "id": "av_singularity_metals",
+          "title": "Цветные сингулярности",
+          "icon": {
+            "item": "Avaritia:Singularity",
+            "meta": 5
+          },
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Avaritia:Singularity",
+              "meta": 1,
+              "count": 1,
+              "consume": false,
+              "title": "Золотая сингулярность"
+            },
+            {
+              "type": "item",
+              "item": "Avaritia:Singularity",
+              "meta": 5,
+              "count": 1,
+              "consume": false,
+              "title": "Медная сингулярность"
+            },
+            {
+              "type": "item",
+              "item": "Avaritia:Singularity",
+              "meta": 6,
+              "count": 1,
+              "consume": false,
+              "title": "Оловянная сингулярность"
+            }
+          ],
+          "description": [
+            "Золото, медь и олово тоже сжимаются: их сингулярности нужны для катализатора."
+          ],
+          "dependencies": [
+            "av_singularity_iron"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "ore": "ingotCopper",
+                  "count": 16
+                },
+                {
+                  "type": "item",
+                  "ore": "ingotTin",
+                  "count": 16
+                }
+              ]
+            }
+          ],
+          "x": 9,
+          "y": -1
+        },
+        {
+          "id": "av_singularity_gems",
+          "title": "Сингулярности камня и пыли",
+          "icon": {
+            "item": "Avaritia:Singularity",
+            "meta": 4
+          },
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Avaritia:Singularity",
+              "meta": 2,
+              "count": 1,
+              "consume": false,
+              "title": "Лазуритовая сингулярность"
+            },
+            {
+              "type": "item",
+              "item": "Avaritia:Singularity",
+              "meta": 3,
+              "count": 1,
+              "consume": false,
+              "title": "Сингулярность редстоуна"
+            },
+            {
+              "type": "item",
+              "item": "Avaritia:Singularity",
+              "meta": 4,
+              "count": 1,
+              "consume": false,
+              "title": "Кварцевая сингулярность"
+            },
+            {
+              "type": "item",
+              "item": "Avaritia:Singularity",
+              "meta": 10,
+              "count": 1,
+              "consume": false,
+              "title": "Глиняная сингулярность"
+            }
+          ],
+          "description": [
+            "Лазурит, редстоун, незер-кварц и глина — «специи», без которых бесконечность не собрать."
+          ],
+          "dependencies": [
+            "av_singularity_iron"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "item",
+              "item": "Avaritia:Singularity",
+              "meta": 3,
+              "count": 1
+            }
+          ],
+          "x": 9,
+          "y": 0
+        },
+        {
+          "id": "av_catalyst",
+          "title": "Бесконечный катализатор",
+          "icon": {
+            "item": "Avaritia:Resource",
+            "meta": 5
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Resource",
+              "count": 1,
+              "meta": 5
+            }
+          ],
+          "description": [
+            "Катализатор собирается в столе Dire из сингулярностей и самых разных вещей мира.",
+            "Достижение так и называется — «All The Kitchen Sinks»: в ход идёт буквально всё."
+          ],
+          "dependencies": [
+            "av_singularity_metals",
+            "av_singularity_gems"
+          ],
+          "achievement": "achievement.avaritia:catalyst",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 200
+            }
+          ],
+          "x": 10,
+          "y": -1
+        },
+        {
+          "id": "av_infinity_ingot",
+          "title": "Слиток бесконечности",
+          "icon": {
+            "item": "Avaritia:Resource",
+            "meta": 6
+          },
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Resource",
+              "count": 1,
+              "meta": 6
+            }
+          ],
+          "description": [
+            "Слиток бесконечности — сердце финального снаряжения Avaritia."
+          ],
+          "dependencies": [
+            "av_catalyst"
+          ],
+          "achievement": "achievement.avaritia:infinity",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "item": "Avaritia:Resource",
+              "meta": 4,
+              "count": 1
+            }
+          ],
+          "x": 11,
+          "y": -1
+        },
+        {
+          "id": "av_infinity_tools",
+          "title": "Орудия разрушения",
+          "icon": "Avaritia:Infinity_Pickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Infinity_Pickaxe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Avaritia:Infinity_Axe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Avaritia:Infinity_Shovel",
+              "count": 1
+            }
+          ],
+          "description": [
+            "World Breaker, Nature's Ruin и Planet Eater — кирка, топор и лопата.",
+            "Каждый инструмент ломает блоки целыми областями."
+          ],
+          "dependencies": [
+            "av_infinity_ingot"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 200
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:diamond",
+                  "count": 16
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:emerald",
+                  "count": 16
+                }
+              ]
+            }
+          ],
+          "x": 12,
+          "y": -4
+        },
+        {
+          "id": "av_infinity_sword",
+          "title": "Меч Космоса",
+          "icon": "Avaritia:Infinity_Sword",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Infinity_Sword",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Sword of the Cosmos рубит по площади и не оставляет живым ничего вокруг."
+          ],
+          "dependencies": [
+            "av_infinity_ingot"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 200
+            }
+          ],
+          "x": 12,
+          "y": -3
+        },
+        {
+          "id": "av_creative_kill",
+          "title": "Даже боги кровоточат",
+          "icon": "Avaritia:Infinity_Sword",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Убить Мечом Космоса игрока в креативном режиме — достижение Even Gods Can Bleed"
+            }
+          ],
+          "description": [
+            "Это единственное оружие в сборке, способное убить игрока в креативе.",
+            "«By that sin fell the angels» — достижение выдаётся за такую победу."
+          ],
+          "dependencies": [
+            "av_infinity_sword"
+          ],
+          "achievement": "achievement.avaritia:creative_kill",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 300
+            }
+          ],
+          "x": 13,
+          "y": -1
+        },
+        {
+          "id": "av_infinity_armor",
+          "title": "Броня бесконечности",
+          "icon": "Avaritia:Infinity_Chest",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Infinity_Helm",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Avaritia:Infinity_Chest",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Avaritia:Infinity_Pants",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Avaritia:Infinity_Shoes",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Полный комплект Infinity даёт защиту, полёт и полное безразличие к опасностям."
+          ],
+          "dependencies": [
+            "av_infinity_ingot"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "item": "minecraft:nether_star",
+              "count": 1
+            }
+          ],
+          "x": 12,
+          "y": -2
+        },
+        {
+          "id": "av_infinity_bow",
+          "title": "Лук небес",
+          "icon": "Avaritia:Infinity_Bow",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Infinity_Bow",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Longbow of the Heavens стреляет стрелами, которые сами находят цель."
+          ],
+          "dependencies": [
+            "av_infinity_ingot"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            }
+          ],
+          "x": 12,
+          "y": -1
+        },
+        {
+          "id": "av_skull_sword",
+          "title": "Огненный меч из черепов",
+          "icon": "Avaritia:Skull_Sword",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Skull_Sword",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Skullfire Sword поджигает всё, до чего дотянется, и выглядит очень зловеще."
+          ],
+          "dependencies": [
+            "av_infinity_ingot"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            }
+          ],
+          "x": 12,
+          "y": 0
+        },
+        {
+          "id": "av_armok",
+          "title": "Кровавая сфера Армока",
+          "icon": "Avaritia:Orb_Armok",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Orb_Armok",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Сфера Армока — подарок для Blood Magic: огромный запас крови в одном предмете.",
+            "Крафтится в столе Dire и открывает путь к самой мощной алтарной магии."
+          ],
+          "dependencies": [
+            "av_infinity_ingot"
+          ],
+          "achievement": "achievement.avaritia:armok",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 200
+            }
+          ],
+          "x": 12,
+          "y": 1
+        },
+        {
+          "id": "av_matter_cluster",
+          "title": "Кластер материи",
+          "icon": "Avaritia:Matter_Cluster",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Matter_Cluster",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Matter Cluster хранит тысячи предметов в одной штуке — идеальный карман для странника."
+          ],
+          "dependencies": [
+            "av_catalyst"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            }
+          ],
+          "x": 11,
+          "y": 0
+        },
+        {
+          "id": "av_pearl_farm",
+          "title": "Жемчужный запас",
+          "icon": "minecraft:ender_pearl",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "pearlEnder",
+              "count": 16,
+              "consume": true,
+              "title": "Сдать 16 эндер-жемчугов"
+            }
+          ],
+          "description": [
+            "Компрессор сожмёт жемчуг только целыми стаками.",
+            "Странники Края — самый доступный источник: запасайтесь заранее."
+          ],
+          "dependencies": [
+            "av_dire"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "minecraft:ender_pearl",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "av_endest_pearl",
+          "title": "Жемчуг Края",
+          "icon": "Avaritia:Endest_Pearl",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Endest_Pearl",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Endest Pearl — спрессованный эндер-жемчуг, основа для самых далёких телепортов."
+          ],
+          "dependencies": [
+            "av_pearl_farm"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "av_big_pearl",
+          "title": "Изначальная жемчужина",
+          "icon": "Avaritia:big_pearl",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:big_pearl",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Extremely Primordial Pearl — очень крупная и очень дорогая игрушка.",
+            "Держите её под рукой: она пригодится в самых сложных крафтах сборки."
+          ],
+          "dependencies": [
+            "av_endest_pearl"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 180
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "ore": "pearlEnder",
+                  "count": 16
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:ender_eye",
+                  "count": 8
+                }
+              ]
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "av_kill_enderman",
+          "title": "Охота на странников Края",
+          "icon": "minecraft:ender_pearl",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Enderman",
+              "count": 20,
+              "title": "Убить 20 эндерменов"
+            }
+          ],
+          "description": [
+            "Двадцать странников Края — и жемчуга хватит и на сингулярность, и на телепорты."
+          ],
+          "dependencies": [
+            "av_pearl_farm"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "item",
+              "item": "minecraft:ender_pearl",
+              "count": 8
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "av_cosmic_meatballs",
+          "title": "Космические тефтели",
+          "icon": "Avaritia:Cosmic_Meatballs",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Cosmic_Meatballs",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Cosmic Meatballs — еда, достойная нейтрония: один такой обед насыщает надолго.",
+            "Готовится в столе Dire из самых сытных блюд мира."
+          ],
+          "dependencies": [
+            "av_neutronium_ingot"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "item",
+              "item": "minecraft:cooked_beef",
+              "count": 16
+            }
+          ],
+          "x": 7,
+          "y": 0
+        },
+        {
+          "id": "av_ultimate_stew",
+          "title": "Суп бесконечности",
+          "icon": "Avaritia:Ultimate_Stew",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Ultimate_Stew",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Ultimate Stew — финальное блюдо Avaritia: восстанавливает голод полностью и надолго."
+          ],
+          "dependencies": [
+            "av_cosmic_meatballs"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            },
+            {
+              "type": "item",
+              "item": "minecraft:mushroom_stew",
+              "count": 1
+            }
+          ],
+          "x": 8,
+          "y": 1
+        },
+        {
+          "id": "av_infinitato",
+          "title": "Бесконечная картошка",
+          "icon": "Avaritia:infinitato",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:infinitato",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Infinitato — шутка мода, собранная из слитка бесконечности. Съедобная и очень дорогая."
+          ],
+          "dependencies": [
+            "av_infinity_ingot"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 250
+            }
+          ],
+          "x": 12,
+          "y": 2
+        },
+        {
+          "id": "av_akashic",
+          "title": "Акашические записи",
+          "icon": "Avaritia:Akashic_Record",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Avaritia:Akashic_Record",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Akashic Records хранят опыт в одном предмете — удобная копилка для энчантов.",
+            "Потеряете предмет — потеряете весь накопленный опыт."
+          ],
+          "dependencies": [
+            "av_dire"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            }
+          ],
+          "x": 4,
+          "y": 1
+        },
+        {
+          "id": "av_matrix_decor",
+          "title": "Строим из матрицы",
+          "icon": "Avaritia:Crystal_Matrix",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "blockCrystalMatrix",
+              "count": 16,
+              "consume": false,
+              "title": "Собрать 16 блоков кристаллической матрицы"
+            }
+          ],
+          "description": [
+            "Кристаллическая матрица — ещё и отличный декоративный блок: прочный, светлый, дорогой."
+          ],
+          "dependencies": [
+            "av_crystal_matrix"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "ore": "gemDiamond",
+              "count": 8
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "av_neutronium_vault",
+          "title": "Нейтрониевое хранилище",
+          "icon": "Avaritia:Resource_Block",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "blockCosmicNeutronium",
+              "count": 8,
+              "consume": false,
+              "title": "Спрессовать 8 блоков нейтрония"
+            }
+          ],
+          "description": [
+            "Восемь блоков нейтрония — компактный сейф, который не сломает даже крипер."
+          ],
+          "dependencies": [
+            "av_neutronium_block"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "ore": "ingotIron",
+                  "count": 16
+                },
+                {
+                  "type": "item",
+                  "ore": "ingotGold",
+                  "count": 16
+                }
+              ]
+            }
+          ],
+          "x": 8,
+          "y": -3
+        },
+        {
+          "id": "av_hopper_line",
+          "title": "Автоподача в компрессор",
+          "icon": "minecraft:hopper",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:hopper",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Воронки избавят от ручной загрузки: сундук, воронка — и компрессор работает сам.",
+            "Четырёх воронок хватит на раздачу сырья по нескольким машинам."
+          ],
+          "dependencies": [
+            "av_compressor"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "minecraft:iron_ingot",
+              "count": 8
+            }
+          ],
+          "x": 8,
+          "y": 0
+        },
+        {
+          "id": "av_kill_blaze",
+          "title": "Топка для компрессора",
+          "icon": "minecraft:blaze_rod",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Blaze",
+              "count": 30,
+              "title": "Убить 30 всполохов"
+            }
+          ],
+          "description": [
+            "Тридцать всполохов дают огненные стержни для топлива и порошок для дальнейших крафтов."
+          ],
+          "dependencies": [
+            "av_singularity_gems"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "item",
+              "item": "minecraft:blaze_rod",
+              "count": 8
+            }
+          ],
+          "x": 10,
+          "y": 0
+        },
+        {
+          "id": "av_kill_wither",
+          "title": "Иссушитель повержен",
+          "icon": "minecraft:nether_star",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "WitherBoss",
+              "count": 1,
+              "title": "Убить Иссушителя"
+            }
+          ],
+          "description": [
+            "Мечом Космоса Иссушитель падает за пару ударов, а звезда Нижнего мира нужна для брони."
+          ],
+          "dependencies": [
+            "av_infinity_sword"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 200
+            },
+            {
+              "type": "item",
+              "item": "minecraft:nether_star",
+              "count": 1
+            }
+          ],
+          "x": 13,
+          "y": 0
+        },
+        {
+          "id": "av_kill_dragon",
+          "title": "Конец дракону",
+          "icon": "Avaritia:Infinity_Sword",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "EnderDragon",
+              "count": 1,
+              "title": "Убить Дракона Края"
+            }
+          ],
+          "description": [
+            "Последний босс ванильного мира против снаряжения бесконечности — короткий бой."
+          ],
+          "dependencies": [
+            "av_endest_pearl"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "item": "minecraft:ender_pearl",
+              "count": 16
+            }
+          ],
+          "x": 6,
+          "y": 0
+        }
+      ]
+    }
+  ]
+}

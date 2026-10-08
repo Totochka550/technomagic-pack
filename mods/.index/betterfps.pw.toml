@@ -1,0 +1,18 @@
+filename = 'BetterFps_1.0.1.jar'
+name = 'BetterFps'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'v1.0.1'
+
+[download]
+hash = '5f95cfaac2c48448be48150105e735323b6697a1'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2244002
+project-id = 229876

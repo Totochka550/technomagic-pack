@@ -1,0 +1,1871 @@
+{
+  "title": "IndustrialCraft 2",
+  "chapters": [
+    {
+      "id": "ic2",
+      "title": "IndustrialCraft 2",
+      "description": "Путь IndustrialCraft 2: от медной руды и каучука до генераторов, машин, ядерного реактора и квантовой брони.",
+      "icon": "IC2:blockGenerator",
+      "requiredMod": "IC2",
+      "quests": [
+        {
+          "id": "ic2_ore",
+          "title": "Руда под ногами",
+          "icon": "IC2:blockOreCopper",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "oreCopper",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 медной руды"
+            },
+            {
+              "type": "item",
+              "ore": "oreTin",
+              "count": 2,
+              "consume": true,
+              "title": "Сдать 2 оловянной руды"
+            },
+            {
+              "type": "item",
+              "ore": "oreLead",
+              "count": 2,
+              "consume": true,
+              "title": "Сдать 2 свинцовой руды"
+            }
+          ],
+          "description": [
+            "Медь, олово и свинец — основа кабелей, бронзы и корпусов машин.",
+            "Возьмите кирку и спуститесь в шахту: без руды здесь ничего не работает."
+          ],
+          "achievement": "ic2.mineOre",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:torch",
+                  "count": 16
+                },
+                {
+                  "type": "item",
+                  "item": "IC2:itemCoin",
+                  "count": 4
+                }
+              ]
+            }
+          ],
+          "x": 0,
+          "y": -2
+        },
+        {
+          "id": "ic2_resin",
+          "title": "Липкая история",
+          "icon": "IC2:itemHarz",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemTreetap",
+              "count": 1,
+              "title": "Смастерить кран"
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemHarz",
+              "count": 3,
+              "consume": false,
+              "title": "Собрать смолу с каучукового дерева"
+            }
+          ],
+          "description": [
+            "Кран из досок цепляется к каучуковому дереву и собирает смолу.",
+            "В печи смола превращается в резину — без неё не сделать ни один кабель."
+          ],
+          "achievement": "ic2.acquireResin",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemRubber",
+              "count": 4
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "ic2_refined_iron",
+          "title": "Очищенное железо",
+          "icon": "IC2:blockMachine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:blockMachine",
+              "count": 2,
+              "title": "Собрать 2 корпуса машин"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemToolForgeHammer",
+              "count": 1,
+              "title": "Сделать кузнечный молот"
+            }
+          ],
+          "description": [
+            "Обычное железо, переплавленное в печи, становится очищенным.",
+            "Из него делают корпуса машин и кузнечный молот — основу всех рецептов IC2."
+          ],
+          "dependencies": [
+            "ic2_ore"
+          ],
+          "achievement": "ic2.acquireRefinedIron",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "minecraft:iron_ingot",
+              "count": 8
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "ic2_cable",
+          "title": "Энергия по проводам",
+          "icon": "IC2:itemCable",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemToolCutter",
+              "count": 1,
+              "title": "Сделать кусачки для провода"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemCable",
+              "count": 6,
+              "title": "Нарезать 6 медных кабелей"
+            }
+          ],
+          "description": [
+            "Медный кабель переносит EU от генератора к машинам.",
+            "Длинные линии теряют энергию, поэтому ставьте машины ближе к источнику."
+          ],
+          "dependencies": [
+            "ic2_resin"
+          ],
+          "achievement": "ic2.buildCable",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemCable",
+              "count": 8
+            }
+          ],
+          "x": 1,
+          "y": 0
+        },
+        {
+          "id": "ic2_generator",
+          "title": "Первый генератор",
+          "icon": "IC2:blockGenerator",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:blockGenerator",
+              "count": 1,
+              "title": "Собрать генератор"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemBatRE",
+              "count": 2,
+              "title": "Сделать 2 аккумулятора RE-Battery"
+            }
+          ],
+          "description": [
+            "Генератор жжёт уголь и выдаёт EU — с него начинается любая энергосеть.",
+            "Аккумуляторы понадобятся и ему, и первым инструментам."
+          ],
+          "dependencies": [
+            "ic2_cable",
+            "ic2_refined_iron"
+          ],
+          "achievement": "ic2.buildGenerator",
+          "rewards": [
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "IC2:itemBatRE",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:coal",
+                  "count": 16
+                }
+              ]
+            }
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "id": "ic2_batbox",
+          "title": "Батарейный ящик",
+          "icon": "IC2:blockElectric",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:blockElectric",
+              "count": 1,
+              "title": "Собрать BatBox"
+            }
+          ],
+          "description": [
+            "BatBox копит 40 000 EU и заряжает инструменты — первый буфер в вашей сети."
+          ],
+          "dependencies": [
+            "ic2_generator"
+          ],
+          "achievement": "ic2.buildBatBox",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 3,
+          "y": -2
+        },
+        {
+          "id": "ic2_macerator",
+          "title": "Дробилка",
+          "icon": "IC2:itemCrushedOre",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemPartCircuit",
+              "count": 2,
+              "title": "Собрать 2 электронные схемы"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:blockMachine",
+              "count": 1,
+              "title": "Собрать дробилку (Macerator)"
+            }
+          ],
+          "description": [
+            "Macerator удваивает выход руды: одна руда — две пыли, а пыль плавится в слиток.",
+            "Схема — сердце любой машины, научитесь их делать."
+          ],
+          "dependencies": [
+            "ic2_generator"
+          ],
+          "achievement": "ic2.buildMacerator",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemCrushedOre",
+              "count": 4
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "ic2_compressor",
+          "title": "Компрессор",
+          "icon": "IC2:itemPartCoalChunk",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:blockMachine",
+              "count": 1,
+              "title": "Собрать компрессор (Compressor)"
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemPartCoalChunk",
+              "count": 1,
+              "consume": false,
+              "title": "Спрессовать угольный блок"
+            }
+          ],
+          "description": [
+            "Compressor сжимает уголь в угольные блоки, а слитки — в продвинутые сплавы."
+          ],
+          "dependencies": [
+            "ic2_macerator"
+          ],
+          "achievement": "ic2.buildCompressor",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemPartCoalBall",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "ic2_extractor",
+          "title": "Экстрактор",
+          "icon": "IC2:itemTreetapElectric",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:blockMachine",
+              "count": 1,
+              "title": "Собрать экстрактор (Extractor)"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemTreetapElectric",
+              "count": 1,
+              "title": "Сделать электрический кран"
+            }
+          ],
+          "description": [
+            "Extractor выжимает из смолы втрое больше резины, чем обычная печь."
+          ],
+          "dependencies": [
+            "ic2_generator"
+          ],
+          "achievement": "ic2.buildExtractor",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemRubber",
+              "count": 8
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "ic2_elec_furnace",
+          "title": "Электропечь",
+          "icon": "IC2:blockMachine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:blockMachine",
+              "count": 1,
+              "title": "Собрать электропечь (Electric Furnace)"
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemDust",
+              "count": 4,
+              "consume": false,
+              "title": "Заготовить 4 порции пыли"
+            }
+          ],
+          "description": [
+            "Electric Furnace плавит быстрее обычной и питается от сети, а не от угля."
+          ],
+          "dependencies": [
+            "ic2_generator"
+          ],
+          "achievement": "ic2.buildElecFurnace",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 3,
+          "y": 1
+        },
+        {
+          "id": "ic2_elec_furnace_plus",
+          "title": "Индукционная печь",
+          "icon": "IC2:blockMachine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:blockMachine",
+              "count": 2,
+              "title": "Собрать индукционную печь (Induction Furnace)"
+            }
+          ],
+          "description": [
+            "Induction Furnace плавит сразу два предмета и разгоняется до огромной скорости.",
+            "Ей нужно много EU — держите рядом MFE."
+          ],
+          "dependencies": [
+            "ic2_elec_furnace"
+          ],
+          "achievement": "ic2.buildIndFurnace",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 4,
+          "y": 3
+        },
+        {
+          "id": "ic2_coal_diamond",
+          "title": "Промышленный алмаз",
+          "icon": "IC2:itemPartIndustrialDiamond",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "IC2:itemPartIndustrialDiamond",
+              "count": 2,
+              "consume": false,
+              "title": "Получить 2 промышленных алмаза"
+            }
+          ],
+          "description": [
+            "Угольные шары, спрессованные компрессором, превращаются в угольный блок,",
+            "а он — в промышленный алмаз. Дешевле настоящего, но требует терпения."
+          ],
+          "dependencies": [
+            "ic2_compressor"
+          ],
+          "achievement": "ic2.buildCoalDiamond",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 2
+            }
+          ],
+          "x": 5,
+          "y": -5
+        },
+        {
+          "id": "ic2_mfe",
+          "title": "Хранилище MFE",
+          "icon": "IC2:itemBatCrystal",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemBatCrystal",
+              "count": 2,
+              "title": "Сделать 2 энергокристалла"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:blockElectric",
+              "count": 1,
+              "title": "Собрать MFE"
+            }
+          ],
+          "description": [
+            "MFE хранит 4 000 000 EU, а энергокристаллы в нём заряжаются до предела."
+          ],
+          "dependencies": [
+            "ic2_batbox"
+          ],
+          "achievement": "ic2.buildMFE",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemBatCrystal",
+              "count": 1
+            }
+          ],
+          "x": 4,
+          "y": -4
+        },
+        {
+          "id": "ic2_mfs",
+          "title": "MFS Unit",
+          "icon": "IC2:itemBatLamaCrystal",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemBatLamaCrystal",
+              "count": 2,
+              "title": "Сделать 2 лапотрон-кристалла"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:blockElectric",
+              "count": 1,
+              "title": "Собрать MFS Unit"
+            }
+          ],
+          "description": [
+            "MFS Unit хранит 40 000 000 EU — этого хватит на телепорты и масс-фабрикатор."
+          ],
+          "dependencies": [
+            "ic2_mfe"
+          ],
+          "achievement": "ic2.buildMFS",
+          "rewards": [
+            {
+              "type": "choice",
+              "title": "Выберите награду за хранилище",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "IC2:itemupgradekit",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "IC2:itemAdvBat",
+                  "count": 4
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "ic2_drill",
+          "title": "Шахтёрский бур",
+          "icon": "IC2:itemToolDrill",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemToolDrill",
+              "count": 1,
+              "title": "Собрать шахтёрский бур"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemAdvBat",
+              "count": 2,
+              "title": "Сделать 2 продвинутых аккумулятора"
+            }
+          ],
+          "description": [
+            "Mining Drill копает как алмазная кирка, но питается от аккумуляторов."
+          ],
+          "dependencies": [
+            "ic2_mfe",
+            "ic2_macerator"
+          ],
+          "achievement": "ic2.buildDrill",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemAdvBat",
+              "count": 1
+            }
+          ],
+          "x": 5,
+          "y": -2
+        },
+        {
+          "id": "ic2_ddrill",
+          "title": "Алмазный бур",
+          "icon": "IC2:itemToolDDrill",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemToolDDrill",
+              "count": 1,
+              "title": "Собрать алмазный бур"
+            }
+          ],
+          "description": [
+            "Diamond Drill не знает, что такое обсидиан, и грызёт почти любой камень."
+          ],
+          "dependencies": [
+            "ic2_drill",
+            "ic2_coal_diamond"
+          ],
+          "achievement": "ic2.buildDDrill",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemPartIndustrialDiamond",
+              "count": 2
+            }
+          ],
+          "x": 6,
+          "y": -4
+        },
+        {
+          "id": "ic2_chainsaw",
+          "title": "Бензопила",
+          "icon": "IC2:itemToolChainsaw",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemToolChainsaw",
+              "count": 1,
+              "title": "Собрать бензопилу"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemPartCircuit",
+              "count": 2,
+              "title": "Сделать 2 схемы для пилы"
+            }
+          ],
+          "description": [
+            "Chainsaw валит деревья и режет мобов — вдвое быстрее любой ручной пилы."
+          ],
+          "dependencies": [
+            "ic2_batbox"
+          ],
+          "achievement": "ic2.buildChainsaw",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 4,
+          "y": -3
+        },
+        {
+          "id": "ic2_creeper_massacre",
+          "title": "Резня криперов",
+          "icon": "IC2:itemToolChainsaw",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Creeper",
+              "count": 5,
+              "title": "Зарубить 5 криперов бензопилой"
+            }
+          ],
+          "description": [
+            "Проверьте бензопилу в деле: криперы падают с двух ударов.",
+            "Пороха после такой охоты хватит надолго."
+          ],
+          "dependencies": [
+            "ic2_chainsaw"
+          ],
+          "achievement": "ic2.killCreeperChainsaw",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:gunpowder",
+              "count": 8
+            }
+          ],
+          "x": 5,
+          "y": 3
+        },
+        {
+          "id": "ic2_mining_laser",
+          "title": "Лазер",
+          "icon": "IC2:itemToolMiningLaser",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemToolMiningLaser",
+              "count": 1,
+              "title": "Собрать горный лазер"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemBatLamaCrystal",
+              "count": 1,
+              "title": "Зарядить лапотрон-кристалл"
+            }
+          ],
+          "description": [
+            "Mining Laser режет камень на расстоянии и плавит руду в блоки.",
+            "Только не стреляйте себе под ноги — отдача честная."
+          ],
+          "dependencies": [
+            "ic2_mfe"
+          ],
+          "achievement": "ic2.buildMiningLaser",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemBatLamaCrystal",
+              "count": 1
+            }
+          ],
+          "x": 5,
+          "y": 1
+        },
+        {
+          "id": "ic2_dragon_laser",
+          "title": "Как босс",
+          "icon": "IC2:itemToolMiningLaser",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "EnderDragon",
+              "count": 1,
+              "title": "Убить дракона Края"
+            }
+          ],
+          "description": [
+            "Дракон Края против промышленного лазера — зрелище, которое стоит увидеть."
+          ],
+          "dependencies": [
+            "ic2_mining_laser"
+          ],
+          "achievement": "ic2.killDragonMiningLaser",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 200
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemPartIridium",
+              "count": 1
+            }
+          ],
+          "x": 6,
+          "y": 2
+        },
+        {
+          "id": "ic2_massfab",
+          "title": "Фабрика материи",
+          "icon": "IC2:blockMachine2",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemPartCircuitAdv",
+              "count": 2,
+              "title": "Сделать 2 продвинутые схемы"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:blockMachine2",
+              "count": 1,
+              "title": "Собрать масс-фабрикатор (Mass Fabricator)"
+            }
+          ],
+          "description": [
+            "Mass Fabricator превращает EU и скрап в UU-материю.",
+            "Из неё можно скрафтить почти всё — включая иридий."
+          ],
+          "dependencies": [
+            "ic2_mfs"
+          ],
+          "achievement": "ic2.buildMassFab",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemFluidCell",
+              "count": 4
+            }
+          ],
+          "x": 6,
+          "y": -3
+        },
+        {
+          "id": "ic2_teleporter",
+          "title": "Телепорт",
+          "icon": "IC2:blockMachine2",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:blockMachine2",
+              "count": 1,
+              "title": "Собрать телепорт (Teleporter)"
+            }
+          ],
+          "description": [
+            "Teleporter переносит вас между точками, если в сети хватает энергии."
+          ],
+          "dependencies": [
+            "ic2_mfs"
+          ],
+          "achievement": "ic2.buildTeleporter",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemFreq",
+              "count": 2
+            }
+          ],
+          "x": 6,
+          "y": -2
+        },
+        {
+          "id": "ic2_teleport_far",
+          "title": "Далеко-далеко",
+          "icon": "IC2:itemFreq",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemFreq",
+              "count": 1,
+              "title": "Сделать частотный передатчик"
+            },
+            {
+              "type": "checkmark",
+              "title": "Телепортироваться между двумя телепортами дальше 500 блоков"
+            }
+          ],
+          "description": [
+            "Свяжите два телепорта частотными передатчиками и прыгните на 500+ блоков.",
+            "Это достижение, а не баг телепортации."
+          ],
+          "dependencies": [
+            "ic2_teleporter"
+          ],
+          "achievement": "ic2.teleportFarAway",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:ender_pearl",
+                  "count": 4
+                },
+                {
+                  "type": "item",
+                  "item": "IC2:itemCellEmpty",
+                  "count": 6
+                }
+              ]
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "ic2_terraformer",
+          "title": "Терраформер",
+          "icon": "IC2:itemTFBP",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:blockMachine2",
+              "count": 1,
+              "title": "Собрать терраформер (Terraformer)"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemTFBP",
+              "count": 1,
+              "title": "Сделать пустой TFBP"
+            }
+          ],
+          "description": [
+            "Terraformer меняет мир вокруг себя: пустыня, лес, грибы — всё решает TFBP."
+          ],
+          "dependencies": [
+            "ic2_mfs"
+          ],
+          "achievement": "ic2.buildTerraformer",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemTFBP",
+              "count": 1
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "ic2_terraform_end",
+          "title": "Рай на краю",
+          "icon": "IC2:itemTFBPCultivation",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemTFBPCultivation",
+              "count": 1,
+              "title": "Запрограммировать TFBP «Окультуривание»"
+            },
+            {
+              "type": "checkmark",
+              "title": "Применить терраформер в Крае"
+            }
+          ],
+          "description": [
+            "Возьмите TFBP «Окультуривание» в Край и вырастите там сад.",
+            "Даже у драконьих островов может быть зелёное будущее."
+          ],
+          "dependencies": [
+            "ic2_terraformer"
+          ],
+          "achievement": "ic2.terraformEndCultivation",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemTerraWart",
+              "count": 2
+            }
+          ],
+          "x": 7,
+          "y": 0
+        },
+        {
+          "id": "ic2_reactor",
+          "title": "Ядерный реактор",
+          "icon": "IC2:blockreactorvessel",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:blockreactorvessel",
+              "count": 1,
+              "title": "Собрать корпус реактора"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:blockReactorChamber",
+              "count": 3,
+              "title": "Сделать 3 камеры реактора"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:reactorCoolantSimple",
+              "count": 2,
+              "title": "Сделать 2 тепловых конденсатора"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:reactorVent",
+              "count": 1,
+              "title": "Сделать теплоотвод"
+            }
+          ],
+          "description": [
+            "Реактор — это давление, тепло и очень много EU.",
+            "Начните с корпуса, камер и охлаждения: без них он красиво взлетает."
+          ],
+          "dependencies": [
+            "ic2_mfs"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "item",
+              "item": "IC2:reactorCoolantSimple",
+              "count": 2
+            }
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "id": "ic2_qarmor",
+          "title": "Квантовая броня",
+          "icon": "IC2:itemArmorQuantumChestplate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemArmorQuantumHelmet",
+              "count": 1,
+              "title": "Собрать квантовый шлем"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemArmorQuantumChestplate",
+              "count": 1,
+              "title": "Собрать квантовый нагрудник"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemArmorQuantumLegs",
+              "count": 1,
+              "title": "Собрать квантовые штаны"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemArmorQuantumBoots",
+              "count": 1,
+              "title": "Собрать квантовые ботинки"
+            }
+          ],
+          "description": [
+            "QuantumSuit — вершина защиты IC2: полёт, щит и запас энергии.",
+            "Иридиевые пластины для неё удобнее всего делать через UU-материю."
+          ],
+          "dependencies": [
+            "ic2_mfs",
+            "ic2_massfab"
+          ],
+          "achievement": "ic2.buildQArmor",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemupgradekit",
+              "count": 1
+            }
+          ],
+          "x": 7,
+          "y": -2
+        },
+        {
+          "id": "ic2_starve_qhelmet",
+          "title": "Забыл зарядить",
+          "icon": "IC2:itemArmorQuantumHelmet",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Походить без еды в разряженном квантовом шлеме до голода"
+            }
+          ],
+          "description": [
+            "Квантовый шлем кормит владельца, пока в нём есть энергия.",
+            "Разрядите его — и вспомните, где лежит еда."
+          ],
+          "dependencies": [
+            "ic2_qarmor"
+          ],
+          "achievement": "ic2.starveWithQHelmet",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemTinCanFilled",
+              "count": 4
+            }
+          ],
+          "x": 8,
+          "y": -1
+        },
+        {
+          "id": "ic2_nuke",
+          "title": "Красная кнопка",
+          "icon": "IC2:blockNuke",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:blockNuke",
+              "count": 1,
+              "title": "Собрать ядерную бомбу"
+            },
+            {
+              "type": "checkmark",
+              "title": "Подорваться на собственной ядерной бомбе"
+            }
+          ],
+          "description": [
+            "Ядерная бомба — самый убедительный аргумент IC2.",
+            "Главное — успеть отойти от своей же кнопки."
+          ],
+          "dependencies": [
+            "ic2_mfs"
+          ],
+          "achievement": "ic2.dieFromOwnNuke",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemRemote",
+              "count": 1
+            }
+          ],
+          "x": 6,
+          "y": 1
+        },
+        {
+          "id": "ic2_crop",
+          "title": "Агрономия",
+          "icon": "IC2:itemCropnalyzer",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemCropnalyzer",
+              "count": 1,
+              "title": "Сделать кропальяйзер"
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemTerraWart",
+              "count": 1,
+              "consume": false,
+              "title": "Раздобыть Terra Wart"
+            }
+          ],
+          "description": [
+            "Cropnalyzer показывает, что растёт на грядке и чего ему не хватает.",
+            "А Terra Wart — редкое лекарство, которое приживается только в Крае."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemFertilizer",
+              "count": 8
+            }
+          ],
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "ic2_wrench",
+          "title": "Гаечный ключ",
+          "icon": "IC2:itemToolWrench",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemToolWrench",
+              "count": 1,
+              "title": "Сделать гаечный ключ"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemToolbox",
+              "count": 1,
+              "title": "Собрать ящик для инструментов"
+            }
+          ],
+          "description": [
+            "Ключ снимает и разворачивает машины, не теряя их содержимое.",
+            "Сложите инструменты в ящик — он спасёт инвентарь от беспорядка."
+          ],
+          "dependencies": [
+            "ic2_refined_iron"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemCasing",
+              "count": 4
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "ic2_scanner",
+          "title": "Разведка и измерения",
+          "icon": "IC2:itemScannerAdv",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemToolMEter",
+              "count": 1,
+              "title": "Сделать EU-Reader"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemScanner",
+              "count": 1,
+              "title": "Сделать OD Scanner"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemScannerAdv",
+              "count": 1,
+              "title": "Сделать OV Scanner"
+            }
+          ],
+          "description": [
+            "EU-Reader показывает заряд и потери в сети, сканеры ищут руду под ногами.",
+            "OV Scanner видит шире и точнее — с ним шахта перестаёт быть лотереей."
+          ],
+          "dependencies": [
+            "ic2_mfe"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemFreq",
+              "count": 1
+            }
+          ],
+          "x": 5,
+          "y": 2
+        },
+        {
+          "id": "ic2_bronze",
+          "title": "Бронзовый век",
+          "icon": "IC2:itemToolBronzePickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemToolBronzePickaxe",
+              "count": 1,
+              "title": "Отлить бронзовую кирку"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemToolBronzeSword",
+              "count": 1,
+              "title": "Отлить бронзовый меч"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemArmorBronzeChestplate",
+              "count": 1,
+              "title": "Сделать бронзовый нагрудник"
+            }
+          ],
+          "description": [
+            "Бронза из пыли меди и олова крепче железа и служит дольше.",
+            "Бронзовый набор — дешёвая замена, пока не хватает EU на бур."
+          ],
+          "dependencies": [
+            "ic2_macerator"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemArmorBronzeBoots",
+              "count": 1
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "ic2_overclocker",
+          "title": "Разгон машин",
+          "icon": "IC2:upgradeModule",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemPartCircuitAdv",
+              "count": 2,
+              "title": "Собрать 2 продвинутые схемы"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:upgradeModule",
+              "count": 4,
+              "title": "Сделать 4 ускорителя (Overclocker)"
+            }
+          ],
+          "description": [
+            "Overclocker Upgrade ускоряет машину, но и расход энергии растёт.",
+            "Ставьте их в дробилку и печь, когда сети уже хватает мощности."
+          ],
+          "dependencies": [
+            "ic2_elec_furnace",
+            "ic2_macerator"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "IC2:upgradeModule",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "IC2:itemAdvBat",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "x": 4,
+          "y": 2
+        },
+        {
+          "id": "ic2_luminator",
+          "title": "Свет цеха",
+          "icon": "IC2:blockLuminator",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:blockLuminator",
+              "count": 4,
+              "title": "Сделать 4 люминатора"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:blockLuminatorDark",
+              "count": 4,
+              "title": "Сделать 4 тёмных люминатора"
+            }
+          ],
+          "description": [
+            "Люминаторы светят ярче факелов и питаются от сети.",
+            "Тёмный вариант пригодится там, где нужен мягкий свет."
+          ],
+          "dependencies": [
+            "ic2_elec_furnace"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "minecraft:torch",
+              "count": 16
+            }
+          ],
+          "x": 4,
+          "y": 4
+        },
+        {
+          "id": "ic2_foam",
+          "title": "Строительная пена",
+          "icon": "IC2:blockReinforcedFoam",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemFoamSprayer",
+              "count": 1,
+              "title": "Сделать распылитель пены"
+            },
+            {
+              "type": "item",
+              "item": "IC2:blockFoam",
+              "count": 8,
+              "consume": false,
+              "title": "Напылить 8 блоков пены"
+            },
+            {
+              "type": "item",
+              "item": "IC2:blockReinforcedFoam",
+              "count": 8,
+              "consume": false,
+              "title": "Укрепить 8 блоков пены"
+            }
+          ],
+          "description": [
+            "CF Sprayer разбрызгивает пену, которая застывает в лёгкий блок.",
+            "Обработанная пена становится усиленным камнем — он держит даже взрыв."
+          ],
+          "dependencies": [
+            "ic2_macerator"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemPartCFPowder",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": 1
+        },
+        {
+          "id": "ic2_reinforced",
+          "title": "Бронированный цех",
+          "icon": "IC2:blockAlloy",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:blockAlloy",
+              "count": 8,
+              "title": "Сделать 8 усиленных блоков"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:blockAlloyGlass",
+              "count": 4,
+              "title": "Сделать 4 усиленных стекла"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemDoorAlloy",
+              "count": 1,
+              "title": "Сделать усиленную дверь"
+            }
+          ],
+          "description": [
+            "Усиленный камень не берёт динамит, а стекло держит свет и удар.",
+            "Из них получается цех, который переживёт даже свой реактор."
+          ],
+          "dependencies": [
+            "ic2_compressor"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "IC2:blockAlloyGlass",
+              "count": 4
+            }
+          ],
+          "x": 5,
+          "y": -4
+        },
+        {
+          "id": "ic2_canoe",
+          "title": "Углеродное каноэ",
+          "icon": "IC2:itemBoat",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemPartCarbonMesh",
+              "count": 2,
+              "title": "Сделать 2 карбоновые сетки"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemBoat",
+              "count": 1,
+              "title": "Склеить каноэ"
+            }
+          ],
+          "description": [
+            "Carbon Fiber Canoe быстрее лодки и не разбивается о берег.",
+            "Карбон вообще пригодится и в броне, и в инструментах."
+          ],
+          "dependencies": [
+            "ic2_macerator",
+            "ic2_resin"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemRubber",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": -5
+        },
+        {
+          "id": "ic2_batpack",
+          "title": "Энергия за спиной",
+          "icon": "IC2:itemArmorAdvBatpack",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemArmorBatpack",
+              "count": 1,
+              "title": "Собрать BatPack"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemArmorAdvBatpack",
+              "count": 1,
+              "title": "Собрать Adv.Batpack"
+            }
+          ],
+          "description": [
+            "BatPack заряжает инструменты прямо в инвентаре, пока вы копаете.",
+            "Продвинутая версия вмещает больше EU и быстрее отдаёт заряд."
+          ],
+          "dependencies": [
+            "ic2_batbox"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemAdvBat",
+              "count": 2
+            }
+          ],
+          "x": 4,
+          "y": -2
+        },
+        {
+          "id": "ic2_jetpack",
+          "title": "Реактивный ранец",
+          "icon": "IC2:itemArmorJetpackElectric",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemArmorJetpack",
+              "count": 1,
+              "title": "Собрать Jetpack"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemArmorJetpackElectric",
+              "count": 1,
+              "title": "Собрать Electric Jetpack"
+            }
+          ],
+          "description": [
+            "Jetpack поднимает в воздух, но топливо кончается быстро.",
+            "Электрический ранец заправляется от сети — летайте, пока есть EU."
+          ],
+          "dependencies": [
+            "ic2_batpack"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду за полёт",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "IC2:itemBatCrystal",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "IC2:itemArmorEnergypack",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": 4
+        },
+        {
+          "id": "ic2_nano",
+          "title": "Наносьют",
+          "icon": "IC2:itemArmorNanoChestplate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemArmorNanoHelmet",
+              "count": 1,
+              "title": "Собрать наношлем"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemArmorNanoChestplate",
+              "count": 1,
+              "title": "Собрать нанонагрудник"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemArmorNanoLegs",
+              "count": 1,
+              "title": "Собрать наноштаны"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemArmorNanoBoots",
+              "count": 1,
+              "title": "Собрать наноботинки"
+            }
+          ],
+          "description": [
+            "NanoSuit держит удар и питается от аккумуляторов.",
+            "Это последняя ступень перед квантовой броней — карбон уже пригодится."
+          ],
+          "dependencies": [
+            "ic2_mfe",
+            "ic2_compressor"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemPartCarbonPlate",
+              "count": 2
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "ic2_nanosaber",
+          "title": "Наносабля",
+          "icon": "IC2:itemNanoSaber",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:itemNanoSaber",
+              "count": 1,
+              "title": "Собрать наносаблю"
+            },
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 10,
+              "title": "Убить 10 зомби наносаблей"
+            }
+          ],
+          "description": [
+            "Включённая Nano Saber режет почти всё живое с одного удара.",
+            "Только не забудьте выключить её в деревне."
+          ],
+          "dependencies": [
+            "ic2_mfe",
+            "ic2_nano"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "minecraft:iron_ingot",
+              "count": 8
+            }
+          ],
+          "x": 6,
+          "y": 3
+        },
+        {
+          "id": "ic2_wind",
+          "title": "Ветряная энергия",
+          "icon": "IC2:blockKineticGenerator",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "IC2:blockKineticGenerator",
+              "count": 1,
+              "title": "Собрать Kinetic Wind Generator"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemironrotor",
+              "count": 1,
+              "title": "Сделать железный ротор"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:windmeter",
+              "count": 1,
+              "title": "Сделать ветромер"
+            }
+          ],
+          "description": [
+            "Kinetic Wind Generator даёт EU бесплатно, но зависит от высоты и погоды.",
+            "Ветромер покажет силу ветра: чем выше ротор, тем больше выработка."
+          ],
+          "dependencies": [
+            "ic2_generator",
+            "ic2_mfe"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemwcarbonrotor",
+              "count": 1
+            }
+          ],
+          "x": 5,
+          "y": -3
+        },
+        {
+          "id": "ic2_uranium",
+          "title": "Обогащение урана",
+          "icon": "IC2:blockOreUran",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "oreUranium",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 урановой руды"
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemUran238",
+              "count": 2,
+              "consume": false,
+              "title": "Получить 2 урана-238"
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemUran235",
+              "count": 1,
+              "consume": false,
+              "title": "Выделить уран-235"
+            }
+          ],
+          "description": [
+            "Урановая руда делится на изотопы, и только U-235 годится в топливо.",
+            "U-238 пойдёт на плутоний и обеднённые стержни."
+          ],
+          "dependencies": [
+            "ic2_reactor"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "IC2:itemFuelRod",
+              "count": 2
+            }
+          ],
+          "x": 7,
+          "y": 1
+        },
+        {
+          "id": "ic2_rtg",
+          "title": "Радиоизотопный источник",
+          "icon": "IC2:itemRTGPellet",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "IC2:itemPlutonium",
+              "count": 1,
+              "consume": false,
+              "title": "Наработать плутоний"
+            },
+            {
+              "type": "craft",
+              "item": "IC2:itemRTGPellet",
+              "count": 2,
+              "title": "Спрессовать 2 топливные таблетки"
+            }
+          ],
+          "description": [
+            "Отработанные стержни дают плутоний, а он — таблетки RTG.",
+            "Такие таблетки греют реактор и питают редкие устройства."
+          ],
+          "dependencies": [
+            "ic2_reactor",
+            "ic2_uranium"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "IC2:itemPlutoniumSmall",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "IC2:reactorCoolantTriple",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "x": 8,
+          "y": 0
+        }
+      ]
+    }
+  ]
+}

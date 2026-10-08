@@ -1,0 +1,1604 @@
+{
+  "title": "Applied Energistics 2",
+  "chapters": [
+    {
+      "id": "ae2",
+      "title": "Applied Energistics 2",
+      "description": "МЭ-сети, цифровое хранение предметов и автокрафт: от первого кристалла до квантовой связи.",
+      "icon": "appliedenergistics2:tile.BlockController",
+      "requiredMod": "appliedenergistics2",
+      "quests": [
+        {
+          "id": "ae2_quartz",
+          "title": "Сертусовый кварц",
+          "icon": "appliedenergistics2:tile.OreQuartz",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "oreCertusQuartz",
+              "count": 4,
+              "consume": false,
+              "title": "Добыть руду сертусового кварца"
+            },
+            {
+              "type": "item",
+              "ore": "crystalCertusQuartz",
+              "count": 8,
+              "consume": false,
+              "title": "Получить 8 кристаллов сертуса"
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockGrinder",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Сертусовый кварц светится в темноте и встречается в жилах вместе с обычным кварцем.",
+            "Кварцевая дробилка превращает кристаллы в пыль, а пыль — в кремний."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            },
+            {
+              "type": "item",
+              "item": "minecraft:quartz",
+              "count": 4
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "ae2_charged",
+          "title": "Заряженный кварц",
+          "icon": "appliedenergistics2:tile.OreQuartzCharged",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "oreChargedCertusQuartz",
+              "count": 1,
+              "consume": false,
+              "title": "Найти заряженную сертусовую руду"
+            }
+          ],
+          "description": [
+            "Иногда среди сертусовой руды попадается заряженная — она ярче и хранит энергию.",
+            "Немного такого кварца можно получить и в заряднике."
+          ],
+          "dependencies": [
+            "ae2_quartz"
+          ],
+          "achievement": "achievement.ae2.ChargedQuartz",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 1,
+          "y": -2
+        },
+        {
+          "id": "ae2_fluix",
+          "title": "Кристалл флюикса",
+          "icon": "appliedenergistics2:tile.BlockFluix",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Сделать кристалл флюикса: заряженный сертус + красная пыль + незер-кварц"
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockFluix",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Флюикс — главный материал мода: из него делают кабель, корпуса и почти все приборы."
+          ],
+          "dependencies": [
+            "ae2_charged"
+          ],
+          "achievement": "achievement.ae2.Fluix",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "appliedenergistics2:tile.BlockFluix",
+              "count": 1
+            }
+          ],
+          "x": 2,
+          "y": -3
+        },
+        {
+          "id": "ae2_charger",
+          "title": "Зарядник",
+          "icon": "appliedenergistics2:tile.BlockCharger",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockCharger",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Зарядник делает сертус заряженным и наполняет инструменты энергией.",
+            "Даже деревянная рукоятка даёт ему немного мощности."
+          ],
+          "dependencies": [
+            "ae2_fluix"
+          ],
+          "achievement": "achievement.ae2.Charger",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "appliedenergistics2:tile.BlockQuartzTorch",
+              "count": 4
+            }
+          ],
+          "x": 3,
+          "y": -2
+        },
+        {
+          "id": "ae2_growth",
+          "title": "Ускоритель роста",
+          "icon": "appliedenergistics2:tile.BlockQuartzGrowthAccelerator",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "appliedenergistics2:item.ItemCrystalSeed",
+              "count": 2,
+              "consume": false,
+              "title": "Получить семена кристаллов"
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockQuartzGrowthAccelerator",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Семена бросают в воду, рядом ставят ускорители — и кристаллы растут сами.",
+            "Так сертус и флюикс появляются без походов в шахту."
+          ],
+          "dependencies": [
+            "ae2_charger"
+          ],
+          "achievement": "achievement.ae2.CrystalGrowthAccelerator",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "appliedenergistics2:item.ItemCrystalSeed",
+              "count": 2
+            }
+          ],
+          "x": 4,
+          "y": -4
+        },
+        {
+          "id": "ae2_cable",
+          "title": "Стеклянный кабель",
+          "icon": "appliedenergistics2:item.ItemMultiPart",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ItemMultiPart",
+              "count": 8,
+              "title": "Скрутить 8 стеклянных МЭ-кабелей"
+            }
+          ],
+          "description": [
+            "Кабель — кровеносная система сети: по нему идут предметы, энергия и сигналы.",
+            "Кабель красится, а сверху на него ставятся шины, панели и терминалы."
+          ],
+          "dependencies": [
+            "ae2_charger"
+          ],
+          "achievement": "achievement.ae2.GlassCable",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "appliedenergistics2:item.ItemPaintBall",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": -3
+        },
+        {
+          "id": "ae2_meteor",
+          "title": "Метеоритный компас",
+          "icon": "appliedenergistics2:tile.BlockSkyCompass",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "appliedenergistics2:tile.BlockSkyStone",
+              "count": 8,
+              "consume": false,
+              "title": "Наломать скистоуна"
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockSkyCompass",
+              "count": 1
+            },
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 10,
+              "title": "Отбиться от нежити у метеорита"
+            }
+          ],
+          "description": [
+            "Компас указывает на ближайший метеорит: внутри скистоун и сундук с пресс-формами.",
+            "Копайте осторожно — вокруг метеорита всегда хватает мобов."
+          ],
+          "dependencies": [
+            "ae2_quartz"
+          ],
+          "achievement": "achievement.ae2.Compass",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "appliedenergistics2:tile.BlockSkyStone",
+              "count": 8
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "ae2_presses",
+          "title": "Пресс-формы",
+          "icon": "appliedenergistics2:tile.BlockInscriber",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Найти в метеоритном сундуке все 4 пресс-формы"
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockInscriber",
+              "count": 1
+            }
+          ],
+          "description": [
+            "В сундуках метеоритов лежат пресс-формы: логика, вычисление, инженерия и кремний.",
+            "Без них не сделать процессоры, а значит и всю электронику AE2."
+          ],
+          "dependencies": [
+            "ae2_meteor"
+          ],
+          "achievement": "achievement.ae2.Presses",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 1
+            }
+          ],
+          "x": 2,
+          "y": -2
+        },
+        {
+          "id": "ae2_storage_cell",
+          "title": "Ячейка хранения",
+          "icon": "appliedenergistics2:item.ItemBasicStorageCell.1k",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ItemBasicStorageCell.1k",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockDrive",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Ячейка держит предметы в цифровом виде, а МЭ-накопитель вмещает сразу десять ячеек.",
+            "Это уже не сундук: один блок вместо целой стены."
+          ],
+          "dependencies": [
+            "ae2_presses",
+            "ae2_fluix"
+          ],
+          "achievement": "achievement.ae2.StorageCell",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "ae2_io_port",
+          "title": "Порт ввода-вывода",
+          "icon": "appliedenergistics2:tile.BlockIOPort",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockIOPort",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockCellWorkbench",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ItemViewCell",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Через порт ввода-вывода ячейки перекладывают содержимое из накопителя в накопитель.",
+            "Верстак ячеек задаёт фильтры, а ячейка просмотра показывает, что уже лежит внутри."
+          ],
+          "dependencies": [
+            "ae2_storage_cell"
+          ],
+          "achievement": "achievement.ae2.IOPort",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:hopper",
+              "count": 1
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "ae2_portable_cell",
+          "title": "Портативная ячейка",
+          "icon": "appliedenergistics2:item.ToolPortableCell",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ToolPortableCell",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Портативная ячейка — рюкзак со связью с сетью: носите предметы с собой и выгружайте их одним кликом."
+          ],
+          "dependencies": [
+            "ae2_storage_cell"
+          ],
+          "achievement": "achievement.ae2.PortableCell",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 4,
+          "y": 1
+        },
+        {
+          "id": "ae2_storage_bus",
+          "title": "Шина хранения",
+          "icon": "appliedenergistics2:tile.BlockCableBus",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ItemMultiPart",
+              "count": 1,
+              "title": "Собрать шину хранения (Storage Bus)"
+            }
+          ],
+          "description": [
+            "Шина хранения подключает обычный сундук прямо в сеть — предметы видны в терминале, будто лежат в ячейке."
+          ],
+          "dependencies": [
+            "ae2_presses",
+            "ae2_cable"
+          ],
+          "achievement": "achievement.ae2.StorageBus",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:chest",
+              "count": 2
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "ae2_network1",
+          "title": "Первая МЭ-сеть",
+          "icon": "appliedenergistics2:tile.BlockChest",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockChest",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockEnergyAcceptor",
+              "count": 1
+            }
+          ],
+          "description": [
+            "МЭ-сундук, акцептор энергии и немного кабеля — вот и первая сеть.",
+            "Вставьте ячейку в сундук и подведите любой источник энергии."
+          ],
+          "dependencies": [
+            "ae2_storage_cell",
+            "ae2_cable"
+          ],
+          "achievement": "achievement.ae2.Networking1",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "appliedenergistics2:item.ItemMultiPart",
+              "count": 8
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "ae2_controller",
+          "title": "МЭ-контроллер",
+          "icon": "appliedenergistics2:tile.BlockController",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockController",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockEnergyCell",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Контроллер распределяет каналы: без него сеть упирается в восемь устройств.",
+            "Энергоячейка запасает энергию, чтобы сеть пережила отключение генератора."
+          ],
+          "dependencies": [
+            "ae2_network1"
+          ],
+          "achievement": "achievement.ae2.Controller",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "appliedenergistics2:tile.BlockEnergyCell",
+              "count": 1
+            }
+          ],
+          "x": 6,
+          "y": -2
+        },
+        {
+          "id": "ae2_network2",
+          "title": "Инженер сети",
+          "icon": "appliedenergistics2:tile.BlockWireless",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockWireless",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ToolWirelessTerminal",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockEnergyCell",
+              "count": 4,
+              "title": "Собрать батарею из 4 энергоячеек"
+            }
+          ],
+          "description": [
+            "Точка беспроводного доступа и беспроводной терминал открывают сеть на расстоянии."
+          ],
+          "dependencies": [
+            "ae2_controller"
+          ],
+          "achievement": "achievement.ae2.Networking2",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            }
+          ],
+          "x": 7,
+          "y": -3
+        },
+        {
+          "id": "ae2_network3",
+          "title": "Администратор сети",
+          "icon": "appliedenergistics2:tile.BlockSecurity",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockSecurity",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ToolBiometricCard",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockInterface",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Терминал безопасности и биометрическая карта разграничивают доступ к ячейкам.",
+            "МЭ-интерфейс отдаёт и принимает предметы автоматически, без участия игрока."
+          ],
+          "dependencies": [
+            "ae2_network2"
+          ],
+          "achievement": "achievement.ae2.Networking3",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:diamond",
+                  "count": 3
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:ender_pearl",
+                  "count": 4
+                }
+              ]
+            }
+          ],
+          "x": 8,
+          "y": -2
+        },
+        {
+          "id": "ae2_p2p",
+          "title": "P2P-туннели",
+          "icon": "appliedenergistics2:item.ItemMultiPart",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ItemMultiPart",
+              "count": 2,
+              "title": "Собрать 2 P2P-туннеля (МЭ P2P)"
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ToolMemoryCard",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Пара P2P-туннелей передаёт каналы, энергию или предметы через одну точку — удобно для больших баз."
+          ],
+          "dependencies": [
+            "ae2_controller"
+          ],
+          "achievement": "achievement.ae2.P2P",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 7,
+          "y": -2
+        },
+        {
+          "id": "ae2_recursive",
+          "title": "Рекурсивная сеть",
+          "icon": "appliedenergistics2:tile.BlockInterface",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockInterface",
+              "count": 2,
+              "title": "Собрать 2 МЭ-интерфейса"
+            }
+          ],
+          "description": [
+            "Интерфейс можно направить в собственную сеть: предметы уходят в ячейки и возвращаются по запросу."
+          ],
+          "dependencies": [
+            "ae2_controller"
+          ],
+          "achievement": "achievement.ae2.Recursive",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "minecraft:hopper",
+              "count": 2
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "ae2_crafting_cpu",
+          "title": "Крафтовый ЦП",
+          "icon": "appliedenergistics2:tile.BlockCraftingUnit",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockCraftingUnit",
+              "count": 3
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockCraftingStorage",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockCraftingMonitor",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Из крафтовых блоков собирается многоблочный ЦП, который выполняет заказы автокрафта.",
+            "Монитор показывает, что именно считается прямо сейчас."
+          ],
+          "dependencies": [
+            "ae2_network1"
+          ],
+          "achievement": "achievement.ae2.CraftingCPU",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "appliedenergistics2:tile.BlockCraftingStorage",
+              "count": 1
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "ae2_crafting_terminal",
+          "title": "Крафтовый терминал",
+          "icon": "appliedenergistics2:item.ItemMultiPart",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ItemMultiPart",
+              "count": 1,
+              "title": "Собрать МЭ крафтовый терминал"
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockMolecularAssembler",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Крафтовый терминал — верстак прямо в сети: предметы берутся из ячеек, бегать к сундукам не нужно.",
+            "Молекулярный сборщик выполняет закодированные шаблоны."
+          ],
+          "dependencies": [
+            "ae2_network1",
+            "ae2_presses"
+          ],
+          "achievement": "achievement.ae2.CraftingTerminal",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 6,
+          "y": -3
+        },
+        {
+          "id": "ae2_pattern_terminal",
+          "title": "Маэстро шаблонов",
+          "icon": "appliedenergistics2:item.ItemEncodedPattern",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "appliedenergistics2:item.ItemEncodedPattern",
+              "count": 1,
+              "consume": false,
+              "title": "Закодировать шаблон"
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockInterface",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Терминал шаблонов записывает рецепты, интерфейс отправляет их сборщику — и сеть крафтит сама.",
+            "Закажите что-нибудь сложное и посмотрите, как работает автокрафт."
+          ],
+          "dependencies": [
+            "ae2_crafting_terminal",
+            "ae2_crafting_cpu"
+          ],
+          "achievement": "achievement.ae2.PatternTerminal",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "appliedenergistics2:item.ItemEncodedPattern",
+              "count": 2
+            }
+          ],
+          "x": 7,
+          "y": 1
+        },
+        {
+          "id": "ae2_facade",
+          "title": "Фасады",
+          "icon": "appliedenergistics2:item.ItemFacade",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ItemFacade",
+              "count": 4,
+              "title": "Сделать 4 стеклянных фасада"
+            }
+          ],
+          "description": [
+            "Фасад надевается на кабель и притворяется обычным блоком — сеть больше не портит интерьер."
+          ],
+          "dependencies": [
+            "ae2_cable"
+          ],
+          "achievement": "achievement.ae2.Facade",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "minecraft:glass",
+              "count": 8
+            }
+          ],
+          "x": 5,
+          "y": -3
+        },
+        {
+          "id": "ae2_network_tool",
+          "title": "Сетевой инструмент",
+          "icon": "appliedenergistics2:item.ToolNetworkTool",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ToolNetworkTool",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Сетевой инструмент показывает занятые каналы и подключённые устройства — первый помощник при поломке сети."
+          ],
+          "dependencies": [
+            "ae2_network1"
+          ],
+          "achievement": "achievement.ae2.NetworkTool",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "id": "ae2_quantum",
+          "title": "Квантовая связь",
+          "icon": "appliedenergistics2:tile.BlockQuantumLinkChamber",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockQuantumLinkChamber",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockQuantumRing",
+              "count": 8,
+              "title": "Собрать 8 квантовых колец"
+            }
+          ],
+          "description": [
+            "Две квантовые камеры с кольцами связывают сети на любом расстоянии, даже между измерениями.",
+            "Это самый надёжный мост между базой и дальним рудником."
+          ],
+          "dependencies": [
+            "ae2_network2"
+          ],
+          "achievement": "achievement.ae2.QNB",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            },
+            {
+              "type": "item",
+              "item": "minecraft:ender_pearl",
+              "count": 4
+            }
+          ],
+          "x": 8,
+          "y": -1
+        },
+        {
+          "id": "ae2_spatial_io",
+          "title": "Пространственный ввод-вывод",
+          "icon": "appliedenergistics2:tile.BlockSpatialIOPort",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockSpatialIOPort",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockSpatialPylon",
+              "count": 4,
+              "title": "Собрать 4 пространственных пилона"
+            }
+          ],
+          "description": [
+            "Пространственная установка вырезает область и упаковывает её в ячейку — так переносят целые постройки."
+          ],
+          "dependencies": [
+            "ae2_network2"
+          ],
+          "achievement": "achievement.ae2.SpatialIO",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            }
+          ],
+          "x": 8,
+          "y": 0
+        },
+        {
+          "id": "ae2_spatial_explorer",
+          "title": "Отважно идти",
+          "icon": "appliedenergistics2:item.ItemSpatialStorageCell.16Cubed",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ItemSpatialStorageCell.16Cubed",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Собрать установку из пилонов, порта и ячейки и перенести постройку"
+            }
+          ],
+          "description": [
+            "Зарядите пространственную ячейку в порту и отправьте область в пустоту, а потом верните её на новое место.",
+            "Главное — не забудьте забрать ячейку с собой."
+          ],
+          "dependencies": [
+            "ae2_spatial_io"
+          ],
+          "achievement": "achievement.ae2.SpatialIOExplorer",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:diamond",
+                  "count": 8
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:ender_pearl",
+                  "count": 8
+                }
+              ]
+            }
+          ],
+          "x": 9,
+          "y": -1
+        },
+        {
+          "id": "ae2_crank",
+          "title": "Энергия вручную",
+          "icon": "appliedenergistics2:tile.BlockCrank",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockCrank",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockVibrationChamber",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Деревянная рукоятка крутит сеть мускульной силой, а вибрационная камера сжигает уголь и топливо.",
+            "На первых порах этого хватает, чтобы прокормить акцептор и терминал."
+          ],
+          "dependencies": [
+            "ae2_network1"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:coal",
+              "count": 8
+            }
+          ],
+          "x": 6,
+          "y": 1
+        },
+        {
+          "id": "ae2_dense_cell",
+          "title": "Плотная энергоячейка",
+          "icon": "appliedenergistics2:tile.BlockDenseEnergyCell",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockDenseEnergyCell",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockEnergyCell",
+              "count": 3,
+              "title": "Собрать 3 обычные энергоячейки"
+            }
+          ],
+          "description": [
+            "Плотная ячейка держит в разы больше энергии и сглаживает скачки при пиковых нагрузках сети."
+          ],
+          "dependencies": [
+            "ae2_controller"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:redstone",
+                  "count": 16
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:gold_ingot",
+                  "count": 4
+                }
+              ]
+            }
+          ],
+          "x": 7,
+          "y": 0
+        },
+        {
+          "id": "ae2_cell_4k",
+          "title": "Ячейки побольше",
+          "icon": "appliedenergistics2:item.ItemBasicStorageCell.4k",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ItemBasicStorageCell.4k",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ItemBasicStorageCell.16k",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Как только 1k перестаёт вмещать хлам, пора переходить на 4k и 16k.",
+            "Старые ячейки не выбрасывайте — их содержимое перекачивают через порт ввода-вывода."
+          ],
+          "dependencies": [
+            "ae2_storage_cell"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "item",
+              "item": "minecraft:iron_ingot",
+              "count": 8
+            }
+          ],
+          "x": 4,
+          "y": 2
+        },
+        {
+          "id": "ae2_cell_64k",
+          "title": "Предел хранения",
+          "icon": "appliedenergistics2:item.ItemBasicStorageCell.64k",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ItemBasicStorageCell.64k",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "ore": "crystalCertusQuartz",
+              "count": 8,
+              "consume": false,
+              "title": "Заготовить 8 кристаллов сертуса"
+            }
+          ],
+          "description": [
+            "64k — самая ёмкая обычная ячейка: одной такой хватает на целую базу."
+          ],
+          "dependencies": [
+            "ae2_cell_4k"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:diamond",
+                  "count": 3
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:ender_pearl",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": 1
+        },
+        {
+          "id": "ae2_condenser",
+          "title": "Конденсатор материи",
+          "icon": "appliedenergistics2:tile.BlockCondenser",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockCondenser",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Скормить конденсатору стак ненужных предметов"
+            }
+          ],
+          "description": [
+            "Конденсатор переплавляет мусор в шарики материи, а те — в сингулярности.",
+            "Отличный способ избавиться от гор мусора с пользой для дела."
+          ],
+          "dependencies": [
+            "ae2_network1"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "minecraft:chest",
+              "count": 2
+            }
+          ],
+          "x": 6,
+          "y": 2
+        },
+        {
+          "id": "ae2_mass_cannon",
+          "title": "Пушка материи",
+          "icon": "appliedenergistics2:item.ToolMassCannon",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ToolMassCannon",
+              "count": 1
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 10,
+              "title": "Отстрелять 10 скелетов из пушки"
+            }
+          ],
+          "description": [
+            "Пушка материи стреляет шариками и сингулярностями: чем тяжелее заряд, тем больнее удар.",
+            "Полезно и на охоте, и при обороне базы от нежити."
+          ],
+          "dependencies": [
+            "ae2_condenser"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "minecraft:arrow",
+              "count": 16
+            }
+          ],
+          "x": 7,
+          "y": 2
+        },
+        {
+          "id": "ae2_charged_staff",
+          "title": "Посох заряда",
+          "icon": "appliedenergistics2:item.ToolChargedStaff",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ToolChargedStaff",
+              "count": 1
+            },
+            {
+              "type": "kill",
+              "entity": "Creeper",
+              "count": 8,
+              "title": "Убить 8 криперов"
+            }
+          ],
+          "description": [
+            "Посох бьёт электричеством по площади — неплохая замена мечу, если держать его заряженным."
+          ],
+          "dependencies": [
+            "ae2_charger"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "minecraft:glowstone",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": -2
+        },
+        {
+          "id": "ae2_entropy",
+          "title": "Манипулятор энтропии",
+          "icon": "appliedenergistics2:item.ToolEntropyManipulator",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ToolEntropyManipulator",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Превратить камень в траву, а воду — в лёд"
+            }
+          ],
+          "description": [
+            "Манипулятор энтропии ускоряет старение: камень зарастает травой, вода замерзает, песок стекленеет.",
+            "Удобная утилита для стройки и терраформирования."
+          ],
+          "dependencies": [
+            "ae2_charger"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "minecraft:ice",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "ae2_tools_certus",
+          "title": "Кварцевый набор",
+          "icon": "appliedenergistics2:item.ToolCertusQuartzPickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ToolCertusQuartzPickaxe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ToolCertusQuartzSword",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ToolCertusQuartzWrench",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Инструменты из сертусового кварца прочнее железных, а кварцевый гаечный ключ разбирает устройства сети.",
+            "Ключ особенно пригодится, когда придётся переставлять кабели и машины."
+          ],
+          "dependencies": [
+            "ae2_fluix"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "minecraft:iron_ingot",
+              "count": 4
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "ae2_tools_nether",
+          "title": "Незерский кварцевый набор",
+          "icon": "appliedenergistics2:item.ToolNetherQuartzPickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ToolNetherQuartzPickaxe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ToolNetherQuartzAxe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ToolNetherQuartzCuttingKnife",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Незер-кварц даёт инструментам ещё немного прочности и скорости.",
+            "Резак из такого кварца аккуратно снимает фасады и кабели, не ломая их."
+          ],
+          "dependencies": [
+            "ae2_tools_certus"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "item",
+              "item": "minecraft:gold_ingot",
+              "count": 2
+            }
+          ],
+          "x": 4,
+          "y": 3
+        },
+        {
+          "id": "ae2_quartz_blocks",
+          "title": "Кварцевые блоки",
+          "icon": "appliedenergistics2:tile.BlockQuartz",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockQuartz",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockQuartzPillar",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockQuartzChiseled",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Сертус спрессовывается в аккуратные белые блоки: гладкие, колонны и резные.",
+            "Из них получается чистая футуристичная отделка для базы."
+          ],
+          "dependencies": [
+            "ae2_quartz"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "appliedenergistics2:tile.BlockQuartz",
+              "count": 4
+            }
+          ],
+          "x": 1,
+          "y": 0
+        },
+        {
+          "id": "ae2_quartz_glass",
+          "title": "Светящееся стекло",
+          "icon": "appliedenergistics2:tile.BlockQuartzGlass",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockQuartzGlass",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockQuartzLamp",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockLightDetector",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Кварцевое стекло прозрачно, а яркое стекло светит не хуже глоустона.",
+            "Световой датчик гасит и включает освещение сам, по уровню света вокруг."
+          ],
+          "dependencies": [
+            "ae2_quartz_blocks"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "minecraft:glowstone",
+              "count": 2
+            }
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "id": "ae2_quartz_build",
+          "title": "Ступени и плиты",
+          "icon": "appliedenergistics2:tile.QuartzStairBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.QuartzStairBlock",
+              "count": 4,
+              "title": "Сделать 4 кварцевые ступени"
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.QuartzSlabBlock",
+              "count": 6,
+              "title": "Сделать 6 кварцевых плит"
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.ChiseledQuartzStairBlock",
+              "count": 4,
+              "title": "Сделать 4 резные ступени"
+            }
+          ],
+          "description": [
+            "Ступени и плиты позволяют собрать из кварца нормальные лестницы, парапеты и полы без единого шва."
+          ],
+          "dependencies": [
+            "ae2_quartz_blocks"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:glass",
+              "count": 8
+            }
+          ],
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "ae2_skystone_build",
+          "title": "Скистоуновая кладка",
+          "icon": "appliedenergistics2:tile.SkyStoneBrickStairBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.SkyStoneStairBlock",
+              "count": 4,
+              "title": "Сделать 4 ступени из скистоуна"
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.SkyStoneBrickStairBlock",
+              "count": 4,
+              "title": "Сделать 4 ступени из кирпича"
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.SkyStoneBrickSlabBlock",
+              "count": 6,
+              "title": "Сделать 6 плит из кирпича"
+            }
+          ],
+          "description": [
+            "Тёмный скистоун с метеорита — отличный материал для стен лаборатории.",
+            "Кирпичная кладка и её ступени придают постройкам законченный вид."
+          ],
+          "dependencies": [
+            "ae2_meteor"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "appliedenergistics2:tile.BlockSkyStone",
+              "count": 8
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "ae2_paint",
+          "title": "Краска и цвет",
+          "icon": "appliedenergistics2:item.ToolColorApplicator",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:item.ToolColorApplicator",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "appliedenergistics2:tile.BlockPaint",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "appliedenergistics2:item.ItemPaintBall",
+              "count": 16,
+              "consume": false,
+              "title": "Собрать 16 шаров краски"
+            }
+          ],
+          "description": [
+            "Аппликатор красит кабели, шины и фасады, а блок краски служит заправкой.",
+            "Цвет помогает разложить провода по назначению: энергия, предметы, сигналы."
+          ],
+          "dependencies": [
+            "ae2_cable"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:dye",
+              "count": 8
+            }
+          ],
+          "x": 5,
+          "y": -2
+        }
+      ]
+    }
+  ]
+}

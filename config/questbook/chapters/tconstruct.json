@@ -1,0 +1,1389 @@
+{
+  "title": "Tinkers' Construct",
+  "chapters": [
+    {
+      "id": "tconstruct",
+      "title": "Tinkers' Construct",
+      "description": "Кузница, литейная и инструменты, которые можно собирать из частей.",
+      "icon": "TConstruct:CraftingStation",
+      "requiredMod": "TConstruct",
+      "quests": [
+        {
+          "id": "tc_pattern",
+          "title": "Пустой шаблон",
+          "icon": "TConstruct:blankPattern",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:blankPattern",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Из досок и палки получается шаблон — основа всех деталей инструментов."
+          ],
+          "achievement": "tconstruct.pattern",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 15
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "tc_station",
+          "title": "Верстак-конструктор",
+          "icon": "TConstruct:CraftingStation",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:CraftingStation",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:ToolStationBlock",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Верстак-конструктор заменяет обычный верстак и открывает доступ к станции.",
+            "Станция собирает инструменты из трёх частей."
+          ],
+          "dependencies": [
+            "tc_pattern"
+          ],
+          "achievement": "tconstruct.beginner",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "tc_first_pick",
+          "title": "Первая кирка",
+          "icon": "TConstruct:pickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:pickaxe",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Рукоять, головка и крепление — соберите любую кирку и оцените её прочность."
+          ],
+          "dependencies": [
+            "tc_station"
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": "TConstruct:toolRod",
+              "count": 4
+            },
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 2,
+          "y": -5
+        },
+        {
+          "id": "tc_patterns",
+          "title": "Все выкройки",
+          "icon": "TConstruct:metalPattern",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:Pattern",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:metalPattern",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Выкройки нужны для отливки деталей из металла."
+          ],
+          "dependencies": [
+            "tc_station"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 2,
+          "y": -4
+        },
+        {
+          "id": "tc_tool_forge",
+          "title": "Кузнечный горн",
+          "icon": "TConstruct:ToolForgeBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:ToolForgeBlock",
+              "count": 1
+            }
+          ],
+          "description": [
+            "На горне делаются большие инструменты: молот, коса, топор-пила."
+          ],
+          "dependencies": [
+            "tc_station"
+          ],
+          "achievement": "tconstruct.tinkerer",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 2,
+          "y": -3
+        },
+        {
+          "id": "tc_grout",
+          "title": "Слизь и обожжённый кирпич",
+          "icon": "TConstruct:SearedBrick",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TConstruct:CraftedSoil",
+              "count": 8,
+              "consume": false,
+              "title": "Замешать слизь с глиной"
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:SearedBrick",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать обожжённые кирпичи"
+            }
+          ],
+          "description": [
+            "Из глины, песка и гравия выходит слизь, из неё — обожжённые кирпичи."
+          ],
+          "dependencies": [
+            "tc_station"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 2,
+          "y": -2
+        },
+        {
+          "id": "tc_smeltery",
+          "title": "Литейная",
+          "icon": "TConstruct:Smeltery",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:Smeltery",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:SearedBlock",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:LavaTank",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Контроллер, обожжённые блоки и бак с лавой — литейная готова.",
+            "Внутренний объём должен быть не меньше одного блока."
+          ],
+          "dependencies": [
+            "tc_grout"
+          ],
+          "achievement": "tconstruct.smelteryMaker",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:manualBook",
+              "count": 1
+            }
+          ],
+          "x": 3,
+          "y": -2
+        },
+        {
+          "id": "tc_casting",
+          "title": "Литьё деталей",
+          "icon": "TConstruct:CastingChannel",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:CastingChannel",
+              "count": 2
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:SearedBlock",
+              "count": 1,
+              "title": "Литейный стол"
+            }
+          ],
+          "description": [
+            "Расплав заливается в выкройки и превращается в готовые части инструментов."
+          ],
+          "dependencies": [
+            "tc_smeltery"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 4,
+          "y": -5
+        },
+        {
+          "id": "tc_cobalt",
+          "title": "Кобальт",
+          "icon": {
+            "item": "TConstruct:MetalBlock",
+            "meta": 4
+          },
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TConstruct:materials",
+              "meta": 4,
+              "count": 1,
+              "consume": false,
+              "title": "Получить кобальт"
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:fluid.molten.cobalt",
+              "count": 1,
+              "consume": false,
+              "title": "Расплавить кобальт"
+            }
+          ],
+          "description": [
+            "Кобальт плавится только в литейной и даёт лучшие головки инструментов."
+          ],
+          "dependencies": [
+            "tc_casting"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 5,
+          "y": -3
+        },
+        {
+          "id": "tc_manyullyn",
+          "title": "Манюллин",
+          "icon": {
+            "item": "TConstruct:MetalBlock",
+            "meta": 5
+          },
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TConstruct:materials",
+              "meta": 5,
+              "count": 1,
+              "consume": false,
+              "title": "Сплавить манюллин"
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:fluid.molten.manyullyn",
+              "count": 1,
+              "consume": false,
+              "title": "Расплавить манюллин"
+            }
+          ],
+          "description": [
+            "Кобальт и ардит в равных долях дают самый прочный сплав мода."
+          ],
+          "dependencies": [
+            "tc_cobalt"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:hammerHead",
+              "count": 1
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "tc_pro",
+          "title": "Мастер-кузнец",
+          "icon": "TConstruct:hammer",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:hammer",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:excavator",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:lumberaxe",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Молот, копатель и лесоруб рубят в объёме — стройка ускоряется в разы."
+          ],
+          "dependencies": [
+            "tc_tool_forge",
+            "tc_manyullyn"
+          ],
+          "achievement": "tconstruct.proTinkerer",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            }
+          ],
+          "x": 7,
+          "y": -2
+        },
+        {
+          "id": "tc_weapon",
+          "title": "Оружие на любой вкус",
+          "icon": "TConstruct:broadsword",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:broadsword",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:battlesign",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Меч и боевая табличка — начало боевого набора."
+          ],
+          "dependencies": [
+            "tc_tool_forge"
+          ],
+          "achievement": "tconstruct.preparedFight",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 3,
+          "y": -3
+        },
+        {
+          "id": "tc_slayer",
+          "title": "Истребитель",
+          "icon": "TConstruct:cleaver",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 10
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 10
+            }
+          ],
+          "description": [
+            "Проверьте оружие в деле: десяток зомби и скелетов."
+          ],
+          "dependencies": [
+            "tc_weapon"
+          ],
+          "achievement": "tconstruct.enemySlayer",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:heartCanister",
+              "count": 1
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "tc_dual",
+          "title": "Двойное удобство",
+          "icon": "TConstruct:frypan",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:frypan",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:battlesign",
+              "count": 1,
+              "title": "Вторая табличка"
+            }
+          ],
+          "description": [
+            "Сковорода и табличка в двух руках — самый несерьёзный боевой набор мода."
+          ],
+          "dependencies": [
+            "tc_slayer"
+          ],
+          "achievement": "tconstruct.dualConvenience",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "tc_hearts",
+          "title": "Канистры жизни",
+          "icon": "TConstruct:heartCanister",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TConstruct:heartCanister",
+              "count": 3,
+              "consume": false,
+              "title": "Собрать 3 канистры"
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:heartCanister",
+              "meta": 1,
+              "count": 1,
+              "consume": false,
+              "title": "Наполнить канистру"
+            }
+          ],
+          "description": [
+            "Канистры добавляют дополнительные сердца, если носить их в инвентаре."
+          ],
+          "dependencies": [
+            "tc_manyullyn"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            }
+          ],
+          "x": 7,
+          "y": 0
+        },
+        {
+          "id": "tc_travel",
+          "title": "Набор путешественника",
+          "icon": "TConstruct:travelVest",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:travelGoggles",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:travelVest",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:travelGlove",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:travelBelt",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:travelBoots",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Очки, жилет, перчатки, пояс и ботинки — по одному слоту аксессуаров каждый.",
+            "Многие из них можно улучшать."
+          ],
+          "dependencies": [
+            "tc_station"
+          ],
+          "rewards": [
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "TConstruct:travelWings",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "TConstruct:knapsack",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "tc_knapsack",
+          "title": "За спиной",
+          "icon": "TConstruct:knapsack",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:knapsack",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Рюкзак вмещает предметы и носится в слоте аксессуара."
+          ],
+          "dependencies": [
+            "tc_travel"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "tc_slime",
+          "title": "Слизистые острова",
+          "icon": "TConstruct:slime.gel",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TConstruct:slime.gel",
+              "count": 4,
+              "consume": false,
+              "title": "Собрать слизь"
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:slime.sapling",
+              "count": 1,
+              "consume": false,
+              "title": "Найти слизневое дерево"
+            }
+          ],
+          "description": [
+            "Синяя слизь водится на слизистых островах и нужна для многих рецептов."
+          ],
+          "dependencies": [
+            "tc_station"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "id": "tc_bounce",
+          "title": "Батут",
+          "icon": "TConstruct:slime.pad",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:slime.pad",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Отскок на слизевой подушке не даёт урона при падении."
+          ],
+          "dependencies": [
+            "tc_slime"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "tc_berries",
+          "title": "Рудные ягоды",
+          "icon": "TConstruct:oreBerries",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TConstruct:ore.berries.one",
+              "count": 1,
+              "consume": false,
+              "title": "Найти рудный куст"
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:oreBerries",
+              "count": 4,
+              "consume": false,
+              "title": "Собрать рудные ягоды"
+            }
+          ],
+          "description": [
+            "Кусты рудных ягод растут на слизевых островах и дают немного металла."
+          ],
+          "dependencies": [
+            "tc_station"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "tc_drying",
+          "title": "Сушка и вяленое мясо",
+          "icon": "TConstruct:jerky",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:Armor.DryingRack",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:jerky",
+              "count": 4,
+              "consume": false,
+              "title": "Насушить мяса"
+            }
+          ],
+          "description": [
+            "Сушилка превращает гнилую плоть и мясо в вяленое — еда, которая не портится."
+          ],
+          "dependencies": [
+            "tc_station"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 2,
+          "y": 2
+        },
+        {
+          "id": "tc_liquid",
+          "title": "Жидкий опыт",
+          "icon": "TConstruct:buckets",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TConstruct:fluid.molten.iron",
+              "count": 1,
+              "consume": false,
+              "title": "Расплавить железо"
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:liquid.slime",
+              "count": 1,
+              "consume": false,
+              "title": "Расплавить слизь"
+            }
+          ],
+          "description": [
+            "В литейной можно хранить и переливать любые жидкости, включая расплавы."
+          ],
+          "dependencies": [
+            "tc_smeltery"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 4,
+          "y": -4
+        },
+        {
+          "id": "tc_launcher",
+          "title": "Пушко-метатель",
+          "icon": "TConstruct:potionLauncher",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:potionLauncher",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Стреляет зельями на дальнее расстояние."
+          ],
+          "dependencies": [
+            "tc_smeltery"
+          ],
+          "optional": true,
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 4,
+          "y": -3
+        },
+        {
+          "id": "tc_tool_casting",
+          "title": "Отливка инструментов",
+          "icon": "TConstruct:shovelHead",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:shovelHead",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:hatchetHead",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:knifeBlade",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Головка лопаты, лезвие топорика и нож — первые детали из металла.",
+            "Дальше так отливается почти любая часть инструмента."
+          ],
+          "dependencies": [
+            "tc_casting"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:toolRod",
+              "count": 4
+            }
+          ],
+          "x": 5,
+          "y": -2
+        },
+        {
+          "id": "tc_alumite",
+          "title": "Алюмит",
+          "icon": "TConstruct:fluid.molten.alumite",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TConstruct:fluid.molten.alumite",
+              "count": 1,
+              "consume": false,
+              "title": "Сплавить алюмит"
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:fluid.molten.obsidian",
+              "count": 1,
+              "consume": false,
+              "title": "Расплавить обсидиан"
+            }
+          ],
+          "description": [
+            "Алюмит — сплав алюминия, обсидиана и стали; крепче кобальта и хорошо держит заточку."
+          ],
+          "dependencies": [
+            "tc_manyullyn"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            }
+          ],
+          "x": 7,
+          "y": 1
+        },
+        {
+          "id": "tc_bronze",
+          "title": "Бронза и латунь",
+          "icon": "TConstruct:fluid.molten.bronze",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TConstruct:fluid.molten.bronze",
+              "count": 1,
+              "consume": false,
+              "title": "Сплавить бронзу"
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:fluid.molten.alubrass",
+              "count": 1,
+              "consume": false,
+              "title": "Сплавить алюминиевую латунь"
+            }
+          ],
+          "description": [
+            "Медь с оловом даёт бронзу, а с алюминием — латунь: из неё делают прочные крепления."
+          ],
+          "dependencies": [
+            "tc_casting"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "tc_pigiron",
+          "title": "Свиное железо",
+          "icon": "TConstruct:fluid.molten.pigiron",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TConstruct:fluid.molten.pigiron",
+              "count": 1,
+              "consume": false,
+              "title": "Сплавить свиное железо"
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:jerky",
+              "count": 3,
+              "consume": false,
+              "title": "Запастись вяленым мясом"
+            }
+          ],
+          "description": [
+            "Свиное железо варят из железа, мяса и крови — из него выходят вкусные инструменты."
+          ],
+          "dependencies": [
+            "tc_smeltery",
+            "tc_drying"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:materials",
+              "meta": 4,
+              "count": 2
+            }
+          ],
+          "x": 4,
+          "y": 3
+        },
+        {
+          "id": "tc_ender",
+          "title": "Жидкость Края",
+          "icon": "TConstruct:fluid.ender",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TConstruct:fluid.ender",
+              "count": 1,
+              "consume": false,
+              "title": "Получить жидкий эндер"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:ender_pearl",
+              "count": 2,
+              "consume": true,
+              "title": "Сдать жемчуг Края"
+            }
+          ],
+          "description": [
+            "Жемчуг Края плавится в литейной и идёт на эндерные сплавы и украшения."
+          ],
+          "dependencies": [
+            "tc_smeltery"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 75
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:materials",
+              "meta": 5,
+              "count": 1
+            }
+          ],
+          "x": 4,
+          "y": -2
+        },
+        {
+          "id": "tc_archery",
+          "title": "Арбалет и болты",
+          "icon": "TConstruct:Crossbow",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:Crossbow",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:CrossbowBodyPart",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:CrossbowLimbPart",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:BoltPart",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Арбалет стреляет болтами и собирается на верстаке-конструкторе из нескольких частей."
+          ],
+          "dependencies": [
+            "tc_weapon",
+            "tc_grout"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:BoltAmmo",
+              "count": 16
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "tc_ranged",
+          "title": "Метательное мастерство",
+          "icon": "TConstruct:Javelin",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:Javelin",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:Shuriken",
+              "count": 2
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:ThrowingKnife",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Дротик, сюрикен и метательные ножи бьют на расстоянии и часто возвращаются в руки."
+          ],
+          "dependencies": [
+            "tc_weapon"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            }
+          ],
+          "x": 4,
+          "y": 1
+        },
+        {
+          "id": "tc_scythe",
+          "title": "Коса и тяжёлое оружие",
+          "icon": "TConstruct:scythe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:scythe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:longsword",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Коса сгребает траву и врагов широким взмахом, а длинный меч достаёт дальше обычного."
+          ],
+          "dependencies": [
+            "tc_tool_forge",
+            "tc_manyullyn"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "tc_armor_wood",
+          "title": "Деревянная броня",
+          "icon": "TConstruct:chestplateWood",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:helmetWood",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:chestplateWood",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:leggingsWood",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:bootsWood",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Броня тоже собирается на станции и улучшается модификаторами, как инструменты."
+          ],
+          "dependencies": [
+            "tc_station"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 65
+            }
+          ],
+          "x": 2,
+          "y": 3
+        },
+        {
+          "id": "tc_decor",
+          "title": "Обустройство кузницы",
+          "icon": "TConstruct:decoration.multibrick",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:decoration.multibrick",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:decoration.multibrickfancy",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:decoration.stoneladder",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:decoration.stonetorch",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Каменные лестницы, факелы и декоративный кирпич превращают кузницу в дом."
+          ],
+          "dependencies": [
+            "tc_station"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 2,
+          "y": 4
+        },
+        {
+          "id": "tc_glass",
+          "title": "Слизевое стекло",
+          "icon": "TConstruct:GlassBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:GlassBlock",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:GlassPane",
+              "count": 8
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:GlassBlock.StainedClear",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Прозрачное стекло и цветные витражи делаются из расплавленного песка и красителей.",
+            "Панели хорошо смотрятся в окнах литейной."
+          ],
+          "dependencies": [
+            "tc_slime"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 3,
+          "y": 1
+        },
+        {
+          "id": "tc_traps",
+          "title": "Ловушки и взрывчатка",
+          "icon": "TConstruct:Redstone.Landmine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:Redstone.Landmine",
+              "count": 2
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:trap.punji",
+              "count": 8
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:explosive.slime",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать взрывоопасную слизь"
+            }
+          ],
+          "description": [
+            "Мина, шипы-пунджи и взрывоопасная слизь прикроют подходы к базе."
+          ],
+          "dependencies": [
+            "tc_casting",
+            "tc_slime"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "minecraft:gunpowder",
+              "count": 4
+            }
+          ],
+          "x": 5,
+          "y": 1
+        },
+        {
+          "id": "tc_slime_glue",
+          "title": "Клей и липкие блоки",
+          "icon": "TConstruct:GlueBlock",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:GlueBlock",
+              "count": 4
+            },
+            {
+              "type": "item",
+              "item": "TConstruct:liquid.glue",
+              "count": 1,
+              "consume": false,
+              "title": "Сварить жидкий клей"
+            }
+          ],
+          "description": [
+            "Слизь и слизевые шарики дают клей — им можно приклеивать блоки и ловить падающих."
+          ],
+          "dependencies": [
+            "tc_smeltery",
+            "tc_slime"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 4,
+          "y": 2
+        },
+        {
+          "id": "tc_rail",
+          "title": "Дорога в шахту",
+          "icon": "TConstruct:rail.wood",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TConstruct:rail.wood",
+              "count": 16
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:slime.channel",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "TConstruct:slime.grass",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Деревянные рельсы дешевле обычных, а слизевые желоба быстро спускают слизь и воду."
+          ],
+          "dependencies": [
+            "tc_slime"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 3,
+          "y": 2
+        },
+        {
+          "id": "tc_vermin",
+          "title": "Чистка пещер",
+          "icon": "TConstruct:dagger",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Creeper",
+              "count": 5
+            },
+            {
+              "type": "kill",
+              "entity": "Spider",
+              "count": 10
+            },
+            {
+              "type": "kill",
+              "entity": "CaveSpider",
+              "count": 10
+            }
+          ],
+          "description": [
+            "Пауки, пещерные пауки и криперы — обычные обитатели пещер под кузницей."
+          ],
+          "dependencies": [
+            "tc_slayer"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 85
+            },
+            {
+              "type": "item",
+              "item": "minecraft:gunpowder",
+              "count": 2
+            }
+          ],
+          "x": 5,
+          "y": 2
+        }
+      ]
+    }
+  ]
+}

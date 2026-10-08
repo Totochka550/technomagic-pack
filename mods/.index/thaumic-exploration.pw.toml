@@ -1,0 +1,25 @@
+filename = 'ThaumicExploration_1.7.10_1.1_53.jar'
+name = 'Thaumic Exploration'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Thaumic Exploration - 1.7.10 '
+
+[download]
+hash = 'da305e257f533bd15855cbb37bebf0b02a83c276'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2263414
+project-id = 230969
+
+[[x-prismlauncher-dependencies]]
+addonId = '222213'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '223628'
+type = 'REQUIRED'

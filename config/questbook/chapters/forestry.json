@@ -1,0 +1,1514 @@
+{
+  "title": "Forestry",
+  "chapters": [
+    {
+      "id": "forestry",
+      "title": "Forestry",
+      "description": "Пасека, питомник и техника: от апатита и сачка до альвеария и многоблочной фермы.",
+      "icon": "Forestry:apiculture",
+      "requiredMod": "Forestry",
+      "quests": [
+        {
+          "id": "for_apatite",
+          "title": "Апатитовые залежи",
+          "icon": "Forestry:resources",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "gemApatite",
+              "count": 8,
+              "consume": false,
+              "title": "Добыть 8 апатита"
+            }
+          ],
+          "description": [
+            "Апатит — главный ресурс Forestry: голубоватые кристаллы попадаются под землёй.",
+            "Из него делают удобрения, а без удобрений не вырастить хороший сад."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 15
+            }
+          ],
+          "x": 0,
+          "y": -3
+        },
+        {
+          "id": "for_fertilizer",
+          "title": "Удобрения",
+          "icon": "Forestry:fertilizerCompound",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:fertilizerCompound",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "Forestry:fertilizerBio",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Апатит с песком даёт минеральное удобрение, а компост получается из пшеницы с землёй.",
+            "Оба заметно ускоряют рост растений."
+          ],
+          "dependencies": [
+            "for_apatite"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 1,
+          "y": -3
+        },
+        {
+          "id": "for_humus",
+          "title": "Гумус",
+          "icon": "Forestry:soil",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:soil",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Земля с компостом превращается в гумус — лучшую почву для саженцев и питомника."
+          ],
+          "dependencies": [
+            "for_fertilizer"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 2,
+          "y": -3
+        },
+        {
+          "id": "for_mulch",
+          "title": "Мульча и торф",
+          "icon": "Forestry:mulch",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Forestry:mulch",
+              "count": 4,
+              "consume": false,
+              "title": "Заготовить 4 мульчи"
+            },
+            {
+              "type": "item",
+              "item": "Forestry:peat",
+              "count": 8,
+              "consume": false,
+              "title": "Набрать 8 торфа"
+            }
+          ],
+          "description": [
+            "Мульча подкармливает деревья и ускоряет их рост, а торф из торфяников — неплохое топливо.",
+            "Сгодятся оба: сад большой, а печей много."
+          ],
+          "dependencies": [
+            "for_humus"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 3,
+          "y": -4
+        },
+        {
+          "id": "for_pulp",
+          "title": "Древесная масса",
+          "icon": "Forestry:woodPulp",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "pulpWood",
+              "count": 8,
+              "consume": false,
+              "title": "Получить 8 древесной массы"
+            }
+          ],
+          "description": [
+            "Древесная масса — полуфабрикат для бумаги, пропитанных деталей и корпусов машин."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 0,
+          "y": -2
+        },
+        {
+          "id": "for_seedoil",
+          "title": "Семенное масло",
+          "icon": "Forestry:canSeedOil",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Forestry:canSeedOil",
+              "count": 2,
+              "consume": false,
+              "title": "Наполнить 2 канистры семенным маслом"
+            }
+          ],
+          "description": [
+            "Отожмите семена — получится масло, которым пропитывают доски и корпуса.",
+            "Удобнее всего хранить его в канистрах."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "for_impregnated",
+          "title": "Пропитка",
+          "icon": "Forestry:impregnatedCasing",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:impregnatedCasing",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Forestry:oakStick",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Пропитанный корпус — сердце пасеки, а пропитанные палки нужны для рамок и инструментов.",
+            "Без масла и древесной массы тут не обойтись."
+          ],
+          "dependencies": [
+            "for_pulp",
+            "for_seedoil"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 1,
+          "y": -2
+        },
+        {
+          "id": "for_metals",
+          "title": "Медь и олово",
+          "icon": "Forestry:ingotCopper",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "ingotCopper",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 медных слитков"
+            },
+            {
+              "type": "item",
+              "ore": "ingotTin",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 оловянных слитка"
+            }
+          ],
+          "description": [
+            "Без цветных металлов не собрать ни шестерни, ни корпуса машин.",
+            "Принесите медь и олово — мастер поделится первой бронзой."
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": "Forestry:ingotBronze",
+              "count": 2
+            },
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "for_bronze",
+          "title": "Бронза и шестерни",
+          "icon": "Forestry:ingotBronze",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "ingotBronze",
+              "count": 4,
+              "consume": false,
+              "title": "Сплавить 4 бронзовых слитка"
+            },
+            {
+              "type": "item",
+              "ore": "gearBronze",
+              "count": 1,
+              "consume": false,
+              "title": "Отлить бронзовую шестерню"
+            },
+            {
+              "type": "item",
+              "ore": "gearCopper",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать медную шестерню"
+            },
+            {
+              "type": "item",
+              "ore": "gearTin",
+              "count": 1,
+              "consume": false,
+              "title": "Сделать оловянную шестерню"
+            }
+          ],
+          "description": [
+            "Сплав меди и олова даёт бронзу — из неё выходят прочные шестерни и корпуса.",
+            "Шестерни понадобятся в двигателе и на многоблочной ферме."
+          ],
+          "dependencies": [
+            "for_metals"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "for_scoop",
+          "title": "Сачок",
+          "icon": "Forestry:scoop",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:scoop",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Сачок — первый инструмент пасечника: им ловят пчёл и бабочек, не получая укусов."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 15
+            }
+          ],
+          "x": 0,
+          "y": 1
+        },
+        {
+          "id": "for_wild_bees",
+          "title": "Дикие пчёлы",
+          "icon": "Forestry:beehives",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Forestry:beePrincessGE",
+              "count": 1,
+              "consume": false,
+              "title": "Поймать принцессу"
+            },
+            {
+              "type": "item",
+              "item": "Forestry:beeDroneGE",
+              "count": 2,
+              "consume": false,
+              "title": "Поймать двух трутней"
+            },
+            {
+              "type": "checkmark",
+              "title": "Разбить сачком дикий улей"
+            }
+          ],
+          "description": [
+            "Дикие ульи висят на деревьях: разбейте улей сачком и соберите принцессу с трутнями.",
+            "Принцесса и хотя бы один трутень — будущая семья."
+          ],
+          "dependencies": [
+            "for_scoop"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "Forestry:honeyDrop",
+              "count": 2
+            }
+          ],
+          "x": 1,
+          "y": 0
+        },
+        {
+          "id": "for_frames",
+          "title": "Рамки",
+          "icon": "Forestry:frameUntreated",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:frameUntreated",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Рамка вставляется в пасеку и заметно ускоряет работу пчёл, но непропитанная быстро изнашивается."
+          ],
+          "dependencies": [
+            "for_scoop"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 1,
+          "y": 1
+        },
+        {
+          "id": "for_apiary",
+          "title": "Пасека",
+          "icon": "Forestry:apiculture",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:apiculture",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Поставить пасеку среди цветов"
+            }
+          ],
+          "description": [
+            "Пасека — домик для пчёл: положите внутрь принцессу и трутня, и семья начнёт носить соты.",
+            "Чем больше цветов вокруг, тем быстрее идёт работа."
+          ],
+          "dependencies": [
+            "for_wild_bees",
+            "for_impregnated"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "id": "for_frames_imp",
+          "title": "Пропитанные рамки",
+          "icon": "Forestry:frameImpregnated",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:frameImpregnated",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Пропитка делает рамку прочнее: она служит дольше и реже ломается."
+          ],
+          "dependencies": [
+            "for_frames",
+            "for_impregnated"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "for_combs",
+          "title": "Медовые соты",
+          "icon": "Forestry:beeCombs",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "beeComb",
+              "count": 8,
+              "consume": false,
+              "title": "Собрать 8 медовых сот"
+            }
+          ],
+          "description": [
+            "Соты — главный урожай пасеки: из них получают воск, мёд и немало редких ресурсов."
+          ],
+          "dependencies": [
+            "for_apiary"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 3,
+          "y": -2
+        },
+        {
+          "id": "for_wax",
+          "title": "Воск и мёд",
+          "icon": "Forestry:beeswax",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "itemBeeswax",
+              "count": 4,
+              "consume": false,
+              "title": "Получить 4 воска"
+            },
+            {
+              "type": "item",
+              "ore": "dropHoney",
+              "count": 4,
+              "consume": false,
+              "title": "Получить 4 капли мёда"
+            }
+          ],
+          "description": [
+            "Переработайте соты: воск идёт на свечи и капсулы, а капли мёда — на еду и анализ пчёл.",
+            "Часть урожая стоит отложить на приборы."
+          ],
+          "dependencies": [
+            "for_combs"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "for_analysis",
+          "title": "Анализ пчёл",
+          "icon": "Forestry:beealyzer",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:beealyzer",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Forestry:core",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Пчелоанализатор и стационарный анализатор показывают породу, продуктивность и характер пчёл.",
+            "Для работы приборов нужны капли мёда."
+          ],
+          "dependencies": [
+            "for_wax"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 5,
+          "y": -4
+        },
+        {
+          "id": "for_apiarist_suit",
+          "title": "Костюм пасечника",
+          "icon": "Forestry:apiaristHelmet",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:apiaristHelmet",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Forestry:apiaristChest",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Forestry:apiaristLegs",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Forestry:apiaristBoots",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Полный костюм пасечника защищает от разъярённых пчёл и позволяет работать с любой породой."
+          ],
+          "dependencies": [
+            "for_wax"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "Forestry:apiaristBag",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "Forestry:honeyedSlice",
+                  "count": 4
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": -3
+        },
+        {
+          "id": "for_alveary",
+          "title": "Альвеарий",
+          "icon": "Forestry:alveary",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Forestry:alveary",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать блок альвеария"
+            },
+            {
+              "type": "item",
+              "ore": "dropRoyalJelly",
+              "count": 4,
+              "consume": false,
+              "title": "Набрать 4 маточного молочка"
+            },
+            {
+              "type": "checkmark",
+              "title": "Построить альвеарий целиком"
+            }
+          ],
+          "description": [
+            "Альвеарий строится из блоков и вмещает нагреватели, вентиляторы и другие модули.",
+            "Маточное молочко — обязательный ингредиент для его блоков."
+          ],
+          "dependencies": [
+            "for_analysis"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "for_grafter",
+          "title": "Прививка и анализ деревьев",
+          "icon": "Forestry:grafter",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:grafter",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Forestry:treealyzer",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Прививка достаёт саженец из листвы, не ломая дерево, а анализатор показывает породу.",
+            "Так и выводят новые виды деревьев."
+          ],
+          "dependencies": [
+            "for_humus"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 3,
+          "y": -3
+        },
+        {
+          "id": "for_arboretum",
+          "title": "Питомник",
+          "icon": "Forestry:saplingGE",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "treeSapling",
+              "count": 8,
+              "consume": false,
+              "title": "Собрать 8 саженцев"
+            },
+            {
+              "type": "craft",
+              "item": "Forestry:arboriculture",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Собирайте саженцы разных пород и скрещивайте их — получатся деревья с новыми свойствами.",
+            "Сундук лесовода удобно хранит саженцы и инструменты."
+          ],
+          "dependencies": [
+            "for_grafter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "for_orchard",
+          "title": "Плодовый сад",
+          "icon": "Forestry:fruits",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "cropCherry",
+              "count": 4,
+              "consume": false,
+              "title": "Собрать 4 вишни"
+            },
+            {
+              "type": "item",
+              "item": "Forestry:pods",
+              "count": 2,
+              "consume": false,
+              "title": "Найти 2 стручка"
+            }
+          ],
+          "description": [
+            "Плодовые деревья дают вишню, сливу и другие фрукты — хорошая еда и сырьё для сока."
+          ],
+          "dependencies": [
+            "for_arboretum"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "for_butterfly",
+          "title": "Бабочки",
+          "icon": "Forestry:lepidopterology",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Forestry:butterflyGE",
+              "count": 1,
+              "consume": false,
+              "title": "Поймать бабочку"
+            },
+            {
+              "type": "item",
+              "item": "Forestry:caterpillarGE",
+              "count": 1,
+              "consume": false,
+              "title": "Найти гусеницу"
+            }
+          ],
+          "description": [
+            "Луга и леса полны бабочек: ловите их сачком и собирайте коллекцию.",
+            "Сундук лепидоптеролога хранит и бабочек, и гусениц."
+          ],
+          "dependencies": [
+            "for_scoop"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "Forestry:foresterBag",
+              "count": 1
+            }
+          ],
+          "x": 1,
+          "y": 2
+        },
+        {
+          "id": "for_engine",
+          "title": "Электрический двигатель",
+          "icon": "Forestry:engine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:engine",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Forestry:thermionicTubes",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Двигатель даёт механическую энергию для лесопилки, фабрикатора и других машин.",
+            "Электронные трубки — его обязательная деталь."
+          ],
+          "dependencies": [
+            "for_impregnated",
+            "for_bronze"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "for_farm",
+          "title": "Многоблочная ферма",
+          "icon": "Forestry:ffarm",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Forestry:ffarm",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать блок фермы"
+            },
+            {
+              "type": "item",
+              "ore": "ingotBronze",
+              "count": 4,
+              "consume": false,
+              "title": "Запасти 4 бронзовых слитка"
+            },
+            {
+              "type": "checkmark",
+              "title": "Построить ферму и подвести энергию"
+            }
+          ],
+          "description": [
+            "Ферма Forestry сама сажает, поливает и собирает урожай — от пшеницы до деревьев.",
+            "Соберите блоки фермы вместе, поставьте их на ровной площадке и подведите энергию."
+          ],
+          "dependencies": [
+            "for_engine",
+            "for_humus"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "Forestry:foresterBag",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "Forestry:diggerBag",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "for_queen",
+          "title": "Матка и расплод",
+          "icon": "Forestry:beeQueenGE",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Forestry:beeQueenGE",
+              "count": 1,
+              "consume": false,
+              "title": "Получить матку"
+            },
+            {
+              "type": "checkmark",
+              "title": "Дождаться, пока матка отложит потомство"
+            }
+          ],
+          "description": [
+            "Принцесса с трутнями превращается в матку, а та откладывает новых пчёл.",
+            "Не забывайте менять старых маток: со временем потомство слабеет."
+          ],
+          "dependencies": [
+            "for_apiary"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "Forestry:honeyDrop",
+              "count": 4
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "for_larvae",
+          "title": "Личинки и маточное молочко",
+          "icon": "Forestry:beeLarvaeGE",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Forestry:beeLarvaeGE",
+              "count": 2,
+              "consume": false,
+              "title": "Собрать 2 личинки"
+            },
+            {
+              "type": "item",
+              "ore": "dropRoyalJelly",
+              "count": 2,
+              "consume": false,
+              "title": "Добыть 2 маточного молочка"
+            }
+          ],
+          "description": [
+            "Разберите урожай пасеки: личинки и маточное молочко — деликатес для анализа и селекции.",
+            "Маточное молочко позже понадобится и для блоков альвеария."
+          ],
+          "dependencies": [
+            "for_queen",
+            "for_wax"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "Forestry:ambrosia",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "Forestry:honeyedSlice",
+                  "count": 4
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "for_flutterlyzer",
+          "title": "Анализатор бабочек",
+          "icon": "Forestry:flutterlyzer",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:flutterlyzer",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "ore": "dropHoneydew",
+              "count": 2,
+              "consume": false,
+              "title": "Запасти 2 медвяной росы"
+            }
+          ],
+          "description": [
+            "Флаттерлайзер определяет вид и свойства бабочек, которые попадают в сачок.",
+            "Для работы прибора нужна медвяная роса."
+          ],
+          "dependencies": [
+            "for_butterfly",
+            "for_analysis"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "Forestry:honeyDrop",
+              "count": 2
+            }
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "id": "for_bee_products",
+          "title": "Пасечные товары",
+          "icon": "Forestry:propolis",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Forestry:propolis",
+              "count": 2,
+              "consume": false,
+              "title": "Собрать 2 прополиса"
+            },
+            {
+              "type": "item",
+              "ore": "itemPollen",
+              "count": 2,
+              "consume": false,
+              "title": "Добыть 2 пыльцевых сгустка"
+            },
+            {
+              "type": "checkmark",
+              "title": "Отфильтровать медвяную росу в сите"
+            }
+          ],
+          "description": [
+            "Кроме мёда и воска пасека даёт прополис, пыльцу и медвяную росу.",
+            "Прополис и пыльца нужны для приборов и селекции пород."
+          ],
+          "dependencies": [
+            "for_wax",
+            "for_flutterlyzer"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "item",
+              "item": "Forestry:beeswax",
+              "count": 4
+            }
+          ],
+          "x": 7,
+          "y": 0
+        },
+        {
+          "id": "for_frames_proven",
+          "title": "Проверенные рамки",
+          "icon": "Forestry:frameProven",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:frameProven",
+              "count": 4
+            }
+          ],
+          "description": [
+            "Проверенная рамка — самая долговечная: она почти не изнашивается и не боится пчёл.",
+            "Хороший запас таких рамок избавит от постоянных походов в пасеку."
+          ],
+          "dependencies": [
+            "for_frames_imp"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 3,
+          "y": 1
+        },
+        {
+          "id": "for_alveary_modules",
+          "title": "Модули альвеария",
+          "icon": "Forestry:hardenedMachine",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "Forestry:hardenedMachine",
+              "count": 2,
+              "consume": false,
+              "title": "Собрать 2 закалённых корпуса"
+            },
+            {
+              "type": "item",
+              "ore": "ingotBronze",
+              "count": 4,
+              "consume": false,
+              "title": "Подготовить 4 бронзовых слитка"
+            },
+            {
+              "type": "checkmark",
+              "title": "Вставить модуль в альвеарий"
+            }
+          ],
+          "description": [
+            "Альвеарий собирается из блоков и модулей: нагреватель, вентилятор, сито и рамкодержатель.",
+            "Каждый модуль меняет климат или ускоряет работу семьи."
+          ],
+          "dependencies": [
+            "for_alveary"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "Forestry:honeyedSlice",
+                  "count": 8
+                },
+                {
+                  "type": "item",
+                  "item": "Forestry:beealyzer",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "for_machine_casings",
+          "title": "Корпуса машин",
+          "icon": "Forestry:sturdyMachine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:sturdyMachine",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Forestry:hardenedMachine",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Оценить запас бронзы в мастерской"
+            }
+          ],
+          "description": [
+            "Прочный корпус — основа первых машин, закалённый выдерживает жар и давление.",
+            "Корпуса собираются из пропитанных досок и бронзы."
+          ],
+          "dependencies": [
+            "for_impregnated"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 2,
+          "y": -2
+        },
+        {
+          "id": "for_fabricator",
+          "title": "Термоионный фабрикатор",
+          "icon": "Forestry:factory2",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:factory2",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "Forestry:thermionicTubes",
+              "count": 4,
+              "consume": false,
+              "title": "Подготовить 4 электронные трубки"
+            }
+          ],
+          "description": [
+            "Фабрикатор плавит стекло и металлы в формы и собирает тонкие детали.",
+            "Без электронных трубок он не заработает."
+          ],
+          "dependencies": [
+            "for_machine_casings",
+            "for_engine"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 3,
+          "y": 2
+        },
+        {
+          "id": "for_bottler",
+          "title": "Разливочная машина",
+          "icon": "Forestry:factory",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:factory",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "Forestry:canHoney",
+              "count": 2,
+              "consume": false,
+              "title": "Наполнить 2 банки мёдом"
+            },
+            {
+              "type": "checkmark",
+              "title": "Поставить разливочную машину"
+            }
+          ],
+          "description": [
+            "Разливочная машина переливает мёд, сок и масло в банки, капсулы и вёдра.",
+            "Она же наполняет капсулы для анализаторов."
+          ],
+          "dependencies": [
+            "for_machine_casings",
+            "for_wax"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 5,
+          "y": 1
+        },
+        {
+          "id": "for_infuser",
+          "title": "Инфузер",
+          "icon": "Forestry:infuser",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:infuser",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "ore": "itemPollen",
+              "count": 4,
+              "consume": false,
+              "title": "Собрать 4 пыльцевых сгустка"
+            },
+            {
+              "type": "checkmark",
+              "title": "Опылить саженец в инфузере"
+            }
+          ],
+          "description": [
+            "Инфузер впрыскивает пыльцу в саженец и меняет породу дерева.",
+            "Так получают редкие виды, которых не найти в лесу."
+          ],
+          "dependencies": [
+            "for_fabricator",
+            "for_arboretum"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 65
+            },
+            {
+              "type": "item",
+              "item": "Forestry:fertilizerCompound",
+              "count": 4
+            }
+          ],
+          "x": 5,
+          "y": 2
+        },
+        {
+          "id": "for_imprinter",
+          "title": "Импринтер",
+          "icon": "Forestry:imprinter",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:imprinter",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Forestry:chipsets",
+              "count": 2
+            }
+          ],
+          "description": [
+            "Импринтер переносит геном одной пчелы на другую — так закрепляют лучшие черты породы.",
+            "Для работы нужны микросхемы."
+          ],
+          "dependencies": [
+            "for_bee_products"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 8,
+          "y": -1
+        },
+        {
+          "id": "for_storage",
+          "title": "Классификация",
+          "icon": "Forestry:catalogue",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:apiaristChest",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Forestry:catalogue",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Сундук пасечника хранит пчёл, а каталог ведёт учёт всех найденных видов.",
+            "С коллекцией удобнее планировать селекцию."
+          ],
+          "dependencies": [
+            "for_bee_products"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "item",
+              "item": "Forestry:foresterBag",
+              "count": 1
+            }
+          ],
+          "x": 8,
+          "y": 0
+        },
+        {
+          "id": "for_exploration",
+          "title": "Снаряжение натуралиста",
+          "icon": "Forestry:naturalistHelmet",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:naturalistHelmet",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "Forestry:habitatLocator",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Найти улей в новом биоме"
+            }
+          ],
+          "description": [
+            "Очки натуралиста и локатор сред обитания помогают искать диких пчёл в дальних биомах.",
+            "Каждая порода живёт в своём климате — от лугов до джунглей."
+          ],
+          "dependencies": [
+            "for_wild_bees",
+            "for_analysis"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "Forestry:lepidopteristBag",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "Forestry:minerBag",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 6,
+          "y": -2
+        },
+        {
+          "id": "for_hunter",
+          "title": "Охота за материалами",
+          "icon": "Forestry:hunterBag",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 10,
+              "title": "Убить 10 зомби"
+            },
+            {
+              "type": "kill",
+              "entity": "Spider",
+              "count": 8,
+              "title": "Убить 8 пауков"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:gunpowder",
+              "count": 8,
+              "consume": false,
+              "title": "Собрать 8 пороха"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:blaze_rod",
+              "count": 2,
+              "consume": false,
+              "title": "Добыть 2 огненных стержня"
+            }
+          ],
+          "description": [
+            "Фабрикатору и анализаторам нужны редкие материалы из мобов.",
+            "Огненные стержни достаются только в Нижнем мире."
+          ],
+          "dependencies": [
+            "for_storage"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "Forestry:hunterBag",
+              "count": 1
+            }
+          ],
+          "x": 9,
+          "y": -1
+        },
+        {
+          "id": "for_candles",
+          "title": "Свечи",
+          "icon": "Forestry:candle",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "Forestry:candle",
+              "count": 4
+            },
+            {
+              "type": "craft",
+              "item": "Forestry:stump",
+              "count": 2
+            },
+            {
+              "type": "checkmark",
+              "title": "Расставить свечи в мастерской"
+            }
+          ],
+          "description": [
+            "Из воска отливают свечи — мягкий свет без дыма и без угля.",
+            "Свечи можно ставить на подставки и украшать ими дом."
+          ],
+          "dependencies": [
+            "for_wax"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "Forestry:beeswax",
+              "count": 4
+            }
+          ],
+          "x": 5,
+          "y": -2
+        }
+      ]
+    }
+  ]
+}

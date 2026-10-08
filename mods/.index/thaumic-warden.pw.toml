@@ -1,0 +1,18 @@
+filename = 'Thaumic_Warden_Mod_1.7.10.jar'
+name = 'Thaumic Warden'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'TWarden-1.1.1.jar'
+
+[download]
+hash = '2cde0421879e103fbf0621974edd970235c7781f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2213480
+project-id = 75783

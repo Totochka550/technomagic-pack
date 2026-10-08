@@ -1,0 +1,1603 @@
+{
+  "title": "Ender IO",
+  "chapters": [
+    {
+      "id": "enderio",
+      "title": "Ender IO",
+      "description": "Путь Ender IO: от генератора Стирлинга и сплавного завода до тёмной стали, управляемых спавнеров и телепада.",
+      "icon": "EnderIO:blockAlloySmelter",
+      "requiredMod": "EnderIO",
+      "quests": [
+        {
+          "id": "eio_iron",
+          "title": "Железо, редстоун и кварц",
+          "icon": "minecraft:iron_ingot",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:iron_ingot",
+              "count": 16,
+              "consume": false,
+              "title": "Запастись 16 слитками железа"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:redstone",
+              "count": 8,
+              "consume": false,
+              "title": "Собрать 8 редстоуна"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:quartz",
+              "count": 4,
+              "consume": false,
+              "title": "Добыть 4 незер-кварца"
+            }
+          ],
+          "description": [
+            "EnderIO начинается с обычных вещей: железа, редстоуна и незер-кварца.",
+            "Из них собираются корпуса машин, конденсаторы и сплавы, поэтому запас не помешает."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "eio_wrench",
+          "title": "Ключ Yeta",
+          "icon": "EnderIO:itemYetaWrench",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:itemYetaWrench",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Yeta Wrench разворачивает и настраивает стороны машин и кондуитов — первое, что стоит сделать."
+          ],
+          "dependencies": [
+            "eio_iron"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "eio_chassis",
+          "title": "Корпус машины",
+          "icon": "EnderIO:itemMachinePart",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:itemMachinePart",
+              "count": 4,
+              "title": "Собрать 4 корпуса машин"
+            }
+          ],
+          "description": [
+            "Machine Chassis — универсальная основа: без него не собрать ни одну машину EnderIO."
+          ],
+          "dependencies": [
+            "eio_iron"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "minecraft:iron_ingot",
+              "count": 8
+            }
+          ],
+          "x": 1,
+          "y": 0
+        },
+        {
+          "id": "eio_capacitor",
+          "title": "Базовый конденсатор",
+          "icon": "EnderIO:itemBasicCapacitor",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:itemBasicCapacitor",
+              "count": 2,
+              "title": "Сделать 2 базовых конденсатора"
+            }
+          ],
+          "description": [
+            "Конденсатор задаёт машине скорость и аппетит: чем он лучше, тем быстрее идёт работа."
+          ],
+          "dependencies": [
+            "eio_chassis"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "eio_alloy_smelter",
+          "title": "Сплавной завод",
+          "icon": "EnderIO:blockAlloySmelter",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockAlloySmelter",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Alloy Smelter сплавляет металлы и варит стекло — сердце всей промышленности мода.",
+            "Поставьте его рядом с генератором и подведите энергию."
+          ],
+          "dependencies": [
+            "eio_chassis",
+            "eio_capacitor"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "eio_electrical_steel",
+          "title": "Электрическая сталь",
+          "icon": "EnderIO:itemAlloy",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "ingotElectricalSteel",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 слитка электрической стали"
+            }
+          ],
+          "description": [
+            "Железо и уголь в сплавном заводе дают электрическую сталь — базовый сплав EnderIO."
+          ],
+          "dependencies": [
+            "eio_alloy_smelter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:coal",
+              "count": 8
+            }
+          ],
+          "x": 4,
+          "y": -3
+        },
+        {
+          "id": "eio_stirling",
+          "title": "Генератор Стирлинга",
+          "icon": "EnderIO:blockStirlingGenerator",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockStirlingGenerator",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Первый источник энергии: генератор Стирлинга жжёт уголь и раздаёт энергию машинам."
+          ],
+          "dependencies": [
+            "eio_capacitor"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:coal",
+              "count": 16
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "eio_sagmill",
+          "title": "SAG Mill",
+          "icon": "EnderIO:blockSagMill",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockSagMill",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Дробилка перемалывает руду в пыль и удваивает выход металла.",
+            "Заодно она делает кремний из песка и кварца — без него не будет кондуитов."
+          ],
+          "dependencies": [
+            "eio_stirling"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 4,
+          "y": -2
+        },
+        {
+          "id": "eio_silicon",
+          "title": "Кремний и сплавленный кварц",
+          "icon": "EnderIO:itemMaterial",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "itemSilicon",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 кремния"
+            },
+            {
+              "type": "item",
+              "ore": "blockGlassHardened",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 блоков сплавленного кварца"
+            }
+          ],
+          "description": [
+            "Кремний получается в SAG Mill из песка и кварца, а сплавленный кварц варится в сплавном заводе.",
+            "Оба материала — основа кондуитов и прочного стекла."
+          ],
+          "dependencies": [
+            "eio_sagmill",
+            "eio_alloy_smelter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:glass",
+              "count": 16
+            }
+          ],
+          "x": 5,
+          "y": -2
+        },
+        {
+          "id": "eio_power_conduit",
+          "title": "Энергия по кондуитам",
+          "icon": "EnderIO:itemPowerConduit",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:itemPowerConduit",
+              "count": 8,
+              "title": "Сделать 8 энергетических кондуитов"
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:itemConduitProbe",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Энергетические кондуиты передают энергию от генератора к машинам без потерь.",
+            "Пробник подскажет, что происходит внутри сети."
+          ],
+          "dependencies": [
+            "eio_silicon"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "EnderIO:itemPowerConduit",
+              "count": 8
+            }
+          ],
+          "x": 6,
+          "y": -4
+        },
+        {
+          "id": "eio_item_conduit",
+          "title": "Предметная логистика",
+          "icon": "EnderIO:itemItemConduit",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:itemItemConduit",
+              "count": 8,
+              "title": "Сделать 8 предметных кондуитов"
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:itemExtractSpeedUpgrade",
+              "count": 2,
+              "title": "Сделать 2 ускорителя извлечения"
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:blockBuffer",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:blockVacuumChest",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Предметные кондуиты переносят вещи между сундуками и машинами.",
+            "Ускоритель извлечения ускоряет работу, буфер собирает предметы, а вакуумный сундук подбирает дроп вокруг."
+          ],
+          "dependencies": [
+            "eio_silicon",
+            "eio_power_conduit"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "EnderIO:itemBasicFilterUpgrade",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:ender_pearl",
+                  "count": 4
+                }
+              ]
+            }
+          ],
+          "x": 7,
+          "y": -3
+        },
+        {
+          "id": "eio_fluid_conduit",
+          "title": "Жидкости по трубам",
+          "icon": "EnderIO:itemLiquidConduit",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:itemLiquidConduit",
+              "count": 8,
+              "title": "Сделать 8 жидкостных кондуитов"
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:blockTank",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Жидкостные кондуиты и бак позволяют хранить воду, лаву и топливо и перекачивать их куда нужно."
+          ],
+          "dependencies": [
+            "eio_silicon"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 6,
+          "y": -3
+        },
+        {
+          "id": "eio_alloys",
+          "title": "Сплавы посерьёзнее",
+          "icon": "EnderIO:itemAlloy",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "EnderIO:itemAlloy",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 слитков сплавов"
+            }
+          ],
+          "description": [
+            "Золото, редстоун, светопыль, жемчуг Края и обсидиан превращаются в энергетический сплав,",
+            "вибрант, редстоун-сплав и тёмную сталь. Держите сплавной завод загруженным."
+          ],
+          "dependencies": [
+            "eio_electrical_steel"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            },
+            {
+              "type": "item",
+              "item": "EnderIO:itemBasicCapacitor",
+              "count": 1
+            }
+          ],
+          "x": 5,
+          "y": -3
+        },
+        {
+          "id": "eio_dark_tools",
+          "title": "Тёмный инструмент",
+          "icon": "EnderIO:item.darkSteel_pickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:item.darkSteel_pickaxe",
+              "count": 1,
+              "title": "Собрать тёмную кирку"
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:item.darkSteel_axe",
+              "count": 1,
+              "title": "Собрать тёмный топор"
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:item.darkSteel_sword",
+              "count": 1,
+              "title": "Собрать меч The Ender"
+            }
+          ],
+          "description": [
+            "Тёмная сталь идёт на инструменты, которые не ломаются и умеют улучшаться.",
+            "Меч носит гордое имя The Ender и неплохо смотрится в руках."
+          ],
+          "dependencies": [
+            "eio_alloys"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "item": "EnderIO:item.darkSteel_shears",
+              "count": 1
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "eio_dark_armor",
+          "title": "Полный комплект",
+          "icon": "EnderIO:item.darkSteel_chestplate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:item.darkSteel_helmet",
+              "count": 1,
+              "title": "Собрать тёмный шлем"
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:item.darkSteel_chestplate",
+              "count": 1,
+              "title": "Собрать тёмный нагрудник"
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:item.darkSteel_leggings",
+              "count": 1,
+              "title": "Собрать тёмные штаны"
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:item.darkSteel_boots",
+              "count": 1,
+              "title": "Собрать тёмные ботинки"
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:itemGliderWing",
+              "count": 1,
+              "title": "Сделать крылья планера"
+            },
+            {
+              "type": "checkmark",
+              "title": "Вставить крылья в тёмные ботинки и спланировать с высоты"
+            }
+          ],
+          "description": [
+            "Тёмная броня крепче алмазной, а в ботинки вставляются крылья планера.",
+            "Соберите комплект целиком — и спрыгните с обрыва без страха."
+          ],
+          "dependencies": [
+            "eio_alloys"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 2
+            }
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "id": "eio_dark_anvil",
+          "title": "Тёмная наковальня",
+          "icon": "EnderIO:blockDarkSteelAnvil",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockDarkSteelAnvil",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:blockReinforcedObsidian",
+              "count": 4,
+              "title": "Сделать 4 укреплённых обсидиана"
+            }
+          ],
+          "description": [
+            "Наковальня из тёмной стали не изнашивается и ремонтирует инструменты и броню.",
+            "Укреплённый обсидиан выдержит даже случайный взрыв соседнего реактора."
+          ],
+          "dependencies": [
+            "eio_alloys"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 6,
+          "y": 1
+        },
+        {
+          "id": "eio_enchanter",
+          "title": "Зачарователь",
+          "icon": "EnderIO:blockEnchanter",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockEnchanter",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Enchanter накладывает чары за опыт и предметы и обходится без книжных стеллажей."
+          ],
+          "dependencies": [
+            "eio_stirling",
+            "eio_dark_tools"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "minecraft:enchanted_book",
+              "count": 1
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "eio_soul",
+          "title": "Души в фиале",
+          "icon": "EnderIO:itemSoulVessel",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:itemSoulVessel",
+              "count": 4,
+              "title": "Сделать 4 фиала"
+            },
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 10,
+              "title": "Убить 10 зомби"
+            }
+          ],
+          "description": [
+            "Soul Vial ловит душу моба, если щёлкнуть по нему фиалом.",
+            "Души нужны Soul Binder, управляемым спавнерам и продвинутым сплавам."
+          ],
+          "dependencies": [
+            "eio_stirling"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "minecraft:rotten_flesh",
+              "count": 8
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "eio_soul_binder",
+          "title": "Soul Binder",
+          "icon": "EnderIO:blockSoulBinder",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockSoulBinder",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Soul Binder связывает души с предметами: здесь рождаются соулариум и другие редкие сплавы."
+          ],
+          "dependencies": [
+            "eio_soul"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "eio_killer_joe",
+          "title": "Киллер Джо",
+          "icon": "EnderIO:blockKillerJoe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockKillerJoe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:itemFrankenSkull",
+              "count": 1,
+              "title": "Сделать зомби-электрод"
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 10,
+              "title": "Убить 10 скелетов"
+            }
+          ],
+          "description": [
+            "Killer Joe сам рубит мобов мечом — ему нужны энергия, электрод и подходящее оружие.",
+            "Поставьте его у фермы мобов и уносите дроп кондуитами."
+          ],
+          "dependencies": [
+            "eio_soul_binder",
+            "eio_item_conduit"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 65
+            },
+            {
+              "type": "item",
+              "item": "minecraft:bone",
+              "count": 8
+            }
+          ],
+          "x": 8,
+          "y": 1
+        },
+        {
+          "id": "eio_spawner",
+          "title": "Управляемый спавнер",
+          "icon": "EnderIO:blockPoweredSpawner",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockPoweredSpawner",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "EnderIO:itemBrokenSpawner",
+              "count": 1,
+              "consume": false,
+              "title": "Раздобыть сломанный спавнер"
+            }
+          ],
+          "description": [
+            "SAG Mill превращает обычный спавнер в сломанный, а Powered Spawner оживляет его.",
+            "Вставьте фиал с душой нужного моба и подведите энергию."
+          ],
+          "dependencies": [
+            "eio_soul_binder",
+            "eio_sagmill"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "minecraft:ender_pearl",
+              "count": 4
+            }
+          ],
+          "x": 6,
+          "y": 3
+        },
+        {
+          "id": "eio_vat",
+          "title": "Чан и генератор сгорания",
+          "icon": "EnderIO:blockVat",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockVat",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:blockCombustionGenerator",
+              "count": 1
+            }
+          ],
+          "description": [
+            "The Vat варит жидкости из простых ингредиентов, а Combustion Generator жжёт их вместо угля.",
+            "Начните с питательного дистиллята — из него получается остальное топливо."
+          ],
+          "dependencies": [
+            "eio_stirling"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "eio_fuels",
+          "title": "Топливная лестница",
+          "icon": "EnderIO:bucketRocket_fuel",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "EnderIO:bucketNutrient_distillation",
+              "count": 1,
+              "consume": false,
+              "title": "Сварить ведро питательного дистиллята"
+            },
+            {
+              "type": "item",
+              "item": "EnderIO:bucketHootch",
+              "count": 1,
+              "consume": false,
+              "title": "Получить ведро хутча"
+            },
+            {
+              "type": "item",
+              "item": "EnderIO:bucketRocket_fuel",
+              "count": 1,
+              "consume": false,
+              "title": "Получить ведро ракетного топлива"
+            },
+            {
+              "type": "item",
+              "item": "EnderIO:bucketFire_water",
+              "count": 1,
+              "consume": false,
+              "title": "Получить ведро огненной воды"
+            }
+          ],
+          "description": [
+            "Каждое следующее топливо горит жарче предыдущего: дистиллят, хутч, ракетное топливо, огненная вода.",
+            "Залейте самое лучшее в генератор сгорания — и энергии станет заметно больше."
+          ],
+          "dependencies": [
+            "eio_vat"
+          ],
+          "rewards": [
+            {
+              "type": "choice",
+              "title": "Выберите награду за топливо",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "EnderIO:bucketLiquid_sunshine",
+                  "count": 1
+                },
+                {
+                  "type": "xp",
+                  "amount": 40
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": 1
+        },
+        {
+          "id": "eio_xp",
+          "title": "Опыт в хранилище",
+          "icon": "EnderIO:blockExperienceObelisk",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockExperienceObelisk",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:itemXpTransfer",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "EnderIO:bucketXpjuice",
+              "count": 1,
+              "consume": false,
+              "title": "Наполнить ведро жидким опытом"
+            }
+          ],
+          "description": [
+            "Experience Obelisk хранит опыт как жидкость, а Experience Rod переносит его между игроком и обелиском.",
+            "Удобно, когда не хочется терять уровни после смерти."
+          ],
+          "dependencies": [
+            "eio_stirling"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 4,
+          "y": 1
+        },
+        {
+          "id": "eio_travel",
+          "title": "Дорожный набор",
+          "icon": "EnderIO:itemTravelStaff",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockTravelAnchor",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:itemTravelStaff",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:itemCoordSelector",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Прыгнуть между двумя Travel Anchor"
+            }
+          ],
+          "description": [
+            "Travel Anchor связывает точки, Staff of Traveling переносит к ним,",
+            "а Coordinate Selector задаёт координаты. Поставьте пару якорей и попробуйте прыжок."
+          ],
+          "dependencies": [
+            "eio_stirling",
+            "eio_alloys"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 65
+            },
+            {
+              "type": "item",
+              "item": "minecraft:ender_pearl",
+              "count": 8
+            }
+          ],
+          "x": 6,
+          "y": -2
+        },
+        {
+          "id": "eio_teleport",
+          "title": "Телепад",
+          "icon": "EnderIO:blockTelePad",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockTelePad",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:blockTransceiver",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Телепортироваться на другой телепад"
+            }
+          ],
+          "description": [
+            "Telepad переносит вас и предметы, а Dimensional Transceiver связывает точки",
+            "через любые расстояния и измерения. Соберите две станции — и база станет ближе."
+          ],
+          "dependencies": [
+            "eio_travel"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "item",
+              "item": "EnderIO:itemConduitProbe",
+              "count": 1
+            }
+          ],
+          "x": 7,
+          "y": 2
+        },
+        {
+          "id": "eio_solar",
+          "title": "Энергия из света",
+          "icon": "EnderIO:blockSolarPanel",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockSolarPanel",
+              "count": 4,
+              "title": "Собрать 4 фотоэлектрические панели"
+            }
+          ],
+          "description": [
+            "Photovoltaic Cell вырабатывает энергию прямо из солнечного света и не жжёт топливо.",
+            "Четыре панели дают базе бесплатное питание на весь день."
+          ],
+          "dependencies": [
+            "eio_stirling",
+            "eio_silicon"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "minecraft:glass",
+              "count": 8
+            }
+          ],
+          "x": 6,
+          "y": -5
+        },
+        {
+          "id": "eio_lighting",
+          "title": "Свет без факелов",
+          "icon": "EnderIO:blockElectricLight",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockElectricLight",
+              "count": 4,
+              "title": "Сделать 4 питаемых светильника"
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:blockLightNode",
+              "count": 1,
+              "title": "Сделать световой узел"
+            }
+          ],
+          "description": [
+            "Powered Light светит ярче факела и питается от сети, а Light Node раздаёт свет без проводов.",
+            "Осветите базу так, чтобы мобы не появлялись в тёмных углах."
+          ],
+          "dependencies": [
+            "eio_power_conduit"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 7,
+          "y": -2
+        },
+        {
+          "id": "eio_power_storage",
+          "title": "Банк энергии",
+          "icon": "EnderIO:blockCapacitorBank",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockCapacitorBank",
+              "count": 1,
+              "title": "Собрать банк конденсаторов"
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:blockPowerMonitor",
+              "count": 1,
+              "title": "Сделать монитор энергии"
+            }
+          ],
+          "description": [
+            "Capacitor Bank копит энергию про запас, а Power Monitor показывает запас и расход сети.",
+            "Запас выручает, когда генератор встал или солнце село."
+          ],
+          "dependencies": [
+            "eio_power_conduit",
+            "eio_electrical_steel"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "EnderIO:itemBasicCapacitor",
+              "count": 1
+            }
+          ],
+          "x": 7,
+          "y": -4
+        },
+        {
+          "id": "eio_facade",
+          "title": "Кондуиты под обшивкой",
+          "icon": "EnderIO:itemConduitFacade",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:itemConduitFacade",
+              "count": 4,
+              "title": "Сделать 4 фасада кондуитов"
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:blockConduitBundle",
+              "count": 1,
+              "title": "Сделать соединитель кондуитов"
+            },
+            {
+              "type": "checkmark",
+              "title": "Спрятать пучок кондуитов под фасадами"
+            }
+          ],
+          "description": [
+            "Conduit Facade маскирует кондуиты под любой блок, а Conduit Connector соединяет их в пучок.",
+            "Так база выглядит как дом, а не как клубок проводов."
+          ],
+          "dependencies": [
+            "eio_item_conduit"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 8,
+          "y": -2
+        },
+        {
+          "id": "eio_crafter",
+          "title": "Крафтер",
+          "icon": "EnderIO:blockCrafter",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockCrafter",
+              "count": 1,
+              "title": "Собрать крафтер"
+            },
+            {
+              "type": "item",
+              "item": "EnderIO:itemExistingItemFilter",
+              "count": 1,
+              "consume": false,
+              "title": "Раздобыть фильтр предметов"
+            },
+            {
+              "type": "checkmark",
+              "title": "Настроить крафтер на автоматическую сборку"
+            }
+          ],
+          "description": [
+            "Crafter сам собирает предметы по рецепту, если подвести к нему вещи кондуитами.",
+            "Фильтр подскажет машине, что именно брать со склада."
+          ],
+          "dependencies": [
+            "eio_item_conduit"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "EnderIO:itemBasicFilterUpgrade",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:iron_ingot",
+                  "count": 16
+                }
+              ]
+            }
+          ],
+          "x": 8,
+          "y": -1
+        },
+        {
+          "id": "eio_inventory_panel",
+          "title": "Панель склада",
+          "icon": "EnderIO:blockInventoryPanel",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockInventoryPanel",
+              "count": 1,
+              "title": "Собрать панель инвентаря"
+            },
+            {
+              "type": "item",
+              "item": "EnderIO:itemFunctionUpgrade",
+              "count": 1,
+              "consume": false,
+              "title": "Раздобыть апгрейд удалённого доступа"
+            },
+            {
+              "type": "checkmark",
+              "title": "Увидеть все сундуки базы на одной панели"
+            }
+          ],
+          "description": [
+            "Inventory Panel показывает содержимое всех сундуков с кондуитами в одном окне,",
+            "а Remote Awareness Upgrade позволяет заглядывать в него издалека."
+          ],
+          "dependencies": [
+            "eio_crafter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 65
+            }
+          ],
+          "x": 9,
+          "y": -1
+        },
+        {
+          "id": "eio_farm",
+          "title": "Станция фермерства",
+          "icon": "EnderIO:blockFarmStation",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockFarmStation",
+              "count": 1,
+              "title": "Собрать станцию фермерства"
+            },
+            {
+              "type": "checkmark",
+              "title": "Засадить грядку и собрать первый урожай"
+            }
+          ],
+          "description": [
+            "Farming Station сама сажает, поливает и собирает урожай.",
+            "Вставьте саженцы и инструменты, подведите энергию и отводите дроп кондуитами."
+          ],
+          "dependencies": [
+            "eio_item_conduit",
+            "eio_sagmill"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 65
+            },
+            {
+              "type": "item",
+              "item": "minecraft:wheat",
+              "count": 16
+            }
+          ],
+          "x": 8,
+          "y": -3
+        },
+        {
+          "id": "eio_reservoir",
+          "title": "Резервуар",
+          "icon": "EnderIO:blockReservoir",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockReservoir",
+              "count": 1,
+              "title": "Собрать резервуар"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:water_bucket",
+              "count": 1,
+              "consume": false,
+              "title": "Набрать ведро воды"
+            },
+            {
+              "type": "checkmark",
+              "title": "Подключить резервуар к жидкостным кондуитам"
+            }
+          ],
+          "description": [
+            "Reservoir сам набирает воду из соседних блоков и отдаёт её машинам и фермам."
+          ],
+          "dependencies": [
+            "eio_fluid_conduit"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "minecraft:bucket",
+              "count": 2
+            }
+          ],
+          "x": 7,
+          "y": 0
+        },
+        {
+          "id": "eio_decor",
+          "title": "Тёмный декор и рельсы",
+          "icon": "EnderIO:blockEnderRail",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockEnderRail",
+              "count": 8,
+              "title": "Сделать 8 эндер-рельсов"
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:blockDarkSteelLadder",
+              "count": 16,
+              "title": "Сделать 16 тёмных лестниц"
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:blockDarkIronBars",
+              "count": 8,
+              "title": "Сделать 8 тёмных решёток"
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:blockDarkSteelPressurePlate",
+              "count": 2,
+              "title": "Сделать 2 тёмные нажимные плиты"
+            }
+          ],
+          "description": [
+            "Ender Rail телепортирует вагонетку в связанную точку, а тёмная сталь даёт прочный декор:",
+            "лестницы, решётки и незаметные нажимные плиты для дома и шахт."
+          ],
+          "dependencies": [
+            "eio_alloys"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            }
+          ],
+          "x": 6,
+          "y": 2
+        },
+        {
+          "id": "eio_painter",
+          "title": "Машина покраски",
+          "icon": "EnderIO:blockPainter",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockPainter",
+              "count": 1,
+              "title": "Собрать машину покраски"
+            },
+            {
+              "type": "checkmark",
+              "title": "Покрасить блоки в любой цвет"
+            }
+          ],
+          "description": [
+            "Painting Machine перекрашивает блоки и делает разноцветные ковры, плиты и ступени.",
+            "Отличный способ разбавить серые стены базы."
+          ],
+          "dependencies": [
+            "eio_alloys",
+            "eio_item_conduit"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "minecraft:dye",
+              "count": 8
+            }
+          ],
+          "x": 8,
+          "y": 0
+        },
+        {
+          "id": "eio_slice_splice",
+          "title": "Slice'N'Splice",
+          "icon": "EnderIO:blockSliceAndSplice",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockSliceAndSplice",
+              "count": 1,
+              "title": "Собрать Slice'N'Splice"
+            },
+            {
+              "type": "item",
+              "item": "EnderIO:blockEndermanSkull",
+              "count": 1,
+              "consume": false,
+              "title": "Добыть голову эндермена"
+            },
+            {
+              "type": "kill",
+              "entity": "Enderman",
+              "count": 5,
+              "title": "Убить 5 эндерменов"
+            }
+          ],
+          "description": [
+            "Slice'N'Splice собирает из голов и душ странных големов и редкие компоненты.",
+            "Голова эндермена падает с самих эндерменов — охота в ночи обязательна."
+          ],
+          "dependencies": [
+            "eio_soul_binder"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 75
+            },
+            {
+              "type": "item",
+              "item": "minecraft:ender_pearl",
+              "count": 8
+            }
+          ],
+          "x": 6,
+          "y": 4
+        },
+        {
+          "id": "eio_obelisks",
+          "title": "Обелиски мобов",
+          "icon": "EnderIO:blockAttractor",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockAttractor",
+              "count": 1,
+              "title": "Собрать притягивающий обелиск"
+            },
+            {
+              "type": "craft",
+              "item": "EnderIO:blockSpawnGuard",
+              "count": 1,
+              "title": "Собрать обелиск отвращения"
+            },
+            {
+              "type": "kill",
+              "entity": "Creeper",
+              "count": 10,
+              "title": "Убить 10 криперов"
+            }
+          ],
+          "description": [
+            "Attractor Obelisk стягивает мобов в одну точку, Aversion Obelisk наоборот прогоняет их прочь.",
+            "Пара обелисков превращает ферму мобов в безопасное место."
+          ],
+          "dependencies": [
+            "eio_spawner"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 75
+            },
+            {
+              "type": "item",
+              "item": "minecraft:gunpowder",
+              "count": 8
+            }
+          ],
+          "x": 7,
+          "y": 1
+        },
+        {
+          "id": "eio_weather",
+          "title": "Погодный обелиск",
+          "icon": "EnderIO:blockWeatherObelisk",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockWeatherObelisk",
+              "count": 1,
+              "title": "Собрать погодный обелиск"
+            },
+            {
+              "type": "item",
+              "item": "EnderIO:bucketLiquid_sunshine",
+              "count": 1,
+              "consume": false,
+              "title": "Получить ведро жидкого солнца"
+            },
+            {
+              "type": "checkmark",
+              "title": "Вызвать дождь или разогнать тучи"
+            }
+          ],
+          "description": [
+            "Weather Obelisk тратит жидкое солнце и меняет погоду по щелчку.",
+            "Никакой бесконечный дождь больше не испортит день на базе."
+          ],
+          "dependencies": [
+            "eio_vat"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:glowstone",
+                  "count": 8
+                },
+                {
+                  "type": "xp",
+                  "amount": 30
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": 2
+        },
+        {
+          "id": "eio_zombie_generator",
+          "title": "Зомби-генератор",
+          "icon": "EnderIO:blockZombieGenerator",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "EnderIO:blockZombieGenerator",
+              "count": 1,
+              "title": "Собрать зомби-генератор"
+            },
+            {
+              "type": "item",
+              "item": "EnderIO:bucketNutrient_distillation",
+              "count": 1,
+              "consume": false,
+              "title": "Сварить ведро питательного дистиллята"
+            },
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 20,
+              "title": "Убить 20 зомби"
+            }
+          ],
+          "description": [
+            "Zombie Generator жжёт питательный дистиллят и даёт много энергии без угля.",
+            "Заодно он пригодится как источник питания для спавнера и Killer Joe."
+          ],
+          "dependencies": [
+            "eio_vat",
+            "eio_soul"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "minecraft:rotten_flesh",
+              "count": 16
+            }
+          ],
+          "x": 5,
+          "y": 0
+        }
+      ]
+    }
+  ]
+}

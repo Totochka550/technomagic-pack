@@ -1,0 +1,1702 @@
+{
+  "title": "Сумеречный лес",
+  "chapters": [
+    {
+      "id": "twilightforest",
+      "title": "Сумеречный лес",
+      "description": "Портал, боссы и трофеи Сумеречного леса — от первых шагов под сумеречными дубами до Сумеречного замка.",
+      "icon": "TwilightForest:tile.TFPortal",
+      "requiredMod": "TwilightForest",
+      "quests": [
+        {
+          "id": "tf_portal",
+          "title": "Портал в сумерки",
+          "icon": "TwilightForest:tile.TFPortal",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Выкопать ямку 2×2, залить водой и обсадить её цветами, травой или грибами"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 1,
+              "consume": true,
+              "title": "Бросить алмаз в воду"
+            }
+          ],
+          "description": [
+            "Портал собирается руками: водоём в земле, растения по краям и алмаз в качестве ключа.",
+            "После броска вода вспыхнет — шагните в неё."
+          ],
+          "achievement": "TwilightForest1",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.torchberries",
+              "count": 4
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "tf_arrival",
+          "title": "Первые шаги в сумерках",
+          "icon": "TwilightForest:tile.TFLog",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Войти в портал и осмотреться"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:tile.TFLog",
+              "count": 8,
+              "consume": false,
+              "title": "Нарубить сумеречной древесины"
+            }
+          ],
+          "description": [
+            "Здесь всегда сумерки: светятся светлячки, стрекочут цикады, а деревья выше обычных.",
+            "Для начала запаситесь местной древесиной — она пригодится во всех рецептах."
+          ],
+          "dependencies": [
+            "tf_portal"
+          ],
+          "achievement": "TwilightForest2",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "tf_hunter",
+          "title": "Сумеречный охотник",
+          "icon": "TwilightForest:item.venisonRaw",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Убить любого зверя: кабана, оленя, козла или кролика"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.venisonRaw",
+              "count": 2,
+              "consume": false,
+              "title": "Добыть оленины"
+            }
+          ],
+          "description": [
+            "Местная живность даёт мясо, кожу и шерсть — охота быстро окупается."
+          ],
+          "dependencies": [
+            "tf_arrival"
+          ],
+          "achievement": "TwilightForest3",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "minecraft:bread",
+              "count": 3
+            }
+          ],
+          "x": 2,
+          "y": -3
+        },
+        {
+          "id": "tf_quest_ram",
+          "title": "Бараний вопрос",
+          "icon": "minecraft:wool",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:wool",
+              "count": 16,
+              "consume": true,
+              "title": "Собрать 16 оттенков шерсти"
+            },
+            {
+              "type": "checkmark",
+              "title": "Накормить шерстью Квест-Барана"
+            }
+          ],
+          "description": [
+            "В лесу пасётся разноцветный Квест-Баран: если принести ему по одному блоку каждого цвета, он отблагодарит.",
+            "Шерсть можно покрасить или найти по деревням."
+          ],
+          "dependencies": [
+            "tf_arrival"
+          ],
+          "achievement": "TwilightForest34",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "TwilightForest:item.magicBeans",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "TwilightForest:item.transformPowder",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 2,
+          "y": -2
+        },
+        {
+          "id": "tf_boots",
+          "title": "Сапоги мои!",
+          "icon": "TwilightForest:item.ironwoodBoots",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Найти малую полую шахту и победить красного колпака"
+            },
+            {
+              "type": "item",
+              "ore": "ingotIronwood",
+              "count": 4,
+              "consume": false,
+              "title": "Наплавить железодревесины"
+            }
+          ],
+          "description": [
+            "Красные колпаки живут в холмах и носят железодревесную броню — сапоги достанутся победителю.",
+            "Слитки железодревесины получаются из сырья с сумеречных дубов."
+          ],
+          "dependencies": [
+            "tf_arrival"
+          ],
+          "achievement": "TwilightForest10",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "choice",
+              "title": "Выберите инструмент",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "TwilightForest:item.ironwoodPick",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "TwilightForest:item.ironwoodAxe",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "tf_noise",
+          "title": "Что это был за шум?",
+          "icon": "minecraft:tnt",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Победить красного сапёра в средней полой шахте"
+            }
+          ],
+          "description": [
+            "Сапёры таскают с собой взрывчатку и очень громко с ней расстаются — держитесь подальше от стен.",
+            "Загляните в средние шахты: там уже встречаются сундуки с добычей."
+          ],
+          "dependencies": [
+            "tf_boots"
+          ],
+          "achievement": "TwilightForest11",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.torchberries",
+              "count": 8
+            }
+          ],
+          "x": 3,
+          "y": 1
+        },
+        {
+          "id": "tf_see_through",
+          "title": "Вижу тебя насквозь",
+          "icon": "TwilightForest:item.armorShards",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Победить призрака в большой полой шахте"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.armorShards",
+              "count": 2,
+              "consume": false,
+              "title": "Собрать осколки брони"
+            }
+          ],
+          "description": [
+            "Призраки полупрозрачны и бьют больно, зато оставляют осколки брони — основу для рыцарского металла."
+          ],
+          "dependencies": [
+            "tf_noise"
+          ],
+          "achievement": "TwilightForest12",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 4,
+          "y": -3
+        },
+        {
+          "id": "tf_bug_stomper",
+          "title": "Давим жуков",
+          "icon": "TwilightForest:tile.TFHedge",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Побывать в лабиринте из живой изгороди"
+            },
+            {
+              "type": "kill",
+              "entity": "Spider",
+              "count": 3,
+              "title": "Раздавить пауков"
+            }
+          ],
+          "description": [
+            "В лабиринте из живой изгороди пауки чувствуют себя хозяевами — наведите там порядок.",
+            "Заодно поищите сундуки: изгородь прячет немало полезного."
+          ],
+          "dependencies": [
+            "tf_arrival"
+          ],
+          "achievement": "TwilightForest13",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "minecraft:string",
+              "count": 6
+            }
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "id": "tf_map_focus",
+          "title": "Огнём и пером",
+          "icon": "TwilightForest:item.magicMapFocus",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TwilightForest:item.magicMapFocus",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Магический фокус карты собирается из пера ворона, светопыли и факельных ягод.",
+            "Он и станет сердцем будущей карты."
+          ],
+          "dependencies": [
+            "tf_hunter"
+          ],
+          "achievement": "TwilightForest5",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 3,
+          "y": -3
+        },
+        {
+          "id": "tf_magic_map",
+          "title": "Видно на мили вокруг",
+          "icon": "TwilightForest:item.emptyMagicMap",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TwilightForest:item.emptyMagicMap",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Пустая магическая карта сама дорисует окрестности Сумеречного леса и покажет структуры."
+          ],
+          "dependencies": [
+            "tf_map_focus"
+          ],
+          "achievement": "TwilightForest14",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "tf_naga",
+          "title": "Нага-охотник",
+          "icon": "TwilightForest:tile.TFNagastone",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Победить Нагу во дворе из нагакамня"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.nagaScale",
+              "count": 2,
+              "consume": false,
+              "title": "Подобрать чешую Наги"
+            }
+          ],
+          "description": [
+            "Двор из нагакамня легко узнать по зелёным колоннам — там ждёт первый босс измерения.",
+            "Нага быстра и любит таранить, но её чешуя того стоит."
+          ],
+          "dependencies": [
+            "tf_hunter"
+          ],
+          "achievement": "TwilightForest6",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.torchberries",
+              "count": 8
+            }
+          ],
+          "x": 3,
+          "y": -2
+        },
+        {
+          "id": "tf_naga_scale",
+          "title": "Сияющая чешуя",
+          "icon": "TwilightForest:item.nagaScale",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TwilightForest:item.nagaScale",
+              "count": 6,
+              "consume": false,
+              "title": "Собрать шесть чешуек Наги"
+            }
+          ],
+          "description": [
+            "Из чешуи Наги делается лёгкая и прочная броня — как раз на комплект."
+          ],
+          "dependencies": [
+            "tf_naga"
+          ],
+          "achievement": "TwilightForest17",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "tf_naga_armor",
+          "title": "Нага-бронник",
+          "icon": "TwilightForest:item.plateNaga",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TwilightForest:item.plateNaga",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TwilightForest:item.legsNaga",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Наденьте любую часть брони Наги и скрафтите вторую — рецепт откроется сам.",
+            "Комплект даёт неплохую защиту и не тормозит бег."
+          ],
+          "dependencies": [
+            "tf_naga_scale"
+          ],
+          "achievement": "TwilightForest7",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 5,
+          "y": -2
+        },
+        {
+          "id": "tf_lich",
+          "title": "Лич-охотник",
+          "icon": "TwilightForest:item.towerKey",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Победить Лича в его башне"
+            }
+          ],
+          "description": [
+            "Башня Лича стоит в холмах: внутри ловушки, щиты и сам хозяин в компании скелетов.",
+            "Лич уязвим, когда его щит опущен — берегите стрелы и зелья."
+          ],
+          "dependencies": [
+            "tf_naga_scale"
+          ],
+          "achievement": "TwilightForest8",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "choice",
+              "title": "Выберите оберег",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "TwilightForest:item.charmOfKeeping1",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "TwilightForest:item.charmOfLife1",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "tf_scepter",
+          "title": "Прикосновение нежити",
+          "icon": "TwilightForest:item.scepterTwilight",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Подобрать один из трёх скипетров Лича"
+            }
+          ],
+          "description": [
+            "После смерти Лич оставляет скипетр: сумерек, вытягивания жизни или зомби.",
+            "Любой из них — след нежити в ваших руках."
+          ],
+          "dependencies": [
+            "tf_lich"
+          ],
+          "achievement": "TwilightForest18",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "tf_scepter_mastery",
+          "title": "Мастер скипетров",
+          "icon": "TwilightForest:item.scepterLifeDrain",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TwilightForest:item.scepterTwilight",
+              "count": 1,
+              "consume": false,
+              "title": "Скипетр сумерек"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.scepterLifeDrain",
+              "count": 1,
+              "consume": false,
+              "title": "Скипетр вытягивания жизни"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.scepterZombie",
+              "count": 1,
+              "consume": false,
+              "title": "Скипетр зомби"
+            }
+          ],
+          "description": [
+            "Соберите все три скипетра — и снова одолейте Лича, чтобы доказать своё мастерство.",
+            "Скипетры хорошо работают и как оружие, и как инструмент."
+          ],
+          "dependencies": [
+            "tf_scepter"
+          ],
+          "achievement": "TwilightForest9",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 7,
+          "y": -3
+        },
+        {
+          "id": "tf_maze_map",
+          "title": "А теперь найдём выход",
+          "icon": "TwilightForest:item.emptyMazeMap",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TwilightForest:item.emptyMazeMap",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "ore": "ingotSteeleaf",
+              "count": 4,
+              "consume": false,
+              "title": "Принести сталелист из лабиринта"
+            }
+          ],
+          "description": [
+            "Пустая карта лабиринта строится на фокусе из минотаврского лабиринта.",
+            "Сталелист — местная награда для тех, кто не боится запутанных коридоров."
+          ],
+          "dependencies": [
+            "tf_lich"
+          ],
+          "achievement": "TwilightForest15",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "id": "tf_ore_map",
+          "title": "А оно того стоило?",
+          "icon": "TwilightForest:item.emptyOreMap",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TwilightForest:item.emptyOreMap",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Карта лабиринта и руды отмечает не только коридоры, но и залежи полезных ископаемых."
+          ],
+          "dependencies": [
+            "tf_maze_map"
+          ],
+          "achievement": "TwilightForest16",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 7,
+          "y": 1
+        },
+        {
+          "id": "tf_mazebreaker",
+          "title": "Сломать лабиринт",
+          "icon": "TwilightForest:item.mazebreakerPick",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TwilightForest:item.mazebreakerPick",
+              "count": 1,
+              "consume": false,
+              "title": "Найти Мазебрейкер в лабиринте"
+            }
+          ],
+          "description": [
+            "Мазебрейкер спрятан в лабиринте: он ломает камень быстрее алмазной кирки.",
+            "Обыщите сундуки в тупиках — иногда он лежит в самой дальней комнате."
+          ],
+          "dependencies": [
+            "tf_scepter"
+          ],
+          "achievement": "TwilightForest32",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 7,
+          "y": -2
+        },
+        {
+          "id": "tf_minotaur",
+          "title": "Могучий строганов",
+          "icon": "TwilightForest:item.meefStroganoff",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Победить Минотавра в лабиринте"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.meefStroganoff",
+              "count": 1,
+              "consume": false,
+              "title": "Получить строганов из мифа"
+            }
+          ],
+          "description": [
+            "Минотавр бродит по лабиринту с топором наперевес и оставляет либо топор, либо сытный строганов.",
+            "Оба варианта одинаково хороши."
+          ],
+          "dependencies": [
+            "tf_scepter"
+          ],
+          "achievement": "TwilightForest28",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.meefRaw",
+              "count": 3
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "tf_hydra",
+          "title": "Убийца Гидры",
+          "icon": "TwilightForest:item.hydraChop",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Победить Гидру в её логове"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.hydraChop",
+              "count": 2,
+              "consume": false,
+              "title": "Добыть отбивные Гидры"
+            }
+          ],
+          "description": [
+            "Огненное болото, кости и три головы — Гидра не отпускает просто так.",
+            "Убивайте головы по одной, иначе они отрастут снова."
+          ],
+          "dependencies": [
+            "tf_minotaur"
+          ],
+          "achievement": "TwilightForest30",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 8,
+          "y": 0
+        },
+        {
+          "id": "tf_hydra_chop",
+          "title": "Огромные отбивные",
+          "icon": "TwilightForest:item.hydraChop",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TwilightForest:item.hydraChop",
+              "count": 1,
+              "consume": true,
+              "title": "Съесть отбивную Гидры"
+            },
+            {
+              "type": "checkmark",
+              "title": "Сделать это на пустом желудке"
+            }
+          ],
+          "description": [
+            "Настоящий герой пробует отбивную Гидры голодным — только так оценишь её размер."
+          ],
+          "dependencies": [
+            "tf_hydra"
+          ],
+          "achievement": "TwilightForest31",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 9,
+          "y": -1
+        },
+        {
+          "id": "tf_fiery_blood",
+          "title": "Одна кровь",
+          "icon": "TwilightForest:item.fieryBlood",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TwilightForest:item.fieryBlood",
+              "count": 2,
+              "consume": false,
+              "title": "Собрать жгучую кровь"
+            }
+          ],
+          "description": [
+            "Жгучая кровь — трофей огненных созданий. Она горит в руках и идёт на жгучие слитки."
+          ],
+          "dependencies": [
+            "tf_hydra"
+          ],
+          "achievement": "TwilightForest20",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 9,
+          "y": 0
+        },
+        {
+          "id": "tf_trophy_pedestal",
+          "title": "Чемпион с трофеем",
+          "icon": "TwilightForest:tile.TFTrophyPedestal",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TwilightForest:tile.TFTrophyPedestal",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Поставить на подставку трофей любого босса"
+            }
+          ],
+          "description": [
+            "Трофей на подставке — это и украшение, и доказательство победы.",
+            "Подставка крафтится из камня и украшается по вкусу."
+          ],
+          "dependencies": [
+            "tf_fiery_blood"
+          ],
+          "achievement": "TwilightForest29",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 10,
+          "y": -1
+        },
+        {
+          "id": "tf_phantom",
+          "title": "Привыкание к карминиту",
+          "icon": "TwilightForest:item.carminite",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Победить фантомного рыцаря в Тёмной башне"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.carminite",
+              "count": 2,
+              "consume": false,
+              "title": "Собрать карминит"
+            },
+            {
+              "type": "item",
+              "ore": "oreKnightmetal",
+              "count": 2,
+              "consume": false,
+              "title": "Набрать осколков брони"
+            }
+          ],
+          "description": [
+            "Фантомные рыцари охраняют Тёмную башню и рассыпаются карминитом и осколками брони.",
+            "Из осколков потом выплавляется рыцарский металл."
+          ],
+          "dependencies": [
+            "tf_trophy_pedestal"
+          ],
+          "achievement": "TwilightForest21",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 11,
+          "y": -1
+        },
+        {
+          "id": "tf_urghast",
+          "title": "Слёзы огня",
+          "icon": "TwilightForest:item.fieryTears",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Победить Ур-Гхаста на вершине Тёмной башни"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.fieryTears",
+              "count": 1,
+              "consume": false,
+              "title": "Забрать жгучие слёзы"
+            }
+          ],
+          "description": [
+            "Ур-Гхаст ждёт в самом верху башни: он швыряется огнём и очень не любит лестницы.",
+            "Из его слёз делаются жгучие инструменты."
+          ],
+          "dependencies": [
+            "tf_phantom"
+          ],
+          "achievement": "TwilightForest22",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "choice",
+              "title": "Выберите оберег",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "TwilightForest:item.charmOfKeeping2",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "TwilightForest:item.charmOfLife2",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 12,
+          "y": -2
+        },
+        {
+          "id": "tf_blood_tears",
+          "title": "Галлоны крови и слёз",
+          "icon": "TwilightForest:item.fieryTears",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TwilightForest:item.fieryBlood",
+              "count": 4,
+              "consume": false,
+              "title": "Собрать жгучую кровь"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.fieryTears",
+              "count": 2,
+              "consume": false,
+              "title": "Собрать жгучие слёзы"
+            }
+          ],
+          "description": [
+            "Огненные создания щедры на кровь и слёзы — наберите их с запасом для будущих рецептов."
+          ],
+          "dependencies": [
+            "tf_urghast"
+          ],
+          "achievement": "TwilightForest33",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 13,
+          "y": -2
+        },
+        {
+          "id": "tf_alpha_yeti",
+          "title": "Альфа-мех",
+          "icon": "TwilightForest:item.alphaFur",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Победить Альфа-Йети в снежной пещере"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.alphaFur",
+              "count": 1,
+              "consume": false,
+              "title": "Снять альфа-мех"
+            }
+          ],
+          "description": [
+            "В снежных пещерах живёт Альфа-Йети — громила, который швыряется ледяными глыбами.",
+            "Его мех не пробить холодом, зато он отлично греет."
+          ],
+          "dependencies": [
+            "tf_urghast"
+          ],
+          "achievement": "TwilightForest23",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 13,
+          "y": -1
+        },
+        {
+          "id": "tf_snow_queen",
+          "title": "Ясное небо",
+          "icon": "TwilightForest:item.iceBow",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Победить Снежную Королеву в Аврора-дворце"
+            }
+          ],
+          "description": [
+            "Аврора-дворец стоит среди облаков, а на самом верху ждёт Снежная Королева.",
+            "Возьмите с собой огненное оружие и не смотрите ей в глаза слишком долго."
+          ],
+          "dependencies": [
+            "tf_alpha_yeti"
+          ],
+          "achievement": "TwilightForest24",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "choice",
+              "title": "Выберите лёд",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "TwilightForest:item.iceSword",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "TwilightForest:item.iceBow",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 14,
+          "y": -1
+        },
+        {
+          "id": "tf_lamp",
+          "title": "Хочу ещё огня",
+          "icon": "TwilightForest:item.lampOfCinders",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TwilightForest:item.lampOfCinders",
+              "count": 1,
+              "consume": false,
+              "title": "Найти лампу пепла в тролльей пещере"
+            }
+          ],
+          "description": [
+            "В тролльей пещере, за гигантским обсидианом, лежит лампа пепла — единственный способ прожечь шипы.",
+            "Тролли не любят гостей, так что заходите подготовленным."
+          ],
+          "dependencies": [
+            "tf_snow_queen"
+          ],
+          "achievement": "TwilightForest25",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 15,
+          "y": -1
+        },
+        {
+          "id": "tf_thorns",
+          "title": "Сквозь шипы",
+          "icon": "TwilightForest:tile.TFBurntThorns",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Прожечь шипы Сумеречного леса лампой пепла"
+            },
+            {
+              "type": "item",
+              "ore": "ingotFiery",
+              "count": 4,
+              "consume": false,
+              "title": "Отлить жгучих слитков"
+            }
+          ],
+          "description": [
+            "Лампа пепла выжигает шипы, открывая дорогу дальше в лес.",
+            "Жгучие слитки из крови и слёз пригодятся для инструментов, которые не боятся огня."
+          ],
+          "dependencies": [
+            "tf_lamp"
+          ],
+          "achievement": "TwilightForest26",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 16,
+          "y": -1
+        },
+        {
+          "id": "tf_castle",
+          "title": "Вот это замок!",
+          "icon": "TwilightForest:tile.CastleBrick",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Добраться до Сумеречного замка"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:tile.CastleBrick",
+              "count": 4,
+              "consume": false,
+              "title": "Принести замкового кирпича"
+            }
+          ],
+          "description": [
+            "За выжженными шипами начинаются владения Сумеречного замка — самая дальняя точка измерения.",
+            "Кирпич из его стен отлично смотрится в собственном доме."
+          ],
+          "dependencies": [
+            "tf_thorns"
+          ],
+          "achievement": "TwilightForest27",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "choice",
+              "title": "Выберите оберег",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "TwilightForest:item.charmOfKeeping3",
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "TwilightForest:item.charmOfLife2",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 17,
+          "y": -1
+        },
+        {
+          "id": "tf_ironwood_gear",
+          "title": "Железодревесный арсенал",
+          "icon": "TwilightForest:item.ironwoodPlate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TwilightForest:item.ironwoodHelm",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TwilightForest:item.ironwoodPlate",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Железодревесина крепче железа и почти не изнашивается — самое время одеться в неё целиком.",
+            "Начните с шлема и нагрудника, а сапоги у вас уже есть."
+          ],
+          "dependencies": [
+            "tf_boots"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 3,
+          "y": 2
+        },
+        {
+          "id": "tf_kitchen",
+          "title": "Сумеречная кухня",
+          "icon": "TwilightForest:item.venisonCooked",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TwilightForest:item.venisonCooked",
+              "count": 4,
+              "consume": false,
+              "title": "Приготовить оленины"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.meefSteak",
+              "count": 2,
+              "consume": false,
+              "title": "Пожарить миф-стейк"
+            },
+            {
+              "type": "checkmark",
+              "title": "Съесть ужин из местных продуктов"
+            }
+          ],
+          "description": [
+            "Оленина и миф-стейк сытнее обычной еды, а готовятся на любой печи.",
+            "Держите запас с собой: в Сумеречном лесу голодным делать нечего."
+          ],
+          "dependencies": [
+            "tf_hunter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "minecraft:bowl",
+              "count": 2
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "tf_mob_cleanup",
+          "title": "Зачистка у портала",
+          "icon": "TwilightForest:item.ironwoodSword",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 10,
+              "title": "Истребить зомби"
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 5,
+              "title": "Разбить скелетов"
+            }
+          ],
+          "description": [
+            "Ночная нежить любит бродить у входа в портал — наведите порядок на подходе к своему лагерю.",
+            "Заодно соберёте кости и стрелы для будущих поделок."
+          ],
+          "dependencies": [
+            "tf_arrival"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "minecraft:arrow",
+              "count": 16
+            }
+          ],
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "tf_uncrafting",
+          "title": "Разобрать на запчасти",
+          "icon": "TwilightForest:tile.TFUncraftingTable",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TwilightForest:tile.TFUncraftingTable",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Разобрать ненужную вещь обратно на ингредиенты"
+            }
+          ],
+          "description": [
+            "Стол разбора разбирает любой предмет на составляющие — правда, часть материалов теряется.",
+            "Отличный способ пустить в дело хлам из сундуков."
+          ],
+          "dependencies": [
+            "tf_scepter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 7,
+          "y": 0
+        },
+        {
+          "id": "tf_ore_magnet",
+          "title": "Магнит для руды",
+          "icon": "TwilightForest:item.oreMagnet",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TwilightForest:item.oreMagnet",
+              "count": 1
+            },
+            {
+              "type": "checkmark",
+              "title": "Собрать магнитом рассыпанную руду"
+            }
+          ],
+          "description": [
+            "Магнит притягивает руду и камешки с нескольких блоков вокруг — экономит время в шахтах."
+          ],
+          "dependencies": [
+            "tf_ore_map"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 8,
+          "y": -2
+        },
+        {
+          "id": "tf_bows",
+          "title": "Три лука леса",
+          "icon": "TwilightForest:item.tripleBow",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TwilightForest:item.tripleBow",
+              "count": 1,
+              "consume": false,
+              "title": "Найти тройной лук"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.seekerBow",
+              "count": 1,
+              "consume": false,
+              "title": "Найти лук-ищейку"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.enderBow",
+              "count": 1,
+              "consume": false,
+              "title": "Найти эндер-лук"
+            }
+          ],
+          "description": [
+            "В сундуках лабиринта и Тёмной башни попадаются особые луки: тройной, самонаводящийся и стреляющий жемчугом.",
+            "Соберите всю коллекцию — каждый хорош по-своему."
+          ],
+          "dependencies": [
+            "tf_mazebreaker"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "minecraft:arrow",
+              "count": 24
+            }
+          ],
+          "x": 8,
+          "y": -1
+        },
+        {
+          "id": "tf_knightmetal",
+          "title": "Рыцарский металл",
+          "icon": "TwilightForest:item.knightMetal",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "ingotKnightmetal",
+              "count": 4,
+              "consume": false,
+              "title": "Выплавить рыцарский металл"
+            }
+          ],
+          "description": [
+            "Осколки брони, собранные с фантомных рыцарей, плавятся в рыцарский металл.",
+            "Он прочнее алмаза, а полный комплект ещё и даёт бонус к броне."
+          ],
+          "dependencies": [
+            "tf_phantom"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 55
+            }
+          ],
+          "x": 12,
+          "y": -1
+        },
+        {
+          "id": "tf_knightly_gear",
+          "title": "Рыцарские доспехи",
+          "icon": "TwilightForest:item.knightlyHelm",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TwilightForest:item.knightlyHelm",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TwilightForest:item.knightlySword",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Из рыцарского металла куётся лучшая броня измерения: шлем держит удар, а меч рубит нежить."
+          ],
+          "dependencies": [
+            "tf_knightmetal"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 13,
+          "y": 0
+        },
+        {
+          "id": "tf_phantom_gear",
+          "title": "Фантомная броня",
+          "icon": "TwilightForest:item.phantomPlate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TwilightForest:item.phantomHelm",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TwilightForest:item.phantomPlate",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Фантомная броня делается из карминита и осколков — она легче рыцарской, но всё ещё хороша.",
+            "Наденьте её перед походом к Ур-Гхасту."
+          ],
+          "dependencies": [
+            "tf_phantom"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 65
+            }
+          ],
+          "x": 12,
+          "y": 0
+        },
+        {
+          "id": "tf_fiery_gear",
+          "title": "Жгучий инструмент",
+          "icon": "TwilightForest:item.fieryPick",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TwilightForest:item.fieryPick",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TwilightForest:item.fierySword",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Из жгучих слитков получаются инструменты, которые сами плавят руду и поджигают врагов.",
+            "Кирка работает как печь, а меч оставляет за собой огонь."
+          ],
+          "dependencies": [
+            "tf_thorns"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 17,
+          "y": 0
+        },
+        {
+          "id": "tf_yeti_gear",
+          "title": "Мех альфа-йети",
+          "icon": "TwilightForest:item.yetiPlate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "TwilightForest:item.yetiHelm",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "TwilightForest:item.yetiPlate",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Тёплая броня из меха альфа-йети не боится холода и хорошо защищает от снежных тварей.",
+            "Как раз то, что нужно для похода в Аврора-дворец."
+          ],
+          "dependencies": [
+            "tf_alpha_yeti"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 65
+            }
+          ],
+          "x": 14,
+          "y": 0
+        },
+        {
+          "id": "tf_moonworm_queen",
+          "title": "Светлячковый свет",
+          "icon": "TwilightForest:item.moonwormQueen",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Найти королеву светлячков в полой шахте или лабиринте"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.moonwormQueen",
+              "count": 1,
+              "consume": false,
+              "title": "Забрать королеву светлячков"
+            }
+          ],
+          "description": [
+            "Королева светлячков сеет вокруг себя светящихся червячков — живые факелы, которые не гаснут.",
+            "Её можно найти в сундуках полых шахт и подземелий."
+          ],
+          "dependencies": [
+            "tf_noise"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 4,
+          "y": -2
+        },
+        {
+          "id": "tf_magic_beans",
+          "title": "Боб до небес",
+          "icon": "TwilightForest:item.magicBeans",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TwilightForest:item.magicBeans",
+              "count": 1,
+              "consume": true,
+              "title": "Посадить волшебный боб"
+            },
+            {
+              "type": "checkmark",
+              "title": "Подняться по стеблю к облакам"
+            }
+          ],
+          "description": [
+            "Посадите волшебный боб на землю — из него вымахает стебель прямо к облачным островам.",
+            "Бобы достаются в награду за шерсть или находятся в сундуках."
+          ],
+          "dependencies": [
+            "tf_quest_ram"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "tf_cloud_walker",
+          "title": "По облакам",
+          "icon": "TwilightForest:tile.FluffyCloud",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "TwilightForest:tile.FluffyCloud",
+              "count": 8,
+              "consume": false,
+              "title": "Набрать пушистых облаков"
+            },
+            {
+              "type": "checkmark",
+              "title": "Пройтись по облачным островам"
+            }
+          ],
+          "description": [
+            "Над лесом висят облачные острова: пушистые блоки гасят падение, а с них открывается вид на весь лес.",
+            "Заодно поищите там редкие сундуки."
+          ],
+          "dependencies": [
+            "tf_magic_beans"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "minecraft:feather",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": 1
+        },
+        {
+          "id": "tf_giant_house",
+          "title": "Дом гиганта",
+          "icon": "TwilightForest:item.giantPick",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Найти дом гиганта среди облаков"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.giantPick",
+              "count": 1,
+              "consume": false,
+              "title": "Добыть кирку гиганта"
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:item.giantSword",
+              "count": 1,
+              "consume": false,
+              "title": "Добыть меч гиганта"
+            }
+          ],
+          "description": [
+            "В облачном доме живёт гигант: его кирка копает целыми пластами, а меч бьёт на несколько шагов вперёд.",
+            "Хозяина лучше обойти стороной или хорошенько подготовиться."
+          ],
+          "dependencies": [
+            "tf_cloud_walker"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "TwilightForest:tile.GiantCobble",
+              "count": 16
+            }
+          ],
+          "x": 5,
+          "y": 0
+        }
+      ]
+    }
+  ]
+}

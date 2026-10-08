@@ -1,0 +1,1626 @@
+{
+  "title": "Thermal Expansion",
+  "chapters": [
+    {
+      "id": "thermal",
+      "title": "Thermal Expansion",
+      "description": "Механизмы, редстоун-флюксовая энергия, жидкости и трубы Thermal: от дробилки и печи до тессеракта и резонансной сети.",
+      "icon": "ThermalExpansion:Machine",
+      "requiredMod": "ThermalExpansion",
+      "quests": [
+        {
+          "id": "te_ore",
+          "title": "Руда для машин",
+          "icon": "ThermalFoundation:Ore",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "oreCopper",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 медной руды"
+            },
+            {
+              "type": "item",
+              "ore": "oreIron",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 железной руды"
+            }
+          ],
+          "description": [
+            "Медь и железо — кровь любой постройки Thermal: из них делают корпуса, сплавы и почти все детали машин.",
+            "Медь лежит выше железа, так что начните с обычной шахты."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:torch",
+                  "count": 16
+                },
+                {
+                  "type": "item",
+                  "ore": "blockCopper",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 0,
+          "y": -2
+        },
+        {
+          "id": "te_dust",
+          "title": "Пыль вместо слитков",
+          "icon": "ThermalFoundation:material",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "oreIron",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 железной руды"
+            },
+            {
+              "type": "item",
+              "ore": "dustIron",
+              "count": 2,
+              "consume": false,
+              "title": "Получить 2 железной пыли"
+            }
+          ],
+          "description": [
+            "Измельчённая руда плавится в слиток с той же скоростью, но пыли выходит больше — это первый способ экономить ресурсы."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            },
+            {
+              "type": "item",
+              "item": "ThermalFoundation:material",
+              "count": 2
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "te_furnace",
+          "title": "Редстоуновая печь",
+          "icon": "ThermalExpansion:Machine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Machine",
+              "count": 1,
+              "meta": 0,
+              "title": "Собрать редстоуновую печь (Redstone Furnace)"
+            }
+          ],
+          "description": [
+            "Redstone Furnace плавит быстрее обычной печи и жрёт меньше топлива.",
+            "Без неё дальше никуда: почти все детали проходят через переплавку."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "minecraft:coal",
+              "count": 8
+            }
+          ],
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "te_wrench",
+          "title": "Ключ на все случаи",
+          "icon": "ThermalExpansion:wrench",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:wrench",
+              "count": 1,
+              "title": "Собрать Crescent Hammer"
+            }
+          ],
+          "description": [
+            "Crescent Hammer — главный инструмент мода: им разворачивают стороны машин, снимают их и настраивают трубы.",
+            "Потерять его почти так же больно, как потерять кирку."
+          ],
+          "dependencies": [
+            "te_furnace"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "te_meter",
+          "title": "Мультиметр",
+          "icon": "ThermalExpansion:meter",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:meter",
+              "count": 1,
+              "title": "Собрать мультиметр"
+            }
+          ],
+          "description": [
+            "Multimeter показывает заряд машин и труб — с ним отладка сети занимает секунды."
+          ],
+          "dependencies": [
+            "te_wrench"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 2,
+          "y": -2
+        },
+        {
+          "id": "te_frame",
+          "title": "Каркас машины",
+          "icon": "ThermalExpansion:Frame",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Frame",
+              "count": 2,
+              "title": "Собрать 2 машинных каркаса"
+            },
+            {
+              "type": "item",
+              "ore": "ingotIron",
+              "count": 8,
+              "consume": false,
+              "title": "Заготовить 8 железных слитков"
+            }
+          ],
+          "description": [
+            "Machine Frame — общий корпус для машин, динамо и устройств.",
+            "Сделайте сразу пару: каркасы уходят быстрее, чем успеваете их крафтить."
+          ],
+          "dependencies": [
+            "te_furnace"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 1,
+          "y": 0
+        },
+        {
+          "id": "te_pulverizer",
+          "title": "Дробилка",
+          "icon": "ThermalExpansion:Machine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Machine",
+              "count": 1,
+              "meta": 1,
+              "title": "Собрать дробилку (Pulverizer)"
+            }
+          ],
+          "description": [
+            "Pulverizer даёт из руды пыль, а из пыли — слиток: считайте, что руды у вас вдвое больше.",
+            "Иногда на выходе выпадает бонусная пыль другого металла."
+          ],
+          "dependencies": [
+            "te_frame",
+            "te_dust"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "ThermalFoundation:material",
+              "count": 4
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "te_sawmill",
+          "title": "Лесопилка",
+          "icon": "ThermalExpansion:Machine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Machine",
+              "count": 1,
+              "meta": 2,
+              "title": "Собрать лесопилку (Sawmill)"
+            }
+          ],
+          "description": [
+            "Sawmill распускает брёвна на доски с приличным выходом и делает опилки.",
+            "Опилки, спрессованные в блок, станут отличным топливом."
+          ],
+          "dependencies": [
+            "te_pulverizer"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "ThermalExpansion:material",
+                  "count": 8
+                },
+                {
+                  "type": "item",
+                  "item": "ThermalExpansion:material",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "te_smelter",
+          "title": "Индукционная плавильня",
+          "icon": "ThermalExpansion:Machine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Machine",
+              "count": 1,
+              "meta": 3,
+              "title": "Собрать плавильню (Induction Smelter)"
+            },
+            {
+              "type": "item",
+              "ore": "ingotIron",
+              "count": 8,
+              "consume": false,
+              "title": "Заготовить 8 железных слитков"
+            }
+          ],
+          "description": [
+            "Induction Smelter плавит две вещи сразу — так получают сплавы вроде инвара, электрума и бронзы.",
+            "Иногда вместе со слитком выпадает богатый шлак: он пригодится в рецептах."
+          ],
+          "dependencies": [
+            "te_pulverizer"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "ThermalExpansion:material",
+              "count": 2
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "te_alloys",
+          "title": "Сплавы",
+          "icon": "ThermalFoundation:Storage",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "ingotIron",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 железных слитка"
+            },
+            {
+              "type": "item",
+              "item": "ThermalFoundation:Storage",
+              "meta": 8,
+              "count": 1,
+              "consume": false,
+              "title": "Получить блок электрума"
+            },
+            {
+              "type": "item",
+              "item": "ThermalFoundation:Storage",
+              "meta": 9,
+              "count": 1,
+              "consume": false,
+              "title": "Получить блок инвара"
+            }
+          ],
+          "description": [
+            "Электрум (золото с серебром) — лучший проводник, инвар (железо с никелем) — прочный и термостойкий.",
+            "Блоки металлов удобно копить: девять слитков в одном месте."
+          ],
+          "dependencies": [
+            "te_smelter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 4,
+          "y": -2
+        },
+        {
+          "id": "te_extruder",
+          "title": "Экструдер",
+          "icon": "ThermalExpansion:Machine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Machine",
+              "count": 1,
+              "meta": 7,
+              "title": "Собрать экструдер (Igneous Extruder)"
+            }
+          ],
+          "description": [
+            "Igneous Extruder сам производит камень, булыжник и обсидиан — вечная каменоломня у вас дома.",
+            "Немного воды и лавы — и стройка больше не ограничена ресурсами."
+          ],
+          "dependencies": [
+            "te_smelter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "minecraft:obsidian",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "te_crucible",
+          "title": "Тигель",
+          "icon": "ThermalExpansion:Machine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Machine",
+              "count": 1,
+              "meta": 4,
+              "title": "Собрать тигель (Magma Crucible)"
+            }
+          ],
+          "description": [
+            "Magma Crucible плавит твёрдое в жидкое: незеррак превращается в лаву, а камень — в расплав.",
+            "Лава из тигля уходит на энергию и на переплавку металлов в трубах."
+          ],
+          "dependencies": [
+            "te_smelter"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "ThermalFoundation:bucket",
+              "count": 1
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "te_transposer",
+          "title": "Транспозер",
+          "icon": "ThermalExpansion:Machine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Machine",
+              "count": 1,
+              "meta": 5,
+              "title": "Собрать транспозер (Fluid Transposer)"
+            }
+          ],
+          "description": [
+            "Fluid Transposer переливает жидкости между вёдрами, контейнерами и машинами.",
+            "Он же наполняет вёдра и заполняет предметы жидкостью для крафта."
+          ],
+          "dependencies": [
+            "te_crucible"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 5,
+          "y": 1
+        },
+        {
+          "id": "te_fluxduct",
+          "title": "Трубы и энергия",
+          "icon": "ThermalExpansion:material",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:material",
+              "count": 2,
+              "title": "Сделать 2 редстоуновые катушки"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalDynamics:ThermalDynamics_0",
+              "count": 8,
+              "title": "Скрутить 8 свинцово-флюксовых труб"
+            }
+          ],
+          "description": [
+            "Leadstone Fluxduct передаёт редстоун-флюкс (RF) от динамо к машинам.",
+            "Тяните трубы от источника к потребителю — иначе машины стоят без дела."
+          ],
+          "dependencies": [
+            "te_crucible"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "ThermalDynamics:ThermalDynamics_0",
+              "count": 8
+            }
+          ],
+          "x": 5,
+          "y": 2
+        },
+        {
+          "id": "te_extruder_water",
+          "title": "Водоворот",
+          "icon": "ThermalExpansion:Machine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Machine",
+              "count": 1,
+              "meta": 8,
+              "title": "Собрать гидроаккумулятор (Aqueous Accumulator)"
+            }
+          ],
+          "description": [
+            "Aqueous Accumulator собирает воду прямо из воздуха — насос, ведро и бочка в одном блоке.",
+            "Вода нужна экструдеру, поливальщикам и охлаждению."
+          ],
+          "dependencies": [
+            "te_transposer"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "ThermalFoundation:bucket",
+              "count": 1
+            }
+          ],
+          "x": 6,
+          "y": -3
+        },
+        {
+          "id": "te_insolator",
+          "title": "Теплица",
+          "icon": "ThermalExpansion:Machine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Machine",
+              "count": 1,
+              "meta": 11,
+              "title": "Собрать фито-инсолятор (Phytogenic Insolator)"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:material",
+              "count": 1,
+              "title": "Сделать фито-гро (Phyto-Gro)"
+            }
+          ],
+          "description": [
+            "Phytogenic Insolator выращивает растения на удобрении и воде, а богатое фито-гро даёт второй урожай.",
+            "Отличный способ получать еду и семена без грядок."
+          ],
+          "dependencies": [
+            "te_extruder_water"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "ThermalExpansion:material",
+              "count": 4
+            }
+          ],
+          "x": 7,
+          "y": -2
+        },
+        {
+          "id": "te_dynamo",
+          "title": "Первое динамо",
+          "icon": "ThermalExpansion:Dynamo",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Dynamo",
+              "count": 1,
+              "meta": 0,
+              "title": "Собрать паровое динамо (Steam Dynamo)"
+            }
+          ],
+          "description": [
+            "Steam Dynamo жжёт уголь и воду и выдаёт редстоун-флюкс.",
+            "Это самый дешёвый генератор мода — с него начинается любая энергосеть."
+          ],
+          "dependencies": [
+            "te_wrench",
+            "te_crucible"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "minecraft:redstone",
+              "count": 16
+            }
+          ],
+          "x": 5,
+          "y": -3
+        },
+        {
+          "id": "te_cell",
+          "title": "Ячейка энергии",
+          "icon": "ThermalExpansion:Cell",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Cell",
+              "count": 1,
+              "meta": 1,
+              "title": "Собрать свинцово-каменную энергоячейку"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:capacitor",
+              "count": 1,
+              "meta": 2,
+              "title": "Сделать свинцово-каменный конденсатор"
+            }
+          ],
+          "description": [
+            "Energy Cell копит RF и отдаёт её, когда динамо молчит, — буфер для всей сети.",
+            "Flux Capacitor в кармане заряжает инструменты и броню прямо на ходу."
+          ],
+          "dependencies": [
+            "te_dynamo"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "id": "te_itemduct",
+          "title": "Логистика",
+          "icon": "ThermalDynamics:ThermalDynamics_32",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalDynamics:servo",
+              "count": 1,
+              "title": "Сделать сервопривод (Servo)"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalDynamics:ThermalDynamics_32",
+              "count": 8,
+              "title": "Изготовить 8 предметопроводов"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalDynamics:ThermalDynamics_16",
+              "count": 4,
+              "title": "Изготовить 4 жидкостных провода"
+            }
+          ],
+          "description": [
+            "Itemduct и Fluiduct переносят предметы и жидкости между машинами.",
+            "Servo задаёт, откуда и сколько тянуть: без него труба просто лежит."
+          ],
+          "dependencies": [
+            "te_fluxduct",
+            "te_insolator"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "ThermalDynamics:ThermalDynamics_32",
+                  "count": 8
+                },
+                {
+                  "type": "item",
+                  "item": "ThermalDynamics:ThermalDynamics_16",
+                  "count": 8
+                }
+              ]
+            }
+          ],
+          "x": 8,
+          "y": -1
+        },
+        {
+          "id": "te_servo",
+          "title": "Автоматический цех",
+          "icon": "ThermalExpansion:material",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:material",
+              "count": 2,
+              "title": "Сделать 2 пневматических сервопривода"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:augment",
+              "count": 1,
+              "title": "Сделать встраиваемый сервомеханизм"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Light",
+              "count": 1,
+              "title": "Собрать светильник (Glowstone Illuminator)"
+            }
+          ],
+          "description": [
+            "Augment встраивается в машину и включает авто-вывод: предметы сами уходят в трубу.",
+            "А светильник осветит цех, чтобы в нём не заводились мобы."
+          ],
+          "dependencies": [
+            "te_itemduct"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 9,
+          "y": -2
+        },
+        {
+          "id": "te_charger",
+          "title": "Зарядная станция",
+          "icon": "ThermalExpansion:Machine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Machine",
+              "count": 1,
+              "meta": 10,
+              "title": "Собрать зарядное устройство (Energetic Infuser)"
+            }
+          ],
+          "description": [
+            "Energetic Infuser заряжает инструменты, броню и конденсаторы, когда вы спите или строите."
+          ],
+          "dependencies": [
+            "te_cell"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "te_precipitator",
+          "title": "Осадкомёт",
+          "icon": "ThermalExpansion:Machine",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Machine",
+              "count": 1,
+              "meta": 6,
+              "title": "Собрать осадитель (Precipitator)"
+            }
+          ],
+          "description": [
+            "Precipitator вытягивает металлы из тумана и пыли — странная, но полезная машина.",
+            "Отлично работает рядом с дробилкой и плавильней."
+          ],
+          "dependencies": [
+            "te_cell"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 7,
+          "y": 0
+        },
+        {
+          "id": "te_resonant",
+          "title": "Резонансный уровень",
+          "icon": "ThermalExpansion:Cell",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Cell",
+              "count": 1,
+              "meta": 4,
+              "title": "Собрать резонансную энергоячейку"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalFoundation:Storage",
+              "count": 1,
+              "meta": 13,
+              "title": "Отлить блок эндериума"
+            }
+          ],
+          "description": [
+            "Резонансный уровень — вершина Thermal: огромный запас RF и лучшие детали.",
+            "Эндериум требует жемчуг Края, так что загляните к эндерменам."
+          ],
+          "dependencies": [
+            "te_charger",
+            "te_alloys"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "item",
+              "item": "ThermalExpansion:capacitor",
+              "meta": 4,
+              "count": 1
+            }
+          ],
+          "x": 8,
+          "y": 0
+        },
+        {
+          "id": "te_tesseract",
+          "title": "Тессеракт",
+          "icon": "ThermalExpansion:Tesseract",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Tesseract",
+              "count": 1,
+              "title": "Собрать тессеракт"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:ender_pearl",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 жемчуга Края"
+            }
+          ],
+          "description": [
+            "Tesseract передаёт энергию, предметы и жидкости на любую дистанцию и между измерениями.",
+            "Настройте частоту — и трубы больше не нужны."
+          ],
+          "dependencies": [
+            "te_resonant"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "ThermalExpansion:capacitor",
+                  "meta": 4,
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "ThermalExpansion:satchel",
+                  "meta": 1,
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 9,
+          "y": 1
+        },
+        {
+          "id": "te_battlewrench",
+          "title": "Боевой ключ",
+          "icon": "ThermalExpansion:tool.battleWrenchInvar",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:tool.battleWrenchInvar",
+              "count": 1,
+              "title": "Собрать боевой ключ из инвара"
+            },
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 10,
+              "title": "Проверить ключ на 10 зомби"
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 10,
+              "title": "И на 10 скелетах"
+            }
+          ],
+          "description": [
+            "BattleWrench и разворачивает машины, и бьёт как меч.",
+            "Один инструмент вместо двух — проверьте его в ночном бою."
+          ],
+          "dependencies": [
+            "te_tesseract"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 2
+            }
+          ],
+          "x": 10,
+          "y": 0
+        },
+        {
+          "id": "te_master",
+          "title": "Хозяин цеха",
+          "icon": "ThermalExpansion:Workbench",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Device",
+              "count": 1,
+              "meta": 1,
+              "title": "Собрать флюивак (FluiVac)"
+            },
+            {
+              "type": "item",
+              "item": "ThermalExpansion:Strongbox",
+              "meta": 4,
+              "count": 1,
+              "consume": false,
+              "title": "Сделать резонансный сейф"
+            },
+            {
+              "type": "checkmark",
+              "title": "Автоматизировать переработку руды: трубы, серво и авто-вывод"
+            }
+          ],
+          "description": [
+            "FluiVac собирает жидкости из мира, резонансный сейф хранит предметы, а автоматика работает без вас.",
+            "Если руда сама превращается в слитки, а слитки сами летят в сундук — цех построен."
+          ],
+          "dependencies": [
+            "te_servo",
+            "te_tesseract"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду за автоматизацию",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "ThermalExpansion:Cell",
+                  "meta": 4,
+                  "count": 1
+                },
+                {
+                  "type": "item",
+                  "item": "ThermalExpansion:Tesseract",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 10,
+          "y": -1
+        },
+        {
+          "id": "te_lexicon",
+          "title": "Универсальный словарь",
+          "icon": "ThermalFoundation:lexicon",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalFoundation:lexicon",
+              "count": 1,
+              "title": "Собрать Forge Lexicon"
+            },
+            {
+              "type": "checkmark",
+              "title": "Обменять в словаре руду одного мода на руду другого"
+            }
+          ],
+          "description": [
+            "Forge Lexicon переводит предметы с общей записью ore dictionary: медь из одного мода превращается в медь из другого.",
+            "С ним не придётся переплавлять чужой металл заново."
+          ],
+          "dependencies": [
+            "te_dust"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "minecraft:book",
+              "count": 4
+            }
+          ],
+          "x": 1,
+          "y": -2
+        },
+        {
+          "id": "te_bronze_armor",
+          "title": "Бронзовая броня",
+          "icon": "ThermalFoundation:armor.plateBronze",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalFoundation:armor.helmetBronze",
+              "count": 1,
+              "title": "Отлить бронзовый шлем"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalFoundation:armor.plateBronze",
+              "count": 1,
+              "title": "Отлить бронзовый нагрудник"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalFoundation:armor.legsBronze",
+              "count": 1,
+              "title": "Отлить бронзовые поножи"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalFoundation:armor.bootsBronze",
+              "count": 1,
+              "title": "Отлить бронзовые ботинки"
+            }
+          ],
+          "description": [
+            "Бронза крепче железа и держит удар лучше любой самодельной брони.",
+            "Полный комплект — самый простой способ пережить первые вылазки в Незер."
+          ],
+          "dependencies": [
+            "te_alloys"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:iron_ingot",
+                  "count": 8
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:leather",
+                  "count": 8
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": -2
+        },
+        {
+          "id": "te_invar_tools",
+          "title": "Инваровый набор",
+          "icon": "ThermalFoundation:tool.pickaxeInvar",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalFoundation:tool.pickaxeInvar",
+              "count": 1,
+              "title": "Сковать инваровую кирку"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalFoundation:tool.swordInvar",
+              "count": 1,
+              "title": "Сковать инваровый меч"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalFoundation:tool.shovelInvar",
+              "count": 1,
+              "title": "Сковать инваровую лопату"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalFoundation:tool.axeInvar",
+              "count": 1,
+              "title": "Сковать инваровый топор"
+            }
+          ],
+          "description": [
+            "Инвар не боится жара и почти не теряет прочность — инструменты из него служат заметно дольше железных.",
+            "Кирка берёт обсидиан, так что набор стоит собрать до похода в Незер."
+          ],
+          "dependencies": [
+            "te_alloys"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 2
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "te_bow",
+          "title": "Укреплённый лук",
+          "icon": "ThermalFoundation:tool.bowInvar",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalFoundation:tool.bowInvar",
+              "count": 1,
+              "title": "Собрать инваровый лук"
+            },
+            {
+              "type": "craft",
+              "item": "minecraft:arrow",
+              "count": 32,
+              "title": "Заготовить 32 стрелы"
+            }
+          ],
+          "description": [
+            "Укреплённый лук наносит больше урона обычного и реже изнашивается.",
+            "Стрелы всё равно расходуются, так что запас не помешает."
+          ],
+          "dependencies": [
+            "te_invar_tools"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "minecraft:string",
+              "count": 8
+            }
+          ],
+          "x": 6,
+          "y": 1
+        },
+        {
+          "id": "te_hunt",
+          "title": "Ночная охота",
+          "icon": "ThermalFoundation:tool.bowBronze",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Creeper",
+              "count": 10,
+              "title": "Застрелить 10 криперов"
+            },
+            {
+              "type": "kill",
+              "entity": "Spider",
+              "count": 10,
+              "title": "Отстрелять 10 пауков"
+            },
+            {
+              "type": "kill",
+              "entity": "Enderman",
+              "count": 5,
+              "title": "Уложить 5 эндерменов"
+            }
+          ],
+          "description": [
+            "Проверьте лук на ночных монстрах: порох пойдёт на динамит, нитки — на тетиву, а жемчуг Края — на эндериум.",
+            "Стреляйте с расстояния: в упор крипер успеет рвануть."
+          ],
+          "dependencies": [
+            "te_bow"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:gunpowder",
+                  "count": 8
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:string",
+                  "count": 8
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:ender_pearl",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "x": 7,
+          "y": 1
+        },
+        {
+          "id": "te_sickle",
+          "title": "Серп и урожай",
+          "icon": "ThermalFoundation:tool.sickleInvar",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalFoundation:tool.sickleInvar",
+              "count": 1,
+              "title": "Сковать инваровый серп"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:wheat",
+              "count": 32,
+              "consume": true,
+              "title": "Сдать 32 пшеницы"
+            }
+          ],
+          "description": [
+            "Серп скашивает сразу несколько колосьев, так что поле убирается в один проход.",
+            "Излишки зерна уходят на хлеб и на корм скоту."
+          ],
+          "dependencies": [
+            "te_alloys"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:bread",
+              "count": 8
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "te_fishing",
+          "title": "Рыбалка",
+          "icon": "ThermalFoundation:tool.fishingRodInvar",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalFoundation:tool.fishingRodInvar",
+              "count": 1,
+              "title": "Собрать инваровую удочку"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:fish",
+              "count": 10,
+              "consume": true,
+              "title": "Наловить и сдать 10 рыбы"
+            }
+          ],
+          "description": [
+            "Прочная удочка не рвётся на первой же зацепившейся водоросли.",
+            "Рыба — быстрая еда, а ещё неплохой источник костей и чернил."
+          ],
+          "dependencies": [
+            "te_sickle"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:fish",
+                  "count": 8
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:bread",
+                  "count": 6
+                }
+              ]
+            }
+          ],
+          "x": 6,
+          "y": 2
+        },
+        {
+          "id": "te_build",
+          "title": "Стройматериалы",
+          "icon": "ThermalExpansion:Glass",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Glass",
+              "count": 16,
+              "title": "Сварить 16 закалённого стекла"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Rockwool",
+              "count": 16,
+              "title": "Спрессовать 16 блоков роквула"
+            }
+          ],
+          "description": [
+            "Закалённое стекло выдерживает взрыв крипера, а роквул не горит и красится в любой цвет.",
+            "Из них получаются и окна цеха, и уютная отделка дома."
+          ],
+          "dependencies": [
+            "te_frame"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "ThermalExpansion:Glass",
+              "count": 8
+            }
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "id": "te_tank",
+          "title": "Портативный бак",
+          "icon": "ThermalExpansion:Tank",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Tank",
+              "count": 1,
+              "title": "Собрать портативный бак"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:florb",
+              "count": 1,
+              "title": "Выдуть флорб"
+            }
+          ],
+          "description": [
+            "Portable Tank хранит жидкость и переносится в инвентаре, а Florb — стеклянный шар ровно на одно ведро.",
+            "Лаву и редстоун удобнее носить именно так."
+          ],
+          "dependencies": [
+            "te_transposer"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "ore": "bucketRedstone",
+              "count": 1
+            }
+          ],
+          "x": 6,
+          "y": -2
+        },
+        {
+          "id": "te_redstone_fluid",
+          "title": "Дестабилизированный редстоун",
+          "icon": "ThermalFoundation:FluidRedstone",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "bucketRedstone",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 ведра жидкого редстоуна"
+            },
+            {
+              "type": "checkmark",
+              "title": "Развести редстоун по трубам и подать его машинам"
+            }
+          ],
+          "description": [
+            "Расплавленный редстоун проводит флюкс, заряжает инструменты и входит в рецепты усиленных деталей.",
+            "Тигель с редстоуновой пылью даёт его сколько угодно."
+          ],
+          "dependencies": [
+            "te_transposer"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "minecraft:redstone",
+              "count": 16
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "te_filter",
+          "title": "Фильтры и сортировка",
+          "icon": "ThermalDynamics:filter",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalDynamics:filter",
+              "count": 2,
+              "title": "Сделать 2 фильтра"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalDynamics:retriever",
+              "count": 1,
+              "title": "Собрать извлекатель (Retriever)"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalDynamics:relay",
+              "count": 1,
+              "title": "Сделать редстоун-реле"
+            }
+          ],
+          "description": [
+            "Filter пропускает только нужные предметы, Retriever тянет их из дальнего сундука, а Relay включает и выключает линию сигналом редстоуна.",
+            "Так из общей трубы получается настоящая сортировочная линия."
+          ],
+          "dependencies": [
+            "te_itemduct"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "ThermalDynamics:filter",
+                  "count": 2
+                },
+                {
+                  "type": "item",
+                  "item": "ThermalDynamics:servo",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "x": 9,
+          "y": -1
+        },
+        {
+          "id": "te_viaduct",
+          "title": "Эстакады и мосты",
+          "icon": "ThermalDynamics:ThermalDynamics_64",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalDynamics:ThermalDynamics_64",
+              "count": 16,
+              "title": "Проложить 16 виадуков"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalDynamics:ThermalDynamics_48",
+              "count": 16,
+              "title": "Сделать 16 структуропроводов"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalDynamics:cover",
+              "count": 4,
+              "title": "Вырезать 4 крышки (Cover)"
+            }
+          ],
+          "description": [
+            "Viaduct тянется по воздуху и выглядит как мост, Structuralduct дешевле обычной трубы, а Cover прячет линию внутри стены.",
+            "Автоматизация не обязана портить вид базы."
+          ],
+          "dependencies": [
+            "te_itemduct"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "ThermalDynamics:ThermalDynamics_64",
+              "count": 16
+            }
+          ],
+          "x": 9,
+          "y": 0
+        },
+        {
+          "id": "te_augments",
+          "title": "Разгон и экономия",
+          "icon": "ThermalExpansion:augment",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:augment",
+              "count": 2,
+              "title": "Собрать 2 встраиваемых модуля"
+            },
+            {
+              "type": "craft",
+              "item": "ThermalExpansion:Glass",
+              "count": 4,
+              "title": "Сварить 4 закалённых стекла"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:gold_ingot",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 золотых слитка"
+            }
+          ],
+          "description": [
+            "Augment вставляется в слоты машины: одни ускоряют работу, другие экономят топливо, третьи увеличивают выход.",
+            "Стекло и золото — основа почти любого модуля."
+          ],
+          "dependencies": [
+            "te_servo"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 75
+            },
+            {
+              "type": "item",
+              "item": "ThermalExpansion:augment",
+              "count": 1
+            }
+          ],
+          "x": 10,
+          "y": -2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+filename = 'Avaritia_1.13.jar'
+name = 'Avaritia'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Avaritia-1.13.jar'
+
+[download]
+hash = '3ed1f92809d6a6ec1d495082ad263725cea7f098'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2519595
+project-id = 233785
+
+[[x-prismlauncher-dependencies]]
+addonId = '224029'
+type = 'TOOL'

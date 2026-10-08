@@ -1,0 +1,18 @@
+filename = 'backpack_2.0.1_1.7.x.jar'
+name = 'Backpacks'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.7.2', '1.7.4', '1.7.5', '1.7.6', '1.7.7', '1.7.8', '1.7.9', '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'backpack-2.0.1-1.7.x.jar'
+
+[download]
+hash = 'ce163fa1a5a27a520817fb8afd2faba4781f3b15'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2268883
+project-id = 59143

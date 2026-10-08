@@ -1,0 +1,1902 @@
+{
+  "title": "Книга квестов",
+  "chapters": [
+    {
+      "id": "main",
+      "title": "Основные",
+      "description": "Прохождение Minecraft: от первого дерева до дракона Края, включая все достижения игры.",
+      "icon": "minecraft:grass",
+      "quests": [
+        {
+          "id": "welcome",
+          "title": "Начало",
+          "x": 0,
+          "y": 0,
+          "icon": "minecraft:book",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Открыть инвентарь и книгу квестов"
+            }
+          ],
+          "subtitle": "Taking Inventory",
+          "description": [
+            "Эта кнопка с книгой в инвентаре открывает дерево квестов."
+          ],
+          "achievement": "openInventory",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "id": "root",
+          "title": "Первые шаги",
+          "x": 0,
+          "y": 1,
+          "icon": "minecraft:log",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:log",
+              "count": 8,
+              "consume": false,
+              "title": "Собрать 8 брёвен"
+            }
+          ],
+          "description": [
+            "Собери древесину — с неё начинается любая игра."
+          ],
+          "dependencies": [
+            "welcome"
+          ],
+          "achievement": "mineWood",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "item": "minecraft:torch",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "crafting_table",
+          "title": "Верстак",
+          "x": 0,
+          "y": 2,
+          "icon": "minecraft:crafting_table",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:crafting_table",
+              "count": 1,
+              "title": "Создать верстак"
+            }
+          ],
+          "dependencies": [
+            "root"
+          ],
+          "achievement": "buildWorkBench",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:torch",
+              "count": 8
+            }
+          ]
+        },
+        {
+          "id": "wooden_tools",
+          "title": "Деревянные инструменты",
+          "x": 0,
+          "y": 3,
+          "icon": "minecraft:wooden_pickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:wooden_pickaxe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "minecraft:wooden_axe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "minecraft:wooden_sword",
+              "count": 1
+            }
+          ],
+          "dependencies": [
+            "crafting_table"
+          ],
+          "achievement": "buildPickaxe",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:bread",
+              "count": 3
+            },
+            {
+              "type": "xp",
+              "amount": 15
+            }
+          ]
+        },
+        {
+          "id": "stone_age",
+          "title": "Каменный век",
+          "x": 0,
+          "y": 4,
+          "icon": "minecraft:cobblestone",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:cobblestone",
+              "count": 32,
+              "consume": true,
+              "title": "Сдать 32 булыжника"
+            }
+          ],
+          "description": [
+            "Булыжник — основа всех инструментов и построек."
+          ],
+          "dependencies": [
+            "wooden_tools"
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:coal",
+              "count": 8
+            },
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "id": "stone_tools",
+          "title": "Каменные инструменты",
+          "x": 0,
+          "y": 5,
+          "icon": "minecraft:stone_pickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:stone_pickaxe",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "minecraft:stone_sword",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "minecraft:stone_axe",
+              "count": 1
+            }
+          ],
+          "dependencies": [
+            "stone_age"
+          ],
+          "achievement": "buildBetterPickaxe",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:iron_ingot",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "furnace",
+          "title": "Печь",
+          "x": 0,
+          "y": 6,
+          "icon": "minecraft:furnace",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:furnace",
+              "count": 1,
+              "title": "Создать печь"
+            }
+          ],
+          "dependencies": [
+            "stone_tools"
+          ],
+          "achievement": "buildFurnace",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:coal",
+              "count": 16
+            }
+          ]
+        },
+        {
+          "id": "iron_age",
+          "title": "Железный век",
+          "x": 0,
+          "y": 7,
+          "icon": "minecraft:iron_ingot",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:iron_ingot",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 железных слитков"
+            }
+          ],
+          "description": [
+            "Добудь железную руду и переплавь её в печи."
+          ],
+          "dependencies": [
+            "furnace"
+          ],
+          "achievement": "acquireIron",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:iron_pickaxe",
+              "count": 1
+            },
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "id": "sword",
+          "title": "Оружие",
+          "x": 0,
+          "y": 8,
+          "icon": "minecraft:iron_sword",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:iron_sword",
+              "count": 1,
+              "title": "Создать железный меч"
+            },
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 5,
+              "title": "Убить 5 зомби"
+            }
+          ],
+          "dependencies": [
+            "iron_age"
+          ],
+          "achievement": "buildSword",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "minecraft:cooked_beef",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "iron_armor",
+          "title": "Железная броня",
+          "x": 0,
+          "y": 9,
+          "icon": "minecraft:iron_chestplate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:iron_helmet",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "minecraft:iron_chestplate",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "minecraft:iron_leggings",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "minecraft:iron_boots",
+              "count": 1
+            }
+          ],
+          "dependencies": [
+            "iron_age"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:golden_apple",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "diamond_age",
+          "title": "Алмазы!",
+          "x": 0,
+          "y": 10,
+          "icon": "minecraft:diamond",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 3,
+              "consume": true,
+              "title": "Сдать 3 алмаза"
+            }
+          ],
+          "description": [
+            "Алмазы ищите на высоте 1–15.",
+            "Нужна железная кирка или лучше."
+          ],
+          "dependencies": [
+            "iron_armor"
+          ],
+          "achievement": "diamonds",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:diamond_pickaxe",
+              "count": 1
+            },
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "id": "diamond_armor",
+          "title": "Алмазная броня",
+          "x": 0,
+          "y": 11,
+          "icon": "minecraft:diamond_chestplate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:diamond_helmet",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "minecraft:diamond_chestplate",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "minecraft:diamond_leggings",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "minecraft:diamond_boots",
+              "count": 1
+            }
+          ],
+          "dependencies": [
+            "diamond_age"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ]
+        },
+        {
+          "id": "enchanting",
+          "title": "Стол зачарований",
+          "x": 0,
+          "y": 12,
+          "icon": "minecraft:enchanting_table",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:enchanting_table",
+              "count": 1,
+              "title": "Создать стол зачарований"
+            },
+            {
+              "type": "xp",
+              "levels": 15,
+              "title": "Достичь 15 уровня опыта",
+              "optional": true
+            }
+          ],
+          "description": [
+            "Понадобится книга, 2 алмаза и 4 обсидиана."
+          ],
+          "dependencies": [
+            "diamond_age"
+          ],
+          "achievement": "enchantments",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:dye",
+              "meta": 4,
+              "count": 16
+            },
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "id": "anvil",
+          "title": "Наковальня",
+          "x": 0,
+          "y": 13,
+          "icon": "minecraft:anvil",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:anvil",
+              "count": 1,
+              "title": "Создать наковальню"
+            }
+          ],
+          "dependencies": [
+            "enchanting"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "id": "obsidian",
+          "title": "Обсидиан",
+          "x": 0,
+          "y": 14,
+          "icon": "minecraft:obsidian",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:obsidian",
+              "count": 10,
+              "consume": false,
+              "title": "Собрать 10 обсидиана"
+            }
+          ],
+          "description": [
+            "Обсидиан получается, если вода встречает лаву."
+          ],
+          "dependencies": [
+            "diamond_age"
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "nether_portal",
+          "title": "Портал в Нижний мир",
+          "x": 0,
+          "y": 15,
+          "icon": "minecraft:flint_and_steel",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:flint_and_steel",
+              "count": 1
+            },
+            {
+              "type": "dimension",
+              "dimension": -1,
+              "title": "Войти в Нижний мир"
+            }
+          ],
+          "description": [
+            "Построй рамку 4x5 из обсидиана и подожги её."
+          ],
+          "dependencies": [
+            "anvil"
+          ],
+          "achievement": "portal",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "minecraft:cooked_porkchop",
+              "count": 8
+            }
+          ]
+        },
+        {
+          "id": "nether_resources",
+          "title": "Ресурсы Нижнего мира",
+          "x": 0,
+          "y": 16,
+          "icon": "minecraft:netherrack",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:netherrack",
+              "count": 32,
+              "consume": true,
+              "title": "Сдать 32 незеррака"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:quartz",
+              "count": 16,
+              "consume": true,
+              "title": "Сдать 16 кварца"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:glowstone_dust",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 светопыли"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:soul_sand",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 песка душ"
+            }
+          ],
+          "dependencies": [
+            "nether_portal"
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:glowstone",
+              "count": 4
+            },
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "id": "nether_fortress",
+          "title": "Крепость Нижнего мира",
+          "x": 0,
+          "y": 17,
+          "icon": "minecraft:nether_brick",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:blaze_rod",
+              "count": 6,
+              "consume": true,
+              "title": "Сдать 6 огненных стержней"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:nether_wart",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 незерские бородавки"
+            }
+          ],
+          "description": [
+            "Крепость ищут по огненным элементалям внутри."
+          ],
+          "dependencies": [
+            "nether_resources"
+          ],
+          "achievement": "blazeRod",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:brewing_stand",
+              "count": 1
+            },
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ]
+        },
+        {
+          "id": "brewing",
+          "title": "Зельеварение",
+          "x": 0,
+          "y": 18,
+          "icon": "minecraft:potion",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:potion",
+              "count": 1,
+              "consume": true,
+              "title": "Сдать любое зелье"
+            }
+          ],
+          "description": [
+            "Свари зелье в варочной стойке из награды предыдущего квеста."
+          ],
+          "dependencies": [
+            "nether_fortress"
+          ],
+          "achievement": "potion",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:blaze_powder",
+              "count": 4
+            },
+            {
+              "type": "item",
+              "item": "minecraft:nether_wart",
+              "count": 8
+            },
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "id": "wither_spawn",
+          "title": "Призыв иссушителя",
+          "x": 0,
+          "y": 19,
+          "icon": "minecraft:skull",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:skull",
+              "meta": 1,
+              "count": 3,
+              "consume": true,
+              "title": "Сдать 3 черепа скелета-иссушителя"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:soul_sand",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 песка душ"
+            }
+          ],
+          "description": [
+            "Поставь черепа на песок душ буквой Т."
+          ],
+          "dependencies": [
+            "nether_fortress"
+          ],
+          "achievement": "spawnWither",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "id": "wither_kill",
+          "title": "Иссушитель побеждён",
+          "x": 0,
+          "y": 20,
+          "icon": "minecraft:nether_star",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "WitherBoss",
+              "count": 1,
+              "title": "Убить иссушителя"
+            }
+          ],
+          "dependencies": [
+            "wither_spawn"
+          ],
+          "achievement": "killWither",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:nether_star",
+              "count": 1
+            },
+            {
+              "type": "xp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "id": "beacon",
+          "title": "Маяк",
+          "x": 0,
+          "y": 21,
+          "icon": "minecraft:beacon",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:beacon",
+              "count": 1,
+              "title": "Создать маяк"
+            },
+            {
+              "type": "checkmark",
+              "title": "Построить пирамиду из 4 уровней и активировать маяк"
+            }
+          ],
+          "description": [
+            "Полный маяк — пирамида 9x9 из 164 блоков."
+          ],
+          "dependencies": [
+            "wither_kill"
+          ],
+          "achievement": "fullBeacon",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            },
+            {
+              "type": "item",
+              "item": "minecraft:iron_block",
+              "count": 8
+            }
+          ]
+        },
+        {
+          "id": "ender_pearls",
+          "title": "Жемчуг Края",
+          "x": 0,
+          "y": 22,
+          "icon": "minecraft:ender_pearl",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:ender_pearl",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 жемчужин Края"
+            },
+            {
+              "type": "kill",
+              "entity": "Enderman",
+              "count": 10,
+              "title": "Убить 10 эндерменов"
+            }
+          ],
+          "dependencies": [
+            "diamond_age"
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:ender_pearl",
+              "count": 2
+            },
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ]
+        },
+        {
+          "id": "eyes_of_ender",
+          "title": "Око Края",
+          "x": 0,
+          "y": 23,
+          "icon": "minecraft:ender_eye",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:ender_eye",
+              "count": 12,
+              "consume": true,
+              "title": "Сдать 12 очей Края"
+            }
+          ],
+          "dependencies": [
+            "ender_pearls"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "id": "end_portal",
+          "title": "Портал в Край",
+          "x": 0,
+          "y": 24,
+          "icon": "minecraft:end_stone",
+          "tasks": [
+            {
+              "type": "dimension",
+              "dimension": 1,
+              "title": "Посетить Край"
+            }
+          ],
+          "description": [
+            "Найди крепость и активируй портал очами Края."
+          ],
+          "dependencies": [
+            "eyes_of_ender"
+          ],
+          "achievement": "theEnd",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:golden_apple",
+              "count": 3
+            },
+            {
+              "type": "xp",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "id": "dragon",
+          "title": "Дракон Края",
+          "x": 0,
+          "y": 25,
+          "icon": "minecraft:dragon_egg",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "EnderDragon",
+              "count": 1,
+              "title": "Убить дракона Края"
+            }
+          ],
+          "description": [
+            "Сначала разрушь кристаллы на обсидиановых столбах."
+          ],
+          "dependencies": [
+            "end_portal"
+          ],
+          "achievement": "theEnd2",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 8
+            },
+            {
+              "type": "xp",
+              "amount": 500
+            }
+          ]
+        },
+        {
+          "id": "end_trophies",
+          "title": "Трофеи Края",
+          "x": 0,
+          "y": 26,
+          "icon": "minecraft:dragon_egg",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:dragon_egg",
+              "count": 1,
+              "consume": false,
+              "title": "Забрать яйцо дракона"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:end_stone",
+              "count": 64,
+              "consume": true,
+              "title": "Сдать 64 камня Края"
+            }
+          ],
+          "dependencies": [
+            "dragon"
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:diamond_block",
+              "count": 2
+            },
+            {
+              "type": "xp",
+              "amount": 300
+            },
+            {
+              "type": "command",
+              "command": "give {player} minecraft:ender_pearl 16"
+            }
+          ]
+        },
+        {
+          "id": "farmer",
+          "title": "Фермер",
+          "x": -1,
+          "y": 3,
+          "icon": "minecraft:wheat",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:wooden_hoe",
+              "count": 1,
+              "title": "Создать тяпку"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:wheat",
+              "count": 16,
+              "consume": true,
+              "title": "Сдать 16 пшеницы"
+            }
+          ],
+          "description": [
+            "Семена выпадают из травы, пшеница растёт на грядке."
+          ],
+          "dependencies": [
+            "wooden_tools"
+          ],
+          "achievement": "buildHoe",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:bread",
+              "count": 3
+            },
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "id": "bread",
+          "title": "Хлеб насущный",
+          "x": -1,
+          "y": 4,
+          "icon": "minecraft:bread",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:bread",
+              "count": 1,
+              "title": "Испечь хлеб"
+            }
+          ],
+          "description": [
+            "Три пшеницы в ряд — и достижение «Хлеб насущный» ваше."
+          ],
+          "dependencies": [
+            "farmer"
+          ],
+          "achievement": "makeBread",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            },
+            {
+              "type": "item",
+              "item": "minecraft:wheat",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "id": "cake",
+          "title": "Тортик",
+          "x": -1,
+          "y": 5,
+          "icon": "minecraft:cake",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:cake",
+              "count": 1,
+              "title": "Испечь торт"
+            }
+          ],
+          "description": [
+            "Нужны молоко, яйца, сахар и пшеница."
+          ],
+          "dependencies": [
+            "bread"
+          ],
+          "achievement": "bakeCake",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:cookie",
+              "count": 8
+            },
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "id": "breed_cow",
+          "title": "Разведение коров",
+          "x": -1,
+          "y": 6,
+          "icon": "minecraft:leather",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:wheat",
+              "count": 16,
+              "consume": true,
+              "title": "Сдать 16 пшеницы на корм"
+            },
+            {
+              "type": "checkmark",
+              "title": "Покормить двух коров пшеницей"
+            }
+          ],
+          "dependencies": [
+            "farmer"
+          ],
+          "achievement": "breedCow",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:leather",
+              "count": 4
+            },
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "id": "fishing",
+          "title": "Рыбалка",
+          "x": -1,
+          "y": 7,
+          "icon": "minecraft:fishing_rod",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:fishing_rod",
+              "count": 1,
+              "title": "Создать удочку"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:fish",
+              "count": 8,
+              "consume": true,
+              "title": "Сдать 8 рыбы"
+            }
+          ],
+          "description": [
+            "Для удочки нужны палки и нить (выпадает из пауков)."
+          ],
+          "dependencies": [
+            "wooden_tools"
+          ],
+          "achievement": "cookFish",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:cooked_fished",
+              "count": 4
+            },
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "id": "bookshelf",
+          "title": "Книжная полка",
+          "x": -1,
+          "y": 8,
+          "icon": "minecraft:bookshelf",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:book",
+              "count": 1,
+              "title": "Создать книгу"
+            },
+            {
+              "type": "craft",
+              "item": "minecraft:bookshelf",
+              "count": 1,
+              "title": "Создать книжную полку"
+            }
+          ],
+          "description": [
+            "Бумага делается из сахарного тростника, кожа — из коров."
+          ],
+          "dependencies": [
+            "cow_hunt"
+          ],
+          "achievement": "bookcase",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:book",
+              "count": 2
+            },
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "id": "bed",
+          "title": "Кровать",
+          "x": -1,
+          "y": 9,
+          "icon": "minecraft:bed",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:bed",
+              "count": 1,
+              "title": "Создать кровать"
+            }
+          ],
+          "description": [
+            "Три шерсти и три доски."
+          ],
+          "dependencies": [
+            "crafting_table"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "minecraft:wool",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "cow_hunt",
+          "title": "Охота на коров",
+          "x": -2,
+          "y": 4,
+          "icon": "minecraft:leather",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Cow",
+              "count": 8,
+              "title": "Убить 8 коров"
+            }
+          ],
+          "dependencies": [
+            "welcome"
+          ],
+          "achievement": "killCow",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:leather",
+              "count": 8
+            },
+            {
+              "type": "item",
+              "item": "minecraft:cooked_beef",
+              "count": 4
+            },
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "id": "fly_pig",
+          "title": "Когда свиньи полетят",
+          "x": -2,
+          "y": 5,
+          "icon": "minecraft:saddle",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:saddle",
+              "count": 1,
+              "consume": false,
+              "title": "Найти седло"
+            },
+            {
+              "type": "checkmark",
+              "title": "Оседлать свинью и спрыгнуть с обрыва"
+            }
+          ],
+          "description": [
+            "Седло встречается в сундуках подземелий и крепостей."
+          ],
+          "dependencies": [
+            "cow_hunt"
+          ],
+          "achievement": "flyPig",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "item": "minecraft:carrot",
+              "count": 8
+            }
+          ]
+        },
+        {
+          "id": "snipe",
+          "title": "Снайпер",
+          "x": -2,
+          "y": 6,
+          "icon": "minecraft:bow",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:bow",
+              "count": 1,
+              "title": "Создать лук"
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 10,
+              "title": "Убить 10 скелетов из лука"
+            }
+          ],
+          "description": [
+            "В ваниле достижение дают за выстрел с 50 блоков."
+          ],
+          "dependencies": [
+            "cow_hunt"
+          ],
+          "achievement": "snipeSkeleton",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:arrow",
+              "count": 32
+            },
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "id": "hunter",
+          "title": "Охотник на монстров",
+          "x": -2,
+          "y": 7,
+          "icon": "minecraft:bone",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 15,
+              "title": "Убить 15 зомби"
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 15,
+              "title": "Убить 15 скелетов"
+            },
+            {
+              "type": "kill",
+              "entity": "Creeper",
+              "count": 10,
+              "title": "Убить 10 криперов"
+            }
+          ],
+          "dependencies": [
+            "cow_hunt"
+          ],
+          "achievement": "killEnemy",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:iron_ingot",
+              "count": 4
+            },
+            {
+              "type": "item",
+              "item": "minecraft:bone",
+              "count": 8
+            },
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "id": "slime_hunt",
+          "title": "Слизни",
+          "x": -2,
+          "y": 8,
+          "icon": "minecraft:slime_ball",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Slime",
+              "count": 10,
+              "title": "Убить 10 слизней"
+            }
+          ],
+          "dependencies": [
+            "hunter"
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:slime_ball",
+              "count": 8
+            },
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "id": "witch_hunt",
+          "title": "Ведьмы",
+          "x": -2,
+          "y": 9,
+          "icon": "minecraft:glass_bottle",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Witch",
+              "count": 3,
+              "title": "Убить 3 ведьм"
+            }
+          ],
+          "dependencies": [
+            "hunter"
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:glowstone_dust",
+              "count": 4
+            },
+            {
+              "type": "item",
+              "item": "minecraft:redstone",
+              "count": 4
+            },
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "id": "gold_mining",
+          "title": "Золотая жила",
+          "x": 1,
+          "y": 6,
+          "icon": "minecraft:gold_ore",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:gold_ore",
+              "count": 16,
+              "consume": true,
+              "title": "Сдать 16 золотой руды"
+            }
+          ],
+          "dependencies": [
+            "iron_age"
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:golden_apple",
+              "count": 1
+            },
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "id": "redstone_mining",
+          "title": "Красная пыль",
+          "x": 1,
+          "y": 7,
+          "icon": "minecraft:redstone_ore",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:redstone",
+              "count": 32,
+              "consume": true,
+              "title": "Сдать 32 красной пыли"
+            }
+          ],
+          "dependencies": [
+            "iron_age"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:repeater",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "miner",
+          "title": "Шахтёрская вахта",
+          "x": 1,
+          "y": 8,
+          "icon": "minecraft:stone_pickaxe",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:cobblestone",
+              "count": 64,
+              "consume": true,
+              "title": "Сдать 64 булыжника"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:coal",
+              "count": 32,
+              "consume": true,
+              "title": "Сдать 32 угля"
+            },
+            {
+              "type": "item",
+              "item": "minecraft:redstone",
+              "count": 32,
+              "consume": true,
+              "title": "Сдать 32 красной пыли"
+            }
+          ],
+          "description": [
+            "Повторяемое задание: руда в обмен на награду."
+          ],
+          "dependencies": [
+            "stone_tools"
+          ],
+          "repeatable": true,
+          "repeatDelay": 900,
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "choice",
+              "title": "Награда шахтёра",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:iron_ingot",
+                  "count": 8
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:gold_ingot",
+                  "count": 4
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:dye",
+                  "meta": 4,
+                  "count": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "deep_mining",
+          "title": "Глубокая шахта",
+          "x": 1,
+          "y": 9,
+          "icon": "minecraft:diamond_ore",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:cobblestone",
+              "count": 256,
+              "consume": true,
+              "title": "Сдать 256 булыжника"
+            }
+          ],
+          "description": [
+            "Повторяемое задание: 4 стака булыжника."
+          ],
+          "dependencies": [
+            "stone_tools"
+          ],
+          "repeatable": true,
+          "repeatDelay": 1200,
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "pigman_hunt",
+          "title": "Зомби-свиночеловек",
+          "x": 2,
+          "y": 17,
+          "icon": "minecraft:gold_nugget",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "PigZombie",
+              "count": 10,
+              "title": "Убить 10 зомби-свиночеловеков"
+            }
+          ],
+          "dependencies": [
+            "nether_portal"
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:gold_nugget",
+              "count": 9
+            },
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "id": "magma_cube_hunt",
+          "title": "Магмовые кубы",
+          "x": 2,
+          "y": 18,
+          "icon": "minecraft:magma_cream",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "LavaSlime",
+              "count": 8,
+              "title": "Убить 8 магмовых кубов"
+            }
+          ],
+          "dependencies": [
+            "nether_portal"
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:magma_cream",
+              "count": 4
+            },
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "id": "ghast_hunt",
+          "title": "Вернуть отправителю",
+          "x": 2,
+          "y": 19,
+          "icon": "minecraft:ghast_tear",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Ghast",
+              "count": 3,
+              "title": "Убить 3 гастов"
+            }
+          ],
+          "description": [
+            "В ваниле достижение дают за убийство гаста его же снарядом."
+          ],
+          "dependencies": [
+            "nether_portal"
+          ],
+          "achievement": "ghast",
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:ghast_tear",
+              "count": 2
+            },
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "id": "railway",
+          "title": "Железная дорога",
+          "x": 3,
+          "y": 11,
+          "icon": "minecraft:rail",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:rail",
+              "count": 32,
+              "consume": true,
+              "title": "Сдать 32 рельса"
+            },
+            {
+              "type": "craft",
+              "item": "minecraft:minecart",
+              "count": 1,
+              "title": "Создать вагонетку"
+            }
+          ],
+          "description": [
+            "В ваниле достижение дают за 1 км пути в вагонетке."
+          ],
+          "dependencies": [
+            "iron_age"
+          ],
+          "achievement": "onARail",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "item",
+              "item": "minecraft:iron_ingot",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "overkill",
+          "title": "Богатырский удар",
+          "x": 3,
+          "y": 12,
+          "icon": "minecraft:diamond_sword",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:diamond_sword",
+              "count": 1,
+              "consume": false,
+              "title": "Иметь алмазный меч"
+            },
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 25,
+              "title": "Убить 25 зомби"
+            }
+          ],
+          "description": [
+            "В ваниле достижение дают за 9 сердец урона одним ударом."
+          ],
+          "dependencies": [
+            "sword"
+          ],
+          "achievement": "overkill",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "xp_grinder",
+          "title": "Опытный боец",
+          "x": 3,
+          "y": 13,
+          "icon": "minecraft:experience_bottle",
+          "tasks": [
+            {
+              "type": "xp",
+              "levels": 30,
+              "title": "Достичь 30 уровня опыта"
+            }
+          ],
+          "dependencies": [
+            "enchanting"
+          ],
+          "repeatable": true,
+          "repeatDelay": 600,
+          "rewards": [
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 1
+            },
+            {
+              "type": "xp",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "id": "diamonds_to_you",
+          "title": "Алмаз другу",
+          "x": 3,
+          "y": 14,
+          "icon": "minecraft:diamond",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Бросить алмаз другому игроку"
+            }
+          ],
+          "description": [
+            "Нужен второй игрок: возьмите алмаз в руку и нажмите Q рядом с ним."
+          ],
+          "dependencies": [
+            "diamond_age"
+          ],
+          "achievement": "diamondsToYou",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "explorer",
+          "title": "Исследователь",
+          "x": 3,
+          "y": 22,
+          "icon": "minecraft:compass",
+          "tasks": [
+            {
+              "type": "checkmark",
+              "title": "Посетить 10 разных биомов"
+            }
+          ],
+          "description": [
+            "Необязательный квест: в ваниле это скрытое достижение."
+          ],
+          "dependencies": [
+            "welcome"
+          ],
+          "optional": true,
+          "achievement": "exploreAllBiomes",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            },
+            {
+              "type": "item",
+              "item": "minecraft:map",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "music_disc",
+          "title": "Пластинка",
+          "x": 3,
+          "y": 15,
+          "icon": "minecraft:record_13",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:record_13",
+              "count": 1,
+              "consume": false,
+              "title": "Найти пластинку «13»"
+            }
+          ],
+          "description": [
+            "Пластинки выпадают из криперов, убитых скелетом."
+          ],
+          "dependencies": [
+            "hunter"
+          ],
+          "optional": true,
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "id": "name_tag",
+          "title": "Табличка с именем",
+          "x": 3,
+          "y": 16,
+          "icon": "minecraft:name_tag",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "minecraft:name_tag",
+              "count": 1,
+              "consume": false,
+              "title": "Найти табличку с именем"
+            }
+          ],
+          "dependencies": [
+            "iron_age"
+          ],
+          "optional": true,
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

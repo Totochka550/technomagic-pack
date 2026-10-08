@@ -1,0 +1,2532 @@
+{
+  "pack": "TechnoMagicRPG",
+  "version": "2026.10.08",
+  "generated": "2026-10-08 03:10",
+  "files": [
+    {
+      "path": "mods/Aroma1997s_Dimensional_World_1.7.10_1.1.0.1.jar",
+      "size": 86550,
+      "sha1": "fbc7565a477bb2bb5fda442c47c2667c35f6ad22"
+    },
+    {
+      "path": "mods/journeymap-1.7.10-5.2.19-unlimited.jar",
+      "size": 8954861,
+      "sha1": "b096b3fa6e26b745f39bd03b8bd63460adef94e9"
+    },
+    {
+      "path": "mods/BetterFps_1.0.1.jar",
+      "size": 63223,
+      "sha1": "5f95cfaac2c48448be48150105e735323b6697a1"
+    },
+    {
+      "path": "mods/NotEnoughItems-1.7.10-1.0.5.120-universal.jar",
+      "size": 513136,
+      "sha1": "a7587d48f19b6e9e8791c0e3d2e9aca3b36882c7"
+    },
+    {
+      "path": "mods/ThaumicTinkerer_2.5_1.7.10_164.jar",
+      "size": 2141043,
+      "sha1": "e50a70d3f65bdfb59c2fef2db2d6515aa1e640f1"
+    },
+    {
+      "path": "mods/TiCTooltips-mc1.7.10-1.2.5.jar",
+      "size": 52002,
+      "sha1": "5a3b97262bd10cf639974251bfda1a35f4b61127"
+    },
+    {
+      "path": "mods/aether-1.7.10-v1.1.2.5.jar",
+      "size": 14335798,
+      "sha1": "1a8423455e0dc93b548b051e18df9011c23c2fe5"
+    },
+    {
+      "path": "mods/Waila_1.5.10_1.7.10.jar",
+      "size": 544821,
+      "sha1": "7a874ee79a88cf66bd5355c8393069b3ac39c631"
+    },
+    {
+      "path": "mods/iron_chests_mod_1.7.10.jar",
+      "size": 157123,
+      "sha1": "2d302eb805528c4e1497e79eff25caa59c756a5d"
+    },
+    {
+      "path": "mods/Modpack Configuration Checker-1.7.10-v1.5.3.jar",
+      "size": 99789,
+      "sha1": "53583f6e09c30d81cce71083c09f27f86676da8f"
+    },
+    {
+      "path": "mods/clientfixer-1.0.jar",
+      "size": 15005,
+      "sha1": "4ffc7464d58eb140045b3e7a4e3e0e0eb66a588b"
+    },
+    {
+      "path": "mods/lloverlayreloaded-1.0.7-mc1.7.10.jar",
+      "size": 13715,
+      "sha1": "61b443fe910a5c12b92f946e0ade5cdbb315a204"
+    },
+    {
+      "path": "mods/electromagictools_1.2.6.21.7.10.jar",
+      "size": 1681384,
+      "sha1": "0bc88d5d10c1d63d8f180a30d10287935a6d99f7"
+    },
+    {
+      "path": "mods/CodeChickenCore-1.7.10-1.0.7.48-universal.jar",
+      "size": 143985,
+      "sha1": "42340568aa6c7d6a9333e30540d4a9803d262f5d"
+    },
+    {
+      "path": "mods/TConstruct-1.7.10-1.8.8.build991.jar",
+      "size": 5606642,
+      "sha1": "35e7ee78cd1f8b185373a6b91de252fa14755f3f"
+    },
+    {
+      "path": "mods/thaumicenergistics_1.7.10_1.1.3.0.jar",
+      "size": 1663661,
+      "sha1": "a6240b09a0680f3e3246a6d0fe17650299533a84"
+    },
+    {
+      "path": "mods/tcinventoryscan-mc1.7.10-1.0.11.jar",
+      "size": 17202,
+      "sha1": "2bdfe707d0adb5b51be97526c4a37a26d3f83f06"
+    },
+    {
+      "path": "mods/gravisuite-1.7.10-2.0.3.jar",
+      "size": 417651,
+      "sha1": "176c2c7530440a440b60a1b9f9a21caeb6589155"
+    },
+    {
+      "path": "mods/IguanaTinkerTweaks-1_7_10-2_1_6.jar",
+      "size": 424257,
+      "sha1": "9593b94a8c0daef0ffcaf3ee9a5e57f38007ee95"
+    },
+    {
+      "path": "mods/XZTools-1.7.10-1.0.jar",
+      "size": 31505,
+      "sha1": "83c8262dae90fba72ad4b0684fd6178905f14f0c"
+    },
+    {
+      "path": "mods/DurabilityShow_1.7.10_1.2.0.jar",
+      "size": 22667,
+      "sha1": "a699591c341876d99a7e2cfa15cd900df368fb5f"
+    },
+    {
+      "path": "mods/Avaritia_1.13.jar",
+      "size": 1034833,
+      "sha1": "3ed1f92809d6a6ec1d495082ad263725cea7f098"
+    },
+    {
+      "path": "mods/ItemBan-1.0.jar",
+      "size": 11692,
+      "sha1": "115c7a5b14481e90288432e4cdba8c252401fc6c"
+    },
+    {
+      "path": "mods/RTG_1.7.10_1.1.1.jar",
+      "size": 2339749,
+      "sha1": "daa483a20eb5fe403f94f9aa637e972ba84d69ac"
+    },
+    {
+      "path": "mods/DivineRPG-1.4.2.3.jar",
+      "size": 19470306,
+      "sha1": "b5934ae7442782cadfd2520fcdb6eefee50504f8"
+    },
+    {
+      "path": "mods/InventoryTweaks_1.7.10_1.59_dev_152.jar",
+      "size": 224461,
+      "sha1": "3643e09b93e66c5690de7b9c3daa62da7789e7f5"
+    },
+    {
+      "path": "mods/QuestBook-1.7.10-1.1.6.jar",
+      "size": 316022,
+      "sha1": "ebbdbc86354ad978b043c71dadf2c48cba1e8723"
+    },
+    {
+      "path": "mods/Draconic-Evolution-1.7.10-1.0.2h.jar",
+      "size": 4874507,
+      "sha1": "c57e734e45a50626e5daf4ddbe5d62c552ea7efc"
+    },
+    {
+      "path": "mods/Botania_1.7.10_r1.8_249.jar",
+      "size": 15977344,
+      "sha1": "eee543e33c0f57c93d3d83815576cc96236f56f4"
+    },
+    {
+      "path": "mods/optifine_1.7.10_hd_u_e7.jar",
+      "size": 1774165,
+      "sha1": "2130d7266224da6a7325051e37444f7e7c19277c"
+    },
+    {
+      "path": "mods/Automagy-1.7.10-0.28.2.jar",
+      "size": 6567165,
+      "sha1": "125d0d24ce4cca204bb8e38f9b93ed5b4c3f8961"
+    },
+    {
+      "path": "mods/MicdoodleCore-1.7-3.0.12.504.jar",
+      "size": 64945,
+      "sha1": "8c7899ae2b2ef1f5157d0c3b52f1efbb9da2dcc5"
+    },
+    {
+      "path": "mods/ThaumicExploration_1.7.10_1.1_53.jar",
+      "size": 1982603,
+      "sha1": "da305e257f533bd15855cbb37bebf0b02a83c276"
+    },
+    {
+      "path": "mods/forestry_1.7.10-4.2.16.64.jar",
+      "size": 3322286,
+      "sha1": "93c294b2f463890fd9de575e6ce6d71d931bc3f4"
+    },
+    {
+      "path": "mods/FastLeafDecay-1.7.10-1.4.jar",
+      "size": 7079,
+      "sha1": "d82f7a1f7573f35a4f1dace410a7fbb88bb4b522"
+    },
+    {
+      "path": "mods/Tainted-Magic-1.7.10-8.1.1.jar",
+      "size": 3602696,
+      "sha1": "2efe76adf5dca79724d11803bd54358db6f20a92"
+    },
+    {
+      "path": "mods/Forbidden Magic-1.7.10-0.575.jar",
+      "size": 647020,
+      "sha1": "dfe376c08c4fa43ec7491128ae26a65b9d4106c9"
+    },
+    {
+      "path": "mods/DragonMounts_r41_1.7.10.jar",
+      "size": 453341,
+      "sha1": "9b8a6b38184868d370da178835c2a5f6def098bf"
+    },
+    {
+      "path": "mods/+unimixins-all-1.7.10-0.3.1.jar",
+      "size": 5519796,
+      "sha1": "75f9251b1ac4eeacdce0b86a1a68bd8ff4fbf604"
+    },
+    {
+      "path": "mods/Avaritiaddons-1.4b.jar",
+      "size": 210140,
+      "sha1": "4b45ecb2d7258bd0893dd11285be73139d07be14"
+    },
+    {
+      "path": "mods/thermalfoundation-1.7.101.2.6-118.jar",
+      "size": 2316321,
+      "sha1": "5a8b566c655738fe02c749206f3e87d32ce74015"
+    },
+    {
+      "path": "mods/HardcoreEnderExpansion  MC-1.7.10  v1.6.6.jar",
+      "size": 12697646,
+      "sha1": "6bc73d69d2dbe8a352c8ef9438eeaa53e5a53731"
+    },
+    {
+      "path": "mods/thermaldynamics-1.7.101.2.1-172.jar",
+      "size": 632485,
+      "sha1": "e22847e8b2286219c1c8833ba264916a6729762d"
+    },
+    {
+      "path": "mods/ThaumicHorizons-1.8.20.jar",
+      "size": 2737554,
+      "sha1": "5056a29019ee34b32db0e221c36daca50bfb10ef"
+    },
+    {
+      "path": "mods/Bookshelf_1.7.10_1.0.4.187.jar",
+      "size": 230589,
+      "sha1": "7350f513ff0a4e2fb855dcfbac1df6c17f0af401"
+    },
+    {
+      "path": "mods/Galacticraft-Planets-1.7-3.0.12.504.jar",
+      "size": 3161761,
+      "sha1": "2931653ca3c9d4357c1c7e95642cd8ba1374dd66"
+    },
+    {
+      "path": "mods/TwilightForest-2.4.3.jar",
+      "size": 3675470,
+      "sha1": "d4dd0f4e833ba2aa42f573ea662f6edaedb6d7f6"
+    },
+    {
+      "path": "mods/Universal+Singularities+[Version+8]-1.7.10.jar",
+      "size": 17275,
+      "sha1": "3f46226cd3fd73f83651b248bb6a43b5b1abdbbb"
+    },
+    {
+      "path": "mods/industrialcraft-2-2.2.828-experimental.jar",
+      "size": 5633947,
+      "sha1": "64f71495feddba295ed4392797d48d7dcfcfc779"
+    },
+    {
+      "path": "mods/entityculling-1.6.4-mc1.7.10.jar",
+      "size": 38712,
+      "sha1": "9a14606b7d305b4bb1db7094b308c2c2db30fdff"
+    },
+    {
+      "path": "mods/falsepatternlib-mc1.7.10-1.12.2.jar",
+      "size": 994672,
+      "sha1": "9ec3ae13ef669b55173739eb49178050356cfbc7"
+    },
+    {
+      "path": "mods/fuck-online-1.0.jar",
+      "size": 2567,
+      "sha1": "7b3c7bf4024c3f8c09dcc66c8134357eb37f4175"
+    },
+    {
+      "path": "mods/Thaumcraft_1.7.10_4.2.3.5.jar",
+      "size": 12565807,
+      "sha1": "3f51b473f9ef7a94d1a9e01f6784af1cfd811649"
+    },
+    {
+      "path": "mods/advancedsolarpanel-1.7.10-3.5.1.jar",
+      "size": 305645,
+      "sha1": "f2254c849c790ec1adc14a7173ef455cf2b483e7"
+    },
+    {
+      "path": "mods/advancedmachinesas-1.7.10.jar",
+      "size": 137893,
+      "sha1": "573a5078c7f91be58dcda41994972a4f1762aa27"
+    },
+    {
+      "path": "mods/Mantle-1.7.10-0.3.2b.jar",
+      "size": 202458,
+      "sha1": "56552968dc8df9a3ad0f909024d086f3748844dc"
+    },
+    {
+      "path": "mods/Aroma1997Core_1.7.10_1.0.2.16.jar",
+      "size": 159243,
+      "sha1": "f86607a5748c70d4614502115070e0e63a266810"
+    },
+    {
+      "path": "mods/Mekanism-1.7.10-9.1.1.1031.jar",
+      "size": 15392975,
+      "sha1": "cd3caa76541a58e55e1b68d1e6a1aef881523cd2"
+    },
+    {
+      "path": "mods/MineFactoryReloaded-[1.7.10]2.8.2B1-201.jar",
+      "size": 1767447,
+      "sha1": "15b3b178e7103c74b8b5522330eef9d632376f22"
+    },
+    {
+      "path": "mods/thermalexpansion-1.7.104.1.5-248.jar",
+      "size": 2614932,
+      "sha1": "ae0d16da59401fee4ef4dcda42fa2b85efee96bc"
+    },
+    {
+      "path": "mods/JavaCheckerShade  MC-UNIVERSAL  v2.0.jar",
+      "size": 9947,
+      "sha1": "037509c0fb08b0e618a2f2816b98928915a22a8b"
+    },
+    {
+      "path": "mods/BeeBetterAtBees-0.3.jar",
+      "size": 33579,
+      "sha1": "eb82437e5340ab78135d6d7a4627deca9ffb4c20"
+    },
+    {
+      "path": "mods/CoFHCore-[1.7.10]3.1.4-329.jar",
+      "size": 1230511,
+      "sha1": "b7d66be19a6898232f5498a50ac0207109a3b2e6"
+    },
+    {
+      "path": "mods/BrandonsCore-1.7.10-1.0.0.12.jar",
+      "size": 92269,
+      "sha1": "39ecb8a041d8e3ada2a159a9f708a7b6bd910bf3"
+    },
+    {
+      "path": "mods/BloodMagic_1.7.10_1.3.3_17.jar",
+      "size": 9198412,
+      "sha1": "9b519305b01bc64498f0049d524fe1acf6b3ee76"
+    },
+    {
+      "path": "mods/extrautilities-1.2.12.jar",
+      "size": 2149827,
+      "sha1": "5abef956579df31d86f54cc20bf7ac8ba7d481a8"
+    },
+    {
+      "path": "mods/backpack_2.0.1_1.7.x.jar",
+      "size": 174814,
+      "sha1": "ce163fa1a5a27a520817fb8afd2faba4781f3b15"
+    },
+    {
+      "path": "mods/BetterPing_1.7.10_1.0.jar",
+      "size": 5441,
+      "sha1": "06369ef456eecced08b2651ce95c88b7fa8bd299"
+    },
+    {
+      "path": "mods/BotaniaVisualizer-1.7.2-1.0a.jar",
+      "size": 9128,
+      "sha1": "ba35708b85957279eefb05c5a5bcba417f6f47af"
+    },
+    {
+      "path": "mods/witchery_1.7.10_0.24.1.jar",
+      "size": 7009956,
+      "sha1": "b3f02f7049eedef71ebd7ad192c3cc23cf1268c9"
+    },
+    {
+      "path": "mods/Thaumic_Warden_Mod_1.7.10.jar",
+      "size": 5960056,
+      "sha1": "2cde0421879e103fbf0621974edd970235c7781f"
+    },
+    {
+      "path": "mods/WanionLib-1.7.10-1.8.jar",
+      "size": 60225,
+      "sha1": "a1ab13083d28403671501eaf7092021f2f477470"
+    },
+    {
+      "path": "mods/appliedenergistics2_mc1.7.10_rv3_beta_6.jar",
+      "size": 2924325,
+      "sha1": "e8ada3103524805d4a84b544bdf8c286bbc2e2c7"
+    },
+    {
+      "path": "mods/XZSkins-1.7.10-1.1.jar",
+      "size": 19528,
+      "sha1": "533ccf161f16520ed7fcccd71332f0014153acc9"
+    },
+    {
+      "path": "mods/craftingtweaks-mc1.7.10-1.0.88.jar",
+      "size": 91325,
+      "sha1": "9b4ff8b2c59cc78ba45c1d648cbd23ad01c53d45"
+    },
+    {
+      "path": "mods/EnderCore-1.7.10-0.2.0.40_beta.jar",
+      "size": 464209,
+      "sha1": "f8fd9953d5dacc7ec684221157e8a4066d1960af"
+    },
+    {
+      "path": "mods/XZShop-1.7.10-1.0.jar",
+      "size": 93308,
+      "sha1": "11c84249e71685cc6bb7ac18aa19caeeb91165c7"
+    },
+    {
+      "path": "mods/GalacticraftCore-1.7-3.0.12.504.jar",
+      "size": 9341058,
+      "sha1": "13b022ce349a279a55be940740eedc92a940ab3b"
+    },
+    {
+      "path": "mods/buildcraft-7.1.27.jar",
+      "size": 2561047,
+      "sha1": "2519edb9bbee1ea841829057265d683764f13c79"
+    },
+    {
+      "path": "mods/ExtraTiC-1.7.10-1.4.6.jar",
+      "size": 11557124,
+      "sha1": "2453d27979b69339e23c14d6fecb1a721c0a4ef1"
+    },
+    {
+      "path": "mods/EnderIO-1.7.10-2.3.0.430_beta.jar",
+      "size": 4778825,
+      "sha1": "4f7175ce464135143fdc21661e73176470450eff"
+    },
+    {
+      "path": "mods/ic2/EJML-core-0.26.jar",
+      "size": 341614,
+      "sha1": "4d7c1d7b16b80875d7fba8d72b2e24eece176124"
+    },
+    {
+      "path": "mods/.index/advanced-machines-1-7-10.pw.toml",
+      "size": 473,
+      "sha1": "acc7a0d0764bb809c9a5dfd89aa4d67074131b95"
+    },
+    {
+      "path": "mods/.index/rn-volts-galacticraft-reup.pw.toml",
+      "size": 509,
+      "sha1": "5a1627a07ccc23eb11b472014b0196650909bdef"
+    },
+    {
+      "path": "mods/.index/ender-io.pw.toml",
+      "size": 515,
+      "sha1": "26c115b2b03612a0e2eca9e36448008b64557f1a"
+    },
+    {
+      "path": "mods/.index/automagy.pw.toml",
+      "size": 434,
+      "sha1": "28ad2ae693deda852ac718612e6a81be3044d529"
+    },
+    {
+      "path": "mods/.index/entityculling.pw.toml",
+      "size": 521,
+      "sha1": "6ea46660b67820ae5396c2bb908a66268f7abb7b"
+    },
+    {
+      "path": "mods/.index/space-explore.pw.toml",
+      "size": 456,
+      "sha1": "1dc0ab09228ac54ee26031e637218ea5efd0975a"
+    },
+    {
+      "path": "mods/.index/extratic.pw.toml",
+      "size": 486,
+      "sha1": "efdd776466fbf6baf439a8211aee5393ae7cfe8b"
+    },
+    {
+      "path": "mods/.index/waila.pw.toml",
+      "size": 446,
+      "sha1": "a414f1e39754dc05eeea5b5c9ab7558ae4be36b5"
+    },
+    {
+      "path": "mods/.index/avaritia.pw.toml",
+      "size": 471,
+      "sha1": "43a487a96808991e4c3c578d3ccc6edcc0230e06"
+    },
+    {
+      "path": "mods/.index/beebetteratbees.pw.toml",
+      "size": 453,
+      "sha1": "701fb5fa400a8819a3e32a1b78d6da4ff28db628"
+    },
+    {
+      "path": "mods/.index/draconic-evolution.pw.toml",
+      "size": 523,
+      "sha1": "e45a981248651d3e74a8764512e2daeed3f4158c"
+    },
+    {
+      "path": "mods/.index/forge-backpacks.pw.toml",
+      "size": 515,
+      "sha1": "4f00578e5185af9945b22df3cc3404c3c2a826f9"
+    },
+    {
+      "path": "mods/.index/forbidden-magic.pw.toml",
+      "size": 512,
+      "sha1": "340b650a3df167fe0e747e5df69260ec07229fa5"
+    },
+    {
+      "path": "mods/.index/blood-magic.pw.toml",
+      "size": 468,
+      "sha1": "16266fcff9c7e62d2ba1067d3cf11bd06a8b9ebb"
+    },
+    {
+      "path": "mods/.index/witchery.pw.toml",
+      "size": 452,
+      "sha1": "af68b4ee0c5b24628d443bcb96c534851fe03ed3"
+    },
+    {
+      "path": "mods/.index/industrial-craft.pw.toml",
+      "size": 506,
+      "sha1": "3c40b3147574d2dcdb5e95845b262668d57a17fb"
+    },
+    {
+      "path": "mods/.index/mekanism.pw.toml",
+      "size": 510,
+      "sha1": "45c3da39538e4e0627eba4cb3822aee9dcf2671e"
+    },
+    {
+      "path": "mods/.index/thaumic-warden.pw.toml",
+      "size": 452,
+      "sha1": "117ad2dd27834f2e5a4bdb12f0110761fb2926ca"
+    },
+    {
+      "path": "mods/.index/thaumic-exploration.pw.toml",
+      "size": 588,
+      "sha1": "4e741a22f08fa6d052175056a9059ed11e131bc3"
+    },
+    {
+      "path": "mods/.index/betterfps.pw.toml",
+      "size": 430,
+      "sha1": "4b6be4a68081195f3d3a74a3161daff7ed9c6aa2"
+    },
+    {
+      "path": "mods/.index/dragon-mounth.pw.toml",
+      "size": 449,
+      "sha1": "643e4dcd647d46deb93521f4c47b778971bfa9f0"
+    },
+    {
+      "path": "mods/.index/buildcraft.pw.toml",
+      "size": 904,
+      "sha1": "a2b169e3fefb13acfa1987ca17c1a2a173b7e5bb"
+    },
+    {
+      "path": "mods/.index/tic-tooltips.pw.toml",
+      "size": 503,
+      "sha1": "697e4182c0d8c3165bc284cdf495aaf4208a1595"
+    },
+    {
+      "path": "mods/.index/inventory-tweaks.pw.toml",
+      "size": 502,
+      "sha1": "51548083c4dd4d634046c23a717d649df404957e"
+    },
+    {
+      "path": "mods/.index/universal-singularities.pw.toml",
+      "size": 1666,
+      "sha1": "013b1eec72255e21d538412615ee27da7ac18abe"
+    },
+    {
+      "path": "mods/.index/wanionlib.pw.toml",
+      "size": 453,
+      "sha1": "9a6fbf46ad8d650b42ae97980611cc3b81e9211d"
+    },
+    {
+      "path": "mods/.index/unimixins.pw.toml",
+      "size": 639,
+      "sha1": "d3c752f6b26c62ed61792253ee35a6ed5ae53762"
+    },
+    {
+      "path": "mods/.index/avaritiaddons.pw.toml",
+      "size": 561,
+      "sha1": "9da90c64d8b825e8d446dbd0b73837ee08e4ef3e"
+    },
+    {
+      "path": "mods/.index/official-divinerpg.pw.toml",
+      "size": 567,
+      "sha1": "9d90cfdf8342ddcb4e0f4cc6049ed3b74b256bba"
+    },
+    {
+      "path": "mods/.index/durability-show.pw.toml",
+      "size": 472,
+      "sha1": "c3e2f9750fa0d253abb7f27d53825bc90de7396d"
+    },
+    {
+      "path": "mods/.index/itemban.pw.toml",
+      "size": 581,
+      "sha1": "2d21a025d20442359167d49ee4ee3a886f28e73e"
+    },
+    {
+      "path": "mods/.index/thermal-dynamics.pw.toml",
+      "size": 521,
+      "sha1": "fde525d389a46dce5194f2ee494de3308ca483e9"
+    },
+    {
+      "path": "mods/.index/bookshelf.pw.toml",
+      "size": 474,
+      "sha1": "9c065f763cacc765e6e0826064e745a18a60bdfd"
+    },
+    {
+      "path": "mods/.index/tainted-magic.pw.toml",
+      "size": 506,
+      "sha1": "e4429ee557eca8a38a644d90293297f8950e0bfb"
+    },
+    {
+      "path": "mods/.index/better-ping-display.pw.toml",
+      "size": 472,
+      "sha1": "f8d8ce52c5f2d54040c9e2cf43591339f2ad21c9"
+    },
+    {
+      "path": "mods/.index/thaumic-tinkerer.pw.toml",
+      "size": 502,
+      "sha1": "564ed561975e5fdb5f79658410f6ac762814e29d"
+    },
+    {
+      "path": "mods/.index/thermal-expansion.pw.toml",
+      "size": 523,
+      "sha1": "d723c7b9381b482ed0dd3f2dfb766e6f10ee6a61"
+    },
+    {
+      "path": "mods/.index/fast-leaf-decay.pw.toml",
+      "size": 467,
+      "sha1": "1e3481f14d97082669a02068342b6cc67991059c"
+    },
+    {
+      "path": "mods/.index/light-level-overlay-reloaded.pw.toml",
+      "size": 496,
+      "sha1": "a3dd453c2a40e3231b42470a474f3c5a0ba5cfa7"
+    },
+    {
+      "path": "mods/.index/config-checker.pw.toml",
+      "size": 508,
+      "sha1": "e14bac2d2129136a404ef491d7bf83df50862e80"
+    },
+    {
+      "path": "mods/.index/thaumic-energistics.pw.toml",
+      "size": 807,
+      "sha1": "22a612a035293783080e06f4a4baf4d7d8f7465a"
+    },
+    {
+      "path": "mods/.index/the-twilight-forest.pw.toml",
+      "size": 489,
+      "sha1": "4d6069014f8f2465a1bdd7b326f35660f967a913"
+    },
+    {
+      "path": "mods/.index/fplib.pw.toml",
+      "size": 461,
+      "sha1": "9456992bbe2ee100f44b3882d3889dd3de647c14"
+    },
+    {
+      "path": "mods/.index/mantle.pw.toml",
+      "size": 458,
+      "sha1": "45f40a4e2f024c022ee0a1260da4a713fff33303"
+    },
+    {
+      "path": "mods/.index/botania.pw.toml",
+      "size": 487,
+      "sha1": "552b1189cb7f1867269d658eda21fa56dacf9a8f"
+    },
+    {
+      "path": "mods/.index/minefactory-reloaded.pw.toml",
+      "size": 499,
+      "sha1": "024514cb66c31ff76c63e978b17d4456aab9bc3d"
+    },
+    {
+      "path": "mods/.index/thermal-foundation.pw.toml",
+      "size": 526,
+      "sha1": "fcd6247b0c24b58856a7d969a62f5ec5113bdb4e"
+    },
+    {
+      "path": "mods/.index/thaumcraft.pw.toml",
+      "size": 501,
+      "sha1": "d0b97acb8919076c7776424471c94a84517d2a71"
+    },
+    {
+      "path": "mods/.index/extra-utilities.pw.toml",
+      "size": 458,
+      "sha1": "d5bb1eaf96ce68502e2df487518b2ca11d2d8441"
+    },
+    {
+      "path": "mods/.index/gravitation-suite-1-7-10.pw.toml",
+      "size": 463,
+      "sha1": "d4552ec6cf1b648eb0594a8686969c5a119ba837"
+    },
+    {
+      "path": "mods/.index/journeymap.pw.toml",
+      "size": 580,
+      "sha1": "3b1b990000e9a5da33ad34f4fab45fb12395eeff"
+    },
+    {
+      "path": "mods/.index/thaumcraft-inventory-scanning.pw.toml",
+      "size": 548,
+      "sha1": "54709d5b7e6e31e046aa3395a860bb9af43a2fcd"
+    },
+    {
+      "path": "mods/.index/electro-magic-tools.pw.toml",
+      "size": 520,
+      "sha1": "042594b79493e6106e3965dcec0fcf099f2af801"
+    },
+    {
+      "path": "mods/.index/brandons-core.pw.toml",
+      "size": 467,
+      "sha1": "75771eb9bd40910f9bb76fe96823667bc6aee128"
+    },
+    {
+      "path": "mods/.index/java-version-checker.pw.toml",
+      "size": 567,
+      "sha1": "c10983844d94b20467cb4161588bba7773febe47"
+    },
+    {
+      "path": "mods/.index/cofh-core.pw.toml",
+      "size": 464,
+      "sha1": "2298263061c59e571698cd1f67100ff5e2cd84f7"
+    },
+    {
+      "path": "mods/.index/tinkers-construct.pw.toml",
+      "size": 527,
+      "sha1": "a9417004ae69416789c50250f72bbb2d4493fe2e"
+    },
+    {
+      "path": "mods/.index/endercore.pw.toml",
+      "size": 479,
+      "sha1": "c97b8f37a851fbfb476017a5e12f94483981b292"
+    },
+    {
+      "path": "mods/.index/applied-energistics-2.pw.toml",
+      "size": 491,
+      "sha1": "7e676bfb3d3fc1e6c11aed18b128ada2f62d6301"
+    },
+    {
+      "path": "mods/.index/thaumic-horizons.pw.toml",
+      "size": 484,
+      "sha1": "8ccd73429c174dc666446e6a596eaaaf5f8d3cf9"
+    },
+    {
+      "path": "mods/.index/aroma1997core.pw.toml",
+      "size": 471,
+      "sha1": "0eb7db639694f402898133471a92d2ee5448d94c"
+    },
+    {
+      "path": "mods/.index/forestry.pw.toml",
+      "size": 461,
+      "sha1": "0b600de7b6605920e4d67923832f95100ffb1523"
+    },
+    {
+      "path": "mods/.index/aether.pw.toml",
+      "size": 533,
+      "sha1": "53f885661c5ea6b9e784e5aec1e751990600192f"
+    },
+    {
+      "path": "mods/.index/advanced-solar-pin.pw.toml",
+      "size": 482,
+      "sha1": "921d8bcc5d298730702d852f127c79cd18558705"
+    },
+    {
+      "path": "mods/.index/aroma1997s-dimensional-world.pw.toml",
+      "size": 550,
+      "sha1": "1f676e098b12bbfc7780c9f401e4be264670693d"
+    },
+    {
+      "path": "mods/1.7.10/ForgeMultipart-1.7.10-1.2.0.345-universal.jar",
+      "size": 943474,
+      "sha1": "34d4354ef1692be305511537c6a9b2ac18b69d7a"
+    },
+    {
+      "path": "mods/1.7.10/Baubles-1.7.10-1.0.1.10.jar",
+      "size": 95415,
+      "sha1": "b6e6ce2d0476d1d53686440f2fc70d2a27e289c2"
+    },
+    {
+      "path": "mods/1.7.10/CodeChickenLib-1.7.10-1.1.3.141-universal.jar",
+      "size": 311450,
+      "sha1": "83ec0b20aaf7ec05e01ac42c1c99bada420af84d"
+    },
+    {
+      "path": "config/Waila.cfg",
+      "size": 3398,
+      "sha1": "1ccb651ff3f93f0b9acda24bd31edc6cd0dd999d"
+    },
+    {
+      "path": "config/multipart.cfg",
+      "size": 326,
+      "sha1": "9adf30cb6a3e693f7ca984b46338d389fc4668a9"
+    },
+    {
+      "path": "config/DraconicEvolution.cfg",
+      "size": 5258,
+      "sha1": "15bcc1952b1dbb576839095caf074e78f2ac26b4"
+    },
+    {
+      "path": "config/bookshelf_asm.cfg_20260325_211956.errored",
+      "size": 428,
+      "sha1": "4f98b384159fd1744d1ce03441fab9f916e274ff"
+    },
+    {
+      "path": "config/falsepatternlib-early.json",
+      "size": 69,
+      "sha1": "a1bf7d450106df829d292d07f36bf91f56e155a5"
+    },
+    {
+      "path": "config/journeymap_ModInfo.cfg",
+      "size": 371,
+      "sha1": "9bfbd3211dd0d1c004c421789ed8a2afa962ce13"
+    },
+    {
+      "path": "config/optimizationsandtweaks.cfg",
+      "size": 34720,
+      "sha1": "370232242fef05c4f209aa3ab1056f03ad9a3c72"
+    },
+    {
+      "path": "config/ClientFixer.cfg",
+      "size": 205,
+      "sha1": "dc31511832a7de8a0a0d1903a80eabf956465681"
+    },
+    {
+      "path": "config/AdvancedSolarPanel_MTRecipes.cfg",
+      "size": 2237,
+      "sha1": "31de1f521ab42ca39dfa1032ab0a415c67294254"
+    },
+    {
+      "path": "config/TwilightForest.cfg",
+      "size": 2523,
+      "sha1": "2916e4be1ed3445597b40a47879d88a2af00facc"
+    },
+    {
+      "path": "config/bookshelf_asm.cfg_20260524_222435.errored",
+      "size": 428,
+      "sha1": "4f98b384159fd1744d1ce03441fab9f916e274ff"
+    },
+    {
+      "path": "config/eplus.cfg",
+      "size": 8536,
+      "sha1": "9fd12e37838af2082197f16034e9daf0938d688d"
+    },
+    {
+      "path": "config/DurabilityShow.cfg",
+      "size": 149,
+      "sha1": "6434de6947ef8ab123715b6b301b7be93088c69f"
+    },
+    {
+      "path": "config/HardcoreEnderExpansion.cfg",
+      "size": 1242,
+      "sha1": "f43ea3686172803cbd0943e9932e432b15847f8f"
+    },
+    {
+      "path": "config/InvTweaksRules.txt",
+      "size": 1352,
+      "sha1": "cf7e4a3443bde9740a4227605af6174480bde05c"
+    },
+    {
+      "path": "config/InvTweaksTree.txt",
+      "size": 43373,
+      "sha1": "cba7829d87a629711ed7fb6fe867fa9c5d5390c5"
+    },
+    {
+      "path": "config/witchery.cfg",
+      "size": 6817,
+      "sha1": "0938ca210dcc8821beed27b539855ec4d64271ca"
+    },
+    {
+      "path": "config/TinkersConstruct.cfg",
+      "size": 5911,
+      "sha1": "d0bf7ec97755e7e8b86ab4fa76106a18d1beb1cf"
+    },
+    {
+      "path": "config/bq_standard.cfg",
+      "size": 112,
+      "sha1": "6e254dad001ce6518f5c3882946546219784443d"
+    },
+    {
+      "path": "config/Avaritiaddons.cfg",
+      "size": 691,
+      "sha1": "d25f6a74b987d52b9d0fb8d2a14b99516e1f7805"
+    },
+    {
+      "path": "config/IC2.ini",
+      "size": 6020,
+      "sha1": "f8de204ebf5da1bb5a72c608ab7b1b76472fba71"
+    },
+    {
+      "path": "config/AdvancedSolarPanel.cfg",
+      "size": 1138,
+      "sha1": "a9103a3053810d911fab85cb1d04bc61eea3a7c0"
+    },
+    {
+      "path": "config/ClientFixer.cfg_20260524_222432.errored",
+      "size": 213,
+      "sha1": "99dd933db2343090ef580b7188106f73ccc97efb"
+    },
+    {
+      "path": "config/forgeChunkLoading.cfg",
+      "size": 2070,
+      "sha1": "6283d4d1b2f93f3162599bc4413b1d239d2a5166"
+    },
+    {
+      "path": "config/beebetteratbees.cfg",
+      "size": 346,
+      "sha1": "91d5aeacc886a46d331eb7045870f4085ee35640"
+    },
+    {
+      "path": "config/UniversalSingularities.cfg",
+      "size": 2312,
+      "sha1": "334eb23f0a08789a066f54a11fb580992934fc86"
+    },
+    {
+      "path": "config/thaumicenergistics.cfg",
+      "size": 2465,
+      "sha1": "f1e7e4c1938ae0268d0bb341aef8f6e3e78a7f15"
+    },
+    {
+      "path": "config/Backpack.cfg",
+      "size": 1977,
+      "sha1": "0ae7cfbee216f75796f19affc21721eea34cfd85"
+    },
+    {
+      "path": "config/ForbiddenMagic.cfg",
+      "size": 2745,
+      "sha1": "ce26b61cd72ec9b96647cd55d005f81c75c44099"
+    },
+    {
+      "path": "config/GraviSuite.cfg",
+      "size": 1000,
+      "sha1": "c929b8aed2fe8d3da3b41057e9e132d3ec4edfe8"
+    },
+    {
+      "path": "config/Mekanism.cfg",
+      "size": 7268,
+      "sha1": "44fc2e7c318b912067b8e0defc0955f500f890d3"
+    },
+    {
+      "path": "config/entityculling.json",
+      "size": 235,
+      "sha1": "a2f7dc625568f299913803164648205ea65159a8"
+    },
+    {
+      "path": "config/fastleafdecay.cfg",
+      "size": 686,
+      "sha1": "c13e9e63a452103171d05098628d485498ef79b4"
+    },
+    {
+      "path": "config/splash.properties",
+      "size": 325,
+      "sha1": "c7573c2864e674d331e59e786c4e298058c947ca"
+    },
+    {
+      "path": "config/fastcraft.ini",
+      "size": 4532,
+      "sha1": "3fc8d7f5ef73e89ae7bf25446a24214d69a9da97"
+    },
+    {
+      "path": "config/itemban.cfg",
+      "size": 489,
+      "sha1": "fe6cb8d5040800bb222215b6f51b9966277c38be"
+    },
+    {
+      "path": "config/DivineRPG.cfg",
+      "size": 2731,
+      "sha1": "430ccbd7ff427a1573e83f285fefef51a8fda1ae"
+    },
+    {
+      "path": "config/questbook.cfg",
+      "size": 1224,
+      "sha1": "67e0b5db2041fcbc5f194efde88249ea012df4e0"
+    },
+    {
+      "path": "config/ExtraUtilities.cfg",
+      "size": 5421,
+      "sha1": "8873ae6e5f3afa45357663dbf69645164723c7c0"
+    },
+    {
+      "path": "config/bookshelf_asm.cfg",
+      "size": 417,
+      "sha1": "95937e5f3b057b8d53fe6eb43fc4b0b6e655c2fc"
+    },
+    {
+      "path": "config/microblocks.cfg",
+      "size": 488,
+      "sha1": "3afbefc6852d959f51ad47d5bea836e159ad8713"
+    },
+    {
+      "path": "config/Thaumcraft.cfg",
+      "size": 8829,
+      "sha1": "898791948b49f145abdd449aae484c319059d090"
+    },
+    {
+      "path": "config/Avaritia.cfg",
+      "size": 2743,
+      "sha1": "6a9d61c4d962c5547f19a89453197c0830102f05"
+    },
+    {
+      "path": "config/TinkersModules.cfg",
+      "size": 582,
+      "sha1": "ec15bef66151ff3b1fb8598173eb10de8e5da5e5"
+    },
+    {
+      "path": "config/flammpfeil.slashblade.cfg",
+      "size": 20618,
+      "sha1": "ff97a8abfe31d7ab404721e3382280e90433e36f"
+    },
+    {
+      "path": "config/LLOverlayReloaded.cfg",
+      "size": 504,
+      "sha1": "6f00ecd953ee2679082b0d88da5e1403c6869b3d"
+    },
+    {
+      "path": "config/falsepatternlib.cfg",
+      "size": 2323,
+      "sha1": "508868dd43eaed6b51979b6f700fa890a9ce7efa"
+    },
+    {
+      "path": "config/craftingtweaks.cfg",
+      "size": 1121,
+      "sha1": "7fe5fbc70e531a3603d78bf50fca7932fa29970b"
+    },
+    {
+      "path": "config/Baubles.cfg",
+      "size": 22,
+      "sha1": "b622c2835a17807c3815be206be46b2166f07495"
+    },
+    {
+      "path": "config/ClientFixer.cfg_20260325_211954.errored",
+      "size": 213,
+      "sha1": "99dd933db2343090ef580b7188106f73ccc97efb"
+    },
+    {
+      "path": "config/IronChest.cfg",
+      "size": 111,
+      "sha1": "931ce1d1321e8a9a79041cc77c7f24abd1dfa3f2"
+    },
+    {
+      "path": "config/ExtraTiC.cfg",
+      "size": 3167,
+      "sha1": "b6173bca4145797b8c2d80198de45d01b5cf9480"
+    },
+    {
+      "path": "config/EMT.cfg",
+      "size": 7087,
+      "sha1": "5ecda3216aff2f0c381c5518f614540929e2df9f"
+    },
+    {
+      "path": "config/AdvancedMachines.cfg",
+      "size": 550,
+      "sha1": "68b36e86e74f5b8ac46c82dd60a49ae67d0ccf23"
+    },
+    {
+      "path": "config/betterquesting.cfg",
+      "size": 564,
+      "sha1": "f786633e405ea2aa4ec01d49bbfe5b159df7d391"
+    },
+    {
+      "path": "config/DraconicEvolution.Balance.cfg",
+      "size": 7175,
+      "sha1": "489ac0c13f89bc77a2e531f1b92f790ab901bc34"
+    },
+    {
+      "path": "config/unimixins.properties",
+      "size": 568,
+      "sha1": "d7753d275bcdb1feb65521bdbb244c98babaad2f"
+    },
+    {
+      "path": "config/xztools.cfg",
+      "size": 1144,
+      "sha1": "1fdeee9cd78621304ddd63d230350fb9b2e0b9d0"
+    },
+    {
+      "path": "config/concheckrmd.cfg",
+      "size": 2617,
+      "sha1": "8284d4f93695b7579d27540e525e2684efe88611"
+    },
+    {
+      "path": "config/forge.cfg",
+      "size": 2307,
+      "sha1": "5db07a5a3abfdb94a68f60ae73e76c8e5fec27d9"
+    },
+    {
+      "path": "config/ThaumicHorizons.cfg",
+      "size": 762,
+      "sha1": "5c3458ae93922cd9e86e3e76c455820704f68e57"
+    },
+    {
+      "path": "config/ThaumicExploration.cfg",
+      "size": 1019,
+      "sha1": "c4848525bac6767e67b3561bfcf758f2aa01df19"
+    },
+    {
+      "path": "config/xzshop.cfg",
+      "size": 705,
+      "sha1": "4f2f6ffd6dcad76e6bdecba0c0f7c8c60bc09533"
+    },
+    {
+      "path": "config/ThaumicTinkerer.cfg",
+      "size": 4464,
+      "sha1": "99945767f6853c2e445a1b122d688ad9cf7066f6"
+    },
+    {
+      "path": "config/DragonMounts.cfg",
+      "size": 577,
+      "sha1": "289aefec518b601f6a99b6c2fcfbbd6de88f8399"
+    },
+    {
+      "path": "config/CodeChickenCore.cfg",
+      "size": 808,
+      "sha1": "8a5983792e822cff2721f0c6649550d107578871"
+    },
+    {
+      "path": "config/InvTweaks.cfg",
+      "size": 655,
+      "sha1": "e8033a01882e454d1e143a597a923ee6db13b042"
+    },
+    {
+      "path": "config/Automagy.cfg",
+      "size": 8880,
+      "sha1": "cb15093f27085d926912dcccfe9b6eb52e0afabf"
+    },
+    {
+      "path": "config/TaintedMagic.cfg",
+      "size": 1485,
+      "sha1": "fa8000d01854fdaace89b9d4f45909b061759a62"
+    },
+    {
+      "path": "config/Botania.cfg",
+      "size": 135047,
+      "sha1": "65ee21ea070d0e412151c4935d2fb897ed2a22ee"
+    },
+    {
+      "path": "config/AWWayofTime.cfg",
+      "size": 27896,
+      "sha1": "63e3f6daa8982c890150e3e7f876c19a8f245445"
+    },
+    {
+      "path": "config/draconicevolution/manual.json",
+      "size": 75527,
+      "sha1": "3e3393fe77ed037cec7302278796be5072a0f251"
+    },
+    {
+      "path": "config/draconicevolution/resources/pack.mcmeta",
+      "size": 72,
+      "sha1": "8830284d7d9c4c38b2b7f581e493ab3abb7a0287"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore9.png",
+      "size": 217041,
+      "sha1": "626029bd838c77a90aa84b12cc4e453eae8ff40c"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore8.png",
+      "size": 214678,
+      "sha1": "d2042fa6870be4759772263d7a93cf8ebab5cf1d"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore19.png",
+      "size": 218660,
+      "sha1": "0aa027e9df43be5f1bd07e0b0090f0f7dd5fdd58"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore18.png",
+      "size": 229792,
+      "sha1": "7ab673ce06c634239d8ca7418dd79073d1e34a86"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/comet.png",
+      "size": 81369,
+      "sha1": "49e73c0476846d92070dbd203f2c51588144522f"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/resurrectionRitual.png",
+      "size": 158491,
+      "sha1": "3f4cbbbedefadb6f1377213ed854b0cde5d9a291"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore15.png",
+      "size": 223689,
+      "sha1": "323856e1c2e3cec5ce9e1e469004c1ab5f3069a1"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore14.png",
+      "size": 194970,
+      "sha1": "da263da7804bf44ac21347b56ba0f588be66c655"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore1.png",
+      "size": 223775,
+      "sha1": "b633933b8fb74e04b3ad3cb2512ae70632be0c06"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore3.png",
+      "size": 220834,
+      "sha1": "0b36ecbc6b934a40d2fa47421be4d6f949cbb371"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore16.png",
+      "size": 220030,
+      "sha1": "177f750d288deeaa652022a6ac3dd146997165a8"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore17.png",
+      "size": 201246,
+      "sha1": "3575c3a08d3f1e3ceb31ac0afe077b49d262c90a"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore2.png",
+      "size": 220380,
+      "sha1": "6eebb8118e4512e8d2c6b3506746996f25032eee"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore6.png",
+      "size": 226103,
+      "sha1": "d72edb536f1a77dcd36e5d0a4d2d9119dc4b3cf9"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore13.png",
+      "size": 218098,
+      "sha1": "343c2e76b107921d63471ed434cf40e9f09f7638"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore12.png",
+      "size": 217589,
+      "sha1": "70a998871a9a863eecc7ca888cf5b541a8178a1b"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore7.png",
+      "size": 225105,
+      "sha1": "1d9461a6e9267b0ce8817617834fae0525559daa"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore5.png",
+      "size": 213312,
+      "sha1": "f2a914a7ed5bb68d1eeea4f701aa3a3d45c61e99"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/dislocatorReceptical.png",
+      "size": 127001,
+      "sha1": "878238948387130dcc82145c143b151522916b6d"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore10.png",
+      "size": 219930,
+      "sha1": "6e80732cfb26521fbc37ead93c433d0f1fb77c34"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/chaosIsland.png",
+      "size": 192409,
+      "sha1": "c0898875ee17559f51a5b0b6277b79c93d1f70d8"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore11.png",
+      "size": 273696,
+      "sha1": "80497fdaaf3f4832d3e39f2a0b09b36c23adbfec"
+    },
+    {
+      "path": "config/draconicevolution/resources/assets/draconicevolution/textures/gui/manualimages/ECore4.png",
+      "size": 223796,
+      "sha1": "f57d45fe3edc5b6e49b2eb66b6c0a3f2d395fb98"
+    },
+    {
+      "path": "config/cofh/thermalfoundation/common.cfg",
+      "size": 11503,
+      "sha1": "a60a10adb4c47a561b8bc87a0b336e3867bec1fa"
+    },
+    {
+      "path": "config/cofh/thermalfoundation/client.cfg",
+      "size": 389,
+      "sha1": "190f16913b7fb66da344f901f782a17c670d592c"
+    },
+    {
+      "path": "config/cofh/thermalfoundation/lexicon-whitelist.cfg",
+      "size": 8684,
+      "sha1": "d91adf5506ccbc5218589c54f508419c719712f4"
+    },
+    {
+      "path": "config/cofh/core/common.cfg",
+      "size": 1846,
+      "sha1": "1e809e3b6d55d26423a9ee7207146938b3e98f19"
+    },
+    {
+      "path": "config/cofh/core/loot.cfg",
+      "size": 647,
+      "sha1": "50610b1976ff50315af20ae28ecdd87724805b5c"
+    },
+    {
+      "path": "config/cofh/core/client.cfg",
+      "size": 2827,
+      "sha1": "3ee0bbcf8754f2ead94fe23aa942f1683de2ea50"
+    },
+    {
+      "path": "config/cofh/world/ThermalFoundation-Ores.json",
+      "size": 3445,
+      "sha1": "9cd0943ee608eab5af7e82da03efdba269790459"
+    },
+    {
+      "path": "config/cofh/world/Vanilla.json",
+      "size": 3790,
+      "sha1": "5bc7fa108b3cd92857273f5bc7ae6f9b1e1872f0"
+    },
+    {
+      "path": "config/cofh/thermaldynamics/common.cfg",
+      "size": 1036,
+      "sha1": "73d2465930359af244ee678c20c9d26ff70e9021"
+    },
+    {
+      "path": "config/cofh/thermaldynamics/client.cfg",
+      "size": 595,
+      "sha1": "1442d20953a3aa850ffe66df6237e97ec9280fda"
+    },
+    {
+      "path": "config/cofh/thermalexpansion/fuels.cfg",
+      "size": 3029,
+      "sha1": "2ac955fd9c9bf26c4bd9692ec879a5df1991fb1a"
+    },
+    {
+      "path": "config/cofh/thermalexpansion/florbs.cfg",
+      "size": 3108,
+      "sha1": "2bb977166ac6bd7f5be09fcd4f8c55898b54f94d"
+    },
+    {
+      "path": "config/cofh/thermalexpansion/common.cfg",
+      "size": 13006,
+      "sha1": "97f173f9013614e7e1013fec1de923b40b1cf27f"
+    },
+    {
+      "path": "config/cofh/thermalexpansion/client.cfg",
+      "size": 1493,
+      "sha1": "c7c5b41c67850def42fd6c410dbd924e4f32adce"
+    },
+    {
+      "path": "config/aroma1997/Aroma1997sDimension.cfg",
+      "size": 915,
+      "sha1": "5fa8e9d3bc485304d8134403815c5840be2dff69"
+    },
+    {
+      "path": "config/aroma1997/Aroma1997Core.cfg",
+      "size": 351,
+      "sha1": "07c70e05b6beafca3e8da104456d0da70f4d0a43"
+    },
+    {
+      "path": "config/crash_assistant/config.toml",
+      "size": 21151,
+      "sha1": "7e6c9282e475634cacad0f7ee803a2d016a84d77"
+    },
+    {
+      "path": "config/crash_assistant/crash_assistant_localization_overrides/README.md",
+      "size": 2650,
+      "sha1": "fda2be339b85a2f66c558f8c842b3423c13f03a5"
+    },
+    {
+      "path": "config/crash_assistant/scripts/startup/example.jexl",
+      "size": 4366,
+      "sha1": "5a10b7226b29ebd508c4522b7c0b7d787fc5c9b1"
+    },
+    {
+      "path": "config/crash_assistant/scripts/log_analysis/example.jexl",
+      "size": 3495,
+      "sha1": "e492d6b210af660f57e4ace58fb84c18230d1c9e"
+    },
+    {
+      "path": "config/buildcraft/main.cfg",
+      "size": 6260,
+      "sha1": "dc5cb0d1a0dd55bb3b0e596b3e5a717a85ac2517"
+    },
+    {
+      "path": "config/buildcraft/objects.cfg",
+      "size": 2355,
+      "sha1": "bc47394ff4bb56587cb0892f2a129df4c977466c"
+    },
+    {
+      "path": "config/RTG/rtg.cfg",
+      "size": 14993,
+      "sha1": "32aafd2e8a54e4c768f8f251d4165be4cd88024f"
+    },
+    {
+      "path": "config/RTG/biomes/icecreammod.cfg",
+      "size": 1966,
+      "sha1": "97c94117910263e3f2fd1c5015856ec8176c1930"
+    },
+    {
+      "path": "config/RTG/biomes/vanilla.cfg",
+      "size": 119314,
+      "sha1": "e06fd92e1d6d82a1cf09b50a0c76d6ead03151a2"
+    },
+    {
+      "path": "config/RTG/biomes/buildcraft.cfg",
+      "size": 3887,
+      "sha1": "aef542b44dfffdce17baff1864f07b560522ef06"
+    },
+    {
+      "path": "config/RTG/biomes/growthcraft.cfg",
+      "size": 1973,
+      "sha1": "ada524dab4a043f8d0e57b8473ee7ea7a115f880"
+    },
+    {
+      "path": "config/RTG/biomes/vampirism.cfg",
+      "size": 1972,
+      "sha1": "b46eb7c7d1f88b48eaa7e06093302b3dd40857ae"
+    },
+    {
+      "path": "config/RTG/biomes/biomesoplenty.cfg",
+      "size": 149257,
+      "sha1": "5c6c436ac930c901383365f0cf0d35ed770501bd"
+    },
+    {
+      "path": "config/RTG/biomes/enhancedbiomes.cfg",
+      "size": 173210,
+      "sha1": "305d7d382608a7e9db4d75932e9a03d9e0033057"
+    },
+    {
+      "path": "config/RTG/biomes/thaumcraft.cfg",
+      "size": 5789,
+      "sha1": "6739214d19e428925899475bc0733a148c4d4637"
+    },
+    {
+      "path": "config/RTG/biomes/industrialtechnologies.cfg",
+      "size": 6012,
+      "sha1": "a5b2ab162771d8829b923001c830c81c1148ac74"
+    },
+    {
+      "path": "config/RTG/biomes/highlands.cfg",
+      "size": 82662,
+      "sha1": "42d5857c86ce1ca4be9483cff926c167067f73c8"
+    },
+    {
+      "path": "config/RTG/biomes/abyssalcraft.cfg",
+      "size": 12283,
+      "sha1": "72ac4c13ea43087ea42e02a3a369ddb1e2cdeb91"
+    },
+    {
+      "path": "config/RTG/biomes/atg.cfg",
+      "size": 15336,
+      "sha1": "7c1ab27bb476b0727bfe3b1ea72a2e963d0b4d32"
+    },
+    {
+      "path": "config/RTG/biomes/arsmagica.cfg",
+      "size": 2048,
+      "sha1": "4d5fef4876d5138e1462efeb22ee79ec7be7ea78"
+    },
+    {
+      "path": "config/RTG/biomes/extrabiomes.cfg",
+      "size": 53779,
+      "sha1": "c7cb9b425dad90cf002481d878649d4304b90757"
+    },
+    {
+      "path": "config/RTG/biomes/flowercraft.cfg",
+      "size": 1970,
+      "sha1": "b906c5b316ec07f70821f7da1ddca60e32445939"
+    },
+    {
+      "path": "config/RTG/biomes/chromaticraft.cfg",
+      "size": 3887,
+      "sha1": "e8743ee804ee31991db3341114ec7022ed134d4e"
+    },
+    {
+      "path": "config/RTG/biomes/ridiculousworld.cfg",
+      "size": 13663,
+      "sha1": "7bb72d0e852eaa3e1e668f8e699a4b6f959a195b"
+    },
+    {
+      "path": "config/RTG/biomes/tofucraft.cfg",
+      "size": 17276,
+      "sha1": "c75e6250f5ca2bbeca3e47f701703e101f8980b5"
+    },
+    {
+      "path": "config/RTG/biomes/forgottennature.cfg",
+      "size": 17305,
+      "sha1": "4f34b18291ed88718bdcf9c2d09497aab4f5edf5"
+    },
+    {
+      "path": "config/NEI/client.cfg",
+      "size": 1300,
+      "sha1": "9d73612ddc20746674d55eec2374df71288cfc0a"
+    },
+    {
+      "path": "config/AppliedEnergistics2/Facades.cfg",
+      "size": 115346,
+      "sha1": "5ad20f241ef816801ff0279c5da07b2e49485056"
+    },
+    {
+      "path": "config/AppliedEnergistics2/AppliedEnergistics2.cfg",
+      "size": 10108,
+      "sha1": "d8d700890d14ddb192e499e5517a2b8b171c3322"
+    },
+    {
+      "path": "config/AppliedEnergistics2/CustomRecipes.cfg",
+      "size": 921,
+      "sha1": "2d043f73b9f3c62b2e174af8981b952fe96e63d1"
+    },
+    {
+      "path": "config/AppliedEnergistics2/VersionChecker.cfg",
+      "size": 727,
+      "sha1": "86f37592a6110feb8a7486bfb425506cf79cedf5"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/README.html",
+      "size": 14676,
+      "sha1": "a3585260c46584490e9c04555cb4f3ba9230c17d"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/items.csv",
+      "size": 1056636,
+      "sha1": "1e969284a18a257f4c28c2d972149f9f371cef61"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/groups.recipe",
+      "size": 1379,
+      "sha1": "aa4f2133ab590771028a9dc7f9db281aae02df61"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/oredict.recipe",
+      "size": 1333,
+      "sha1": "edbb02e74bd1c67babfc4e0f257f234f96902a1b"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/index.recipe",
+      "size": 522,
+      "sha1": "4c7d7534bd2dca1d5dd17d3c5b1a57ac00d244ed"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/aliases.recipe",
+      "size": 54,
+      "sha1": "6b47570af7634bbbbb6cc180a836ec48143caf26"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/misc/deconstruction.recipe",
+      "size": 317,
+      "sha1": "2ee999309bbcf33d930f767db96d91c4457d11bc"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/misc/seeds.recipe",
+      "size": 273,
+      "sha1": "dd74e2dab09d1965757cca7d81015892ae8d6acb"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/misc/fluixpearl.recipe",
+      "size": 220,
+      "sha1": "e2b2a80a644d468d443b497e663044455c615108"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/misc/meteors.recipe",
+      "size": 197,
+      "sha1": "606c9b7ee06dceee90e78625f02797f547325fec"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/misc/tinytnt.recipe",
+      "size": 89,
+      "sha1": "9c0546ccc56b55680e2b395738dc37f924a65e72"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/misc/index.recipe",
+      "size": 226,
+      "sha1": "3c70ab3973b3ee1bbce03dc5322450af530bcecc"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/misc/vanilla.recipe",
+      "size": 732,
+      "sha1": "19e5db3e6c700f2423faaa2c68f7a4cb579adc95"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/misc/grindstone.recipe",
+      "size": 564,
+      "sha1": "580669fedc7fa4497cf27743b55d91bde7a29585"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/misc/chests.recipe",
+      "size": 405,
+      "sha1": "5d429d02eccf950077d0134deb783071860b75c3"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/tools/paintballs.recipe",
+      "size": 8769,
+      "sha1": "967835263ce87d656e56ecd67468f45cd2ba556d"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/tools/index.recipe",
+      "size": 191,
+      "sha1": "96ef77993d91fbc6ab0f93b1a37309940b3f90b2"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/tools/certus-quartz.recipe",
+      "size": 1327,
+      "sha1": "e8f2972718c681cb49a73a000579af8fa849c8ca"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/tools/nether-quartz.recipe",
+      "size": 1327,
+      "sha1": "83065831130bbb86478fb6b6e447f828b69839d9"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/tools/network.recipe",
+      "size": 815,
+      "sha1": "6b48f2af049996e5083992f12a1ba3e5d32c5fb8"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/tools/matter-cannon.recipe",
+      "size": 205,
+      "sha1": "d28767659e08d5897e485ebf6cc9080d415fc3e2"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/tools/misctools.recipe",
+      "size": 330,
+      "sha1": "48888b7a56fd2bdecad05b9253d1fda023d2f7a6"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/materials/circuits.recipe",
+      "size": 483,
+      "sha1": "74e585319489e324991337bd3b9afb471e3d2a6c"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/materials/cores.recipe",
+      "size": 248,
+      "sha1": "86d2f3506bc1cb932503184e5cc54b4b11a80a73"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/materials/presses.recipe",
+      "size": 459,
+      "sha1": "314f6738bf12374c8dac07a45c4557423f8c32bd"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/materials/processors.recipe",
+      "size": 428,
+      "sha1": "9d5e430f9f71fe120c1fee56d7c7ed6ec03e7624"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/materials/index.recipe",
+      "size": 160,
+      "sha1": "e2fdbf0e19d5bda3dad84d64aee34e740f184566"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/materials/cards.recipe",
+      "size": 1057,
+      "sha1": "79db3607552c59318fd16296f4f22f7a3fdc631c"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/processing/te.recipe",
+      "size": 626,
+      "sha1": "5ce99ec03d55f0e4b7c22161eedf9ac5fbbfa54f"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/processing/mekanism.recipe",
+      "size": 645,
+      "sha1": "97cd279326c9dec3e745cb1de7a837e9990b5bd2"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/processing/grind.recipe",
+      "size": 181,
+      "sha1": "ab1a4f303f11c69111c328b8fb2984517c73c068"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/processing/hydraulicraft.recipe",
+      "size": 617,
+      "sha1": "e329f99159cc88fc9b2da1cd1b58a870e62bc3dc"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/processing/index.recipe",
+      "size": 270,
+      "sha1": "f843a39a0ae9e70e4959a4d745ed871ab32e1481"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/processing/vanilla.recipe",
+      "size": 308,
+      "sha1": "a62cb2dcefa98a8c347acf1d4982eb028c0dd59a"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/processing/ic2.recipe",
+      "size": 619,
+      "sha1": "a59e347defb51a6e4d55baacc7e486af5f63920e"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/processing/factorization.recipe",
+      "size": 603,
+      "sha1": "ba15552abd7e7620e3d5d679d8d7513c41fa3abb"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/processing/rotarycraft.recipe",
+      "size": 599,
+      "sha1": "02493bd31f17bde7129479a6934207bff3c870d1"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/index.recipe",
+      "size": 206,
+      "sha1": "f686aea3d3da878bce71d68744518b644d1aba18"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/wireless.recipe",
+      "size": 608,
+      "sha1": "60af19918b25b53963ce8badc1c97c8786415c3a"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/blocks/crystal-processing.recipe",
+      "size": 424,
+      "sha1": "810d5a4fb7f7de48c1b0bc1531b9f2de29fb213a"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/blocks/quantum.recipe",
+      "size": 567,
+      "sha1": "6f3fb8a051afa42f4d3d765e35c77f71652f3ea0"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/blocks/io.recipe",
+      "size": 372,
+      "sha1": "87f56e8ff21870f3977c5d0d52dfe7ececb5b62a"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/blocks/security.recipe",
+      "size": 229,
+      "sha1": "402679fd4a4f4b8d7db9bd423b1f20c023cf25d0"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/blocks/controller.recipe",
+      "size": 311,
+      "sha1": "da93638b8ab008240dec083d4fdda27381cc832e"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/blocks/interfaces.recipe",
+      "size": 353,
+      "sha1": "28eafdeabb242e68c9e9b5791092920cef99c8e8"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/blocks/index.recipe",
+      "size": 431,
+      "sha1": "b4c760d2647b1d80799226b1a42075d9b75eefc4"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/blocks/energy.recipe",
+      "size": 978,
+      "sha1": "c3fe5b654ae3cc7da65177b434b04be730fe30ee"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/blocks/cellworkbench.recipe",
+      "size": 237,
+      "sha1": "f2ac08d9216db247cf096f045edd593c5ae22506"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/blocks/spatial-io.recipe",
+      "size": 385,
+      "sha1": "eaaa3b92502d970f21927c63bf9fe0d3a5201988"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/blocks/storage.recipe",
+      "size": 369,
+      "sha1": "4ddf5adfae8bdf31a162a2029ca70da0ce7e0e7b"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/blocks/inscribers.recipe",
+      "size": 217,
+      "sha1": "d0677978c18a311ac5f79ce90e06d28a0ed43be2"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/cells/spatial-components.recipe",
+      "size": 1008,
+      "sha1": "64e34238f20e083f430286fca133b4363992fddb"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/cells/spatial.recipe",
+      "size": 1253,
+      "sha1": "8fd0c861f538a137e4ef8a716b8515377b42a17a"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/cells/storage-components.recipe",
+      "size": 1170,
+      "sha1": "c76129e0ac5bf92fcb6a4e67fa2a374688b7abc1"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/cells/index.recipe",
+      "size": 233,
+      "sha1": "118187d0b5b2fc6659053fc8b3ff0be43eca9a03"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/cells/empty.recipe",
+      "size": 260,
+      "sha1": "214d42e56520f331106101581c5a05b9fbcc92bd"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/cells/storage.recipe",
+      "size": 1571,
+      "sha1": "4178fd1756413c81f1e14feaa4b86749eee853df"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/cells/view.recipe",
+      "size": 339,
+      "sha1": "11a125066e3c243382e79eaeede34589e8f403ad"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/parts/panels.recipe",
+      "size": 453,
+      "sha1": "6b145139e71c7f79c8a623718def7847c8bc2929"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/parts/io-buses.recipe",
+      "size": 379,
+      "sha1": "3e3a995156ceee95e018710e82d82e2b2d12b16c"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/parts/toggle-buses.recipe",
+      "size": 289,
+      "sha1": "f5c92f70b9c7b76e852a00136d435a2330db7907"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/parts/terminals.recipe",
+      "size": 501,
+      "sha1": "c72fd8828d10bb679077302ff0881abcde9a2d23"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/parts/index.recipe",
+      "size": 378,
+      "sha1": "b9b05165f56fa1acee2d3ceb349f1208b1ea1f3a"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/parts/emitters.recipe",
+      "size": 97,
+      "sha1": "a7b416a8e75422c0325efa5e71accdf450346178"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/parts/cable-anchor.recipe",
+      "size": 67,
+      "sha1": "b51f3758ca980b7750875687aea65c0b998ea1a9"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/parts/planes.recipe",
+      "size": 826,
+      "sha1": "8ecd0bdc753f6404d59d1bcaa19f75dd5db0de2a"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/parts/monitors.recipe",
+      "size": 231,
+      "sha1": "9bc043eed5bce73266d305889c031e2b178555b9"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/parts/quartz-fiber.recipe",
+      "size": 125,
+      "sha1": "1cdcceb53cf4c617b38f9dd3abd6d7da2036f001"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/parts/tunnels.recipe",
+      "size": 199,
+      "sha1": "097939526d95dde483feb5c6c96e2ffe3dae0e04"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/cables/glass.recipe",
+      "size": 3319,
+      "sha1": "a04727b4fb99b5101485a3f073d38a8987ebbdc0"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/cables/index.recipe",
+      "size": 142,
+      "sha1": "b9853d883a7cac8a4aa8f01f0009298fcd58c582"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/cables/smart.recipe",
+      "size": 3342,
+      "sha1": "01fb8dc213b4f89351fe43c57984cf7b7e83229e"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/cables/covered.recipe",
+      "size": 3584,
+      "sha1": "11a4a54e3bd10e14e97c22a8bc83924dba8b0f02"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/cables/dense.recipe",
+      "size": 3394,
+      "sha1": "6cc57017fa7e67899f347b3c5795c0165fc9596c"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/crafting/patterns.recipe",
+      "size": 271,
+      "sha1": "a9cfc20851001c04825661ffb9fd15fbf0ce3d6b"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/crafting/assembler.recipe",
+      "size": 292,
+      "sha1": "1d9fb21f8a0a5087b35a75c440d5e5a58759ad4d"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/crafting/index.recipe",
+      "size": 116,
+      "sha1": "6e44390aa8fe3f5c85f1ff980f97c95bd796ec95"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/network/crafting/cpu.recipe",
+      "size": 929,
+      "sha1": "f5021bd16e1c1bf48a81a487ea93d1fd8a96bd71"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/decorative/stairs.recipe",
+      "size": 1442,
+      "sha1": "78ad344e08fc5abca33a7a4514298ddda0464bbc"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/decorative/quartzglass.recipe",
+      "size": 228,
+      "sha1": "7f5739b9ca057c36962b80e9d8405d13bca43c55"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/decorative/fixtures.recipe",
+      "size": 171,
+      "sha1": "0b2d810742f26f4697d083acc7e659a655dde64c"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/decorative/certus.recipe",
+      "size": 158,
+      "sha1": "0eb40388110fae2e4902695d3bd665dbc91fe642"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/decorative/index.recipe",
+      "size": 234,
+      "sha1": "798b10e47ca196ea747220abab138d78ff3a40ec"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/decorative/skystone.recipe",
+      "size": 233,
+      "sha1": "9f88e5f75ba673bb0425d0b054456cf6d9047d95"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/decorative/crystals.recipe",
+      "size": 1535,
+      "sha1": "fe9233df1b0651edb933967db877acd4c81ef1a7"
+    },
+    {
+      "path": "config/AppliedEnergistics2/recipes/generated/decorative/slabs.recipe",
+      "size": 841,
+      "sha1": "6b89117a7b312355cc9793bc95c544e747c5cd41"
+    },
+    {
+      "path": "config/endercore/endercore.cfg",
+      "size": 2698,
+      "sha1": "39a280eff8e765795d7484e35334b1d1f8478f99"
+    },
+    {
+      "path": "config/endercore/cropConfig.json",
+      "size": 444,
+      "sha1": "2efca3124e0407e038222e38fc34de6e30c0a05d"
+    },
+    {
+      "path": "config/aether/AetherI.cfg",
+      "size": 2591,
+      "sha1": "39e7be4933fc1af7027fd79e20f5bbeb3f706a93"
+    },
+    {
+      "path": "config/powercrystals/minefactoryreloaded/common.cfg",
+      "size": 17544,
+      "sha1": "052ee329c5e92510a39c1d743d5f4e3188cd695d"
+    },
+    {
+      "path": "config/powercrystals/minefactoryreloaded/client.cfg",
+      "size": 454,
+      "sha1": "c0c36ba9e38c6bda8141759defda82ea80389685"
+    },
+    {
+      "path": "config/enderio/VatRecipes_User.xml",
+      "size": 28,
+      "sha1": "a5e7f0dd70bb61514ddd8cd0ab416404ce2122c9"
+    },
+    {
+      "path": "config/enderio/OreDictionaryPreferences_Core.xml",
+      "size": 4497,
+      "sha1": "314a5adf927d05cfd8258b8ec71ee27cfbb42a8c"
+    },
+    {
+      "path": "config/enderio/SliceAndSpliceRecipes_User.xml",
+      "size": 50,
+      "sha1": "9ae1947d28daad4070cd1ded57c6823ffbd8337c"
+    },
+    {
+      "path": "config/enderio/EnchanterRecipes_Core.xml",
+      "size": 5307,
+      "sha1": "6112ae8ac865cdfc34e7c8b4be4559c1550aa92a"
+    },
+    {
+      "path": "config/enderio/SAGMillRecipes_User.xml",
+      "size": 2989,
+      "sha1": "0393f6b46d24edce7bdc3725c1cecd94c7bece79"
+    },
+    {
+      "path": "config/enderio/AlloySmelterRecipes_Core.xml",
+      "size": 15161,
+      "sha1": "d6c629fec61b6b28dad4acea6a52ef6cd50c161e"
+    },
+    {
+      "path": "config/enderio/PainterPaintSources_Core.xml",
+      "size": 1508,
+      "sha1": "4bd75f803f2f738a41241be643680f1a6853d724"
+    },
+    {
+      "path": "config/enderio/VatRecipes_Core.xml",
+      "size": 6083,
+      "sha1": "a728ca22ffe01b371586505088dd333ea32fd73c"
+    },
+    {
+      "path": "config/enderio/OreDictionaryPreferences_User.xml",
+      "size": 136,
+      "sha1": "5ba0ab20422bab73e77a9d6cefbd48b580f0c801"
+    },
+    {
+      "path": "config/enderio/EnderIO.cfg",
+      "size": 40319,
+      "sha1": "aae7559824ecb464eee6b5019ccad8af52d329e6"
+    },
+    {
+      "path": "config/enderio/EnchanterRecipes_User.xml",
+      "size": 867,
+      "sha1": "d5801ab22f789f9b497bb49910bf73fd596dd4ba"
+    },
+    {
+      "path": "config/enderio/SliceAndSpliceRecipes_Core.xml",
+      "size": 3171,
+      "sha1": "63922ed67160a8eff27e6b7764edd72f1ecffa5d"
+    },
+    {
+      "path": "config/enderio/PoweredSpawnerConfig_User.json",
+      "size": 220,
+      "sha1": "0ba2bbfe2aad1ca964748696d3f8954dfdb91149"
+    },
+    {
+      "path": "config/enderio/PoweredSpawnerConfig_Core.json",
+      "size": 1012,
+      "sha1": "d20506ba0c28a033a81bd47d4fe07b0182968662"
+    },
+    {
+      "path": "config/enderio/SAGMillRecipes_Core.xml",
+      "size": 104459,
+      "sha1": "a65f65571bc34411daf2e4a412c35c45f99b8aed"
+    },
+    {
+      "path": "config/enderio/PainterPaintSources_User.xml",
+      "size": 170,
+      "sha1": "78c578a1097ba37a4a7c603fd5123efc328d5625"
+    },
+    {
+      "path": "config/enderio/AlloySmelterRecipes_User.xml",
+      "size": 1085,
+      "sha1": "79e30991ff702e0d0c377ed8249abe5efe12f79f"
+    },
+    {
+      "path": "config/mekanism/BoxBlacklist.txt",
+      "size": 164,
+      "sha1": "e47207974665cbe0998cc8c115f067f83dce0a5a"
+    },
+    {
+      "path": "config/forestry/backpacks.cfg",
+      "size": 18307,
+      "sha1": "d2f2f3b51c121b6759ed95033079b00feaabb5cb"
+    },
+    {
+      "path": "config/forestry/modules.cfg",
+      "size": 3905,
+      "sha1": "3c50120c1bb77cf33f00df9213aca882656332b2"
+    },
+    {
+      "path": "config/forestry/common.cfg",
+      "size": 4750,
+      "sha1": "2d710c860ccc75631f34bfc0ed7abfd72929faec"
+    },
+    {
+      "path": "config/forestry/fluids.cfg",
+      "size": 1882,
+      "sha1": "65a9fa63cd83ded93cfb3d44196c5b58e9a668ed"
+    },
+    {
+      "path": "config/forestry/apiculture.cfg",
+      "size": 6133,
+      "sha1": "a35468d5e4a373744ba3b45b0db98a04412314fc"
+    },
+    {
+      "path": "config/forestry/lepidopterology.cfg",
+      "size": 471,
+      "sha1": "b937c53f00922abcb560814710961f16e34ceee4"
+    },
+    {
+      "path": "config/forestry/gamemodes/EASY.cfg",
+      "size": 4696,
+      "sha1": "f1893a49ab76a2381a629b33991586c818623fbb"
+    },
+    {
+      "path": "config/forestry/gamemodes/NORMAL.cfg",
+      "size": 4844,
+      "sha1": "0d114c37fe8f2229d244df1b87d0d98aa9d7e8b3"
+    },
+    {
+      "path": "config/forestry/gamemodes/HARD.cfg",
+      "size": 4826,
+      "sha1": "9bbe3e64a7dabcbde0f87edb41b260bbbe479d6d"
+    },
+    {
+      "path": "config/forestry/gamemodes/OP.cfg",
+      "size": 4860,
+      "sha1": "c486bada1255c910a480f04876a1fa4c59e37a45"
+    },
+    {
+      "path": "config/Galacticraft/miccore.conf",
+      "size": 302,
+      "sha1": "a6405dd312ed8432525c4f7320367722693143a9"
+    },
+    {
+      "path": "config/Galacticraft/chunkloading.conf",
+      "size": 157,
+      "sha1": "5fa7d20c6d695d3e2424ab7c3a3a370d74b216e1"
+    },
+    {
+      "path": "config/Galacticraft/power-GC3.conf",
+      "size": 1148,
+      "sha1": "6cfca0aa91b9e644f61b1a7cfa6d4aac5abe4489"
+    },
+    {
+      "path": "config/Galacticraft/core.conf",
+      "size": 10821,
+      "sha1": "078600df500bc46df6363425ba8cbde0cd3ea747"
+    },
+    {
+      "path": "config/Galacticraft/planets.conf",
+      "size": 2278,
+      "sha1": "22633238ecba1f4b2e86602bc1cc9bf4c2fbccae"
+    },
+    {
+      "path": "config/IguanaTinkerTweaks/main.cfg",
+      "size": 13600,
+      "sha1": "50fea5ec20478713fdf1fde8fd17b2938d620f8b"
+    },
+    {
+      "path": "config/IguanaTinkerTweaks/Modules.cfg",
+      "size": 1108,
+      "sha1": "0f58957e2f562504abc311120390abd5b10b3364"
+    },
+    {
+      "path": "config/IguanaTinkerTweaks/restrictions.cfg",
+      "size": 5853,
+      "sha1": "f955700550a31a8e2db2a833f931cf7c7b1bb1ab"
+    },
+    {
+      "path": "config/xzshop/wallets.txt",
+      "size": 51,
+      "sha1": "8f6182639ed9aafac755509616ba04fa795988a7"
+    },
+    {
+      "path": "config/BloodMagic/schematics/MedMossyForge.json",
+      "size": 18725,
+      "sha1": "ec5e893aeab3eebe3d2874a1de21fa5e084d5349"
+    },
+    {
+      "path": "config/BloodMagic/schematics/SmallMossyTower1.json",
+      "size": 20724,
+      "sha1": "c01a34e05e82a9aed942edc7af3d4c5be5af9274"
+    },
+    {
+      "path": "config/BloodMagic/schematics/Ampitheter.json",
+      "size": 83376,
+      "sha1": "d1331848d75bca0ca7d1060e8244fe586281a623"
+    },
+    {
+      "path": "config/BloodMagic/schematics/LavaLight.json",
+      "size": 9648,
+      "sha1": "a314630f6195e5487a2d5e94f9d21304fc65b9b5"
+    },
+    {
+      "path": "config/BloodMagic/schematics/MossyGourdHouse1.json",
+      "size": 20474,
+      "sha1": "7bc8ef24afdc9b469962f32ece0a3d79e35f1ad9"
+    },
+    {
+      "path": "config/BloodMagic/schematics/SmallHouse2.json",
+      "size": 11431,
+      "sha1": "20547d031276cc7f0806e385687d56d15e7ff6ee"
+    },
+    {
+      "path": "config/BloodMagic/schematics/MossyTheatre.json",
+      "size": 39233,
+      "sha1": "477a47d069e4f10cb5e44f99389c2e91dd615ebb"
+    },
+    {
+      "path": "config/BloodMagic/schematics/QuickDemonStructure1.json",
+      "size": 10622,
+      "sha1": "1aca88d20753e608856f5be65803b572ba7650a2"
+    },
+    {
+      "path": "config/BloodMagic/schematics/MedHouse1.json",
+      "size": 16595,
+      "sha1": "44c12ec7e4e547dce5433fbe1e0a0dd4971fb3b9"
+    },
+    {
+      "path": "config/BloodMagic/schematics/SmallTower1.json",
+      "size": 19924,
+      "sha1": "7dc8aef0989d6b8eda8d175430074e256371cda4"
+    },
+    {
+      "path": "config/BloodMagic/schematics/SmallHouse1.json",
+      "size": 10770,
+      "sha1": "392015035f3aca9b55e8632f6c1c3db69b1e9c7b"
+    },
+    {
+      "path": "config/BloodMagic/schematics/MedFarm1.json",
+      "size": 32786,
+      "sha1": "367657a35d5506dd264561e05b2deeb666bf1768"
+    },
+    {
+      "path": "config/BloodMagic/schematics/MedForge1.json",
+      "size": 29575,
+      "sha1": "6b4a01153aad631ba3dfdd12573563d259626da4"
+    },
+    {
+      "path": "config/BloodMagic/schematics/MossyCellar1.json",
+      "size": 16883,
+      "sha1": "3ba08149dea9725f9d96367b3d45d04ae05ba0d2"
+    },
+    {
+      "path": "config/mixingasm/transformer_inclusion_list_default.txt",
+      "size": 1260,
+      "sha1": "6f516cc73321dfca058780ca90195b220c75c43b"
+    },
+    {
+      "path": "config/mixingasm/transformer_exclusion_list.txt",
+      "size": 236,
+      "sha1": "d09a81fd9ce9e6d24f1f250a36dd527cf645b38f"
+    },
+    {
+      "path": "config/mixingasm/transformer_inclusion_list.txt",
+      "size": 253,
+      "sha1": "ac409a637e2f3db95abb0443b2d8350212a68043"
+    },
+    {
+      "path": "config/ProjectE/ProjectE.cfg",
+      "size": 6740,
+      "sha1": "40bd0fae1d20e0d5bf7893a0372767ece4ecf038"
+    },
+    {
+      "path": "config/ProjectE/nbt_whitelist.cfg",
+      "size": 307,
+      "sha1": "3a03ef4ea5d06e54c8f51e158b499fd3a7aadea7"
+    },
+    {
+      "path": "config/ProjectE/custom_emc.cfg",
+      "size": 218,
+      "sha1": "a0436ccb6b74cf4fddc455b5248ef33f1370aae6"
+    },
+    {
+      "path": "config/ProjectE/mapping.cfg",
+      "size": 3687,
+      "sha1": "01a464993de9c501d2397d162356ee75a31c6b13"
+    },
+    {
+      "path": "config/ProjectE/customConversions/ODdefaults.json",
+      "size": 1379,
+      "sha1": "dbf673fa62d7877c68599cec7d5e2ca584c18fe5"
+    },
+    {
+      "path": "config/ProjectE/customConversions/example.json",
+      "size": 3895,
+      "sha1": "baef2953bf679907987dd5170c35d25fb8e7faf0"
+    },
+    {
+      "path": "config/ProjectE/customConversions/metals.json",
+      "size": 3849,
+      "sha1": "4cda4364b5ce748d697f5173cf6d71f7d5058356"
+    },
+    {
+      "path": "config/xzskins/fbb5125497ec378db4989435e70344e4.png",
+      "size": 615,
+      "sha1": "6e45b081e7b52dea2575a09ac9c10b4fba0e9afc"
+    },
+    {
+      "path": "config/biomesoplenty/terraingen.cfg",
+      "size": 829,
+      "sha1": "591ed930e7b24a4cf64ad22a61d9aee5c45b995a"
+    },
+    {
+      "path": "config/biomesoplenty/biomeweights.cfg",
+      "size": 1571,
+      "sha1": "8f7bae232cd0819ef69aa128afa0a3d464e0a5e8"
+    },
+    {
+      "path": "config/biomesoplenty/main.cfg",
+      "size": 346,
+      "sha1": "52b9ad60d91e957260759d5a4ec6823e7300a3b9"
+    },
+    {
+      "path": "config/biomesoplenty/biomegen.cfg",
+      "size": 3278,
+      "sha1": "d91610813b34790d981af33550dc1964f18d4532"
+    },
+    {
+      "path": "config/biomesoplenty/ids.cfg",
+      "size": 2456,
+      "sha1": "e4ea7405d80688aa9188045d316a5dcade7ff7e3"
+    },
+    {
+      "path": "config/biomesoplenty/misc.cfg",
+      "size": 532,
+      "sha1": "da4b94661d7e131d79e2142551f4776527a43128"
+    },
+    {
+      "path": "config/biomesoplenty/structures/strongholds.cfg",
+      "size": 1483,
+      "sha1": "af3b91c6d0d213c7535c0fe7dc45d9880db75561"
+    },
+    {
+      "path": "config/biomesoplenty/structures/villages.cfg",
+      "size": 1641,
+      "sha1": "0e39ce29d877693328822f741f6fbf94ba1dfbe6"
+    },
+    {
+      "path": "config/questbook/quests.json",
+      "size": 38735,
+      "sha1": "d4bdbf698f9c895199d73fc352d29d72c33d8bae"
+    },
+    {
+      "path": "config/questbook/quests-backup-old.json.bak",
+      "size": 50324,
+      "sha1": "abfaf800532283a99781cd8db710de33ee1cf3e1"
+    },
+    {
+      "path": "config/questbook/chapters/buildcraft.json",
+      "size": 49556,
+      "sha1": "f9256278305f351ce9b84c064a3af0eabef3e66a"
+    },
+    {
+      "path": "config/questbook/chapters/thaumaddons.json",
+      "size": 52782,
+      "sha1": "48820ed04327761e95834eed2f8080bb7e4c142f"
+    },
+    {
+      "path": "config/questbook/chapters/hee.json",
+      "size": 48728,
+      "sha1": "e479df75ea51a5925a6b3c3a37fe0361c5baa3a8"
+    },
+    {
+      "path": "config/questbook/chapters/divinerpg.json",
+      "size": 58626,
+      "sha1": "963d092aa3e870a875aad25a77ac3332af658b7c"
+    },
+    {
+      "path": "config/questbook/chapters/enderio.json",
+      "size": 51338,
+      "sha1": "317c06b01a4f81a1584f10a7f961d1c6968729bf"
+    },
+    {
+      "path": "config/questbook/chapters/mfr.json",
+      "size": 40026,
+      "sha1": "34a0f179016c431aa2e0b4e9fac1642365f190f8"
+    },
+    {
+      "path": "config/questbook/chapters/mekanism.json",
+      "size": 58204,
+      "sha1": "c0ead64794c034c1d336df7b657521123f5e296b"
+    },
+    {
+      "path": "config/questbook/chapters/avaritia.json",
+      "size": 41221,
+      "sha1": "d8e75926ad59adf966722f5094c49620c1649422"
+    },
+    {
+      "path": "config/questbook/chapters/ic2.json",
+      "size": 57686,
+      "sha1": "5c996de7df646652a3d633bb75ce87ab98fae264"
+    },
+    {
+      "path": "config/questbook/chapters/extrautilities.json",
+      "size": 35805,
+      "sha1": "1d8203bc2758d00d19416b882042d4f672db25c3"
+    },
+    {
+      "path": "config/questbook/chapters/thermal.json",
+      "size": 53071,
+      "sha1": "3d326f4856030234cd54ef740bed39bb4e213668"
+    },
+    {
+      "path": "config/questbook/chapters/thaumcraft.json",
+      "size": 40044,
+      "sha1": "3ff0961fe0fc91c07590636bc374838ca4e4eeec"
+    },
+    {
+      "path": "config/questbook/chapters/aether.json",
+      "size": 47148,
+      "sha1": "95b1fa8d118c356bf4ab1a56eae7a7571a90d81b"
+    },
+    {
+      "path": "config/questbook/chapters/galacticraft.json",
+      "size": 48665,
+      "sha1": "a6c681c1762b6585f5659384b713b7d647665b7e"
+    },
+    {
+      "path": "config/questbook/chapters/twilightforest.json",
+      "size": 56116,
+      "sha1": "57e53da96dca36134f2c3b4b7ea084e1960aeb1f"
+    },
+    {
+      "path": "config/questbook/chapters/ic2addons.json",
+      "size": 50221,
+      "sha1": "a74e3849c96f1df63e637d547d6a5fff4d8564ec"
+    },
+    {
+      "path": "config/questbook/chapters/ae2.json",
+      "size": 53069,
+      "sha1": "bdf1094f18d2461dc93f19e0c69d53f936904325"
+    },
+    {
+      "path": "config/questbook/chapters/bloodmagic.json",
+      "size": 59604,
+      "sha1": "b7ffeee52abb131a44ba8ff8e90a3a23d5fffc05"
+    },
+    {
+      "path": "config/questbook/chapters/forestry.json",
+      "size": 46380,
+      "sha1": "0e7ca6d490e6b4a6487654cc2efdf48d1a4ee2ff"
+    },
+    {
+      "path": "config/questbook/chapters/witchery.json",
+      "size": 52198,
+      "sha1": "e9ebf91efdacb74c55305473a51d3e92030ea88d"
+    },
+    {
+      "path": "config/questbook/chapters/draconicevolution.json",
+      "size": 55016,
+      "sha1": "fc1a57aa565d83dfbf7e910b6bae8dddfa54e75f"
+    },
+    {
+      "path": "config/questbook/chapters/tconstruct.json",
+      "size": 39498,
+      "sha1": "7e607389ab67b7e11ffd6446cd9d58c43428b744"
+    },
+    {
+      "path": "config/questbook/chapters/botania.json",
+      "size": 37866,
+      "sha1": "87512579f27541994f82a304f8fc70e8823b235e"
+    },
+    {
+      "path": "config/SlimeKnights/Mantle.cfg",
+      "size": 332,
+      "sha1": "a722faee10477bba6f25fdc4a6a3d0a73160ceb8"
+    },
+    {
+      "path": "shaderpacks/miniature-shader-2.19.zip",
+      "size": 43913,
+      "sha1": "f66501ebcc5197f72ef19065eb0fa851707d7f9f"
+    },
+    {
+      "path": "shaderpacks/BSL_v10.1.8.zip",
+      "size": 1134153,
+      "sha1": "e89818c8827d0131c102fb480c3c3446624db0df"
+    },
+    {
+      "path": "resourcepacks/Faithful32-1.7.10-missing-fill.zip",
+      "size": 11316610,
+      "sha1": "3f817182d360f24899598916bb61bdff700f9733"
+    },
+    {
+      "path": "resourcepacks/ToolLevelNames_ResourcePack.zip",
+      "size": 6675,
+      "sha1": "5f31398f601b8a3a64f1faa7d22c083b02b1c175"
+    },
+    {
+      "path": "resourcepacks/Faithful32-1.7.10-master.zip",
+      "size": 149123679,
+      "sha1": "ee94eebb75fd29912ecff49c38569cea0d427095"
+    },
+    {
+      "path": "resourcepacks/XZLauncher-Skin/pack.mcmeta",
+      "size": 58,
+      "sha1": "062da4afe85ecce9e9f49f987db8cbbd23bbc17f"
+    },
+    {
+      "path": "resourcepacks/XZLauncher-Skin/assets/minecraft/textures/entity/steve.png",
+      "size": 615,
+      "sha1": "6e45b081e7b52dea2575a09ac9c10b4fba0e9afc"
+    },
+    {
+      "path": "resourcepacks/Aether b1.7.3 Textures/pack.png",
+      "size": 600,
+      "sha1": "2ccac2610fb87f45fb2b1ac102cb73a0b630940e"
+    },
+    {
+      "path": "resourcepacks/Aether b1.7.3 Textures/pack.mcmeta",
+      "size": 113,
+      "sha1": "bafb164a1c7af3c7bd41d89ae0409b9d4b73a40d"
+    },
+    {
+      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/misc/buckets/skyroot_remedy_bucket.png",
+      "size": 484,
+      "sha1": "a8a4b11b001c3de7fb009e7c3959775ade233641"
+    },
+    {
+      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/accessories/agility_cape.png",
+      "size": 3049,
+      "sha1": "59f629e21177eb8c6aa8c5737481b7909cbfdd1d"
+    },
+    {
+      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/accessories/phoenix_gloves.png",
+      "size": 1816,
+      "sha1": "08841ee104eaa0c339672193e76987a6667298bc"
+    },
+    {
+      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/weapons/holy_sword.png",
+      "size": 339,
+      "sha1": "cd6349f3b408f1eece6e099232f69b0be1986f87"
+    },
+    {
+      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/weapons/lightning_sword.png",
+      "size": 339,
+      "sha1": "d30ae1f55899bb4d3ee7a29eefe7ecffca8b921d"
+    },
+    {
+      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/weapons/flaming_sword.png",
+      "size": 355,
+      "sha1": "dcdace6bd97d43bfe9150640a7ab76061569bd4a"
+    },
+    {
+      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/weapons/bow_pulling_2.png",
+      "size": 445,
+      "sha1": "392739b74c062745dff5d64eca05342d90ba500c"
+    },
+    {
+      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/weapons/phoenix_bow.png",
+      "size": 385,
+      "sha1": "01dbdf6ff2a5251b3b3e5b96a20394e125499eb4"
+    },
+    {
+      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/weapons/bow_pulling_0.png",
+      "size": 443,
+      "sha1": "5aa34acfcc67cf1641dd3abef4ad7ffae6ad19cd"
+    },
+    {
+      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/weapons/bow_pulling_1.png",
+      "size": 489,
+      "sha1": "7acb1ed758c3884f291ea77b5e2cb8777a9b1f39"
+    },
+    {
+      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/armor/phoenix_leggings.png",
+      "size": 1282,
+      "sha1": "9249a5af0a9ebb2eddc589fec9cb003e3e48b36e"
+    },
+    {
+      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/armor/phoenix_chestplate.png",
+      "size": 1305,
+      "sha1": "c1193658a3c85292f8f987fccf4937bae791e8ed"
+    },
+    {
+      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/armor/phoenix_helmet.png",
+      "size": 1286,
+      "sha1": "3dce3ebc3301c682ae61ddca97843e4d2cc47adf"
+    },
+    {
+      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/armor/phoenix_boots.png",
+      "size": 1285,
+      "sha1": "ed577e80a79c727a6c7861402ef562766b4c48a3"
+    },
+    {
+      "path": "options.txt",
+      "size": 4189,
+      "sha1": "cad5f6e6305cf9f8aa0dbb14f01de400a827ac72"
+    },
+    {
+      "path": "servers.dat",
+      "size": 83,
+      "sha1": "6b65d47f3520d98f626b1b4ae96a7ce4843c0667"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+filename = 'DragonMounts_r41_1.7.10.jar'
+name = 'dragon mounth'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'dragon mounth'
+
+[download]
+hash = '9b8a6b38184868d370da178835c2a5f6def098bf'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2820814
+project-id = 350180

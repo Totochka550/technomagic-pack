@@ -1,0 +1,21 @@
+filename = 'Botania_1.7.10_r1.8_249.jar'
+name = 'Botania'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Botania r1.8-249.jar'
+
+[download]
+hash = 'eee543e33c0f57c93d3d83815576cc96236f56f4'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2283837
+project-id = 225643
+
+[[x-prismlauncher-dependencies]]
+addonId = '227083'
+type = 'REQUIRED'

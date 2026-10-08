@@ -1,0 +1,21 @@
+filename = 'EnderIO-1.7.10-2.3.0.430_beta.jar'
+name = 'Ender IO'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'EnderIO-1.7.10-2.3.0.430_beta.jar'
+
+[download]
+hash = '4f7175ce464135143fdc21661e73176470450eff'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4671445
+project-id = 64578
+
+[[x-prismlauncher-dependencies]]
+addonId = '231868'
+type = 'REQUIRED'

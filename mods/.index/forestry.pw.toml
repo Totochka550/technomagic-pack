@@ -1,0 +1,18 @@
+filename = 'forestry_1.7.10-4.2.16.64.jar'
+name = 'Forestry for Minecraft'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Forestry 4.2.16'
+
+[download]
+hash = '93c294b2f463890fd9de575e6ce6d71d931bc3f4'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2333823
+project-id = 59751

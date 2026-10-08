@@ -1,0 +1,25 @@
+filename = 'journeymap-1.7.10-5.2.19-unlimited.jar'
+name = 'JourneyMap'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'journeymap-1.7.10-5.2.19'
+
+[download]
+hash = 'b096b3fa6e26b745f39bd03b8bd63460adef94e9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8341718
+project-id = 32274
+
+[[x-prismlauncher-dependencies]]
+addonId = '226005'
+type = 'TOOL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '826970'
+type = 'REQUIRED'

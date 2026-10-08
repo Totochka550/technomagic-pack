@@ -1,0 +1,25 @@
+filename = 'Avaritiaddons-1.4b.jar'
+name = 'Avaritiaddons'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Avaritiaddons-1.4b.jar'
+
+[download]
+hash = '4b45ecb2d7258bd0893dd11285be73139d07be14'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2502196
+project-id = 248873
+
+[[x-prismlauncher-dependencies]]
+addonId = '233785'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '253043'
+type = 'REQUIRED'

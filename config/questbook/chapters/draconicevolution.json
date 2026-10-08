@@ -1,0 +1,1791 @@
+{
+  "title": "Draconic Evolution",
+  "chapters": [
+    {
+      "id": "draconicevolution",
+      "title": "Draconic Evolution",
+      "description": "Драконий эндгейм: руда и ядра, виверновая и пробуждённая броня, энергия, реактор и Хаос-остров.",
+      "icon": "DraconicEvolution:awakenedCore",
+      "requiredMod": "DraconicEvolution",
+      "quests": [
+        {
+          "id": "de_dust",
+          "title": "Дракониевая пыль",
+          "icon": "DraconicEvolution:draconiumDust",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "dustDraconium",
+              "count": 8,
+              "consume": false,
+              "title": "Добыть 8 дракониевой пыли"
+            }
+          ],
+          "description": [
+            "Дракониевая руда прячется глубоко под землёй. Разбейте её и соберите пыль —",
+            "с неё начинается весь мод: слитки, ядра, машины и броня."
+          ],
+          "achievement": "draconicevolution.dust",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 0,
+          "y": -1
+        },
+        {
+          "id": "de_ingot",
+          "title": "Дракониевый слиток",
+          "icon": "DraconicEvolution:draconiumIngot",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "ingotDraconium",
+              "count": 4,
+              "consume": false,
+              "title": "Получить 4 дракониевых слитка"
+            }
+          ],
+          "description": [
+            "Переплавьте пыль в обычной печи — получится дракониевый слиток, базовый материал мода."
+          ],
+          "dependencies": [
+            "de_dust"
+          ],
+          "achievement": "draconicevolution.ingot",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "DraconicEvolution:draconiumDust",
+              "count": 8
+            }
+          ],
+          "x": 1,
+          "y": -2
+        },
+        {
+          "id": "de_manual",
+          "title": "Информационный планшет",
+          "icon": "DraconicEvolution:infoTablet",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:infoTablet",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Встроенный справочник мода: рецепты, машины и советы правда под рукой."
+          ],
+          "dependencies": [
+            "de_dust"
+          ],
+          "achievement": "draconicevolution.manual",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 1,
+          "y": -1
+        },
+        {
+          "id": "de_soul",
+          "title": "Души мобов",
+          "icon": "DraconicEvolution:mobSoul",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:grinder",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "DraconicEvolution:mobSoul",
+              "count": 1,
+              "consume": false,
+              "title": "Получить душу моба"
+            }
+          ],
+          "description": [
+            "Дробилка мобов убивает их и оставляет души.",
+            "Одна душа — один будущий спавнер, так что копите их заранее."
+          ],
+          "dependencies": [
+            "de_ingot"
+          ],
+          "achievement": "draconicevolution.soul",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            },
+            {
+              "type": "item",
+              "item": "DraconicEvolution:draconiumDust",
+              "count": 6
+            }
+          ],
+          "x": 2,
+          "y": -3
+        },
+        {
+          "id": "de_core",
+          "title": "Драконическое ядро",
+          "icon": "DraconicEvolution:draconicCore",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:infusedObsidian",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:draconicCore",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Первое настоящее ядро мода. Без него не собрать ни машины, ни инструменты.",
+            "Заодно заготовьте пропитанный драконием обсидиан."
+          ],
+          "dependencies": [
+            "de_ingot"
+          ],
+          "achievement": "draconicevolution.core",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:diamond",
+              "count": 2
+            }
+          ],
+          "x": 2,
+          "y": -2
+        },
+        {
+          "id": "de_core2",
+          "title": "Визерновое ядро",
+          "icon": "DraconicEvolution:wyvernCore",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:wyvernCore",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:generator",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Визерновое ядро — пропуск в виверновую экипировку.",
+            "Генератор рядом даст первые RF и запитает зарядные устройства."
+          ],
+          "dependencies": [
+            "de_core"
+          ],
+          "achievement": "draconicevolution.core2",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "DraconicEvolution:draconiumDust",
+                  "count": 12
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:gold_ingot",
+                  "count": 8
+                }
+              ]
+            }
+          ],
+          "x": 3,
+          "y": -6
+        },
+        {
+          "id": "de_chest",
+          "title": "Драконический сундук",
+          "icon": "DraconicEvolution:draconiumChest",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:draconiumChest",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Огромный сундук с собственным интерфейсом: места хватит на целую базу."
+          ],
+          "dependencies": [
+            "de_core"
+          ],
+          "achievement": "draconicevolution.chest",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 3,
+          "y": -5
+        },
+        {
+          "id": "de_particles",
+          "title": "Генератор частиц",
+          "icon": "DraconicEvolution:particleGenerator",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:particleGenerator",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Чистая косметика: блок рассыпает вокруг себя настраиваемые искры."
+          ],
+          "dependencies": [
+            "de_core"
+          ],
+          "achievement": "draconicevolution.particles",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 3,
+          "y": -4
+        },
+        {
+          "id": "de_weather",
+          "title": "Погодный контроллер",
+          "icon": "DraconicEvolution:weatherController",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:weatherController",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:rainSensor",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Датчик дождя и контроллер погоды: солнце или гроза — по одному сигналу редстоуна."
+          ],
+          "dependencies": [
+            "de_core"
+          ],
+          "achievement": "draconicevolution.weather",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 3,
+          "y": -3
+        },
+        {
+          "id": "de_dissenchanter",
+          "title": "Разочарователь",
+          "icon": "DraconicEvolution:dissEnchanter",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:dissEnchanter",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Снимает чары с предметов и складывает их в книги — чары не пропадут зря."
+          ],
+          "dependencies": [
+            "de_core"
+          ],
+          "achievement": "draconicevolution.dissenchanter",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "item": "minecraft:book",
+              "count": 2
+            }
+          ],
+          "x": 3,
+          "y": -2
+        },
+        {
+          "id": "de_ecore",
+          "title": "Энергоядро",
+          "icon": "DraconicEvolution:energyStorageCore",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:energyStorageCore",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:energyCrystal",
+              "count": 2,
+              "title": "Собрать 2 энергореле"
+            },
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:energyPylon",
+              "count": 2,
+              "title": "Собрать 2 энергопилона"
+            }
+          ],
+          "description": [
+            "Энергоядро вместе с реле и пилонами — сердце энергосистемы:",
+            "миллионы RF в одном блоке, а реле раздают их по базе."
+          ],
+          "dependencies": [
+            "de_core2"
+          ],
+          "achievement": "draconicevolution.ecore",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "item": "DraconicEvolution:energyCrystal",
+              "count": 2
+            }
+          ],
+          "x": 4,
+          "y": -7
+        },
+        {
+          "id": "de_flux",
+          "title": "Визерновый накопитель",
+          "icon": "DraconicEvolution:draconiumFluxCapacitor",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:draconiumFluxCapacitor",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:energyInfuser",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Накопитель носит RF прямо в инвентаре, а зарядник наполняет энергией предметы и броню.",
+            "Держите накопитель заряженным — виверновая броня ест энергию."
+          ],
+          "dependencies": [
+            "de_core2"
+          ],
+          "achievement": "draconicevolution.flux",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 4,
+          "y": -6
+        },
+        {
+          "id": "de_wpick",
+          "title": "Кирка виверны",
+          "icon": "DraconicEvolution:wyvernPickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:wyvernPickaxe",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Быстрее алмазной и умеет включать режим области — шахты растут на глазах."
+          ],
+          "dependencies": [
+            "de_core2"
+          ],
+          "achievement": "draconicevolution.wpick",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 4,
+          "y": -5
+        },
+        {
+          "id": "de_wshovel",
+          "title": "Лопата виверны",
+          "icon": "DraconicEvolution:wyvernShovel",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:wyvernShovel",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Сносит целые пласты земли, если включить область."
+          ],
+          "dependencies": [
+            "de_core2"
+          ],
+          "achievement": "draconicevolution.wshovel",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 4,
+          "y": -4
+        },
+        {
+          "id": "de_wsword",
+          "title": "Меч виверны",
+          "icon": "DraconicEvolution:wyvernSword",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:wyvernSword",
+              "count": 1
+            },
+            {
+              "type": "kill",
+              "entity": "Zombie",
+              "count": 10,
+              "title": "Проверить меч на 10 зомби"
+            }
+          ],
+          "description": [
+            "Острый и прочный клинок. Десяток зомби — хорошая проверка."
+          ],
+          "dependencies": [
+            "de_core2"
+          ],
+          "achievement": "draconicevolution.wsword",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 4,
+          "y": -3
+        },
+        {
+          "id": "de_wbow",
+          "title": "Лук виверны",
+          "icon": "DraconicEvolution:wyvernBow",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:wyvernBow",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "DraconicEvolution:enderArrow",
+              "count": 4,
+              "consume": false,
+              "title": "Запастись эндер-стрелами"
+            },
+            {
+              "type": "kill",
+              "entity": "Skeleton",
+              "count": 10,
+              "title": "Отстрелять 10 скелетов"
+            }
+          ],
+          "description": [
+            "Лук виверны бьёт дальше и сильнее обычного, а эндер-стрела переносит стрелка туда,",
+            "где она упала. Очень удобно для разведки."
+          ],
+          "dependencies": [
+            "de_core2"
+          ],
+          "achievement": "draconicevolution.wbow",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "DraconicEvolution:enderArrow",
+              "count": 4
+            }
+          ],
+          "x": 4,
+          "y": -2
+        },
+        {
+          "id": "de_whelm",
+          "title": "Шлем виверны",
+          "icon": "DraconicEvolution:wyvernHelm",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:wyvernHelm",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Дышать под водой и не бояться утонуть — шлем виверны решает обе задачи."
+          ],
+          "dependencies": [
+            "de_core2"
+          ],
+          "achievement": "draconicevolution.whelm",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 4,
+          "y": -1
+        },
+        {
+          "id": "de_wchest",
+          "title": "Нагрудник виверны",
+          "icon": "DraconicEvolution:wyvernChest",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:wyvernChest",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Крепче алмазного: пока в накопителе есть RF, урон по вам заметно меньше."
+          ],
+          "dependencies": [
+            "de_core2"
+          ],
+          "achievement": "draconicevolution.wchest",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "id": "de_wleggs",
+          "title": "Штаны виверны",
+          "icon": "DraconicEvolution:wyvernLeggs",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:wyvernLeggs",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Ускоряют бег — с ними база кажется в два раза меньше."
+          ],
+          "dependencies": [
+            "de_core2"
+          ],
+          "achievement": "draconicevolution.wleggs",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 4,
+          "y": 1
+        },
+        {
+          "id": "de_wboots",
+          "title": "Ботинки виверны",
+          "icon": "DraconicEvolution:wyvernBoots",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:wyvernBoots",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Гасят урон от падения: можно спрыгнуть с любой высоты и не оставить яму собой."
+          ],
+          "dependencies": [
+            "de_core2"
+          ],
+          "achievement": "draconicevolution.wboots",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "x": 4,
+          "y": 2
+        },
+        {
+          "id": "de_resurrection",
+          "title": "Оживление мобов",
+          "icon": "DraconicEvolution:customSpawner",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:customSpawner",
+              "count": 1
+            },
+            {
+              "type": "item",
+              "item": "DraconicEvolution:mobSoul",
+              "count": 2,
+              "consume": false,
+              "title": "Накопить 2 души мобов"
+            }
+          ],
+          "description": [
+            "Стабилизированный спавнер возвращает моба из души:",
+            "вставьте душу — и спавнер начнёт работать, даже без темноты и спавнеров крепости."
+          ],
+          "dependencies": [
+            "de_core2",
+            "de_soul"
+          ],
+          "achievement": "draconicevolution.resurrection",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 60
+            }
+          ],
+          "x": 4,
+          "y": -8
+        },
+        {
+          "id": "de_dislocator2",
+          "title": "Улучшенный амулет перемещения",
+          "icon": "DraconicEvolution:teleporterMKII",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:teleporterMKII",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:longRangeDislocator",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Второй уровень амулета бьёт дальше и точнее первого.",
+            "Дислокатор большой дальности пригодится для переброски между базами."
+          ],
+          "dependencies": [
+            "de_core2",
+            "de_dislocator"
+          ],
+          "achievement": "draconicevolution.dislocator2",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "x": 4,
+          "y": 6
+        },
+        {
+          "id": "de_heart",
+          "title": "Сердце дракона",
+          "icon": "DraconicEvolution:dragonHeart",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "EnderDragon",
+              "count": 1,
+              "title": "Победить дракона Края"
+            },
+            {
+              "type": "item",
+              "item": "DraconicEvolution:dragonHeart",
+              "count": 1,
+              "consume": false,
+              "title": "Забрать сердце дракона"
+            }
+          ],
+          "description": [
+            "Сердце дракона — трофей с дракона Края.",
+            "Именно оно открывает пробуждённый уровень мода: пробуждённый драконий блок и ядра."
+          ],
+          "dependencies": [
+            "de_core2"
+          ],
+          "achievement": "draconicevolution.heart",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 90
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "ore": "ingotDraconium",
+                  "count": 4
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:ender_pearl",
+                  "count": 8
+                }
+              ]
+            }
+          ],
+          "x": 4,
+          "y": 3
+        },
+        {
+          "id": "de_awakenedblock",
+          "title": "Пробуждённый драконий блок",
+          "icon": "DraconicEvolution:draconicBlock",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "ingotDraconiumAwakened",
+              "count": 4,
+              "consume": false,
+              "title": "Получить 4 пробуждённых слитка"
+            },
+            {
+              "type": "item",
+              "ore": "blockDraconiumAwakened",
+              "count": 1,
+              "consume": false,
+              "title": "Собрать пробуждённый блок"
+            }
+          ],
+          "description": [
+            "Пробуждённый драконий слиток — материал нового уровня.",
+            "Соберите из слитков блок: он нужен для пробуждённых ядер и драконьей брони."
+          ],
+          "dependencies": [
+            "de_heart"
+          ],
+          "achievement": "draconicevolution.awakenedblock",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "minecraft:emerald",
+                  "count": 4
+                },
+                {
+                  "type": "item",
+                  "item": "DraconicEvolution:draconiumDust",
+                  "count": 16
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "id": "de_core3",
+          "title": "Пробуждённое ядро",
+          "icon": "DraconicEvolution:awakenedCore",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:awakenedCore",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Самое дорогое ядро мода: с него начинается драконья экипировка."
+          ],
+          "dependencies": [
+            "de_awakenedblock"
+          ],
+          "achievement": "draconicevolution.core3",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            }
+          ],
+          "x": 6,
+          "y": -1
+        },
+        {
+          "id": "de_dhelm",
+          "title": "Драконий шлем",
+          "icon": "DraconicEvolution:draconicHelm",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:draconicHelm",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Дышать и быстро плавать под водой — с драконьим шлемом водные глубины безопасны."
+          ],
+          "dependencies": [
+            "de_core3"
+          ],
+          "achievement": "draconicevolution.dhelm",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 7,
+          "y": -6
+        },
+        {
+          "id": "de_dchest",
+          "title": "Драконий нагрудник",
+          "icon": "DraconicEvolution:draconicChest",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:draconicChest",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Главный подарок мода: нагрудник даёт настоящий полёт, как в креативе.",
+            "Следите за энергией — полёт расходует RF."
+          ],
+          "dependencies": [
+            "de_core3"
+          ],
+          "achievement": "draconicevolution.dChest",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            }
+          ],
+          "x": 7,
+          "y": -5
+        },
+        {
+          "id": "de_dleggs",
+          "title": "Драконьи штаны",
+          "icon": "DraconicEvolution:draconicLeggs",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:draconicLeggs",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Добавляют прыгучести: через заборы и овраги можно просто перепрыгивать."
+          ],
+          "dependencies": [
+            "de_core3"
+          ],
+          "achievement": "draconicevolution.dleggs",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 7,
+          "y": -4
+        },
+        {
+          "id": "de_dboots",
+          "title": "Драконьи ботинки",
+          "icon": "DraconicEvolution:draconicBoots",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:draconicBoots",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Поднимают выше и полностью гасят урон от падения."
+          ],
+          "dependencies": [
+            "de_core3"
+          ],
+          "achievement": "draconicevolution.dboots",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 7,
+          "y": -3
+        },
+        {
+          "id": "de_dpick",
+          "title": "Драконья кирка",
+          "icon": "DraconicEvolution:draconicPickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:draconicPickaxe",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Копает целыми областями: одна шахта — несколько ударов."
+          ],
+          "dependencies": [
+            "de_core3"
+          ],
+          "achievement": "draconicevolution.dpick",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 7,
+          "y": -2
+        },
+        {
+          "id": "de_dshovel",
+          "title": "Драконья лопата",
+          "icon": "DraconicEvolution:draconicShovel",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:draconicShovel",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Двигает горы: земля и песок уходят пластами."
+          ],
+          "dependencies": [
+            "de_core3"
+          ],
+          "achievement": "draconicevolution.dshovel",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 7,
+          "y": -1
+        },
+        {
+          "id": "de_daxe",
+          "title": "Драконий топор",
+          "icon": "DraconicEvolution:draconicAxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:draconicAxe",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Один удар — и дерево падает целиком. Лесорубкам посвящается."
+          ],
+          "dependencies": [
+            "de_core3"
+          ],
+          "achievement": "draconicevolution.daxe",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 7,
+          "y": 0
+        },
+        {
+          "id": "de_dsword",
+          "title": "Драконий меч",
+          "icon": "DraconicEvolution:draconicSword",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:draconicSword",
+              "count": 1
+            },
+            {
+              "type": "kill",
+              "entity": "PigZombie",
+              "count": 10,
+              "title": "Убить 10 свинозомби"
+            }
+          ],
+          "description": [
+            "Жалит как пчела: очень быстрый и очень больной клинок."
+          ],
+          "dependencies": [
+            "de_core3"
+          ],
+          "achievement": "draconicevolution.dsword",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 7,
+          "y": 1
+        },
+        {
+          "id": "de_dbow",
+          "title": "Драконий лук",
+          "icon": "DraconicEvolution:draconicBow",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:draconicBow",
+              "count": 1
+            },
+            {
+              "type": "kill",
+              "entity": "Blaze",
+              "count": 10,
+              "title": "Убить 10 всполохов"
+            }
+          ],
+          "description": [
+            "Пробивает броню и стреляет мощнее вивернова лука. Всполохи в Нижнем мире это подтвердят."
+          ],
+          "dependencies": [
+            "de_core3"
+          ],
+          "achievement": "draconicevolution.dbow",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 7,
+          "y": 2
+        },
+        {
+          "id": "de_dhoe",
+          "title": "Драконий мотыга",
+          "icon": "DraconicEvolution:draconicHoe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:draconicHoe",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Вскапывает землю быстро и широко — огород под ферму делается за минуту."
+          ],
+          "dependencies": [
+            "de_core3"
+          ],
+          "achievement": "draconicevolution.dhoe",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "x": 7,
+          "y": 3
+        },
+        {
+          "id": "de_chaos",
+          "title": "Хаос-остров",
+          "icon": "DraconicEvolution:chaosCrystal",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "DraconicEvolution:chaosFragment",
+              "count": 4,
+              "consume": true,
+              "title": "Сдать 4 осколка хаоса"
+            },
+            {
+              "type": "item",
+              "item": "DraconicEvolution:chaosCrystal",
+              "count": 1,
+              "consume": false,
+              "title": "Найти кристалл хаоса"
+            },
+            {
+              "type": "checkmark",
+              "title": "Победить стража хаоса"
+            }
+          ],
+          "description": [
+            "В Краю парит Хаос-остров: там летают стражи хаоса и растут кристаллы.",
+            "Осколки хаоса — единственный путь к хаотическому ядру, а он опасен даже в драконьей броне."
+          ],
+          "dependencies": [
+            "de_core3"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 120
+            },
+            {
+              "type": "item",
+              "item": "minecraft:ender_pearl",
+              "count": 8
+            }
+          ],
+          "x": 7,
+          "y": 4
+        },
+        {
+          "id": "de_flux2",
+          "title": "Хаотическое ядро",
+          "icon": "DraconicEvolution:chaoticCore",
+          "tasks": [
+            {
+              "type": "item",
+              "item": "DraconicEvolution:chaosShard",
+              "count": 4,
+              "consume": false,
+              "title": "Собрать 4 осколка хаоса"
+            },
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:chaoticCore",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Крошечный предмет с чудовищной мощью — венец энергетики мода.",
+            "Собирается из осколков хаоса, пробуждённого ядра и виверновых накопителей."
+          ],
+          "dependencies": [
+            "de_core3",
+            "de_chaos"
+          ],
+          "achievement": "draconicevolution.flux2",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            }
+          ],
+          "x": 8,
+          "y": 0
+        },
+        {
+          "id": "de_dstaff",
+          "title": "Посох силы",
+          "icon": "DraconicEvolution:draconicDistructionStaff",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:draconicDistructionStaff",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Посох силы объединяет кирку, топор и лопату в один инструмент,",
+            "а заодно умеет стрелять. Один слот вместо трёх."
+          ],
+          "dependencies": [
+            "de_dpick"
+          ],
+          "achievement": "draconicevolution.dstaff",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 200
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "ore": "ingotDraconiumAwakened",
+                  "count": 4
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:nether_star",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "x": 8,
+          "y": -1
+        },
+        {
+          "id": "de_reactor",
+          "title": "Драконий реактор",
+          "icon": "DraconicEvolution:reactorCore",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:reactorCore",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:reactorStabilizer",
+              "count": 4,
+              "title": "Собрать 4 стабилизатора"
+            },
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:reactorEnergyInjector",
+              "count": 4,
+              "title": "Собрать 4 инжектора"
+            },
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:reactorCraftingPart",
+              "count": 4,
+              "title": "Собрать 4 каркаса"
+            },
+            {
+              "type": "checkmark",
+              "title": "Запустить реактор и удержать стабильность"
+            }
+          ],
+          "description": [
+            "Самый мощный источник энергии в моде — и самый опасный.",
+            "Соберите корпус из стабилизаторов и инжекторов, запустите реактор и следите за температурой:",
+            "перегрев заканчивается воронкой на месте базы."
+          ],
+          "dependencies": [
+            "de_core3"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 150
+            },
+            {
+              "type": "item",
+              "item": "DraconicEvolution:energyCrystal",
+              "count": 4
+            }
+          ],
+          "x": 7,
+          "y": 5
+        },
+        {
+          "id": "de_dislocator",
+          "title": "Амулет перемещения",
+          "icon": "DraconicEvolution:teleporterMKI",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:teleporterMKI",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:teleporterStand",
+              "count": 1
+            },
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:dislocatorReceptacle",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Пьедестал-приёмник и амулет: запомните точку и возвращайтесь к ней из любой точки мира.",
+            "Рецептакул нужен, чтобы заряжать амулет."
+          ],
+          "dependencies": [
+            "de_ingot"
+          ],
+          "achievement": "draconicevolution.dislocator",
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 2,
+          "y": -1
+        },
+        {
+          "id": "de_ore",
+          "title": "Дракониевая руда",
+          "icon": "DraconicEvolution:draconiumOre",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "oreDraconium",
+              "count": 8,
+              "consume": false,
+              "title": "Собрать 8 блоков дракониевой руды"
+            }
+          ],
+          "description": [
+            "Руда, добытая с шёлковым касанием, остаётся блоком, а не рассыпается в пыль.",
+            "Запас блоков удобно копить, а потом разом отправить на переработку."
+          ],
+          "dependencies": [
+            "de_dust"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 1,
+          "y": 0
+        },
+        {
+          "id": "de_nugget",
+          "title": "Дракониевые самородки",
+          "icon": "DraconicEvolution:nugget",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "nuggetDraconium",
+              "count": 9,
+              "consume": false,
+              "title": "Получить 9 самородков дракония"
+            }
+          ],
+          "description": [
+            "Слиток делится на девять самородков и собирается обратно: самый мелкий номинал дракония для точных рецептов."
+          ],
+          "dependencies": [
+            "de_ingot"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "id": "de_block",
+          "title": "Блок дракония",
+          "icon": "DraconicEvolution:draconium",
+          "tasks": [
+            {
+              "type": "item",
+              "ore": "blockDraconium",
+              "count": 4,
+              "consume": false,
+              "title": "Собрать 4 блока дракония"
+            }
+          ],
+          "description": [
+            "Девять слитков в одном блоке: и склад компактнее, и постройки из дракония выглядят куда солиднее."
+          ],
+          "dependencies": [
+            "de_ingot"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "DraconicEvolution:draconiumDust",
+              "count": 6
+            }
+          ],
+          "x": 2,
+          "y": 1
+        },
+        {
+          "id": "de_energycore",
+          "title": "Виверновое энергоядро",
+          "icon": "DraconicEvolution:draconiumEnergyCore",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:draconiumEnergyCore",
+              "count": 2,
+              "title": "Собрать 2 виверновых энергоядра"
+            }
+          ],
+          "description": [
+            "Энергоядро — промежуточная деталь крупных машин мода.",
+            "Соберите пару про запас: без него не собрать продвинутые энергоблоки и реактор."
+          ],
+          "dependencies": [
+            "de_core2"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 4,
+          "y": 4
+        },
+        {
+          "id": "de_magnet",
+          "title": "Дислокатор предметов",
+          "icon": "DraconicEvolution:magnet",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:magnet",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Магнит сам подбирает выпавшие предметы и тянет их к владельцу.",
+            "После шахты или рубки леса бегать за дропом больше не придётся."
+          ],
+          "dependencies": [
+            "de_core"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 3,
+          "y": -1
+        },
+        {
+          "id": "de_wrench",
+          "title": "Кристальный биндер",
+          "icon": "DraconicEvolution:wrench",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:wrench",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Ключ мода: разворачивает блоки, переключает режимы машин, а телепортам меняет и снимает привязку."
+          ],
+          "dependencies": [
+            "de_core"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "id": "de_detector",
+          "title": "Детектор игроков",
+          "icon": "DraconicEvolution:playerDetector",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:playerDetector",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Замечает игроков в радиусе и подаёт сигнал редстоуна — основа автоматических дверей, ламп и ловушек."
+          ],
+          "dependencies": [
+            "de_core"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            },
+            {
+              "type": "item",
+              "item": "minecraft:redstone",
+              "count": 8
+            }
+          ],
+          "x": 3,
+          "y": 1
+        },
+        {
+          "id": "de_detector_adv",
+          "title": "Продвинутый детектор",
+          "icon": "DraconicEvolution:playerDetectorAdvanced",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:playerDetectorAdvanced",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Работает на большем радиусе и позволяет выбрать, на кого именно реагировать."
+          ],
+          "dependencies": [
+            "de_detector"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "x": 4,
+          "y": 7
+        },
+        {
+          "id": "de_potentiometer",
+          "title": "Потенциометр",
+          "icon": "DraconicEvolution:potentiometer",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:potentiometer",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Выдаёт сигнал редстоуна ровно нужной силы: тонкая настройка машин вместо стопки рычагов и повторителей."
+          ],
+          "dependencies": [
+            "de_core"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 3,
+          "y": 2
+        },
+        {
+          "id": "de_flowgate",
+          "title": "Флюсовый шлюз",
+          "icon": "DraconicEvolution:flowGate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:flowGate",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Регулятор потока энергии: задаёт нижнюю и верхнюю границу передачи,",
+            "а сила сигнала редстоуна плавно переводит поток между этими значениями."
+          ],
+          "dependencies": [
+            "de_ecore"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            },
+            {
+              "type": "item",
+              "item": "DraconicEvolution:energyCrystal",
+              "count": 1
+            }
+          ],
+          "x": 5,
+          "y": -1
+        },
+        {
+          "id": "de_upgrade",
+          "title": "Модификатор улучшений",
+          "icon": "DraconicEvolution:upgradeModifier",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:upgradeModifier",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Ставится рядом с машинами и усиливает их характеристики — скорость, радиус и другие параметры.",
+            "Что именно улучшится, зависит от устройства."
+          ],
+          "dependencies": [
+            "de_core2"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "x": 4,
+          "y": 5
+        },
+        {
+          "id": "de_sundial",
+          "title": "Солнечные часы",
+          "icon": "DraconicEvolution:sunDial",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:sunDial",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Дают власть над сутками: один щелчок — и ночь сменяется днём, а день ночью."
+          ],
+          "dependencies": [
+            "de_core"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "x": 3,
+          "y": 3
+        },
+        {
+          "id": "de_safetymatch",
+          "title": "Безопасные спички",
+          "icon": "DraconicEvolution:safetyMatch",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "DraconicEvolution:safetyMatch",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Коробок зажигает безопасное пламя: горит вечно и не поджигает постройки.",
+            "Идеальный светильник для деревянной базы."
+          ],
+          "dependencies": [
+            "de_core"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "item": "minecraft:torch",
+              "count": 16
+            }
+          ],
+          "x": 3,
+          "y": 4
+        },
+        {
+          "id": "de_hunt",
+          "title": "Охота за душами",
+          "icon": "DraconicEvolution:mobSoul",
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "Creeper",
+              "count": 10,
+              "title": "Убить 10 криперов"
+            },
+            {
+              "type": "kill",
+              "entity": "Spider",
+              "count": 10,
+              "title": "Убить 10 пауков"
+            }
+          ],
+          "description": [
+            "Меч виверны превращает ночную прогулку в пополнение коллекции душ.",
+            "Криперы и пауки — самый доступный материал для будущих спавнеров."
+          ],
+          "dependencies": [
+            "de_soul",
+            "de_wsword"
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            },
+            {
+              "type": "choice",
+              "title": "Выберите награду",
+              "options": [
+                {
+                  "type": "item",
+                  "item": "DraconicEvolution:draconiumDust",
+                  "count": 8
+                },
+                {
+                  "type": "item",
+                  "item": "minecraft:gunpowder",
+                  "count": 8
+                }
+              ]
+            }
+          ],
+          "x": 5,
+          "y": -2
+        }
+      ]
+    }
+  ]
+}

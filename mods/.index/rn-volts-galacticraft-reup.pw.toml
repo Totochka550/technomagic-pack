@@ -1,0 +1,18 @@
+filename = 'Galacticraft-Planets-1.7-3.0.12.504.jar'
+name = 'RN Volts Galacticraft Reup'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Galacticraft-Planets-1.7-3.0.12.504.jar'
+
+[download]
+hash = '2931653ca3c9d4357c1c7e95642cd8ba1374dd66'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3603153
+project-id = 566828

@@ -1,0 +1,1467 @@
+{
+  "title": "Minecraft",
+  "chapters": [
+    {
+      "id": "main",
+      "title": "Minecraft",
+      "description": "Путь от первого бревна до дракона Края: добыча, ферма, красный камень, зачарования, Нижний мир и Край.",
+      "icon": "minecraft:dragon_egg",
+      "quests": [
+        {
+          "id": "van_log",
+          "title": "Древесина",
+          "icon": "minecraft:log",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:log",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Ударь по дереву рукой. Бревно — начало всему: доски, палки, верстак, инструменты."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "van_table",
+          "title": "Верстак",
+          "icon": "minecraft:crafting_table",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:crafting_table",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Четыре доски. Открывает все рецепты 3x3 — без него не собрать ничего серьёзного."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_log"
+          ],
+          "x": 0,
+          "y": 1
+        },
+        {
+          "id": "van_pick_wood",
+          "title": "Деревянная кирка",
+          "icon": "minecraft:wooden_pickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:wooden_pickaxe",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Три доски и две палки. Ею добывают камень, рукой он не поддаётся."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_table"
+          ],
+          "x": -1,
+          "y": 2
+        },
+        {
+          "id": "van_stone",
+          "title": "Камень",
+          "icon": "minecraft:cobblestone",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:cobblestone",
+              "count": 32
+            }
+          ],
+          "description": [
+            "Набери с запасом: он идёт на инструменты, печь, укрепление и красный камень."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_pick_wood"
+          ],
+          "x": 0,
+          "y": 3
+        },
+        {
+          "id": "van_pick_stone",
+          "title": "Каменная кирка",
+          "icon": "minecraft:stone_pickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:stone_pickaxe",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Камень и палки. Быстрее деревянной и открывает железную руду."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_stone"
+          ],
+          "x": -3,
+          "y": 4
+        },
+        {
+          "id": "van_furnace",
+          "title": "Печь",
+          "icon": "minecraft:furnace",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:furnace",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Восемь камней по кругу. Плавит руду, готовит еду, жжёт уголь."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_stone"
+          ],
+          "x": -1,
+          "y": 4
+        },
+        {
+          "id": "van_coal",
+          "title": "Уголь",
+          "icon": "minecraft:coal",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:coal",
+              "count": 16
+            }
+          ],
+          "description": [
+            "Угольная руда или пережжённое дерево. Топливо и основа факелов."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_furnace"
+          ],
+          "x": -2,
+          "y": 5
+        },
+        {
+          "id": "van_torch",
+          "title": "Факелы",
+          "icon": "minecraft:torch",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:torch",
+              "count": 64
+            }
+          ],
+          "description": [
+            "Уголь и палка. Свет в шахте и дома: в темноте появляются мобы."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_coal"
+          ],
+          "x": -3,
+          "y": 6
+        },
+        {
+          "id": "van_chest",
+          "title": "Сундук",
+          "icon": "minecraft:chest",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:chest",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Восемь досок. Складывай добычу: погибнешь — вещи в сундуке останутся."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_table"
+          ],
+          "x": 1,
+          "y": 2
+        },
+        {
+          "id": "van_iron_ore",
+          "title": "Железная руда",
+          "icon": "minecraft:iron_ore",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:iron_ore",
+              "count": 16
+            }
+          ],
+          "description": [
+            "Ниже уровня моря. Нужна каменная кирка или лучше."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_pick_stone"
+          ],
+          "x": 0,
+          "y": 5
+        },
+        {
+          "id": "van_iron",
+          "title": "Железный слиток",
+          "icon": "minecraft:iron_ingot",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:iron_ingot",
+              "count": 16
+            }
+          ],
+          "description": [
+            "Переплавь руду. Железо — главный рабочий материал всей игры."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_iron_ore"
+          ],
+          "x": -1,
+          "y": 6
+        },
+        {
+          "id": "van_sword_stone",
+          "title": "Каменный меч",
+          "icon": "minecraft:stone_sword",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:stone_sword",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Камень и палка. С ним ночные мобы перестают быть проблемой."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_stone"
+          ],
+          "x": 1,
+          "y": 4
+        },
+        {
+          "id": "van_armor_iron",
+          "title": "Железная броня",
+          "icon": "minecraft:iron_chestplate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:iron_chestplate",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Шлем, нагрудник, штаны, ботинки. Первая серьёзная защита."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "dependencies": [
+            "van_iron"
+          ],
+          "x": -10,
+          "y": 7
+        },
+        {
+          "id": "van_sword_iron",
+          "title": "Железный меч",
+          "icon": "minecraft:iron_sword",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:iron_sword",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Два слитка и палка. Хороший урон до алмазов."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_iron"
+          ],
+          "x": -8,
+          "y": 7
+        },
+        {
+          "id": "van_bow",
+          "title": "Лук",
+          "icon": "minecraft:bow",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:bow",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Палки и нити. Бой на расстоянии — против криперов особенно полезно."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "dependencies": [
+            "van_iron"
+          ],
+          "x": -6,
+          "y": 7
+        },
+        {
+          "id": "van_arrows",
+          "title": "Стрелы",
+          "icon": "minecraft:arrow",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:arrow",
+              "count": 32
+            }
+          ],
+          "description": [
+            "Кремень, палка и перо. Без стрел лук бесполезен."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_bow"
+          ],
+          "x": -10,
+          "y": 8
+        },
+        {
+          "id": "van_hoe",
+          "title": "Мотыга",
+          "icon": "minecraft:stone_hoe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:stone_hoe",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Камень и палки. Вскапывает землю под грядки."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_stone"
+          ],
+          "x": 3,
+          "y": 4
+        },
+        {
+          "id": "van_wheat",
+          "title": "Пшеница",
+          "icon": "minecraft:wheat",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:wheat",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Посади семена у воды и жди. Из пшеницы хлеб, а хлеб — сытость и здоровье."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_hoe"
+          ],
+          "x": 2,
+          "y": 5
+        },
+        {
+          "id": "van_bread",
+          "title": "Хлеб",
+          "icon": "minecraft:bread",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:bread",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Три пшеницы. Простая еда, которая всегда под рукой."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_wheat"
+          ],
+          "x": 1,
+          "y": 6
+        },
+        {
+          "id": "van_animals",
+          "title": "Разведение животных",
+          "icon": "minecraft:leather",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:leather",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Примани коров пшеницей и разводи. Дают кожу, молоко и мясо."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "dependencies": [
+            "van_wheat"
+          ],
+          "x": 3,
+          "y": 6
+        },
+        {
+          "id": "van_wool",
+          "title": "Шерсть",
+          "icon": "minecraft:wool",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:wool",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Стриги овец ножницами. Шерсть нужна на кровать и украшения."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_animals"
+          ],
+          "x": -4,
+          "y": 7
+        },
+        {
+          "id": "van_bed",
+          "title": "Кровать",
+          "icon": "minecraft:bed",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:bed",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Три шерсти и три доски. Позволяет спать и задаёт точку возрождения."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "dependencies": [
+            "van_wool"
+          ],
+          "x": -8,
+          "y": 8
+        },
+        {
+          "id": "van_fishing",
+          "title": "Рыбалка",
+          "icon": "minecraft:fishing_rod",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:fishing_rod",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Палки и нити. Тихая добыча еды и иногда — сокровищ в шкатулках."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "dependencies": [
+            "van_iron"
+          ],
+          "x": -2,
+          "y": 7
+        },
+        {
+          "id": "van_redstone",
+          "title": "Красный камень",
+          "icon": "minecraft:redstone",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:redstone",
+              "count": 16
+            }
+          ],
+          "description": [
+            "Пыль глубоко под землёй. Основа всей автоматики и механизмов."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_iron"
+          ],
+          "x": 0,
+          "y": 7
+        },
+        {
+          "id": "van_repeater",
+          "title": "Повторитель",
+          "icon": "minecraft:repeater",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:repeater",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Усиливает сигнал и задаёт задержку — из него собирают логику."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "dependencies": [
+            "van_redstone"
+          ],
+          "x": -6,
+          "y": 8
+        },
+        {
+          "id": "van_piston",
+          "title": "Поршень",
+          "icon": "minecraft:piston",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:piston",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Двигает блоки. Основа дверей, ловушек и автоматических ферм."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "dependencies": [
+            "van_redstone"
+          ],
+          "x": -4,
+          "y": 8
+        },
+        {
+          "id": "van_dispenser",
+          "title": "Раздатчик",
+          "icon": "minecraft:dispenser",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:dispenser",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Стреляет тем, что внутри: стрелами, зельями, водой."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "dependencies": [
+            "van_redstone"
+          ],
+          "x": -2,
+          "y": 8
+        },
+        {
+          "id": "van_hopper",
+          "title": "Воронка",
+          "icon": "minecraft:hopper",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:hopper",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Собирает предметы и передаёт их в сундук. Начало настоящей автоматизации."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 30
+            }
+          ],
+          "dependencies": [
+            "van_iron"
+          ],
+          "x": 2,
+          "y": 7
+        },
+        {
+          "id": "van_rails",
+          "title": "Рельсы",
+          "icon": "minecraft:rail",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:rail",
+              "count": 32
+            }
+          ],
+          "description": [
+            "Палки, слитки и палка. Дорога на вагонетке — быстрый способ возить грузы."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "dependencies": [
+            "van_iron"
+          ],
+          "x": 4,
+          "y": 7
+        },
+        {
+          "id": "van_minecart",
+          "title": "Вагонетка",
+          "icon": "minecraft:minecart",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:minecart",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Пять слитков. Вместе с рельсами — транспорт для руды и стройки."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "dependencies": [
+            "van_rails"
+          ],
+          "x": 0,
+          "y": 8
+        },
+        {
+          "id": "van_anvil",
+          "title": "Наковальня",
+          "icon": "minecraft:anvil",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:anvil",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Блоки железа и слитки. Починка и объединение зачарований."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "dependencies": [
+            "van_iron"
+          ],
+          "x": 6,
+          "y": 7
+        },
+        {
+          "id": "van_diamond",
+          "title": "Алмазы",
+          "icon": "minecraft:diamond",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:diamond",
+              "count": 3
+            }
+          ],
+          "description": [
+            "Глубина 1-16, часто под лавой. Добывай только железной киркой."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_iron"
+          ],
+          "x": 8,
+          "y": 7
+        },
+        {
+          "id": "van_pick_diamond",
+          "title": "Алмазная кирка",
+          "icon": "minecraft:diamond_pickaxe",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:diamond_pickaxe",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Три алмаза и палки. Ею берут обсидиан."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "dependencies": [
+            "van_diamond"
+          ],
+          "x": 2,
+          "y": 8
+        },
+        {
+          "id": "van_sword_diamond",
+          "title": "Алмазный меч",
+          "icon": "minecraft:diamond_sword",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:diamond_sword",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Два алмаза и палка. Лучшее оружие до Нижнего мира и Края."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "dependencies": [
+            "van_diamond"
+          ],
+          "x": 4,
+          "y": 8
+        },
+        {
+          "id": "van_armor_diamond",
+          "title": "Алмазная броня",
+          "icon": "minecraft:diamond_chestplate",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:diamond_chestplate",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Полный комплект из алмазов — защита, с которой не страшен Край."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "dependencies": [
+            "van_diamond"
+          ],
+          "x": 6,
+          "y": 8
+        },
+        {
+          "id": "van_emerald",
+          "title": "Изумруды",
+          "icon": "minecraft:emerald",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:emerald",
+              "count": 1
+            }
+          ],
+          "description": [
+            "В горах, а ещё у жителей за товары. Начало торговли."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "dependencies": [
+            "van_iron"
+          ],
+          "x": 10,
+          "y": 7
+        },
+        {
+          "id": "van_trade",
+          "title": "Торговля с жителями",
+          "icon": "minecraft:emerald_block",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:emerald_block",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Обменивай товары на изумруды, а изумруды — на редкие вещи и зачарованные книги."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "dependencies": [
+            "van_emerald"
+          ],
+          "x": 8,
+          "y": 8
+        },
+        {
+          "id": "van_books",
+          "title": "Книги и полки",
+          "icon": "minecraft:bookshelf",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:bookshelf",
+              "count": 15
+            }
+          ],
+          "description": [
+            "Полки вокруг стола поднимают уровень зачарования. Пятнадцать — максимум."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "dependencies": [
+            "van_diamond"
+          ],
+          "x": 10,
+          "y": 8
+        },
+        {
+          "id": "van_enchant",
+          "title": "Стол зачарований",
+          "icon": "minecraft:enchanting_table",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:enchanting_table",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Алмазы, обсидиан и книга. Усиливает инструменты, оружие и броню."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "dependencies": [
+            "van_books"
+          ],
+          "x": -1,
+          "y": 9
+        },
+        {
+          "id": "van_obsidian",
+          "title": "Обсидиан",
+          "icon": "minecraft:obsidian",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:obsidian",
+              "count": 10
+            }
+          ],
+          "description": [
+            "Вода на лаву. Десять блоков — рамка портала, остальное на стол."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_pick_diamond"
+          ],
+          "x": 1,
+          "y": 9
+        },
+        {
+          "id": "van_flint",
+          "title": "Огниво",
+          "icon": "minecraft:flint_and_steel",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:flint_and_steel",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Кремень и слиток. Поджигает портал."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 20
+            }
+          ],
+          "dependencies": [
+            "van_obsidian"
+          ],
+          "x": 0,
+          "y": 10
+        },
+        {
+          "id": "van_nether",
+          "title": "Нижний мир",
+          "icon": "minecraft:netherrack",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:netherrack",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Портал из обсидиана и огниво. Жарко, лава, злые мобы — иди в броне и с едой."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "dependencies": [
+            "van_flint"
+          ],
+          "x": 0,
+          "y": 11
+        },
+        {
+          "id": "van_glowstone",
+          "title": "Светокамень",
+          "icon": "minecraft:glowstone",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:glowstone",
+              "count": 8
+            }
+          ],
+          "description": [
+            "Светит ярче факела. Идёт на лампы и зелья."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "dependencies": [
+            "van_nether"
+          ],
+          "x": -3,
+          "y": 12
+        },
+        {
+          "id": "van_quartz",
+          "title": "Кварц",
+          "icon": "minecraft:quartz",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:quartz",
+              "count": 16
+            }
+          ],
+          "description": [
+            "Белый минерал из Нижнего мира. Нужен для механизмов и декора."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "dependencies": [
+            "van_nether"
+          ],
+          "x": -1,
+          "y": 12
+        },
+        {
+          "id": "van_blaze",
+          "title": "Огненный стержень",
+          "icon": "minecraft:blaze_rod",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:blaze_rod",
+              "count": 6
+            }
+          ],
+          "description": [
+            "Выпадает из вспышек в крепости. Нужен для варочной стойки и глаза Эндера."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "dependencies": [
+            "van_nether"
+          ],
+          "x": 1,
+          "y": 12
+        },
+        {
+          "id": "van_brewing",
+          "title": "Варочная стойка",
+          "icon": "minecraft:brewing_stand",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:brewing_stand",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Стержень и камень. На ней варят зелья: лечение, сила, огнестойкость."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 35
+            }
+          ],
+          "dependencies": [
+            "van_blaze"
+          ],
+          "x": -3,
+          "y": 13
+        },
+        {
+          "id": "van_wart",
+          "title": "Адский нарост",
+          "icon": "minecraft:nether_wart",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:nether_wart",
+              "count": 3
+            }
+          ],
+          "description": [
+            "Растёт на песке душ. Без него не сварить ни одного зелья."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 25
+            }
+          ],
+          "dependencies": [
+            "van_blaze"
+          ],
+          "x": -1,
+          "y": 13
+        },
+        {
+          "id": "van_potions",
+          "title": "Зелья",
+          "icon": "minecraft:potion",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:potion",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Основа — склянка воды и адский нарост. Дальше добавляй ингредиенты под нужный эффект."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "dependencies": [
+            "van_brewing"
+          ],
+          "x": -1,
+          "y": 14
+        },
+        {
+          "id": "van_wither_skull",
+          "title": "Голова Иссушителя",
+          "icon": "minecraft:skull",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:skull",
+              "count": 3
+            }
+          ],
+          "description": [
+            "Редкая добыча из скелетов-иссушителей. Три головы и песок душ — призыв Иссушителя."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "dependencies": [
+            "van_nether"
+          ],
+          "x": 3,
+          "y": 12
+        },
+        {
+          "id": "van_nether_star",
+          "title": "Звезда Нижнего мира",
+          "icon": "minecraft:nether_star",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:nether_star",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Выпадает из Иссушителя. Из неё делают маяк и маячные лучи."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 70
+            }
+          ],
+          "dependencies": [
+            "van_wither_skull"
+          ],
+          "x": 1,
+          "y": 13
+        },
+        {
+          "id": "van_pearl",
+          "title": "Эндер-жемчуг",
+          "icon": "minecraft:ender_pearl",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:ender_pearl",
+              "count": 12
+            }
+          ],
+          "description": [
+            "Из странников Края. Жемчуг и стержень дают глаз Эндера."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 40
+            }
+          ],
+          "dependencies": [
+            "van_blaze"
+          ],
+          "x": 3,
+          "y": 13
+        },
+        {
+          "id": "van_eye",
+          "title": "Глаз Эндера",
+          "icon": "minecraft:ender_eye",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:ender_eye",
+              "count": 12
+            }
+          ],
+          "description": [
+            "Глазами ищут крепость и заполняют рамку портала."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "dependencies": [
+            "van_pearl"
+          ],
+          "x": 1,
+          "y": 14
+        },
+        {
+          "id": "van_stronghold",
+          "title": "Крепость",
+          "icon": "minecraft:stonebrick",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:stonebrick",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Подземная крепость с порталом в Край. Найди её глазами Эндера."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 45
+            }
+          ],
+          "dependencies": [
+            "van_eye"
+          ],
+          "x": 0,
+          "y": 15
+        },
+        {
+          "id": "van_end",
+          "title": "Портал в Край",
+          "icon": "minecraft:end_portal_frame",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:end_portal_frame",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Вставь глаза в рамку и открой портал."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 50
+            }
+          ],
+          "dependencies": [
+            "van_stronghold"
+          ],
+          "x": 0,
+          "y": 16
+        },
+        {
+          "id": "van_dragon",
+          "title": "Дракон Края",
+          "icon": "minecraft:dragon_egg",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:dragon_egg",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Финал ванильного прохождения: сначала кристаллы на башнях, потом дракон."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 100
+            }
+          ],
+          "dependencies": [
+            "van_end"
+          ],
+          "x": 0,
+          "y": 17
+        },
+        {
+          "id": "van_beacon",
+          "title": "Маяк",
+          "icon": "minecraft:beacon",
+          "tasks": [
+            {
+              "type": "craft",
+              "item": "minecraft:beacon",
+              "count": 1
+            }
+          ],
+          "description": [
+            "Звезда Нижнего мира, обсидиан и стекло. Даёт эффекты на всей базе."
+          ],
+          "rewards": [
+            {
+              "type": "xp",
+              "amount": 80
+            }
+          ],
+          "dependencies": [
+            "van_nether_star",
+            "van_dragon"
+          ],
+          "x": 0,
+          "y": 18
+        }
+      ]
+    }
+  ]
+}

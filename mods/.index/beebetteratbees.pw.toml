@@ -1,0 +1,18 @@
+filename = 'BeeBetterAtBees-0.3.jar'
+name = 'BeeBetterAtBees'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.7.10' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'BeeBetterAtBees 0.3'
+
+[download]
+hash = 'eb82437e5340ab78135d6d7a4627deca9ffb4c20'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2297397
+project-id = 244516
