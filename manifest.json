@@ -1,7 +1,7 @@
 {
   "pack": "TechnoMagicRPG",
   "version": "2026.10.08",
-  "generated": "2026-10-08 03:10",
+  "generated": "2026-10-08 03:27",
   "files": [
     {
       "path": "mods/Aroma1997s_Dimensional_World_1.7.10_1.1.0.1.jar",
@@ -2104,11 +2104,6 @@
       "sha1": "f955700550a31a8e2db2a833f931cf7c7b1bb1ab"
     },
     {
-      "path": "config/xzshop/wallets.txt",
-      "size": 51,
-      "sha1": "8f6182639ed9aafac755509616ba04fa795988a7"
-    },
-    {
       "path": "config/BloodMagic/schematics/MedMossyForge.json",
       "size": 18725,
       "sha1": "ec5e893aeab3eebe3d2874a1de21fa5e084d5349"
@@ -2227,11 +2222,6 @@
       "path": "config/ProjectE/customConversions/metals.json",
       "size": 3849,
       "sha1": "4cda4364b5ce748d697f5173cf6d71f7d5058356"
-    },
-    {
-      "path": "config/xzskins/fbb5125497ec378db4989435e70344e4.png",
-      "size": 615,
-      "sha1": "6e45b081e7b52dea2575a09ac9c10b4fba0e9afc"
     },
     {
       "path": "config/biomesoplenty/terraingen.cfg",

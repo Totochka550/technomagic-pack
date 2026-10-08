@@ -1,0 +1,9 @@
+# личные данные игроков — в обновлениях им не место
+config/xzshop/wallets.txt
+config/xzshop/cosmetics.txt
+config/xzskins/
+config/journeymap/
+saves/
+screenshots/
+logs/
+crash-reports/
