@@ -1,7 +1,7 @@
 {
   "pack": "TechnoMagicRPG",
-  "version": "2026.10.08",
-  "generated": "2026-10-08 03:27",
+  "version": "2026.10.10.0105",
+  "generated": "2026-10-10 01:05",
   "files": [
     {
       "path": "mods/Aroma1997s_Dimensional_World_1.7.10_1.1.0.1.jar",
@@ -2402,121 +2402,6 @@
       "path": "shaderpacks/BSL_v10.1.8.zip",
       "size": 1134153,
       "sha1": "e89818c8827d0131c102fb480c3c3446624db0df"
-    },
-    {
-      "path": "resourcepacks/Faithful32-1.7.10-missing-fill.zip",
-      "size": 11316610,
-      "sha1": "3f817182d360f24899598916bb61bdff700f9733"
-    },
-    {
-      "path": "resourcepacks/ToolLevelNames_ResourcePack.zip",
-      "size": 6675,
-      "sha1": "5f31398f601b8a3a64f1faa7d22c083b02b1c175"
-    },
-    {
-      "path": "resourcepacks/Faithful32-1.7.10-master.zip",
-      "size": 149123679,
-      "sha1": "ee94eebb75fd29912ecff49c38569cea0d427095"
-    },
-    {
-      "path": "resourcepacks/XZLauncher-Skin/pack.mcmeta",
-      "size": 58,
-      "sha1": "062da4afe85ecce9e9f49f987db8cbbd23bbc17f"
-    },
-    {
-      "path": "resourcepacks/XZLauncher-Skin/assets/minecraft/textures/entity/steve.png",
-      "size": 615,
-      "sha1": "6e45b081e7b52dea2575a09ac9c10b4fba0e9afc"
-    },
-    {
-      "path": "resourcepacks/Aether b1.7.3 Textures/pack.png",
-      "size": 600,
-      "sha1": "2ccac2610fb87f45fb2b1ac102cb73a0b630940e"
-    },
-    {
-      "path": "resourcepacks/Aether b1.7.3 Textures/pack.mcmeta",
-      "size": 113,
-      "sha1": "bafb164a1c7af3c7bd41d89ae0409b9d4b73a40d"
-    },
-    {
-      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/misc/buckets/skyroot_remedy_bucket.png",
-      "size": 484,
-      "sha1": "a8a4b11b001c3de7fb009e7c3959775ade233641"
-    },
-    {
-      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/accessories/agility_cape.png",
-      "size": 3049,
-      "sha1": "59f629e21177eb8c6aa8c5737481b7909cbfdd1d"
-    },
-    {
-      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/accessories/phoenix_gloves.png",
-      "size": 1816,
-      "sha1": "08841ee104eaa0c339672193e76987a6667298bc"
-    },
-    {
-      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/weapons/holy_sword.png",
-      "size": 339,
-      "sha1": "cd6349f3b408f1eece6e099232f69b0be1986f87"
-    },
-    {
-      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/weapons/lightning_sword.png",
-      "size": 339,
-      "sha1": "d30ae1f55899bb4d3ee7a29eefe7ecffca8b921d"
-    },
-    {
-      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/weapons/flaming_sword.png",
-      "size": 355,
-      "sha1": "dcdace6bd97d43bfe9150640a7ab76061569bd4a"
-    },
-    {
-      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/weapons/bow_pulling_2.png",
-      "size": 445,
-      "sha1": "392739b74c062745dff5d64eca05342d90ba500c"
-    },
-    {
-      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/weapons/phoenix_bow.png",
-      "size": 385,
-      "sha1": "01dbdf6ff2a5251b3b3e5b96a20394e125499eb4"
-    },
-    {
-      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/weapons/bow_pulling_0.png",
-      "size": 443,
-      "sha1": "5aa34acfcc67cf1641dd3abef4ad7ffae6ad19cd"
-    },
-    {
-      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/weapons/bow_pulling_1.png",
-      "size": 489,
-      "sha1": "7acb1ed758c3884f291ea77b5e2cb8777a9b1f39"
-    },
-    {
-      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/armor/phoenix_leggings.png",
-      "size": 1282,
-      "sha1": "9249a5af0a9ebb2eddc589fec9cb003e3e48b36e"
-    },
-    {
-      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/armor/phoenix_chestplate.png",
-      "size": 1305,
-      "sha1": "c1193658a3c85292f8f987fccf4937bae791e8ed"
-    },
-    {
-      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/armor/phoenix_helmet.png",
-      "size": 1286,
-      "sha1": "3dce3ebc3301c682ae61ddca97843e4d2cc47adf"
-    },
-    {
-      "path": "resourcepacks/Aether b1.7.3 Textures/assets/aether_legacy/textures/items/armor/phoenix_boots.png",
-      "size": 1285,
-      "sha1": "ed577e80a79c727a6c7861402ef562766b4c48a3"
-    },
-    {
-      "path": "options.txt",
-      "size": 4189,
-      "sha1": "cad5f6e6305cf9f8aa0dbb14f01de400a827ac72"
-    },
-    {
-      "path": "servers.dat",
-      "size": 83,
-      "sha1": "6b65d47f3520d98f626b1b4ae96a7ce4843c0667"
     }
   ]
 }
