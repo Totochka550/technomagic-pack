@@ -1,7 +1,7 @@
 {
   "pack": "TechnoMagicRPG",
-  "version": "2026.10.10.0105",
-  "generated": "2026-10-10 01:05",
+  "version": "2026.10.10.0112",
+  "generated": "2026-10-10 01:12",
   "files": [
     {
       "path": "mods/Aroma1997s_Dimensional_World_1.7.10_1.1.0.1.jar",
@@ -2402,6 +2402,31 @@
       "path": "shaderpacks/BSL_v10.1.8.zip",
       "size": 1134153,
       "sha1": "e89818c8827d0131c102fb480c3c3446624db0df"
+    },
+    {
+      "path": "libraries/net/java/jinput/jinput-platform/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-windows.jar",
+      "size": 155179,
+      "sha1": "385ee093e01f587f30ee1c8a2ee7d408fd732e16"
+    },
+    {
+      "path": "libraries/net/java/jinput/jinput/jinput/2.0.5/jinput-2.0.5.jar",
+      "size": 208338,
+      "sha1": "39c7796b469a600f72380316f6b1f11db6c2c7c4"
+    },
+    {
+      "path": "libraries/org/lwjgl/lwjgl/lwjgl_util/lwjgl_util/2.9.4-nightly-20150209/lwjgl_util-2.9.4-nightly-20150209.jar",
+      "size": 173887,
+      "sha1": "d51a7c040a721d13efdfbd34f8b257b2df882ad0"
+    },
+    {
+      "path": "libraries/org/lwjgl/lwjgl/lwjgl/lwjgl/2.9.4-nightly-20150209/lwjgl-2.9.4-nightly-20150209.jar",
+      "size": 1047168,
+      "sha1": "697517568c68e78ae0b4544145af031c81082dfe"
+    },
+    {
+      "path": "libraries/org/lwjgl/lwjgl/lwjgl-platform/lwjgl-platform/2.9.4-nightly-20150209/lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar",
+      "size": 613748,
+      "sha1": "b84d5102b9dbfabfeb5e43c7e2828d98a7fc80e0"
     }
   ]
 }
